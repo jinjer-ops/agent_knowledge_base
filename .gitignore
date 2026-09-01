@@ -1,0 +1,11 @@
+# Local editor and runtime files
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# Never retain copied source pages, private exports, or generated indexes here.
+raw_sources/
+downloads/
+indexes/
