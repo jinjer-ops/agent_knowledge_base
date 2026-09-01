@@ -17,7 +17,7 @@ Use this topic when the question is "where should we retain knowledge so humans 
 | Need | First choice | Escalate when |
 | --- | --- | --- |
 | Decision, procedure, or project context | Versioned Markdown in this repository | Cross-document questions become demonstrably hard to answer. |
-| Recall a source article and why it matters | `sources/articles.yml` plus a topic map | The registry becomes too large for direct search. |
+| Recall a source article and why it matters | `knowledge/sources/articles.yml` plus a topic map | The registry becomes too large for direct search. |
 | Search approved internal documents semantically | Local RAG experiment | Recall, provenance, and refresh can be measured. |
 | Repeated codebase impact analysis | Code graph experiment | File search, LSP, and repository docs are measured bottlenecks. |
 | Extract structured facts from long text | Grounded extraction experiment | Manual review cost is lower than structured capture. |

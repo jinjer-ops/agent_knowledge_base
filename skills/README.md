@@ -1,5 +1,10 @@
 # Skills
 
-Skills are the final layer of the knowledge base. Each skill must state its source IDs, trigger, output, verification, and permission boundary. Do not promote a one-off article summary into a skill.
+Skills are reusable workflows. Each skill states its source IDs, trigger, output, verification, and permission boundary. Do not promote a one-off article summary into a skill.
 
-`knowledge-curator` is included because article intake is already a repeated, bounded workflow. Agent configuration synchronization remains an implementation candidate under `ADR-0002`; it is not installed automatically.
+| Skill | Use when | Install target |
+| --- | --- | --- |
+| [knowledge-curator](knowledge-curator/SKILL.md) | Links or notes must be retained as reusable knowledge. | Codex skill directory or a project-specific skill directory. |
+| [repository-publish](repository-publish/SKILL.md) | A repository change could be read by others or pushed to GitHub. | `.claude/skills/` or an equivalent agent skill directory. |
+
+Copy only the selected skill directory; do not copy local settings, history, permission state, or credentials. Agent configuration synchronization remains an implementation candidate under `../knowledge/decisions/ADR-0002_agent_configuration_ssot.md`; it is not installed automatically.

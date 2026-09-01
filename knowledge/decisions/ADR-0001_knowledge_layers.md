@@ -6,7 +6,7 @@ status: accepted
 created_at: 2026-09-01
 updated_at: 2026-09-01
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-007, ART-012, ART-015]
+source_ids: [ART-003, ART-007, ART-012, ART-015, REF-004]
 tags: [knowledge, skills, maintenance]
 ---
 
@@ -14,7 +14,7 @@ tags: [knowledge, skills, maintenance]
 
 ## Decision
 
-Keep supplied articles in `sources/articles.yml`, and keep current interpretation and executable guidance in separate files. A skill is a derived workflow, never the only location of its rationale.
+Keep supplied articles in `knowledge/sources/articles.yml`, and keep current interpretation and executable guidance in separate files. A skill is a derived workflow, never the only location of its rationale.
 
 ## Rationale
 
