@@ -15,7 +15,7 @@ Source IDs: `ART-001`, `ART-003`, `ART-007`, `ART-012`.
 
 ## Source of truth
 
-For this repository, read `sources/articles.yml` and the relevant topic, decision, experiment, or practice before editing. Preserve the original source URL and use source IDs in every derived artifact.
+For this repository, read `knowledge/sources/articles.yml` and the relevant topic, decision, experiment, or practice before editing. Preserve the original source URL and use source IDs in every derived artifact.
 
 Do not copy full articles into the repository. Record only source metadata, a concise original assessment, and links to derived local guidance.
 
@@ -34,10 +34,10 @@ Prefer primary documentation when a tool behavior, version, license, security po
 
 Create or update the smallest appropriate artifact:
 
-- `topics/` for "when would I use this?" routing;
-- `decisions/` for a chosen rule and its alternatives;
-- `experiments/` for a bounded comparison;
-- `practices/` for a locally verified procedure;
+- `knowledge/topics/` for "when would I use this?" routing;
+- `knowledge/decisions/` for a chosen rule and its alternatives;
+- `knowledge/experiments/` for a bounded comparison;
+- `knowledge/practices/` for a locally verified procedure;
 - `skills/` only for a recurring workflow with clear trigger, inputs, verification, and stopping condition.
 
 Do not create a new skill merely because an article describes a tool. Do not silently install dependencies, create a remote repository, or publish a change. Ask for approval immediately before an external or otherwise material mutation.
