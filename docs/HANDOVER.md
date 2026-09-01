@@ -19,16 +19,16 @@ Acceptance criteria: every supplied article has a source ID and current status; 
 
 ## Current state — 2026-09-01
 
-Completed: source registry with 15 articles, four topic maps, two architecture decisions, five experiment charters, two practices, and the `knowledge-curator` skill source.
+Published 2026-09-01: source registry with 15 articles, four topic maps, two architecture decisions, five experiment charters, two practices, and the `knowledge-curator` skill source. Public remote: <https://github.com/jinjer-ops/agent_knowledge_base>.
 
-Publication target: public GitHub repository `agent_knowledge_base` owned by the active personal GitHub account. The source must remain suitable for unrestricted public access.
+The source must remain suitable for unrestricted public access.
 
 ## How to continue
 
 1. Run the checks in the README and inspect `git status --short`.
-2. Create and push the initial public repository only after checking for secrets, local paths, and organization-only details.
-3. Register the public repository in the handbook index, then submit that change separately.
-4. Run `knowledge-curator` on the next batch of links. Promote a source only after its derived experiment or practice has evidence.
+2. Create a feature branch and submit a pull request for material changes.
+3. Run `knowledge-curator` on the next batch of links. Promote a source only after its derived experiment or practice has evidence.
+4. Re-run the public-content checks before every push.
 
 ## Decisions
 

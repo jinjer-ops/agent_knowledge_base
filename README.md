@@ -13,6 +13,8 @@ tags: [knowledge, agents, technology-radar, skills]
 
 AIエージェント、知識検索、資料作成、ML基盤に関する外部記事と、検証した実践知を分けて管理する public repository です。
 
+公開先: <https://github.com/jinjer-ops/agent_knowledge_base>
+
 ## まず読む場所
 
 - 受け取った全記事: [sources/articles.yml](sources/articles.yml)
