@@ -6,7 +6,7 @@ status: proposed
 created_at: 2026-09-01
 updated_at: 2026-09-01
 owners: [knowledge-stewards]
-source_ids: [ART-008]
+source_ids: [ART-008, ART-016]
 tags: [codebase, graph, retrieval]
 ---
 
@@ -22,4 +22,4 @@ Start only after recording repeated search failures or excess investigation time
 
 ## Compare
 
-Use the same impact-analysis questions against the current workflow and graph-assisted workflow. Measure answer completeness, incorrect links, staleness, build time, and operator burden.
+Use the same impact-analysis questions against the current workflow and graph-assisted workflow. Include multi-hop dependency, exhaustive impact, and type-and-relation questions only when they represent real work. Measure answer completeness, incorrect links, staleness, build time, and operator burden.

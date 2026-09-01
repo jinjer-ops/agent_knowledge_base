@@ -122,6 +122,14 @@ sources:
     status: adopted
     use_when: "常時読み込まれる指示の肥大化を防ぐ時"
     derived: [foundation/README.md, foundation/claude-code/README.md, knowledge/decisions/ADR-0001_knowledge_layers.md, knowledge/practices/knowledge_maintenance.md]
+  - id: ART-016
+    title: オントロジー × グラフ × LLM の実装と評価（基礎編）
+    url: https://qiita.com/haystacker/items/853234c38ae36adbca1f
+    published_at: 2026-08-16
+    topics: [local_rag, knowledge_graph, graphrag, ontology]
+    status: experiment
+    use_when: "多段の関係追跡・網羅・型と関係の結合を含む質問で、ベクトルRAGの取得範囲を比較したい時"
+    derived: [knowledge/topics/knowledge_system.md, knowledge/experiments/local_rag.md, knowledge/experiments/codebase_knowledge_graph.md]
   - id: REF-001
     title: How Claude remembers your project
     url: https://code.claude.com/docs/en/memory
