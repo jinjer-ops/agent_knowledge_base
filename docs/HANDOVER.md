@@ -21,7 +21,7 @@ Acceptance criteria: a new reader can identify the three areas from the README, 
 
 Sources: 20 records in `knowledge/sources/articles.yml`, made up of 16 article records (`ART-001`–`ART-016`) and 4 official or reference records (`REF-001`–`REF-004`). Current status split: 6 `adopted`, 14 `reference`, 0 `experiment`.
 
-Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 20 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` is marked as only partly verified, because its article is paginated and only the first page was read.
+Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 20 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` was reviewed across all three public pages and remains `reference`; its reported figures are not treated as local verification.
 
 Machine entry point: `knowledge/sources/articles.yml` is canonical for source IDs and URLs. Its `derived` field is the complete reverse index of the documents that declare a source in `source_ids`, so a reader can list every related document from the registry alone. `derived` is an index of related documents; it is not the basis for status.
 
@@ -60,6 +60,8 @@ git diff --check
 
 `validate_knowledge.py` checks the source ID count, that every `derived` path exists, that `source_ids` declarations and `derived` agree in both directions, that the reading guide holds exactly one card per source, and that the retired term `local guidance` is gone. It prints the specific missing or unsupported paths and exits 1 on failure.
 
+`.github/workflows/knowledge-validation.yml` runs this same command for pull requests targeting `main` and pushes to `main`. It has read-only `contents` permission, installs no project dependencies, and does not deploy or change repository state. The workflow reports validation results, but branch protection is a separate GitHub administrator setting.
+
 Before every push, run a targeted scan for credentials, local paths, organization-only identifiers, and copied external content. Roll back a bad classification with a normal Git revert; do not delete source records. Review a source's status when new local evidence is added, and review `reference` entries at least yearly.
 
 ## Artifacts
@@ -72,3 +74,5 @@ Before every push, run a targeted scan for credentials, local paths, organizatio
 - Reusable workflows: `skills/`
 - Contribution rules and public boundary: `docs/contribution.md`, `docs/public-boundary.md`
 - Validator: `scripts/validate_knowledge.py`
+- CI workflow: `.github/workflows/knowledge-validation.yml`
+- CI audit: `docs/audits/2026-09-03-knowledge-validation-ci/`
