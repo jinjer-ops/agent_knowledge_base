@@ -103,9 +103,9 @@ sources:
     url: https://www.sbbit.jp/article/cont1/186558
     published_at: 2026-08-21
     topics: [agent_orchestration, automation]
-    status: reference
+    status: adopted
     use_when: "複数エージェントの自動化を検討し、再現可能な測定例と比較する時"
-    derived: [knowledge/reading-guide.md]
+    derived: [foundation/README.md, knowledge/reading-guide.md]
   - id: ART-014
     title: リポジトリにロジックは書くな！
     url: https://zenn.dev/more_tech_blog/articles/76af481ab3816d
@@ -135,9 +135,9 @@ sources:
     url: https://zenn.dev/minewo/articles/river-review-judgment-placement
     published_at: 2026-08-31
     topics: [ai_code_review, review_automation, quality_gates, human_oversight]
-    status: reference
+    status: adopted
     use_when: "コードレビューの判断を決定論的検査、ルール検出、意味的レビュー、人間承認へ分けたい時"
-    derived: [knowledge/reading-guide.md]
+    derived: [foundation/claude-code/rules/review.md, knowledge/reading-guide.md]
   - id: ART-018
     title: 社内限定サービスの認証を Google Workspace でサクッと作る
     url: https://zenn.dev/dress_code/articles/6134e6bd5e46c6
