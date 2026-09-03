@@ -4,7 +4,7 @@ title: Agent knowledge base handover
 type: handover
 status: active
 created_at: 2026-09-01
-updated_at: 2026-09-01
+updated_at: 2026-09-03
 owners: [knowledge-stewards]
 tags: [handover, knowledge, foundation]
 ---
@@ -13,50 +13,62 @@ tags: [handover, knowledge, foundation]
 
 ## Purpose and boundary
 
-This public repository is the single entry point for reusable agent-environment guidance, public-safe jinjer guidance, and external reading notes. It stores source links, decisions, experiments, verified practices, and reusable skills. It does not store article copies, credentials, exports, personal data, business data, internal URLs, or local agent state.
+This public repository is the single entry point for reusable agent-environment guidance, public-safe jinjer guidance, and external reading notes. It stores source links, a human reading guide, reusable configuration, and reusable skills. It does not store article copies, credentials, exports, personal data, business data, internal URLs, or local agent state.
 
-Acceptance criteria: a new reader can identify the three areas from the README, apply a generic Claude Code starter without overwriting local settings, find supplied articles and reference material, and distinguish an experiment from an adopted practice.
+Acceptance criteria: a new reader can identify the three areas from the README, apply a generic Claude Code starter without overwriting local settings, find every supplied article through the reading guide, and tell from the registry whether a source is adopted or kept only for reference.
 
-## Current state — 2026-09-01
+## Current state — 2026-09-03
 
-Published 2026-09-01: 15 supplied article records, four official/reference records, four topic maps, two decisions, five experiment charters, two practices, two reusable skills, a Claude Code starter, and a public-safe jinjer overlay. Public remote: <https://github.com/jinjer-ops/agent_knowledge_base>.
+Sources: 20 records in `knowledge/sources/articles.yml`, made up of 16 article records (`ART-001`–`ART-016`) and 4 official or reference records (`REF-001`–`REF-004`). Current status split: 6 `adopted`, 14 `reference`, 0 `experiment`.
 
-The source must remain suitable for unrestricted public access. `organization/jinjer/` is an audience label, not an access-control boundary.
+Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 20 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` is marked as only partly verified, because its article is paginated and only the first page was read.
+
+Machine entry point: `knowledge/sources/articles.yml` is canonical for source IDs and URLs. Its `derived` field is the complete reverse index of the documents that declare a source in `source_ids`, so a reader can list every related document from the registry alone. `derived` is an index of related documents; it is not the basis for status.
+
+Other current material: `foundation/` (6 files), `organization/jinjer/` (2 files), `skills/` (2 skills), and `docs/` (this handover, the contribution guide, and the public boundary policy).
+
+There are currently no separate topic, decision, experiment, or practice documents. Thirteen such documents were removed by the repository owner before this change, and the registry was rebuilt around what remains: stale `derived` paths were dropped, six sources moved from `experiment` to `reference` because no experiment charter survives, and one moved from `adopted` to `reference`. Those removals and the rebuilt registry belong to the same publication change and are not published separately. The structure still allows verified decisions, experiments, and practices to be added later; see `docs/contribution.md`.
+
+Public remote: <https://github.com/jinjer-ops/agent_knowledge_base>. The source must remain suitable for unrestricted public access. `organization/jinjer/` is an audience label, not an access-control boundary.
 
 ## How to continue
 
 1. Read the README, `docs/contribution.md`, and `docs/public-boundary.md`; then inspect `git status --short`.
-2. Add article links through `knowledge/sources/articles.yml`, and connect them to the smallest relevant derived artifact.
+2. Add article links through `knowledge/sources/articles.yml`, add one card per source to `knowledge/reading-guide.md`, and declare `source_ids` in any document that uses the source so the reverse index stays complete.
 3. Add reusable initial settings under `foundation/`; add jinjer-specific material only when it is safe for public disclosure.
 4. Run the checks below, create a feature branch, and submit a pull request for material changes.
 
-## Decisions
+## Decisions in force
 
-- Sources, interpretations, experiments, practices, and skills are separate layers: `knowledge/decisions/ADR-0001_knowledge_layers.md`.
-- Shared agent configuration has one canonical source; agent-specific guidance is not force-synchronized: `knowledge/decisions/ADR-0002_agent_configuration_ssot.md`.
-- Local RAG, Ollama, Mojo, extraction, and codebase graphs are retained as experiments, not discarded or pre-approved.
+- Sources, the human reading guide, and reusable configuration are separate layers, and the same content is not copied between them.
+- Shared agent configuration has one canonical source; agent-specific guidance is not force-synchronized.
+- `derived` is the complete reverse index of documents declaring a source. Status is decided separately, by whether a verified decision, practice, guidance, or experiment charter exists.
+- Sources are never deleted when their local material goes away. They move to `reference` and keep their URL and reading-guide card.
 
 ## Environment
 
-Requires Git, GitHub CLI authenticated to the repository owner, and ripgrep. Claude Code users can copy selected skills into their configured skill location after reading `foundation/claude-code/README.md`. No secrets belong in the repository.
+Requires Git and Python 3 for the validator, which uses only the standard library. GitHub CLI is needed to open pull requests. Claude Code users can copy selected skills into their configured skill location after reading `foundation/claude-code/README.md`. No secrets belong in the repository.
 
 ## Verification and operations
 
 Run the following commands from the repository root:
 
 ```powershell
-rg -n "^  id:|^  status:|source_ids" foundation organization knowledge skills
+python scripts/validate_knowledge.py
 git diff --check
 ```
 
-Run `quick_validate.py` for changed skills. Before every push, run a targeted scan for credentials, local paths, organization-only identifiers, and copied external content. Roll back a bad classification with a normal Git revert; do not delete source records. Review experiment status after evidence is added, and review `reference` entries at least yearly.
+`validate_knowledge.py` checks the source ID count, that every `derived` path exists, that `source_ids` declarations and `derived` agree in both directions, that the reading guide holds exactly one card per source, and that the retired term `local guidance` is gone. It prints the specific missing or unsupported paths and exits 1 on failure.
+
+Before every push, run a targeted scan for credentials, local paths, organization-only identifiers, and copied external content. Roll back a bad classification with a normal Git revert; do not delete source records. Review a source's status when new local evidence is added, and review `reference` entries at least yearly.
 
 ## Artifacts
 
 - Foundation: `foundation/`
 - Public-safe organization overlay: `organization/jinjer/`
 - Source registry: `knowledge/sources/articles.yml`
-- Topic entrypoints: `knowledge/topics/`
-- Current decisions: `knowledge/decisions/`
-- Experiment charters: `knowledge/experiments/`
+- Human reading guide: `knowledge/reading-guide.md`
+- Knowledge area entry point: `knowledge/README.md`
 - Reusable workflows: `skills/`
+- Contribution rules and public boundary: `docs/contribution.md`, `docs/public-boundary.md`
+- Validator: `scripts/validate_knowledge.py`

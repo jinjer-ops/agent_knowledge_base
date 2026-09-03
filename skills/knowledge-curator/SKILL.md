@@ -11,13 +11,13 @@ Use this skill when the user provides article URLs, reading notes, or a knowledg
 
 ## Provenance
 
-Source IDs: `ART-001`, `ART-003`, `ART-007`, `ART-012`.
+source_ids: [ART-001, ART-003, ART-006, ART-007, ART-012, REF-002]
 
 ## Source of truth
 
-For this repository, read `knowledge/sources/articles.yml` and the relevant topic, decision, experiment, or practice before editing. Preserve the original source URL and use source IDs in every derived artifact.
+For this repository, read `knowledge/sources/articles.yml` for the source record, `knowledge/reading-guide.md` for the card that explains it, and the existing documents listed in that source's `derived` field before editing. Preserve the original source URL and use source IDs in every derived artifact.
 
-Do not copy full articles into the repository. Record only source metadata, a concise original assessment, and links to derived local guidance.
+Do not copy full articles into the repository. Record only source metadata, a concise original assessment, and links to related local documents.
 
 ## Triage
 
@@ -32,7 +32,7 @@ Prefer primary documentation when a tool behavior, version, license, security po
 
 ## Derive reusable knowledge
 
-Create or update the smallest appropriate artifact:
+Create or update the smallest appropriate artifact. The directories below are candidates for new material and are created when the first such document is added; do not assume they already hold anything:
 
 - `knowledge/topics/` for "when would I use this?" routing;
 - `knowledge/decisions/` for a chosen rule and its alternatives;

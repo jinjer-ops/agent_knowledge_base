@@ -7,9 +7,9 @@ sources:
     url: https://gihyo.jp/article/2025/08/langextract
     published_at: 2025-08-01
     topics: [knowledge_ingestion, structured_extraction]
-    status: experiment
+    status: reference
     use_when: "出典位置を保持したまま、非構造化テキストを判断カードへ抽出したい時"
-    derived: [knowledge/experiments/source_grounded_extraction.md]
+    derived: [docs/contribution.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: ART-002
     title: PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成
     url: https://zenn.dev/daming_cafe/articles/reveal-markdown-slides
@@ -17,7 +17,7 @@ sources:
     topics: [presentations, web_slides]
     status: reference
     use_when: "コード・数式中心の技術発表をWebスライドで配信したい時"
-    derived: [foundation/presentations/README.md, knowledge/topics/presentation_and_assets.md]
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
   - id: ART-003
     title: CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録
     url: https://zenn.dev/pepabo/articles/claude-code-rules-skills-split
@@ -25,7 +25,7 @@ sources:
     topics: [agent_instructions, skills]
     status: adopted
     use_when: "常時ルール、参照資料、明示的ワークフローの置き場所を決める時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, knowledge/decisions/ADR-0001_knowledge_layers.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-004
     title: Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる
     url: https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup
@@ -33,15 +33,15 @@ sources:
     topics: [agent_operations, sop]
     status: adopted
     use_when: "高リスクまたは再現性が必要な作業手順を構造化する時"
-    derived: [foundation/claude-code/rules/review.md, foundation/templates/new-project.md, knowledge/practices/sop_template.md]
+    derived: [foundation/claude-code/rules/review.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md]
   - id: ART-005
     title: Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた
     url: https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474
     published_at: 2026-07-27
     topics: [local_rag, open_weight_models]
-    status: experiment
+    status: reference
     use_when: "社内文書を外部送信せずに検索・回答する構成を比較する時"
-    derived: [knowledge/experiments/local_rag.md, knowledge/experiments/open_weight_runtime.md]
+    derived: [knowledge/reading-guide.md]
   - id: ART-006
     title: 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)
     url: https://zenn.dev/explaza/articles/20f7f41cff8428
@@ -49,31 +49,31 @@ sources:
     topics: [agent_configuration, skills]
     status: adopted
     use_when: "複数のコーディングエージェントで設定の重複と競合を減らす時"
-    derived: [foundation/README.md, knowledge/decisions/ADR-0002_agent_configuration_ssot.md, skills/knowledge-curator/SKILL.md]
+    derived: [foundation/README.md, foundation/claude-code/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-007
     title: コードベースのナレッジ化なら、LLM Wikiで十分かもしれない
     url: https://qiita.com/Syoitu/items/ff38655fed51a2920910
     published_at: 2026-07-30
     topics: [knowledge_system, llm_wiki]
-    status: adopted
+    status: reference
     use_when: "素材を検索し直すだけでなく、整理済みの知識を育てたい時"
-    derived: [knowledge/decisions/ADR-0001_knowledge_layers.md, knowledge/topics/knowledge_system.md]
+    derived: [knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: ART-008
     title: ナレッジグラフを活用してClaude Codeのトークンを10分の1にする
     url: https://zenn.dev/nocodesolutions/articles/19f0d415af42be
     published_at: null
     topics: [codebase_search, knowledge_graph]
-    status: experiment
+    status: reference
     use_when: "大規模コードベースで通常の検索・索引では探索コストが高いと測定された時"
-    derived: [knowledge/experiments/codebase_knowledge_graph.md]
+    derived: [knowledge/reading-guide.md]
   - id: ART-009
     title: Ollama環境構築 # 自分用メモ
     url: https://zenn.dev/jun1013/articles/17e88035111d7c
     published_at: null
     topics: [open_weight_models, ollama]
-    status: experiment
+    status: reference
     use_when: "複数のオープンウェイトモデルや埋め込みモデルを共通境界で評価する時"
-    derived: [knowledge/experiments/open_weight_runtime.md]
+    derived: [knowledge/reading-guide.md]
   - id: ART-010
     title: 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる
     url: https://qiita.com/uni928/items/b4a874f0bbf91d378097
@@ -81,15 +81,15 @@ sources:
     topics: [ui_assets, design_reuse]
     status: adopted
     use_when: "実証済みのUI部品や見た目を再利用したい時"
-    derived: [foundation/presentations/README.md, knowledge/topics/presentation_and_assets.md]
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
   - id: ART-011
     title: Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明
     url: https://www.publickey1.jp/blog/26/pythonmojowindows.html
     published_at: null
     topics: [ml_infrastructure, mojo]
-    status: experiment
+    status: reference
     use_when: "既存ML処理で計算ホットスポットが特定され、Python実装との比較を行う時"
-    derived: [knowledge/experiments/mojo.md]
+    derived: [knowledge/reading-guide.md]
   - id: ART-012
     title: claude のメモリを棚卸しする
     url: https://zenn.dev/cureapp/articles/c1e963064d05fd
@@ -97,7 +97,7 @@ sources:
     topics: [knowledge_maintenance, agent_memory]
     status: adopted
     use_when: "知識台帳やエージェント向け文書の鮮度・孤児・肥大化を点検する時"
-    derived: [foundation/README.md, knowledge/practices/knowledge_maintenance.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-013
     title: 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ
     url: https://www.sbbit.jp/article/cont1/186558
@@ -105,7 +105,7 @@ sources:
     topics: [agent_orchestration, automation]
     status: reference
     use_when: "複数エージェントの自動化を検討し、再現可能な測定例と比較する時"
-    derived: [knowledge/topics/agent_operations.md]
+    derived: [knowledge/reading-guide.md]
   - id: ART-014
     title: リポジトリにロジックは書くな！
     url: https://zenn.dev/more_tech_blog/articles/76af481ab3816d
@@ -113,7 +113,7 @@ sources:
     topics: [application_architecture, repository_pattern]
     status: reference
     use_when: "アプリケーション層とデータアクセス層の責務をレビューする時"
-    derived: [knowledge/topics/ml_and_architecture.md]
+    derived: [knowledge/reading-guide.md]
   - id: ART-015
     title: 肥大化し続けるCLAUDE.md
     url: https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing
@@ -121,15 +121,15 @@ sources:
     topics: [agent_instructions, knowledge_maintenance]
     status: adopted
     use_when: "常時読み込まれる指示の肥大化を防ぐ時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, knowledge/decisions/ADR-0001_knowledge_layers.md, knowledge/practices/knowledge_maintenance.md]
+    derived: [foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
   - id: ART-016
     title: オントロジー × グラフ × LLM の実装と評価（基礎編）
     url: https://qiita.com/haystacker/items/853234c38ae36adbca1f
     published_at: 2026-08-16
     topics: [local_rag, knowledge_graph, graphrag, ontology]
-    status: experiment
+    status: reference
     use_when: "多段の関係追跡・網羅・型と関係の結合を含む質問で、ベクトルRAGの取得範囲を比較したい時"
-    derived: [knowledge/topics/knowledge_system.md, knowledge/experiments/local_rag.md, knowledge/experiments/codebase_knowledge_graph.md]
+    derived: [knowledge/reading-guide.md]
   - id: REF-001
     title: How Claude remembers your project
     url: https://code.claude.com/docs/en/memory
@@ -137,7 +137,7 @@ sources:
     topics: [agent_instructions, claude_code, memory]
     status: reference
     use_when: "CLAUDE.md、rules、auto memoryの役割と読み込み範囲を確認する時"
-    derived: [foundation/README.md, foundation/claude-code/README.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
@@ -145,7 +145,7 @@ sources:
     topics: [claude_code, skills]
     status: reference
     use_when: "Claude Code skillの配置、形式、適用条件を確認する時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, docs/contribution.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: REF-003
     title: Secret scanning
     url: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
@@ -153,7 +153,7 @@ sources:
     topics: [github, security, public_repositories]
     status: reference
     use_when: "publicリポジトリの秘密情報検査と、漏えい時の対応を確認する時"
-    derived: [docs/public-boundary.md, foundation/claude-code/rules/review.md, skills/repository-publish/SKILL.md]
+    derived: [docs/public-boundary.md, foundation/claude-code/rules/review.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
   - id: REF-004
     title: Markdown Architectural Decision Records
     url: https://adr.github.io/madr/
@@ -161,4 +161,4 @@ sources:
     topics: [decision_records, documentation]
     status: reference
     use_when: "重要な技術・運用上の判断を、背景とトレードオフ付きで記録する時"
-    derived: [foundation/claude-code/rules/review.md, knowledge/decisions/ADR-0001_knowledge_layers.md]
+    derived: [foundation/claude-code/rules/review.md, knowledge/reading-guide.md]

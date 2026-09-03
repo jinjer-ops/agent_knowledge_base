@@ -16,3 +16,7 @@ indexes/
 .codex/auth.json
 .codex/history.jsonl
 private/
+
+# Local coordination records for this working copy. Kept on disk, not published.
+/CLAUDE.md
+docs/codex-briefs/
