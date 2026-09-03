@@ -4,9 +4,9 @@ title: Reading guide for registered sources
 type: reading-guide
 status: active
 created_at: 2026-09-02
-updated_at: 2026-09-02
+updated_at: 2026-09-03
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, REF-001, REF-002, REF-003, REF-004]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, REF-001, REF-002, REF-003, REF-004]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -104,7 +104,7 @@ tags: [knowledge, reading-guide, sources]
 
 ## reference
 
-読む価値のある出典として保持しているもの。14件。推奨や導入済みという意味ではありません。
+読む価値のある出典として保持しているもの。17件。推奨や導入済みという意味ではありません。
 
 ### ART-001 LangExtract
 
@@ -197,6 +197,33 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 「必要な情報が取得できているか」と「正しく答えられるか」を分けて測る評価の型が示されている。ベクトル検索が構造上苦手な問い（多段の追跡、型の網羅、型と関係の結合）が具体的に挙がっているため、検索の限界を説明するときの材料になる。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。
 
+### ART-017 AIコードレビューの判断配置
+
+- **URL**: <https://zenn.dev/minewo/articles/river-review-judgment-placement>
+- **記事種別**: 技術記事（OSS設計・実装状況の解説）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: コードレビューの判断を、機械的に証明できる検査、明示ルールで候補を絞る検出、複数の成果物の意味を読むAIレビュー、責任を伴う人間の最終判断の4層に分ける設計を説明している。同じ指摘を繰り返す場合は条件をルールやテストへ移す一方、意味・例外・責任の判断まで無理に機械化しない。決定論的なcommandでも、レビュー対象側が実行許可を変更できないtrust boundaryが必要だとする。
+- **得られる示唆**: AIに任せるかを先に決めるのではなく、判定の再現性、必要な文脈、失敗時の影響、最終責任を軸に置き場所を決める。機械的な検査結果をAIの再判断で覆さず、繰り返す観点だけを測定可能なルールへ移すと、レビューのノイズとコストを抑えられる。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。
+
+### ART-018 社内サービスの認証境界
+
+- **URL**: <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>
+- **記事種別**: 技術記事（設計・疎通確認段階の実装解説）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: Google Workspace を利用する社内限定サービスで、人のログイン、APIを使う機械、リポジトリ同期を担うCIを別の認証対象として扱う構成を解説している。人のログインではOIDCの署名・audience・所属ドメインを確認し、在籍確認が必要な人向けtokenと、特定の役割に結び付けるCI tokenを混同しない。Directory APIを使う場合も、鍵を常設せずワークロードの短期credentialを使い、設定不足を退職扱いにしてtokenを消さないfail-closedの考え方を示す。
+- **得られる示唆**: 「誰が使うか」だけでなく、「何の役割としてアクセスするか」と失効の根拠を分けて設計する。外部IDトークンは表示できるだけでは信頼せず署名と宛先を検証し、認証基盤の設定欠落はアクセス拒否にしても、利用者の削除や失効の証拠とは扱わない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。
+
+### ART-019 コード構造をグラフとLSPで探索する
+
+- **URL**: <https://zenn.dev/helloworld/articles/bcaea69f58eae5>
+- **記事種別**: 技術記事（複数OSSツールの導入・測定記録）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: コードと設計文書の関係をグラフ化するツール、意味検索・影響範囲分析、言語サーバーによる定義・参照探索を、質問の種類で使い分ける構成を紹介している。著者のTypeScriptプロジェクトでは、レビュー用コンテキスト量、意味検索、影響範囲、質問からのツール選択を測定したと報告する一方、内蔵セキュリティスキャンだけでは検出できなかった問題があり、専用の静的解析などとの併用を勧めている。
+- **得られる示唆**: コードベース全体を毎回読ませる前に、目的別の探索経路を設計する価値がある。グラフやLSPは関係・型・影響範囲の取得候補として比較できるが、著者のトークン削減率や検出力を一般化せず、対象コード・質問・安全検査を定めて自分たちで再現確認する。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。
+
 ### REF-001 CLAUDE.md と auto memory の公式仕様
 
 - **URL**: <https://code.claude.com/docs/en/memory>
@@ -239,6 +266,6 @@ tags: [knowledge, reading-guide, sources]
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全20 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全23 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 6件、`experiment` 0件、`reference` 14件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 6件、`experiment` 0件、`reference` 17件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

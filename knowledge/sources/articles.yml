@@ -130,6 +130,30 @@ sources:
     status: reference
     use_when: "多段の関係追跡・網羅・型と関係の結合を含む質問で、ベクトルRAGの取得範囲を比較したい時"
     derived: [knowledge/reading-guide.md]
+  - id: ART-017
+    title: AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計
+    url: https://zenn.dev/minewo/articles/river-review-judgment-placement
+    published_at: 2026-08-31
+    topics: [ai_code_review, review_automation, quality_gates, human_oversight]
+    status: reference
+    use_when: "コードレビューの判断を決定論的検査、ルール検出、意味的レビュー、人間承認へ分けたい時"
+    derived: [knowledge/reading-guide.md]
+  - id: ART-018
+    title: 社内限定サービスの認証を Google Workspace でサクッと作る
+    url: https://zenn.dev/dress_code/articles/6134e6bd5e46c6
+    published_at: 2026-09-01
+    topics: [internal_services, authentication, google_workspace, oidc]
+    status: reference
+    use_when: "社内限定サービスで人、機械、CIの認証対象と失効条件を分けて設計する時"
+    derived: [knowledge/reading-guide.md]
+  - id: ART-019
+    title: トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す
+    url: https://zenn.dev/helloworld/articles/bcaea69f58eae5
+    published_at: 2026-09-01
+    topics: [knowledge_graph, codebase_search, agent_context]
+    status: reference
+    use_when: "コードベース探索でグラフ、意味検索、言語サーバーを組み合わせる価値を比較検証する時"
+    derived: [knowledge/reading-guide.md]
   - id: REF-001
     title: How Claude remembers your project
     url: https://code.claude.com/docs/en/memory
