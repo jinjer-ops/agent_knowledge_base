@@ -9,9 +9,11 @@ metadata:
 
 Use this skill before committing, pushing, creating a pull request, or making a repository visible to additional readers. Do not use it for local-only changes with no sharing intent.
 
-## Source and boundary
+## Provenance
 
-Reference IDs: `REF-003`.
+source_ids: [REF-003]
+
+## Source and boundary
 
 Treat publication as an external mutation. Confirm the target repository, visibility, intended audience, branch, and the user's approval before changing GitHub state. Do not publish merely because a local change is ready.
 
