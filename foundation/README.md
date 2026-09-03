@@ -4,9 +4,9 @@ title: Reusable agent environment foundation
 type: foundation
 status: active
 created_at: 2026-09-01
-updated_at: 2026-09-01
+updated_at: 2026-09-03
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-006, ART-012, ART-015, REF-001, REF-002]
+source_ids: [ART-003, ART-006, ART-012, ART-013, ART-015, REF-001, REF-002]
 tags: [claude-code, configuration, onboarding]
 ---
 
@@ -20,5 +20,6 @@ tags: [claude-code, configuration, onboarding]
 2. 常時必要な事実は `CLAUDE.md`、対象を絞るルールは `.claude/rules/`、反復手順は `.claude/skills/` に置く。
 3. ツール固有の設定を無理に同期しない。共有できる事実は一つの正本へ寄せ、実行手順は各ツールに合わせる。
 4. 外部公開やデータ変更は、明示的な承認と検証を必要とする。
+5. 複数手順を自動化する場合は、完了を示す証拠、反復回数または時間の上限、安全な停止条件、人が引き取る判断点を先に定める。agentの完了報告だけで完了や承認と扱わない。
 
 Claude Codeにおける設定の読み込み範囲とskillsの形式は、[参考資料台帳](../knowledge/sources/articles.yml) の `REF-001` と `REF-002` を確認します。
