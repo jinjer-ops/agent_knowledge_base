@@ -112,6 +112,16 @@ tags: [knowledge, sources, discovery]
   - REF-030 How we make AI coding more cost efficient without sacrificing task quality <https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/>（`reference`）
   - REF-031 How we're making GitHub Copilot smarter with fewer tools <https://github.blog/ai-and-ml/github-copilot/how-were-making-github-copilot-smarter-with-fewer-tools/>（`reference`）
 
+### ART-028 GitHub Copilot のモデル選び 2026/09 版
+
+- 共有した URL: <https://qiita.com/aktsmm/items/bccfc0e945545fe17e58>
+- 見つけて使った資料:
+  - REF-013 Configure models (Claude Code) <https://code.claude.com/docs/en/model-config>（`reference`）
+  - REF-026 Subagents (Claude Code) <https://code.claude.com/docs/en/sub-agents>（`reference`）
+  - REF-027 Manage costs effectively (Claude Code) <https://code.claude.com/docs/en/costs>（`reference`）
+  - REF-032 Models overview (Claude) <https://platform.claude.com/docs/en/about-claude/models/overview>（`reference`）
+  - REF-033 Copilot requests (GitHub Docs) <https://docs.github.com/en/copilot/concepts/billing/copilot-requests>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

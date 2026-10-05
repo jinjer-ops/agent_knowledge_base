@@ -307,9 +307,9 @@ sources:
     topics: [claude_code, model_versions, configuration, context_management]
     status: reference
     intake: found
-    found_via: [ART-022]
+    found_via: [ART-022, ART-028]
     use_when: "別名が指すモデルの変化、モデル名を鍵にした設定、深さの設定の決まり方を確認する時"
-    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/instruction-upkeep/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
   - id: REF-014
     title: Skill authoring best practices
     url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
@@ -456,9 +456,9 @@ sources:
     topics: [subagents, context_management, delegation, claude_code]
     status: reference
     intake: found
-    found_via: [ART-023]
+    found_via: [ART-023, ART-028]
     use_when: "重い作業を別の文脈へ分離する手段が製品側にあるか、モデルを個別に指定できるかを確認する時"
-    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+    derived: [foundation/heavy-read-delegation/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
   - id: ART-025
     title: Claude Codeでトークンを消費する4つの設定と対処法
     url: https://news.yahoo.co.jp/articles/0abb4856706e3274dd5d1c6394ca819a96c28712?page=1
@@ -485,9 +485,9 @@ sources:
     topics: [cost_control, context_management, scheduled_tasks, claude_code]
     status: reference
     intake: found
-    found_via: [ART-025, ART-027]
+    found_via: [ART-025, ART-027, ART-028]
     use_when: "使用の割り当て内訳、待機中に減る原因、公式が勧める削減方法と版の要件を確認する時"
-    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/cost-change-evaluation/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/cost-change-evaluation/README.md, foundation/model-tier-selection/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
   - id: REF-028
     title: Connect to tools with MCP (Claude Code)
     url: https://code.claude.com/docs/en/mcp
@@ -537,3 +537,32 @@ sources:
     found_via: [ART-027]
     use_when: "道具の数そのものが精度と待ち時間に効くか、減らして良くなる種類の変更を確認する時"
     derived: [foundation/cost-change-evaluation/README.md, knowledge/reading-guide.md]
+  - id: ART-028
+    title: GitHub Copilot のモデル選び 2026/09 版
+    url: https://qiita.com/aktsmm/items/bccfc0e945545fe17e58
+    published_at: 2026-09-23
+    topics: [model_selection, cost_control, coding_agents]
+    status: reference
+    intake: shared
+    use_when: "安いモデルから試して上げる段取りと、1作業あたりの実測費用の開きを知る時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-032
+    title: Models overview (Claude)
+    url: https://platform.claude.com/docs/en/about-claude/models/overview
+    published_at: null
+    topics: [model_selection, pricing, effort, claude]
+    status: reference
+    intake: found
+    found_via: [ART-028]
+    use_when: "段階ごとの単価・既定のeffort・用途の記述を現在の値で引き直す時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-033
+    title: Copilot requests (GitHub Docs)
+    url: https://docs.github.com/en/copilot/concepts/billing/copilot-requests
+    published_at: null
+    topics: [pricing, billing, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-028]
+    use_when: "課金の単位が要求の件数か token かを確かめる時、記事の費用の数字を自分の請求へ持ち込めるか判断する時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
