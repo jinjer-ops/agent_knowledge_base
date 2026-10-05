@@ -122,6 +122,15 @@ tags: [knowledge, sources, discovery]
   - REF-032 Models overview (Claude) <https://platform.claude.com/docs/en/about-claude/models/overview>（`reference`）
   - REF-033 Copilot requests (GitHub Docs) <https://docs.github.com/en/copilot/concepts/billing/copilot-requests>（`reference`）
 
+### ART-029 上位モデルと安いモデルを組み合わせるハーネス「Fusion」が登場
+
+- 共有した URL: <https://gigazine.net/news/20260914-cognition-fusion/>
+- 見つけて使った資料:
+  - REF-026 Subagents (Claude Code) <https://code.claude.com/docs/en/sub-agents>（`reference`）
+  - REF-030 How we make AI coding more cost efficient without sacrificing task quality <https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/>（`reference`）
+  - REF-034 Fusion (Cognition) <https://cognition.com/blog/local-fusion>（`reference`）
+  - REF-035 Coding Agent Index v1.5 Methodology (Artificial Analysis) <https://artificialanalysis.ai/methodology/coding-agents-benchmarking>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

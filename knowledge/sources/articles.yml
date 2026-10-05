@@ -456,7 +456,7 @@ sources:
     topics: [subagents, context_management, delegation, claude_code]
     status: reference
     intake: found
-    found_via: [ART-023, ART-028]
+    found_via: [ART-023, ART-028, ART-029]
     use_when: "重い作業を別の文脈へ分離する手段が製品側にあるか、モデルを個別に指定できるかを確認する時"
     derived: [foundation/heavy-read-delegation/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
   - id: ART-025
@@ -524,9 +524,9 @@ sources:
     topics: [cost_control, evaluation, experiments, coding_agents]
     status: reference
     intake: found
-    found_via: [ART-027]
+    found_via: [ART-027, ART-029]
     use_when: "出力を短くすると総額が増える仕組み、削減の測り方（単位と二段の検証）、安全な圧縮の基準を確認する時"
-    derived: [foundation/cost-change-evaluation/README.md, foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+    derived: [foundation/cost-change-evaluation/README.md, foundation/heavy-read-delegation/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
   - id: REF-031
     title: How we're making GitHub Copilot smarter with fewer tools
     url: https://github.blog/ai-and-ml/github-copilot/how-were-making-github-copilot-smarter-with-fewer-tools/
@@ -565,4 +565,33 @@ sources:
     intake: found
     found_via: [ART-028]
     use_when: "課金の単位が要求の件数か token かを確かめる時、記事の費用の数字を自分の請求へ持ち込めるか判断する時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: ART-029
+    title: 上位モデルと安いモデルを組み合わせるハーネス「Fusion」が登場
+    url: https://gigazine.net/news/20260914-cognition-fusion/
+    published_at: 2026-09-14
+    topics: [model_selection, cost_control, delegation, coding_agents]
+    status: reference
+    intake: shared
+    use_when: "役割で2つのモデルに分ける構成が話題になった経緯を確認する時（数値は一次情報で確かめる）"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-034
+    title: Fusion (Cognition)
+    url: https://cognition.com/blog/local-fusion
+    published_at: 2026-09-11
+    topics: [model_selection, cost_control, delegation, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-029]
+    use_when: "上位と安いモデルの役割分けの構成、別文脈にする理由、提供元の実測値と著者自身の限界を確認する時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-035
+    title: Coding Agent Index v1.5 Methodology (Artificial Analysis)
+    url: https://artificialanalysis.ai/methodology/coding-agents-benchmarking
+    published_at: null
+    topics: [evaluation, benchmarks, cost_control, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-029]
+    use_when: "公開された比較の指標が何を測り、費用に何を含めていないかを確かめる時"
     derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
