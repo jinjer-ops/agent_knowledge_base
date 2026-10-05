@@ -194,7 +194,7 @@ sources:
     topics: [agent_instructions, agents_md, interoperability]
     status: reference
     intake: found
-    found_via: [REF-001]
+    found_via: [ART-020, REF-001]
     use_when: "指示ファイルの正本をツール非依存の形式に寄せる時、対応ツールと入れ子の優先規則を確認する時"
     derived: [docs/contribution.md, foundation/agents-md/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md]
   - id: REF-006
@@ -204,7 +204,7 @@ sources:
     topics: [agent_instructions, agents_md, codex]
     status: reference
     intake: found
-    found_via: [REF-001]
+    found_via: [ART-020, REF-001]
     use_when: "CodexがAGENTS.mdを探す順序、上書き用ファイル名、結合規則、サイズ上限を確認する時"
     derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
   - id: REF-007
@@ -216,4 +216,33 @@ sources:
     intake: found
     found_via: [REF-001]
     use_when: "Gemini CLIの文脈ファイル名を設定で切り替え、階層的な読み込み範囲を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: ART-020
+    title: ようやく CLAUDE.md が不要になった
+    url: https://zenn.dev/tenkei/articles/bad7b682aed22c
+    published_at: 2026-09-24
+    topics: [agent_instructions, agents_md, claude_code]
+    status: reference
+    intake: shared
+    use_when: "Claude CodeがAGENTS.mdをネイティブに読むようになった経緯と、入れ子での扱いの差を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-008
+    title: Set up Claude Code in a monorepo or large codebase
+    url: https://code.claude.com/docs/en/large-codebases
+    published_at: null
+    topics: [agent_instructions, monorepo, claude_code, context_management]
+    status: reference
+    intake: found
+    found_via: [ART-020]
+    use_when: "大きなリポジトリで指示ファイルを階層化し、読み込み範囲と探索コストを絞る設定を確認する時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-009
+    title: "Nested AGENTS.md not loaded when a file in its directory is @-mentioned (nested CLAUDE.md is)"
+    url: https://github.com/anthropics/claude-code/issues/98796
+    published_at: null
+    topics: [agent_instructions, agents_md, claude_code, known_issues]
+    status: reference
+    intake: found
+    found_via: [ART-020]
+    use_when: "入れ子のAGENTS.mdが読み込まれる条件と、入れ子のCLAUDE.mdとの差を確認する時"
     derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]

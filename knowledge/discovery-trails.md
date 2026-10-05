@@ -17,6 +17,15 @@ tags: [knowledge, sources, discovery]
 
 ## 入口ごとの資料
 
+### ART-020 ようやく CLAUDE.md が不要になった
+
+- 共有した URL: <https://zenn.dev/tenkei/articles/bad7b682aed22c>
+- 見つけて使った資料:
+  - REF-005 AGENTS.md（コーディングエージェント向け指示ファイルの共通形式） <https://agents.md/>（`reference`）
+  - REF-006 Custom instructions with AGENTS.md (Codex) <https://learn.chatgpt.com/docs/agent-configuration/agents-md>（`reference`）
+  - REF-008 Set up Claude Code in a monorepo or large codebase <https://code.claude.com/docs/en/large-codebases>（`reference`）
+  - REF-009 Nested AGENTS.md not loaded when a file in its directory is @-mentioned (nested CLAUDE.md is) <https://github.com/anthropics/claude-code/issues/98796>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

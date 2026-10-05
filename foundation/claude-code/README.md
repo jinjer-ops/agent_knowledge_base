@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-01
 updated_at: 2026-10-06
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-006, ART-012, ART-015, REF-001, REF-002]
+source_ids: [ART-003, ART-006, ART-012, ART-015, REF-001, REF-002, REF-008]
 tags: [claude-code, setup, skills]
 ---
 
@@ -46,6 +46,10 @@ project/
 Claude Code は、作業ディレクトリとその上位に `CLAUDE.md` / `.claude/CLAUDE.md` / `CLAUDE.local.md` が無いときに `AGENTS.md` を直接読みます。判定に数えるのはプロジェクト側のこれらだけで、ユーザー個人の `~/.claude/CLAUDE.md`、組織の管理ポリシー、`.claude/rules/` は数に入らず並んで読み込まれます。
 
 両方を読ませる設定はユーザー設定・管理設定だけで有効で、プロジェクト設定からは指定できません。リポジトリ側から確実に効かせたい場合は、`CLAUDE.md` の先頭で `AGENTS.md` を取り込みます。Windows を含むチームでは symlink ではなく取り込みを使います。条件と制約は [../agents-md/README.md](../agents-md/README.md) にまとめてあります。
+
+## 大きなリポジトリ
+
+階層が深い、または package が多いリポジトリでは、根に 1 枚だけ置く構成が「全部入りで重い」か「汎用的すぎて役に立たない」のどちらかに寄ります。根に全体の規約、各領域にその領域の規約、という二層に分け、関わらない領域の指示を除外する設定と、対象を絞るルールを併用します。どこで起動するかで読み込まれる範囲が変わる点が起点になります。設定と判断の詳細は `REF-008`、正本を `AGENTS.md` にする場合の追加の注意は [../agents-md/README.md](../agents-md/README.md) にあります。
 
 ## 導入後の確認
 
