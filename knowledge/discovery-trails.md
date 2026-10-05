@@ -103,6 +103,15 @@ tags: [knowledge, sources, discovery]
   - REF-028 Connect to tools with MCP (Claude Code) <https://code.claude.com/docs/en/mcp>（`reference`）
   - REF-029 Commands (Claude Code) <https://code.claude.com/docs/en/commands>（`reference`）
 
+### ART-027 「トークンを削ったのにコストが増えた」 GitHubが明かすAIコーディング“効率化の落とし穴”
+
+- 共有した URL: <https://atmarkit.itmedia.co.jp/ait/spv/2609/17/news023.html>
+- 見つけて使った資料:
+  - ART-024 Spotify Cut Claude Code Tokens by 90%. We Measured the Same Pattern Ourselves and Got a Different Number <https://thakicloud.com/tech-blog/en/tutorials/spotify-shunt-token-routing/>（`reference`）
+  - REF-027 Manage costs effectively (Claude Code) <https://code.claude.com/docs/en/costs>（`reference`）
+  - REF-030 How we make AI coding more cost efficient without sacrificing task quality <https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/>（`reference`）
+  - REF-031 How we're making GitHub Copilot smarter with fewer tools <https://github.blog/ai-and-ml/github-copilot/how-were-making-github-copilot-smarter-with-fewer-tools/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

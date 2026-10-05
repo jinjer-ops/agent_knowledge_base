@@ -12,7 +12,7 @@ tags: [claude-code, configuration, onboarding]
 
 # Foundation
 
-この領域は、特定の会社・案件・端末に依存しないAIエージェント環境の出発点です。指示ファイルの正本の置き方は [agents-md/](agents-md/)、Claude Code を使う場合は続けて [claude-code/](claude-code/) を読みます。手順をskillへ出すときは [skill-authoring/](skill-authoring/)、運用に入ってから指示が膨らんできたら [instruction-upkeep/](instruction-upkeep/)、エージェント自身が書いた記憶が古くなってきたら [memory-upkeep/](memory-upkeep/) を読みます。常時ではなく1回ごとの大きい読み取りが費用や文脈を押し上げていると感じたら [heavy-read-delegation/](heavy-read-delegation/) を読みます。作業量の感覚より早く枠が尽きるときは、どこに原因があるかを先に当てる [token-drain-review/](token-drain-review/) から始めます。
+この領域は、特定の会社・案件・端末に依存しないAIエージェント環境の出発点です。指示ファイルの正本の置き方は [agents-md/](agents-md/)、Claude Code を使う場合は続けて [claude-code/](claude-code/) を読みます。手順をskillへ出すときは [skill-authoring/](skill-authoring/)、運用に入ってから指示が膨らんできたら [instruction-upkeep/](instruction-upkeep/)、エージェント自身が書いた記憶が古くなってきたら [memory-upkeep/](memory-upkeep/) を読みます。常時ではなく1回ごとの大きい読み取りが費用や文脈を押し上げていると感じたら [heavy-read-delegation/](heavy-read-delegation/) を読みます。作業量の感覚より早く枠が尽きるときは、どこに原因があるかを先に当てる [token-drain-review/](token-drain-review/) から始めます。削る変更を入れたあと、本当に効いたかを判定するときは [cost-change-evaluation/](cost-change-evaluation/) を読みます。
 
 ## 適用の原則
 

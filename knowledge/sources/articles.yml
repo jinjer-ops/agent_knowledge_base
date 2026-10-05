@@ -416,9 +416,9 @@ sources:
     topics: [context_management, cost_control, measurement, claude_code]
     status: reference
     intake: found
-    found_via: [ART-023]
+    found_via: [ART-023, ART-027]
     use_when: "閾値による読み取り遮断が自分の環境で何割に効くかを、公開値ではなく手元の分布から決める時"
-    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+    derived: [foundation/cost-change-evaluation/README.md, foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
   - id: REF-023
     title: Portal by Spotify cut my Claude Code token usage by 90%
     url: https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90
@@ -485,9 +485,9 @@ sources:
     topics: [cost_control, context_management, scheduled_tasks, claude_code]
     status: reference
     intake: found
-    found_via: [ART-025]
+    found_via: [ART-025, ART-027]
     use_when: "使用の割り当て内訳、待機中に減る原因、公式が勧める削減方法と版の要件を確認する時"
-    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/cost-change-evaluation/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
   - id: REF-028
     title: Connect to tools with MCP (Claude Code)
     url: https://code.claude.com/docs/en/mcp
@@ -508,3 +508,32 @@ sources:
     found_via: [ART-025]
     use_when: "記事で紹介されたコマンド名が現行で何をするか、最低版の要件が付いていないかを引き直す時"
     derived: [foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: ART-027
+    title: 「トークンを削ったのにコストが増えた」 GitHubが明かすAIコーディング“効率化の落とし穴”
+    url: https://atmarkit.itmedia.co.jp/ait/spv/2609/17/news023.html
+    published_at: 2026-09-17
+    topics: [cost_control, evaluation, agent_operations, coding_agents]
+    status: reference
+    intake: shared
+    use_when: "削減策が逆効果になる話の入口を確認する時（本文未確認のため、内容は一次情報で確かめる）"
+    derived: [foundation/cost-change-evaluation/README.md, knowledge/reading-guide.md]
+  - id: REF-030
+    title: How we make AI coding more cost efficient without sacrificing task quality
+    url: https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/
+    published_at: 2026-09-02
+    topics: [cost_control, evaluation, experiments, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-027]
+    use_when: "出力を短くすると総額が増える仕組み、削減の測り方（単位と二段の検証）、安全な圧縮の基準を確認する時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-031
+    title: How we're making GitHub Copilot smarter with fewer tools
+    url: https://github.blog/ai-and-ml/github-copilot/how-were-making-github-copilot-smarter-with-fewer-tools/
+    published_at: 2025-11-19
+    topics: [tooling, evaluation, context_management, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-027]
+    use_when: "道具の数そのものが精度と待ち時間に効くか、減らして良くなる種類の変更を確認する時"
+    derived: [foundation/cost-change-evaluation/README.md, knowledge/reading-guide.md]
