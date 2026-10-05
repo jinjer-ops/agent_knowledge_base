@@ -4,7 +4,7 @@ title: Agent knowledge base handover
 type: handover
 status: active
 created_at: 2026-09-01
-updated_at: 2026-09-03
+updated_at: 2026-10-06
 owners: [knowledge-stewards]
 tags: [handover, knowledge, foundation]
 ---
@@ -13,7 +13,7 @@ tags: [handover, knowledge, foundation]
 
 ## Purpose and boundary
 
-This public repository is the single entry point for reusable agent-environment guidance, public-safe jinjer guidance, and external reading notes. It stores source links, a human reading guide, reusable configuration, and reusable skills. It does not store article copies, credentials, exports, personal data, business data, internal URLs, or local agent state.
+This repository is the single entry point for reusable agent-environment guidance, public-safe jinjer guidance, and external reading notes. It stores source links, a human reading guide, reusable configuration, and reusable skills. It does not store article copies, credentials, exports, personal data, business data, internal URLs, or local agent state.
 
 Acceptance criteria: a new reader can identify the three areas from the README, apply a generic Claude Code starter without overwriting local settings, find every supplied article through the reading guide, and tell from the registry whether a source is adopted or kept only for reference.
 
@@ -25,11 +25,11 @@ Human entry point: `knowledge/reading-guide.md` holds one Japanese card per sour
 
 Machine entry point: `knowledge/sources/articles.yml` is canonical for source IDs and URLs. Its `derived` field is the complete reverse index of the documents that declare a source in `source_ids`, so a reader can list every related document from the registry alone. `derived` is an index of related documents; it is not the basis for status.
 
-Other current material: `foundation/` (6 files), `organization/jinjer/` (2 files), `skills/` (2 skills), and `docs/` (this handover, the contribution guide, and the public boundary policy).
+Other current material: `foundation/` (6 files), `organization/jinjer/` (2 files), `skills/` (2 skills), and `docs/` (this handover, the contribution guide, the public boundary policy, and, since 2026-10-06, the Knowledge Inbox coordination folder `docs/knowledge-inbox/`).
 
 There are currently no separate topic, decision, experiment, or practice documents. Thirteen such documents were removed by the repository owner before this change, and the registry was rebuilt around what remains: stale `derived` paths were dropped, six sources moved from `experiment` to `reference` because no experiment charter survives, and one moved from `adopted` to `reference`. Those removals and the rebuilt registry belong to the same publication change and are not published separately. The structure still allows verified decisions, experiments, and practices to be added later; see `docs/contribution.md`.
 
-Public remote: <https://github.com/jinjer-ops/agent_knowledge_base>. The source must remain suitable for unrestricted public access. `organization/jinjer/` is an audience label, not an access-control boundary.
+Remote: <https://github.com/jinjer-ops/agent_knowledge_base>. The repository has been private since 2026-10-06 at the owner's decision; the content must still remain suitable for unrestricted public access so that it can be made public again. `organization/jinjer/` is an audience label, not an access-control boundary.
 
 ## How to continue
 
@@ -73,6 +73,7 @@ Before every push, run a targeted scan for credentials, local paths, organizatio
 - Knowledge area entry point: `knowledge/README.md`
 - Reusable workflows: `skills/`
 - Contribution rules and public boundary: `docs/contribution.md`, `docs/public-boundary.md`
+- Knowledge Inbox coordination (status and open questions between the Android app and the PC worker): `docs/knowledge-inbox/`
 - Validator: `scripts/validate_knowledge.py`
 - CI workflow: `.github/workflows/knowledge-validation.yml`
 - CI audit: `docs/audits/2026-09-03-knowledge-validation-ci/`

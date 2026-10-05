@@ -11,9 +11,9 @@ tags: [knowledge, agents, technology-radar, skills]
 
 # Agent knowledge base
 
-Claude Code をはじめとするAIエージェントの導入設定、公開可能な組織向けオーバーレイ、記事・実験・判断を、一つの場所で育てる public repository です。
+Claude Code をはじめとするAIエージェントの導入設定、公開可能な組織向けオーバーレイ、記事・実験・判断を、一つの場所で育てるリポジトリです。2026-10-06 から非公開ですが、再び公開できる基準で書きます。
 
-公開先: <https://github.com/jinjer-ops/agent_knowledge_base>
+リモート: <https://github.com/jinjer-ops/agent_knowledge_base>
 
 ## まず読む場所
 
@@ -23,6 +23,7 @@ Claude Code をはじめとするAIエージェントの導入設定、公開可
 - 記事・判断・実験から探す: [knowledge/](knowledge/)
 - 実行ワークフロー: [skills/](skills/)
 - 追加・公開のルール: [docs/contribution.md](docs/contribution.md) と [docs/public-boundary.md](docs/public-boundary.md)
+- Knowledge Inbox（Android アプリと PC の実行管理アプリ）との確認事項: [docs/knowledge-inbox/](docs/knowledge-inbox/)
 
 ## 3つの領域
 
@@ -69,4 +70,4 @@ git diff --check
 
 ## 公開と再利用
 
-このリポジトリは閲覧用に公開しています。外部記事の権利は各出典に帰属します。`LICENSE` を追加するまで、このリポジトリ固有の文章・skill・構成について再配布や利用の許諾は付与しません。改善提案は issue または pull request でお願いします。
+このリポジトリは 2026-10-06 から非公開です。外部記事の権利は各出典に帰属します。`LICENSE` を追加するまで、このリポジトリ固有の文章・skill・構成について再配布や利用の許諾は付与しません。改善提案は issue または pull request でお願いします。
