@@ -81,6 +81,18 @@ tags: [knowledge, sources, discovery]
   - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
   - REF-013 Configure models (Claude Code) <https://code.claude.com/docs/en/model-config>（`reference`）
 
+### ART-023 Spotifyのエンジニアが Claude Code のトークン消費を約90%削減した方法とは?
+
+- 共有した URL: <https://article.auone.jp/090465f4-bbd4-4e07-8236-ac82cebd9552>
+- 見つけて使った資料:
+  - ART-024 Spotify Cut Claude Code Tokens by 90%. We Measured the Same Pattern Ourselves and Got a Different Number <https://thakicloud.com/tech-blog/en/tutorials/spotify-shunt-token-routing/>（`reference`）
+  - REF-017 Explore the context window (Claude Code) <https://code.claude.com/docs/en/context-window>（`reference`）
+  - REF-020 Hooks reference (Claude Code) <https://code.claude.com/docs/en/hooks>（`reference`）
+  - REF-023 Portal by Spotify cut my Claude Code token usage by 90% <https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90>（`reference`）
+  - REF-024 shunt plugin (spotify/portal-ai-plugins) <https://github.com/spotify/portal-ai-plugins/blob/main/plugins/shunt/README.md>（`reference`）
+  - REF-025 shunt: PreToolUse hooks emit the legacy decision field, rejected by current Claude Code <https://github.com/spotify/portal-ai-plugins/issues/19>（`reference`）
+  - REF-026 Subagents (Claude Code) <https://code.claude.com/docs/en/sub-agents>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

@@ -347,9 +347,9 @@ sources:
     topics: [context_management, claude_code, agent_instructions, skills]
     status: reference
     intake: found
-    found_via: [ART-003, ART-015]
+    found_via: [ART-003, ART-015, ART-023]
     use_when: "起動時に何が読み込まれるか、要約で何が消えて何が戻るかを確認する時、実際の占有を測る時"
-    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-018
     title: Effective context engineering for AI agents
     url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
@@ -377,9 +377,9 @@ sources:
     topics: [hooks, claude_code, automation, guardrails]
     status: reference
     intake: found
-    found_via: [ART-015]
+    found_via: [ART-015, ART-023]
     use_when: "どのイベントで何ができるか、止められるのはどれか、出力が利用者とモデルのどちらへ行くかを確認する時"
-    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: REF-021
     title: Agent SOP (strands-agents/agent-sop)
     url: https://github.com/strands-agents/agent-sop
@@ -400,3 +400,62 @@ sources:
     found_via: [ART-004]
     use_when: "手順や規則の制約に強さの段階を付ける時、強い語をどこまで使ってよいかを確認する時"
     derived: [foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: ART-023
+    title: Spotifyのエンジニアが Claude Code のトークン消費を約90%削減した方法とは?
+    url: https://article.auone.jp/090465f4-bbd4-4e07-8236-ac82cebd9552
+    published_at: 2026-09-12
+    topics: [context_management, cost_control, model_routing, claude_code]
+    status: reference
+    intake: shared
+    use_when: "読み取りの委譲でトークンを削るという話の入口を確認する時（数値と限界は一次情報側で確かめる）"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: ART-024
+    title: "Spotify Cut Claude Code Tokens by 90%. We Measured the Same Pattern Ourselves and Got a Different Number"
+    url: https://thakicloud.com/tech-blog/en/tutorials/spotify-shunt-token-routing/
+    published_at: 2026-09-07
+    topics: [context_management, cost_control, measurement, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "閾値による読み取り遮断が自分の環境で何割に効くかを、公開値ではなく手元の分布から決める時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-023
+    title: Portal by Spotify cut my Claude Code token usage by 90%
+    url: https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90
+    published_at: 2026-09-03
+    topics: [context_management, cost_control, model_routing, delegation]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "読み取りと定型生成を安いモデルへ回す構成と、著者自身が挙げた委譲できない作業を確認する時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-024
+    title: "shunt plugin (spotify/portal-ai-plugins)"
+    url: https://github.com/spotify/portal-ai-plugins/blob/main/plugins/shunt/README.md
+    published_at: null
+    topics: [hooks, delegation, claude_code, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "閾値で読み取りを止めて委譲へ誘導する実装の構成と、動かすための前提を確認する時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-025
+    title: "shunt: PreToolUse hooks emit the legacy decision field, rejected by current Claude Code"
+    url: https://github.com/spotify/portal-ai-plugins/issues/19
+    published_at: 2026-09-25
+    topics: [hooks, claude_code, compatibility, verification]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "既製の hook を入れる前に、出力形式が現行版で受け付けられるかを確かめる理由が要る時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-026
+    title: Subagents (Claude Code)
+    url: https://code.claude.com/docs/en/sub-agents
+    published_at: null
+    topics: [subagents, context_management, delegation, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "重い作業を別の文脈へ分離する手段が製品側にあるか、モデルを個別に指定できるかを確認する時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
