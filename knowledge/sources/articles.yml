@@ -800,3 +800,33 @@ sources:
     found_via: [ART-013]
     use_when: "停止条件を書かずにループを回した場合に何が起きるかを確かめる時"
     derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-055
+    title: Best practices for Claude Code
+    url: https://code.claude.com/docs/en/best-practices
+    published_at: null
+    topics: [agent_instructions, automation, verification, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "指示ファイルに何を書き何を書かないかを決める時、無人で回す作業の止め方の強度を選ぶ時"
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-056
+    title: "LLMs Get Lost In Multi-Turn Conversation"
+    url: https://arxiv.org/abs/2505.06120
+    published_at: 2025-05-09
+    topics: [reliability, evaluation, long_horizon, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "何周も往復させる構成が、単発と同じ品質で動くと見込んでよいかを確かめる時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-057
+    title: "Intent Mismatch Causes LLMs to Get Lost in Multi-Turn Conversation"
+    url: https://arxiv.org/abs/2602.07338
+    published_at: 2026-02-07
+    topics: [reliability, evaluation, long_horizon, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "多ターンで品質が落ちる原因をモデル側に帰してよいかを疑う時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]

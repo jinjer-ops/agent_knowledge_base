@@ -85,6 +85,9 @@ tags: [knowledge, sources, discovery]
   - REF-052 Scaling managed agents <https://www.anthropic.com/engineering/managed-agents>（`reference`）
   - REF-053 Measuring AI Ability to Complete Long Software Tasks <https://arxiv.org/abs/2503.14499>（`reference`）
   - REF-054 When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents <https://arxiv.org/abs/2607.01641>（`reference`）
+  - REF-055 Best practices for Claude Code <https://code.claude.com/docs/en/best-practices>（`reference`）
+  - REF-056 LLMs Get Lost In Multi-Turn Conversation <https://arxiv.org/abs/2505.06120>（`reference`）
+  - REF-057 Intent Mismatch Causes LLMs to Get Lost in Multi-Turn Conversation <https://arxiv.org/abs/2602.07338>（`reference`）
 
 ### ART-015 肥大化し続けるCLAUDE.md
 
