@@ -30,11 +30,12 @@ sources:
   - id: ART-004
     title: Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる
     url: https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup
-    published_at: null
-    topics: [agent_operations, sop]
+    published_at: 2026-07-03
+    topics: [agent_operations, sop, skills, procedure_extraction]
     status: adopted
-    use_when: "高リスクまたは再現性が必要な作業手順を構造化する時"
-    derived: [foundation/claude-code/rules/review.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md]
+    intake: shared
+    use_when: "高リスクまたは再現性が必要な作業手順を構造化する時、過去の作業記録から再利用できる手順を掘り出す時"
+    derived: [foundation/claude-code/rules/review.md, foundation/skill-authoring/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md]
   - id: ART-005
     title: Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた
     url: https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474
@@ -287,9 +288,9 @@ sources:
     topics: [context_management, agent_instructions, prompt_design, skills]
     status: reference
     intake: found
-    found_via: [ART-003, ART-012, ART-021, ART-022]
+    found_via: [ART-003, ART-004, ART-012, ART-021, ART-022]
     use_when: "新しい世代のモデル向けに、規則の列挙から判断の委譲へ指示を書き換える方針を確認する時"
-    derived: [foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: ART-022
     title: "/claude-api prompt-audit で棚卸ししたら、モデルの版上げで外れた設定がぞろぞろ出てきた"
     url: https://zenn.dev/nanora/articles/20260925-claude-prompt-audit-opus55
@@ -316,7 +317,7 @@ sources:
     topics: [skills, agent_instructions, context_management, evaluation]
     status: reference
     intake: found
-    found_via: [REF-002]
+    found_via: [ART-004, REF-002]
     use_when: "skillのdescriptionと本体を、選ばれて実際に効く形に書く時、評価を先に作って検証する時"
     derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-015
@@ -336,7 +337,7 @@ sources:
     topics: [skills, evaluation, benchmarks, agent_operations]
     status: reference
     intake: found
-    found_via: [REF-002]
+    found_via: [ART-004, REF-002]
     use_when: "skillが効く条件と効かない条件、自動生成したskillの扱いを、実測を見て判断する時"
     derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-017
@@ -379,3 +380,23 @@ sources:
     found_via: [ART-015]
     use_when: "どのイベントで何ができるか、止められるのはどれか、出力が利用者とモデルのどちらへ行くかを確認する時"
     derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-021
+    title: Agent SOP (strands-agents/agent-sop)
+    url: https://github.com/strands-agents/agent-sop
+    published_at: null
+    topics: [sop, skills, agent_operations, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-004]
+    use_when: "反復手順を、入力・段階・制約の強さを分けた形式で書く時、skillへ変換できる中間形式を確認する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-022
+    title: "RFC 2119: Key words for use in RFCs to Indicate Requirement Levels"
+    url: https://www.rfc-editor.org/rfc/rfc2119
+    published_at: null
+    topics: [specification, normative_keywords, procedure_writing]
+    status: reference
+    intake: found
+    found_via: [ART-004]
+    use_when: "手順や規則の制約に強さの段階を付ける時、強い語をどこまで使ってよいかを確認する時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]

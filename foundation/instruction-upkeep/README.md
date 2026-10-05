@@ -6,7 +6,7 @@ status: active
 created_at: 2026-10-06
 updated_at: 2026-10-06
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-012, ART-015, ART-021, ART-022, REF-001, REF-002, REF-011, REF-012, REF-013, REF-017, REF-018, REF-020]
+source_ids: [ART-003, ART-012, ART-015, ART-021, ART-022, REF-001, REF-002, REF-011, REF-012, REF-013, REF-017, REF-018, REF-020, REF-022]
 tags: [agent-instructions, context, maintenance]
 ---
 
@@ -41,7 +41,7 @@ tags: [agent-instructions, context, maintenance]
 | --- | --- | --- |
 | そのリポジトリ固有の落とし穴 | 使えない既定値、壊れやすい前提、既定と違う規約 | **残す。最も価値が高い** |
 | ファイルを見れば分かること | ディレクトリ構成、依存一覧、概要 | 外す。読めば分かることを書かない（`REF-001`） |
-| 禁止の列挙 | 「必ず〜」「絶対に〜しない」 | **判断の基準に書き換える。** 取り返しのつかない操作の歯止めだけ残す |
+| 禁止の列挙 | 「必ず〜」「絶対に〜しない」 | **判断の基準に書き換える。** 取り返しのつかない操作の歯止めだけ残す（強い語を害の防止に限る根拠は `REF-022`）|
 | 手順 | 公開手順、リリース手順 | 呼び出し式の層（skill）へ移す |
 | 個人の観察・経緯 | 過去の判断の記録、仕様の本文 | 自動の記憶や参照先の文書へ移す（`REF-012`）。移した先の点検は [../memory-upkeep/README.md](../memory-upkeep/README.md) |
 
