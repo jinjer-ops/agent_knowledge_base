@@ -4,7 +4,7 @@ title: Adding knowledge and environment guidance
 type: contribution-guide
 status: active
 created_at: 2026-09-01
-updated_at: 2026-09-02
+updated_at: 2026-10-06
 owners: [knowledge-stewards]
 source_ids: [ART-001, ART-003, ART-012, REF-001, REF-002]
 tags: [contribution, knowledge, skills]
@@ -32,8 +32,9 @@ tags: [contribution, knowledge, skills]
 5. status は、採用・実験の裏付けがどの種類まで揃っているかで決める。`derived` の件数では決めない。`adopted` は検証済みの decision / practice / guidance が現存すること、`experiment` は現存する charter（用途・入力・安全境界・検証方法・終了条件）があることを意味する。単なる引用、読書ガイド、この contribution guide からのリンクはどちらの根拠にもならない。どちらも無い場合は `reference` にする。`adopted` は記事の全主張を採用したという意味ではない。`experiment` と `reference` のカードには、推奨や導入済みと読める書き方をしない。
 6. `derived` は**関連文書**の一覧、すなわち現存文書への完全な逆引きにする。`source_ids` にその source を書いたら、その source の `derived` にもその path を必ず加える（正方向と逆方向を一致させる）。宣言の場所は、通常の文書は frontmatter、skill は `## Provenance` 節の `source_ids: [...]` の1行とする。存在しない path は書かない。文書を削除したら、その path を全ての `derived` から外す。
 7. `derived`（関連文書）と採用・実験の裏付けは別概念である。`derived` は status の根拠ではなく、件数の多さは `adopted` を意味しない。引用・読書ガイド・この contribution guide からのリンクも status を動かさない。status は上の項目5の基準だけで決める。
-8. 新しい判断は `knowledge/decisions/`、比較は `knowledge/experiments/`、検証済み手順は `knowledge/practices/` に置く。
-9. 派生ファイルに `source_ids` を記載する。これはテーマを追えるようにするための参照であり、厳密な発祥の証明ではない。
+8. 入口の種類を分ける。持ち主が共有した URL は `intake: shared`、それをきっかけに調べて実際に読み、判断や成果に使った資料は `intake: found` とし、`found_via: [共有した URL の ID]` で結び付ける。読んだが使わなかった資料は登録しない。Knowledge Inbox の PC 処理ではこの 2 行を処理系が書き、[../knowledge/discovery-trails.md](../knowledge/discovery-trails.md) を台帳から作り直す。区別を付ける前に登録した出典は `intake` を持たない。
+9. 新しい判断は `knowledge/decisions/`、比較は `knowledge/experiments/`、検証済み手順は `knowledge/practices/` に置く。
+10. 派生ファイルに `source_ids` を記載する。これはテーマを追えるようにするための参照であり、厳密な発祥の証明ではない。
 
 ## 設定・skillを追加する
 
