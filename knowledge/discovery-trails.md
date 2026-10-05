@@ -34,6 +34,13 @@ tags: [knowledge, sources, discovery]
   - REF-008 Set up Claude Code in a monorepo or large codebase <https://code.claude.com/docs/en/large-codebases>（`reference`）
   - REF-009 Nested AGENTS.md not loaded when a file in its directory is @-mentioned (nested CLAUDE.md is) <https://github.com/anthropics/claude-code/issues/98796>（`reference`）
 
+### ART-021 CLAUDE.mdをそろそろ見直す時期かも ── Claude 5世代向けの最適化手順・スキル・プロジェクト種類別の例
+
+- 共有した URL: <https://qiita.com/nogataka/items/d6a54f3694726b9141f3>
+- 見つけて使った資料:
+  - REF-011 Plugins overview (Claude Code) <https://code.claude.com/docs/en/plugins/overview>（`reference`）
+  - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

@@ -25,7 +25,7 @@ sources:
     topics: [agent_instructions, skills]
     status: adopted
     use_when: "常時ルール、参照資料、明示的ワークフローの置き場所を決める時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-004
     title: Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる
     url: https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup
@@ -98,7 +98,7 @@ sources:
     topics: [knowledge_maintenance, agent_memory]
     status: adopted
     use_when: "知識台帳やエージェント向け文書の鮮度・孤児・肥大化を点検する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-013
     title: 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ
     url: https://www.sbbit.jp/article/cont1/186558
@@ -122,7 +122,7 @@ sources:
     topics: [agent_instructions, knowledge_maintenance]
     status: adopted
     use_when: "常時読み込まれる指示の肥大化を防ぐ時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+    derived: [foundation/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: ART-016
     title: オントロジー × グラフ × LLM の実装と評価（基礎編）
     url: https://qiita.com/haystacker/items/853234c38ae36adbca1f
@@ -163,7 +163,7 @@ sources:
     status: reference
     intake: shared
     use_when: "CLAUDE.md、AGENTS.md、rules、auto memoryの役割と読み込み範囲・条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
@@ -171,7 +171,7 @@ sources:
     topics: [claude_code, skills]
     status: reference
     use_when: "Claude Code skillの配置、形式、適用条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: REF-003
     title: Secret scanning
     url: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
@@ -264,6 +264,25 @@ sources:
     topics: [claude_code, plugins, skills, distribution]
     status: reference
     intake: found
-    found_via: [ART-006]
+    found_via: [ART-006, ART-021]
     use_when: "skills・subagent・hook・MCPをひとまとまりで配布し版を付けたい時、その常時コストと併せて判断する時"
-    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agents-md/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: ART-021
+    title: CLAUDE.mdをそろそろ見直す時期かも ── Claude 5世代向けの最適化手順・スキル・プロジェクト種類別の例
+    url: https://qiita.com/nogataka/items/d6a54f3694726b9141f3
+    published_at: 2026-09-05
+    topics: [agent_instructions, knowledge_maintenance, context_management, claude_code]
+    status: reference
+    intake: shared
+    use_when: "肥大化した指示ファイルを棚卸しし、残す・書き換える・移すを分類する時"
+    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-012
+    title: The new rules of context engineering for Claude 5 generation models
+    url: https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models
+    published_at: 2026-07-24
+    topics: [context_management, agent_instructions, prompt_design, skills]
+    status: reference
+    intake: found
+    found_via: [ART-021]
+    use_when: "新しい世代のモデル向けに、規則の列挙から判断の委譲へ指示を書き換える方針を確認する時"
+    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
