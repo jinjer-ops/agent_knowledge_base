@@ -17,13 +17,16 @@ tags: [knowledge, sources, reading-guide]
 | --- | --- | --- |
 | 人が読んで理解する | [reading-guide.md](reading-guide.md) | source ID ごとの日本語カード |
 | 機械・エージェントが参照する | [sources/articles.yml](sources/articles.yml) | 構造化した出典台帳 |
+| 共有した URL と、そこから見つけた資料を追う | [discovery-trails.md](discovery-trails.md) | 台帳から生成する一覧 |
 
 ## 使い分け
 
 - **[読書ガイド](reading-guide.md)**: URL ごとに「何が書かれているか」「得られる示唆」「現在の扱い」「採用・実験の裏付け」を並べています。関連文書の全一覧は載せません。どの記事を読むべきか、なぜ手元の方針がその形になっているかを追う場所です。
-- **[出典台帳](sources/articles.yml)**: source ID、URL、公開日、topic、status、`use_when`、関連文書（`derived`）を保持します。ID と URL の正本であり、記事の要約は置きません。
+- **[出典台帳](sources/articles.yml)**: source ID、URL、公開日、topic、status、入口の種類（`intake`）、見つけたきっかけ（`found_via`）、`use_when`、関連文書（`derived`）を保持します。ID と URL の正本であり、記事の要約は置きません。
 
 同じ内容を両方に書きません。台帳は事実とメタデータ、ガイドは説明と評価を担当します。
+
+- **[共有と発見の一覧](discovery-trails.md)**: スマホから共有した URL（`intake: shared`）ごとに、それをきっかけに調べて実際に使った資料（`intake: found`）を並べます。台帳の `intake` と `found_via` から生成するので、手で編集しません。
 
 ## 現在の扱い（status）の意味
 
