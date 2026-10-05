@@ -25,7 +25,7 @@ sources:
     topics: [agent_instructions, skills]
     status: adopted
     use_when: "常時ルール、参照資料、明示的ワークフローの置き場所を決める時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-004
     title: Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる
     url: https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup
@@ -49,7 +49,7 @@ sources:
     topics: [agent_configuration, skills]
     status: adopted
     use_when: "複数のコーディングエージェントで設定の重複と競合を減らす時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    derived: [foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-007
     title: コードベースのナレッジ化なら、LLM Wikiで十分かもしれない
     url: https://qiita.com/Syoitu/items/ff38655fed51a2920910
@@ -158,10 +158,11 @@ sources:
     title: How Claude remembers your project
     url: https://code.claude.com/docs/en/memory
     published_at: null
-    topics: [agent_instructions, claude_code, memory]
+    topics: [agent_instructions, claude_code, memory, agents_md]
     status: reference
-    use_when: "CLAUDE.md、rules、auto memoryの役割と読み込み範囲を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+    intake: shared
+    use_when: "CLAUDE.md、AGENTS.md、rules、auto memoryの役割と読み込み範囲・条件を確認する時"
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
@@ -186,3 +187,33 @@ sources:
     status: reference
     use_when: "重要な技術・運用上の判断を、背景とトレードオフ付きで記録する時"
     derived: [foundation/claude-code/rules/review.md, knowledge/reading-guide.md]
+  - id: REF-005
+    title: AGENTS.md（コーディングエージェント向け指示ファイルの共通形式）
+    url: https://agents.md/
+    published_at: null
+    topics: [agent_instructions, agents_md, interoperability]
+    status: reference
+    intake: found
+    found_via: [REF-001]
+    use_when: "指示ファイルの正本をツール非依存の形式に寄せる時、対応ツールと入れ子の優先規則を確認する時"
+    derived: [docs/contribution.md, foundation/agents-md/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md]
+  - id: REF-006
+    title: Custom instructions with AGENTS.md (Codex)
+    url: https://learn.chatgpt.com/docs/agent-configuration/agents-md
+    published_at: null
+    topics: [agent_instructions, agents_md, codex]
+    status: reference
+    intake: found
+    found_via: [REF-001]
+    use_when: "CodexがAGENTS.mdを探す順序、上書き用ファイル名、結合規則、サイズ上限を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-007
+    title: Provide Context with GEMINI.md Files (Gemini CLI)
+    url: https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/gemini-md.md
+    published_at: null
+    topics: [agent_instructions, agents_md, gemini_cli]
+    status: reference
+    intake: found
+    found_via: [REF-001]
+    use_when: "Gemini CLIの文脈ファイル名を設定で切り替え、階層的な読み込み範囲を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
