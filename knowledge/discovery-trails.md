@@ -75,6 +75,17 @@ tags: [knowledge, sources, discovery]
   - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
   - REF-019 STALE: Can LLM Agents Know When Their Memories Are No Longer Valid? <https://arxiv.org/abs/2605.06527>（`reference`）
 
+### ART-013 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ
+
+- 共有した URL: <https://www.sbbit.jp/article/cont1/186558>
+- 見つけて使った資料:
+  - REF-049 Building agents with the Claude Agent SDK <https://claude.com/blog/building-agents-with-the-claude-agent-sdk>（`reference`）
+  - REF-050 Effective harnesses for long-running agents <https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents>（`reference`）
+  - REF-051 Building effective agents <https://www.anthropic.com/engineering/building-effective-agents>（`reference`）
+  - REF-052 Scaling managed agents <https://www.anthropic.com/engineering/managed-agents>（`reference`）
+  - REF-053 Measuring AI Ability to Complete Long Software Tasks <https://arxiv.org/abs/2503.14499>（`reference`）
+  - REF-054 When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents <https://arxiv.org/abs/2607.01641>（`reference`）
+
 ### ART-015 肥大化し続けるCLAUDE.md
 
 - 共有した URL: <https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing>
@@ -206,7 +217,6 @@ tags: [knowledge, sources, discovery]
 - ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）
 - ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
-- ART-013 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ <https://www.sbbit.jp/article/cont1/186558>（`adopted`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
 - ART-017 AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計 <https://zenn.dev/minewo/articles/river-review-judgment-placement>（`adopted`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）

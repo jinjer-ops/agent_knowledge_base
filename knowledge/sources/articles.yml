@@ -111,8 +111,9 @@ sources:
     published_at: 2026-08-21
     topics: [agent_orchestration, automation]
     status: adopted
+    intake: shared
     use_when: "複数エージェントの自動化を検討し、再現可能な測定例と比較する時"
-    derived: [foundation/README.md, knowledge/reading-guide.md]
+    derived: [foundation/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
   - id: ART-014
     title: リポジトリにロジックは書くな！
     url: https://zenn.dev/more_tech_blog/articles/76af481ab3816d
@@ -739,3 +740,63 @@ sources:
     found_via: [ART-001]
     use_when: "記憶や知識を、散文で貯めるか項目として書くかを決める時、更新と削除を表現できる形を考える時"
     derived: [foundation/memory-upkeep/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-049
+    title: Building agents with the Claude Agent SDK
+    url: https://claude.com/blog/building-agents-with-the-claude-agent-sdk
+    published_at: 2025-09-29
+    topics: [agent_orchestration, automation, verification, agent_design]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "エージェントに任せた作業の出来上がりをどう確かめるかを決める時、検証手段の信頼度を比べる時"
+    derived: [foundation/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-050
+    title: Effective harnesses for long-running agents
+    url: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+    published_at: 2025-11-26
+    topics: [agent_orchestration, automation, long_horizon, recovery]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "1回の文脈に収まらない作業をエージェントに続けさせる時、復帰と早期の完了宣言の抑止を設計する時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-051
+    title: Building effective agents
+    url: https://www.anthropic.com/engineering/building-effective-agents
+    published_at: 2024-12-19
+    topics: [agent_orchestration, automation, agent_design]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "決め打ちの手順にするか自律に任せるかを分ける時、反復上限と人のチェックポイントの原典を引く時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-052
+    title: Scaling managed agents
+    url: https://www.anthropic.com/engineering/managed-agents
+    published_at: 2026-04-08
+    topics: [agent_orchestration, automation, long_horizon, agent_design]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "自律ループの足場が前提にしている仮定が古くなっていないかを疑う時、落ちた後に再開できる形を考える時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-053
+    title: "Measuring AI Ability to Complete Long Software Tasks"
+    url: https://arxiv.org/abs/2503.14499
+    published_at: 2025-03-18
+    topics: [agent_orchestration, automation, evaluation, long_horizon]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "どれくらいの長さの作業まで任せてよいかを、求める成功率から決める時"
+    derived: [foundation/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-054
+    title: "When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents"
+    url: https://arxiv.org/abs/2607.01641
+    published_at: 2026-07-02
+    topics: [agent_orchestration, automation, reliability, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "停止条件を書かずにループを回した場合に何が起きるかを確かめる時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
