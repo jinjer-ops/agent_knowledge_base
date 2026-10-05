@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-01
 updated_at: 2026-10-06
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-006, ART-012, ART-015, REF-001, REF-002, REF-008]
+source_ids: [ART-003, ART-006, ART-012, ART-015, REF-001, REF-002, REF-008, REF-017]
 tags: [claude-code, setup, skills]
 ---
 
@@ -56,7 +56,7 @@ Claude Code は、作業ディレクトリとその上位に `CLAUDE.md` / `.cla
 ## 導入後の確認
 
 1. 新しいセッションで、プロジェクトの目的と検証方法をClaudeに要約させる。
-2. どの指示ファイルが実際に読み込まれたかをセッション内で確認する。読み込みの形跡を確認するまで適用済みと扱わない。
+2. どの指示ファイルが実際に読み込まれたかを、セッション内で占有の内訳を出す機能で確認する（`REF-017`）。読み込みの形跡を確認するまで適用済みと扱わない。
 3. `.claude/rules/` を追加した場合は、対象の作業でだけ参照されることを確認する。
 4. skillを追加した場合は、`SKILL.md` の説明だけで起動条件が判別できることを確認する。あわせて、入れる前と入れた後で対象の作業を比べる（[../skill-authoring/README.md](../skill-authoring/README.md)）。
 

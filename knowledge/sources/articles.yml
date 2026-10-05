@@ -24,6 +24,7 @@ sources:
     published_at: 2026-04-21
     topics: [agent_instructions, skills]
     status: adopted
+    intake: shared
     use_when: "常時ルール、参照資料、明示的ワークフローの置き場所を決める時"
     derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-004
@@ -284,7 +285,7 @@ sources:
     topics: [context_management, agent_instructions, prompt_design, skills]
     status: reference
     intake: found
-    found_via: [ART-021, ART-022]
+    found_via: [ART-003, ART-021, ART-022]
     use_when: "新しい世代のモデル向けに、規則の列挙から判断の委譲へ指示を書き換える方針を確認する時"
     derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: ART-022
@@ -336,3 +337,23 @@ sources:
     found_via: [REF-002]
     use_when: "skillが効く条件と効かない条件、自動生成したskillの扱いを、実測を見て判断する時"
     derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-017
+    title: Explore the context window (Claude Code)
+    url: https://code.claude.com/docs/en/context-window
+    published_at: null
+    topics: [context_management, claude_code, agent_instructions, skills]
+    status: reference
+    intake: found
+    found_via: [ART-003]
+    use_when: "起動時に何が読み込まれるか、要約で何が消えて何が戻るかを確認する時、実際の占有を測る時"
+    derived: [foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-018
+    title: Effective context engineering for AI agents
+    url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+    published_at: 2025-09-29
+    topics: [context_management, prompt_design, agent_operations]
+    status: reference
+    intake: found
+    found_via: [ART-003]
+    use_when: "指示を減らす理由を費用ではなく精度の問題として説明する時、先読みと必要時取得を比べる時"
+    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]

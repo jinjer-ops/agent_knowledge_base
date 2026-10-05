@@ -17,6 +17,14 @@ tags: [knowledge, sources, discovery]
 
 ## 入口ごとの資料
 
+### ART-003 CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録
+
+- 共有した URL: <https://zenn.dev/pepabo/articles/claude-code-rules-skills-split>
+- 見つけて使った資料:
+  - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
+  - REF-017 Explore the context window (Claude Code) <https://code.claude.com/docs/en/context-window>（`reference`）
+  - REF-018 Effective context engineering for AI agents <https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents>（`reference`）
+
 ### ART-006 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)
 
 - 共有した URL: <https://zenn.dev/explaza/articles/20f7f41cff8428>
@@ -70,7 +78,6 @@ tags: [knowledge, sources, discovery]
 
 - ART-001 Google、AIを使って非構造化テキストから構造化データを抽出するオープンソースPythonライブラリ「LangExtract」をリリース <https://gihyo.jp/article/2025/08/langextract>（`reference`）
 - ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
-- ART-003 CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録 <https://zenn.dev/pepabo/articles/claude-code-rules-skills-split>（`adopted`）
 - ART-004 Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる <https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup>（`adopted`）
 - ART-005 Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた <https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474>（`reference`）
 - ART-007 コードベースのナレッジ化なら、LLM Wikiで十分かもしれない <https://qiita.com/Syoitu/items/ff38655fed51a2920910>（`reference`）
