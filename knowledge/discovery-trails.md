@@ -231,6 +231,16 @@ tags: [knowledge, sources, discovery]
   - REF-068 Useful Memories Become Faulty When Continuously Updated by LLMs <https://arxiv.org/abs/2605.12978>（`reference`）
   - REF-069 MemDelta: Controlled Baselines and Hidden Confounds in Agent Memory Evaluation <https://arxiv.org/abs/2606.29914>（`reference`）
 
+### ART-035 AIに丸投げしないで理解するためのAI開発手法（2026年8月現在）
+
+- 共有した URL: <https://zenn.dev/avaintelligence/articles/dont-outsource-understanding-to-ai>
+- 見つけて使った資料:
+  - REF-017 Explore the context window (Claude Code) <https://code.claude.com/docs/en/context-window>（`reference`）
+  - REF-066 Exploring automation bias in human-AI collaboration: a review and implications for explainable AI <https://doi.org/10.1007/s00146-025-02422-7>（`reference`）
+  - REF-070 How AI assistance impacts the formation of coding skills <https://www.anthropic.com/research/AI-assistance-coding-skills>（`reference`）
+  - REF-071 (Im)Paired Programming: Coding Agents Improve Productivity but Harm Understanding <https://arxiv.org/abs/2607.26375>（`reference`）
+  - REF-072 Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity <https://arxiv.org/abs/2507.09089>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

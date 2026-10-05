@@ -353,9 +353,9 @@ sources:
     topics: [context_management, claude_code, agent_instructions, skills]
     status: reference
     intake: found
-    found_via: [ART-003, ART-015, ART-023, ART-025, ART-031]
+    found_via: [ART-003, ART-015, ART-023, ART-025, ART-031, ART-035]
     use_when: "起動時に何が読み込まれるか、要約で何が消えて何が戻るかを確認する時、実際の占有を測る時"
-    derived: [foundation/autonomous-loop-delegation/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/comprehension-debt/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
   - id: REF-018
     title: Effective context engineering for AI agents
     url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
@@ -944,9 +944,9 @@ sources:
     topics: [reliability, verification, evaluation]
     status: reference
     intake: found
-    found_via: [ART-033]
+    found_via: [ART-033, ART-035]
     use_when: "「最後は人が確認する」を安全策として数えてよいかを確かめる時"
-    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
   - id: ART-034
     title: 月30万円かかるAIは「学習しない社員」だった――LayerXが回し始めた仕事の“自己改善ループ”
     url: https://www.itmedia.co.jp/business/spv/2609/25/news019_2.html
@@ -986,3 +986,42 @@ sources:
     found_via: [ART-034]
     use_when: "記憶の仕組みを変えた効果を測る時、何と比べ何を同時に変えないかを決める時"
     derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: ART-035
+    title: AIに丸投げしないで理解するためのAI開発手法（2026年8月現在）
+    url: https://zenn.dev/avaintelligence/articles/dont-outsource-understanding-to-ai
+    published_at: 2026-08-28
+    topics: [verification, agent_orchestration, code_review, skills]
+    status: reference
+    intake: shared
+    use_when: "AI に書かせる量が増えて中身を把握できなくなってきた時、人が理解する工程をどこに置くかを決める時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-070
+    title: How AI assistance impacts the formation of coding skills
+    url: https://www.anthropic.com/research/AI-assistance-coding-skills
+    published_at: 2026-01-29
+    topics: [verification, evaluation, reliability]
+    status: reference
+    intake: found
+    found_via: [ART-035]
+    use_when: "AI に書かせたときに理解がどれだけ落ちるか、どんな使い方なら保たれるかを引く時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-071
+    title: "(Im)Paired Programming: Coding Agents Improve Productivity but Harm Understanding"
+    url: https://arxiv.org/abs/2607.26375
+    published_at: 2026-07-29
+    topics: [verification, evaluation, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-035]
+    use_when: "エージェントに編集させる形と、自分で当てはめる形の差を、完了の速さ以外の軸で見る時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-072
+    title: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
+    url: https://arxiv.org/abs/2507.09089
+    published_at: 2025-07-12
+    topics: [evaluation, reliability, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-035]
+    use_when: "「速くなった」「分かっている」という自己評価を根拠にしてよいかを疑う時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
