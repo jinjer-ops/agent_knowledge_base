@@ -43,6 +43,14 @@ tags: [knowledge, sources, discovery]
   - REF-010 Build skills (Codex) <https://learn.chatgpt.com/docs/build-skills>（`reference`）
   - REF-011 Plugins overview (Claude Code) <https://code.claude.com/docs/en/plugins/overview>（`reference`）
 
+### ART-007 コードベースのナレッジ化なら、LLM Wikiで十分かもしれない
+
+- 共有した URL: <https://qiita.com/Syoitu/items/ff38655fed51a2920910>
+- 見つけて使った資料:
+  - REF-041 Evaluating Repository-level Software Documentation via Question Answering and Feature-Driven Development <https://arxiv.org/abs/2604.06793>（`reference`）
+  - REF-042 OpenWiki (langchain-ai/openwiki) <https://github.com/langchain-ai/openwiki>（`reference`）
+  - REF-043 Identifying Inaccurate Descriptions in LLM-generated Code Comments via Test Execution <https://arxiv.org/abs/2406.14836>（`reference`）
+
 ### ART-008 ナレッジグラフを活用してClaude Codeのトークンを10分の1にする
 
 - 共有した URL: <https://zenn.dev/nocodesolutions/articles/19f0d415af42be>
@@ -181,7 +189,6 @@ tags: [knowledge, sources, discovery]
 - ART-001 Google、AIを使って非構造化テキストから構造化データを抽出するオープンソースPythonライブラリ「LangExtract」をリリース <https://gihyo.jp/article/2025/08/langextract>（`reference`）
 - ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
 - ART-005 Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた <https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474>（`reference`）
-- ART-007 コードベースのナレッジ化なら、LLM Wikiで十分かもしれない <https://qiita.com/Syoitu/items/ff38655fed51a2920910>（`reference`）
 - ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）
 - ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）

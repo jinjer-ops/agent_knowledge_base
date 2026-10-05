@@ -19,7 +19,7 @@ Acceptance criteria: a new reader can identify the three areas from the README, 
 
 ## Current state — 2026-10-06
 
-Sources: 69 records in `knowledge/sources/articles.yml`, made up of 29 article records (`ART-001`–`ART-029`) and 40 official or reference records (`REF-001`–`REF-040`). Current status split: 8 `adopted`, 61 `reference`, 0 `experiment`.
+Sources: 72 records in `knowledge/sources/articles.yml`, made up of 29 article records (`ART-001`–`ART-029`) and 43 official or reference records (`REF-001`–`REF-043`). Current status split: 8 `adopted`, 64 `reference`, 0 `experiment`.
 
 Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 69 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` was reviewed across all three public pages and is adopted only for the general automation-safety principle in `foundation/README.md`; its reported figures are not treated as local verification.
 

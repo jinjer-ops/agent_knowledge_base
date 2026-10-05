@@ -57,10 +57,11 @@ sources:
     title: コードベースのナレッジ化なら、LLM Wikiで十分かもしれない
     url: https://qiita.com/Syoitu/items/ff38655fed51a2920910
     published_at: 2026-07-30
-    topics: [knowledge_system, llm_wiki]
+    topics: [knowledge_system, llm_wiki, codebase_search, cost_control]
     status: reference
-    use_when: "素材を検索し直すだけでなく、整理済みの知識を育てたい時"
-    derived: [knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "取り込み時に生成した文書を置く案を検討する時、その初期費用の実例が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: ART-008
     title: ナレッジグラフを活用してClaude Codeのトークンを10分の1にする
     url: https://zenn.dev/nocodesolutions/articles/19f0d415af42be
@@ -647,4 +648,34 @@ sources:
     intake: found
     found_via: [ART-008]
     use_when: "グラフ照会と素の探索を、トークン・呼び出し回数・回答品質の3つで同時に比べた数字が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-041
+    title: Evaluating Repository-level Software Documentation via Question Answering and Feature-Driven Development
+    url: https://arxiv.org/abs/2604.06793
+    published_at: 2026-04-08
+    topics: [documentation_generation, codebase_search, evaluation, benchmarks, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-007]
+    use_when: "取り込み時に生成した文書が、下流の課題解決と場所の特定にどれだけ効くかを一次情報で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-042
+    title: OpenWiki (langchain-ai/openwiki)
+    url: https://github.com/langchain-ai/openwiki
+    published_at: null
+    topics: [documentation_generation, knowledge_system, agents_md, ci, codebase_search]
+    status: reference
+    intake: found
+    found_via: [ART-007]
+    use_when: "生成した文書を陳腐化させない仕組み（証拠の紐付け・差分更新・指示ファイルの管理ブロック）の実装例を確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-043
+    title: Identifying Inaccurate Descriptions in LLM-generated Code Comments via Test Execution
+    url: https://arxiv.org/abs/2406.14836
+    published_at: 2024-06-21
+    topics: [documentation_generation, evaluation, hallucination, code_comprehension]
+    status: reference
+    intake: found
+    found_via: [ART-007]
+    use_when: "生成した説明文をそのまま正本に置く前に、事実誤りがどの程度混ざるかを確かめる時"
     derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
