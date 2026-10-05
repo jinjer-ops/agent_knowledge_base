@@ -4,7 +4,7 @@ title: Public repository boundary
 type: policy
 status: active
 created_at: 2026-09-01
-updated_at: 2026-09-01
+updated_at: 2026-10-06
 owners: [knowledge-stewards]
 source_ids: [REF-003]
 tags: [public, security, privacy]
@@ -12,7 +12,7 @@ tags: [public, security, privacy]
 
 # Public boundary
 
-このリポジトリはpublicです。フォルダ名や「社内向け」という表記はアクセス制御になりません。
+このリポジトリは 2026-10-06 から非公開ですが、再び公開できるように公開の基準で書きます。非公開であることを、下の確認を省く理由にしません。フォルダ名や「社内向け」という表記はアクセス制御になりません。
 
 コミット前に、認証情報、秘密鍵、接続文字列、個人情報、顧客・業務データ、内部URL、個人の絶対パス、端末の設定・履歴・許可情報がないことを確認します。見つかった場合は公開せず、値のない雛形または一般化された説明へ置き換えます。
 
