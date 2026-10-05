@@ -195,6 +195,14 @@ tags: [knowledge, sources, discovery]
   - REF-044 From Single to Multi: How LLMs Hallucinate in Multi-Document Summarization <https://aclanthology.org/2025.findings-naacl.293/>（`reference`）
   - REF-045 When Summaries Distort Decisions: Information Fidelity in LLM-Compressed Financial Analysis <https://arxiv.org/abs/2606.29251>（`reference`）
 
+### ART-031 ループエンジニアリング（ralph loop）で業務システムのUIを一新してみた
+
+- 共有した URL: <https://zenn.dev/sompojapan_dx/articles/846c6038fee45d>
+- 見つけて使った資料:
+  - REF-017 Explore the context window (Claude Code) <https://code.claude.com/docs/en/context-window>（`reference`）
+  - REF-050 Effective harnesses for long-running agents <https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents>（`reference`）
+  - REF-058 Ralph Wiggum as a "software engineer" <https://ghuntley.com/ralph/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

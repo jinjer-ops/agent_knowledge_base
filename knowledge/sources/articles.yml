@@ -353,9 +353,9 @@ sources:
     topics: [context_management, claude_code, agent_instructions, skills]
     status: reference
     intake: found
-    found_via: [ART-003, ART-015, ART-023, ART-025]
+    found_via: [ART-003, ART-015, ART-023, ART-025, ART-031]
     use_when: "起動時に何が読み込まれるか、要約で何が消えて何が戻るかを確認する時、実際の占有を測る時"
-    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
   - id: REF-018
     title: Effective context engineering for AI agents
     url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
@@ -757,7 +757,7 @@ sources:
     topics: [agent_orchestration, automation, long_horizon, recovery]
     status: reference
     intake: found
-    found_via: [ART-013]
+    found_via: [ART-013, ART-031]
     use_when: "1回の文脈に収まらない作業をエージェントに続けさせる時、復帰と早期の完了宣言の抑止を設計する時"
     derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
   - id: REF-051
@@ -829,4 +829,23 @@ sources:
     intake: found
     found_via: [ART-013]
     use_when: "多ターンで品質が落ちる原因をモデル側に帰してよいかを疑う時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: ART-031
+    title: ループエンジニアリング（ralph loop）で業務システムのUIを一新してみた
+    url: https://zenn.dev/sompojapan_dx/articles/846c6038fee45d
+    published_at: 2026-09-04
+    topics: [agent_orchestration, automation, long_horizon, verification]
+    status: reference
+    intake: shared
+    use_when: "同じ指示で何周も自動で回す構成を組む時、その構成が実際にどこで壊れるかを知りたい時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-058
+    title: Ralph Wiggum as a "software engineer"
+    url: https://ghuntley.com/ralph/
+    published_at: 2025-07-14
+    topics: [agent_orchestration, automation, long_horizon]
+    status: reference
+    intake: found
+    found_via: [ART-031]
+    use_when: "同じ指示を繰り返し流す技法の不変条件と、提唱者自身が挙げる限界を引く時"
     derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
