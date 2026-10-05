@@ -223,6 +223,14 @@ tags: [knowledge, sources, discovery]
   - REF-065 Wired for Overconfidence: A Mechanistic Perspective on Inflated Verbalized Confidence in LLMs <https://arxiv.org/abs/2604.01457>（`reference`）
   - REF-066 Exploring automation bias in human-AI collaboration: a review and implications for explainable AI <https://doi.org/10.1007/s00146-025-02422-7>（`reference`）
 
+### ART-034 月30万円かかるAIは「学習しない社員」だった――LayerXが回し始めた仕事の“自己改善ループ”
+
+- 共有した URL: <https://www.itmedia.co.jp/business/spv/2609/25/news019_2.html>
+- 見つけて使った資料:
+  - REF-067 Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models <https://arxiv.org/abs/2510.04618>（`reference`）
+  - REF-068 Useful Memories Become Faulty When Continuously Updated by LLMs <https://arxiv.org/abs/2605.12978>（`reference`）
+  - REF-069 MemDelta: Controlled Baselines and Hidden Confounds in Agent Memory Evaluation <https://arxiv.org/abs/2606.29914>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

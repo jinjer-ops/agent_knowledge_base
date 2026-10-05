@@ -947,3 +947,42 @@ sources:
     found_via: [ART-033]
     use_when: "「最後は人が確認する」を安全策として数えてよいかを確かめる時"
     derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: ART-034
+    title: 月30万円かかるAIは「学習しない社員」だった――LayerXが回し始めた仕事の“自己改善ループ”
+    url: https://www.itmedia.co.jp/business/spv/2609/25/news019_2.html
+    published_at: 2026-09-25
+    topics: [agent_memory, automation, evaluation, context]
+    status: reference
+    intake: shared
+    use_when: "モデルの重みが変わらない前提で、改善をどこに積むかを考え始めた時の入口として"
+    derived: [knowledge/reading-guide.md]
+  - id: REF-067
+    title: "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models"
+    url: https://arxiv.org/abs/2510.04618
+    published_at: 2025-10-06
+    topics: [context, agent_memory, evaluation, agent_instructions]
+    status: reference
+    intake: found
+    found_via: [ART-034]
+    use_when: "文脈や指示を自動で短くしていく運用の失敗様式を引く時、書き足す形と書き直す形を分ける根拠が要る時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-068
+    title: Useful Memories Become Faulty When Continuously Updated by LLMs
+    url: https://arxiv.org/abs/2605.12978
+    published_at: 2026-05-13
+    topics: [agent_memory, reliability, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-034]
+    use_when: "記憶を増やし続けてよいかを疑う時、まとめ直す処理を既定にしてよいかを決める時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-069
+    title: "MemDelta: Controlled Baselines and Hidden Confounds in Agent Memory Evaluation"
+    url: https://arxiv.org/abs/2606.29914
+    published_at: 2026-06-29
+    topics: [agent_memory, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-034]
+    use_when: "記憶の仕組みを変えた効果を測る時、何と比べ何を同時に変えないかを決める時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
