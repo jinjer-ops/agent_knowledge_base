@@ -166,6 +166,13 @@ tags: [knowledge, sources, discovery]
   - REF-034 Fusion (Cognition) <https://cognition.com/blog/local-fusion>（`reference`）
   - REF-035 Coding Agent Index v1.5 Methodology (Artificial Analysis) <https://artificialanalysis.ai/methodology/coding-agents-benchmarking>（`reference`）
 
+### ART-030 LLMにWikiを書かせて半年、一番役に立った画面はLLMの文章を使っていなかった
+
+- 共有した URL: <https://zenn.dev/rescuenow/articles/5aa26aebd7ae78>
+- 見つけて使った資料:
+  - REF-044 From Single to Multi: How LLMs Hallucinate in Multi-Document Summarization <https://aclanthology.org/2025.findings-naacl.293/>（`reference`）
+  - REF-045 When Summaries Distort Decisions: Information Fidelity in LLM-Compressed Financial Analysis <https://arxiv.org/abs/2606.29251>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

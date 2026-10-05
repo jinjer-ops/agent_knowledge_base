@@ -579,6 +579,15 @@ sources:
     intake: shared
     use_when: "役割で2つのモデルに分ける構成が話題になった経緯を確認する時（数値は一次情報で確かめる）"
     derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: ART-030
+    title: LLMにWikiを書かせて半年、一番役に立った画面はLLMの文章を使っていなかった
+    url: https://zenn.dev/rescuenow/articles/5aa26aebd7ae78
+    published_at: 2026-09-16
+    topics: [knowledge_system, llm_wiki, documentation_generation, summarization, knowledge_graph]
+    status: reference
+    intake: shared
+    use_when: "生成した文書を置いた後、半年の運用で何が使われ何が使われなかったかの記録が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: REF-034
     title: Fusion (Cognition)
     url: https://cognition.com/blog/local-fusion
@@ -679,3 +688,23 @@ sources:
     found_via: [ART-007]
     use_when: "生成した説明文をそのまま正本に置く前に、事実誤りがどの程度混ざるかを確かめる時"
     derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-044
+    title: "From Single to Multi: How LLMs Hallucinate in Multi-Document Summarization"
+    url: https://aclanthology.org/2025.findings-naacl.293/
+    published_at: 2024-10-17
+    topics: [summarization, hallucination, evaluation, benchmarks, documentation_generation]
+    status: reference
+    intake: found
+    found_via: [ART-030]
+    use_when: "複数の資料をまとめさせた出力で、何が歪み何が落ちるかを型と数値で確かめる時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-045
+    title: "When Summaries Distort Decisions: Information Fidelity in LLM-Compressed Financial Analysis"
+    url: https://arxiv.org/abs/2606.29251
+    published_at: 2026-06-28
+    topics: [summarization, context_compression, delegation, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-030]
+    use_when: "文脈を圧縮して渡す構成が、下流の判断をどう変えうるかを確かめる時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
