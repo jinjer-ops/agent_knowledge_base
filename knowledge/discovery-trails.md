@@ -203,6 +203,15 @@ tags: [knowledge, sources, discovery]
   - REF-050 Effective harnesses for long-running agents <https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents>（`reference`）
   - REF-058 Ralph Wiggum as a "software engineer" <https://ghuntley.com/ralph/>（`reference`）
 
+### ART-032 HTMLを社内共有するサービスを、コードを読まずに作る - 1人で25万行を回す自動運用の記録
+
+- 共有した URL: <https://zenn.dev/coji/articles/solo-software-factory-without-reading-code>
+- 見つけて使った資料:
+  - REF-059 Maintainer development workflow (artifactshare) <https://github.com/artifactshare/artifactshare/blob/d50596d7d61ec4d54056f413a8e161af04618b3c/docs/development-workflow.md>（`reference`）
+  - REF-060 Refute-or-Promote: An Adversarial Stage-Gated Multi-Agent Review Methodology for High-Precision LLM-Assisted Defect Discovery <https://arxiv.org/abs/2604.19049>（`reference`）
+  - REF-061 SWR-Bench: Assessing LLM Performance in Real-World Code Review Comment Generation <https://arxiv.org/abs/2509.01494>（`reference`）
+  - REF-062 AI-to-AI Code Reviews of GitHub Pull Requests <https://arxiv.org/abs/2608.21311>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
