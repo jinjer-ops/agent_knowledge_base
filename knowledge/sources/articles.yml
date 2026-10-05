@@ -6,10 +6,11 @@ sources:
     title: Google、AIを使って非構造化テキストから構造化データを抽出するオープンソースPythonライブラリ「LangExtract」をリリース
     url: https://gihyo.jp/article/2025/08/langextract
     published_at: 2025-08-01
-    topics: [knowledge_ingestion, structured_extraction]
+    topics: [knowledge_ingestion, structured_extraction, documentation_generation]
     status: reference
-    use_when: "出典位置を保持したまま、非構造化テキストを判断カードへ抽出したい時"
-    derived: [docs/contribution.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "取り込み時に散文ではなく項目として取り出す案の入口（現況と制限は一次情報で確かめる）"
+    derived: [docs/contribution.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: ART-002
     title: PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成
     url: https://zenn.dev/daming_cafe/articles/reveal-markdown-slides
@@ -708,3 +709,33 @@ sources:
     found_via: [ART-030]
     use_when: "文脈を圧縮して渡す構成が、下流の判断をどう変えうるかを確かめる時"
     derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-046
+    title: LangExtract (google/langextract)
+    url: https://github.com/google/langextract
+    published_at: null
+    topics: [structured_extraction, knowledge_ingestion, source_grounding, documentation_generation]
+    status: reference
+    intake: found
+    found_via: [ART-001]
+    use_when: "抽出した項目を元テキストの位置に結び付ける仕組みと、その保証の範囲を一次情報で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-047
+    title: "ExtractBench: A Benchmark and Evaluation Methodology for Complex Structured Extraction"
+    url: https://arxiv.org/abs/2602.12247
+    published_at: 2026-02-12
+    topics: [structured_extraction, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-001]
+    use_when: "抽出するスキーマの広さを決める時、抽出結果の正しさをどう採点するかを決める時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-048
+    title: "From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction"
+    url: https://arxiv.org/abs/2604.27906
+    published_at: 2026-04-30
+    topics: [structured_extraction, memory, knowledge_ingestion, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-001]
+    use_when: "記憶や知識を、散文で貯めるか項目として書くかを決める時、更新と削除を表現できる形を考える時"
+    derived: [foundation/memory-upkeep/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]

@@ -17,6 +17,14 @@ tags: [knowledge, sources, discovery]
 
 ## 入口ごとの資料
 
+### ART-001 Google、AIを使って非構造化テキストから構造化データを抽出するオープンソースPythonライブラリ「LangExtract」をリリース
+
+- 共有した URL: <https://gihyo.jp/article/2025/08/langextract>
+- 見つけて使った資料:
+  - REF-046 LangExtract (google/langextract) <https://github.com/google/langextract>（`reference`）
+  - REF-047 ExtractBench: A Benchmark and Evaluation Methodology for Complex Structured Extraction <https://arxiv.org/abs/2602.12247>（`reference`）
+  - REF-048 From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction <https://arxiv.org/abs/2604.27906>（`reference`）
+
 ### ART-003 CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録
 
 - 共有した URL: <https://zenn.dev/pepabo/articles/claude-code-rules-skills-split>
@@ -193,7 +201,6 @@ tags: [knowledge, sources, discovery]
 
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
 
-- ART-001 Google、AIを使って非構造化テキストから構造化データを抽出するオープンソースPythonライブラリ「LangExtract」をリリース <https://gihyo.jp/article/2025/08/langextract>（`reference`）
 - ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
 - ART-005 Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた <https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474>（`reference`）
 - ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）
