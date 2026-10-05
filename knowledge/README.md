@@ -42,7 +42,7 @@ status は、その source を根拠にした local artifact がどの種類ま�
 
 台帳の `derived` は**関連文書**の一覧、すなわち**現存文書への完全な逆引き**です。ある文書が `source_ids` でその source を宣言していれば、その path は必ず `derived` に載ります（通常の文書は frontmatter、skill は `## Provenance` 節の1行で宣言します）。存在しない path は載せません。
 
-`derived` は status の根拠ではありません。status を支えるのは「**採用・実験の裏付け**」、すなわち現存する decision / practice / guidance / experiment charter だけです。件数が多いことは `adopted` を意味せず、引用・読書ガイド・contribution guide からのリンクも status を動かしません。読書ガイドは全20 source を要約する関連文書なので、全 source の `derived` に含まれます。
+`derived` は status の根拠ではありません。status を支えるのは「**採用・実験の裏付け**」、すなわち現存する decision / practice / guidance / experiment charter だけです。件数が多いことは `adopted` を意味せず、引用・読書ガイド・contribution guide からのリンクも status を動かしません。読書ガイドは全 source を要約する関連文書なので、全 source の `derived` に含まれます。
 
 ## 追加するとき
 

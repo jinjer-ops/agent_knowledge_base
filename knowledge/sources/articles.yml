@@ -95,11 +95,12 @@ sources:
   - id: ART-012
     title: claude のメモリを棚卸しする
     url: https://zenn.dev/cureapp/articles/c1e963064d05fd
-    published_at: null
-    topics: [knowledge_maintenance, agent_memory]
+    published_at: 2026-08-21
+    topics: [knowledge_maintenance, agent_memory, verification]
     status: adopted
-    use_when: "知識台帳やエージェント向け文書の鮮度・孤児・肥大化を点検する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "エージェントが自分で書いた記憶の鮮度を点検する時、外の事実と突き合わせて古い前提を見つける時"
+    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-013
     title: 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ
     url: https://www.sbbit.jp/article/cont1/186558
@@ -164,7 +165,7 @@ sources:
     status: reference
     intake: shared
     use_when: "CLAUDE.md、AGENTS.md、rules、auto memoryの役割と読み込み範囲・条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
@@ -285,9 +286,9 @@ sources:
     topics: [context_management, agent_instructions, prompt_design, skills]
     status: reference
     intake: found
-    found_via: [ART-003, ART-021, ART-022]
+    found_via: [ART-003, ART-012, ART-021, ART-022]
     use_when: "新しい世代のモデル向けに、規則の列挙から判断の委譲へ指示を書き換える方針を確認する時"
-    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
   - id: ART-022
     title: "/claude-api prompt-audit で棚卸ししたら、モデルの版上げで外れた設定がぞろぞろ出てきた"
     url: https://zenn.dev/nanora/articles/20260925-claude-prompt-audit-opus55
@@ -357,3 +358,13 @@ sources:
     found_via: [ART-003]
     use_when: "指示を減らす理由を費用ではなく精度の問題として説明する時、先読みと必要時取得を比べる時"
     derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-019
+    title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?"
+    url: https://arxiv.org/abs/2605.06527
+    published_at: null
+    topics: [agent_memory, evaluation, benchmarks, verification]
+    status: reference
+    intake: found
+    found_via: [ART-012]
+    use_when: "記憶が古くなったことをエージェント自身が気づけるか、気づいた更新を後続に反映できるかを実測で確認する時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]

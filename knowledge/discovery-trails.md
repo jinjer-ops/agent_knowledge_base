@@ -33,6 +33,13 @@ tags: [knowledge, sources, discovery]
   - REF-010 Build skills (Codex) <https://learn.chatgpt.com/docs/build-skills>（`reference`）
   - REF-011 Plugins overview (Claude Code) <https://code.claude.com/docs/en/plugins/overview>（`reference`）
 
+### ART-012 claude のメモリを棚卸しする
+
+- 共有した URL: <https://zenn.dev/cureapp/articles/c1e963064d05fd>
+- 見つけて使った資料:
+  - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
+  - REF-019 STALE: Can LLM Agents Know When Their Memories Are No Longer Valid? <https://arxiv.org/abs/2605.06527>（`reference`）
+
 ### ART-020 ようやく CLAUDE.md が不要になった
 
 - 共有した URL: <https://zenn.dev/tenkei/articles/bad7b682aed22c>
@@ -85,7 +92,6 @@ tags: [knowledge, sources, discovery]
 - ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）
 - ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
-- ART-012 claude のメモリを棚卸しする <https://zenn.dev/cureapp/articles/c1e963064d05fd>（`adopted`）
 - ART-013 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ <https://www.sbbit.jp/article/cont1/186558>（`adopted`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
 - ART-015 肥大化し続けるCLAUDE.md <https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing>（`adopted`）
