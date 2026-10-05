@@ -6,7 +6,7 @@ status: draft
 created_at: 2026-10-06
 updated_at: 2026-10-06
 owners: [knowledge-stewards]
-source_ids: [ART-013, ART-031, ART-032, REF-017, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, REF-058, REF-059]
+source_ids: [ART-013, ART-031, ART-032, REF-017, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, REF-058, REF-059, REF-066]
 tags: [automation, agent-orchestration, verification, long-horizon]
 ---
 
@@ -100,6 +100,11 @@ hook は確定である**と明記しています（`REF-055`）。必ず起き�
 - 失敗しても安く戻せる作業 → 長く任せてよい。復旧の経路を用意する方が、成功率を上げるより効く
 - 失敗が高くつく作業（本番反映、外部への公開、削除、資格情報） → **1周ごとに人が受け取る**
 - 判定が機械でできない作業 → 長さにかかわらず、成果物を人が見るまで完了にしない
+
+ただし**人を置いたこと自体は安全策になりません**。査読を通ったレビューは、説明を足してもシステムの
+受け入れやすさが上がるだけで判断の精度は上がらず、有効性が示された介入は**検証の手間を実際に増やすこと**
+だったと報告しています（`REF-066`、要旨の範囲で確認）。受け取り方の設計は
+[../agent-report-handoff/](../agent-report-handoff/) に分けてあります。
 
 ## 止まらないループは実在する
 

@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-06
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -902,12 +902,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: この形が珍しくないことは確かめられる。ただし**その指摘が実際に取り込まれたか、役に立ったかは測っていない**。普及の速さを有効性の証拠として読まない、という歯止めとして残す。質の判断は `REF-060`・`REF-061` 側に置く。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/review-design/README.md](../foundation/review-design/README.md)（未検証）。
 
+### ART-033 インシデント一次対応をエージェントに載せた全社の事例
+
+- **URL**: <https://aws.amazon.com/jp/blogs/news/play-devops-agent-case-study/>
+- **記事種別**: 提供元のブログに載った事例紹介（1 社、自己申告、対照なし）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 動画配信基盤を運用する企業が、アラートの一次調査を提供元の運用エージェントに任せた記録。調査手順を 9 段階の markdown の skill として定義し、そこに**モジュールマップ**と呼ぶ対応表（どのロググループがどのサービスか、ある呼び名がどのリポジトリのどのパスか、監視側の実体との紐付け）を書き込んでいる。同社のテックリードの言葉として、**エージェント自体の能力よりも、この対応関係をどれだけ具体的に渡せるかが結果を左右する**と記している。出力側は、既存の連絡ツールのスレッドへ 3 段階に分けて書き込み、調査結果に【確定 / 有力 / 推定】のラベルを付ける。自動で進むのは一次トリアージまでで、**修正するかどうかの判断は人**が持ち、精度が高い場合に限って人の明示の合図で修正案の作成へ進む。エージェントを呼ぶ前に、類似のアラートを機械的に判定してまとめる前処理を置いている。調査時間、解決率、重複判定の割合などの数値が並ぶが、いずれも社内測定で、記事自身も初期の計測は参考値と断っている。
+- **得られる示唆**: 価値は数値ではなく、**どこで人が受け取り、何を渡し、何を自動にしないか**の配置にある。対応表を skill 側へ書く話は、公式仕様が示す「本体に手順、参照資料に具体の表」という形（`REF-064`）と一致するので、向きとしては採れる。一方、確度ラベルで人が判断するという部分は、独立した研究が**そのままでは効かない**方向を示す。言語化された確信度は誤答時にも高く出るため（`REF-065`）、ラベルは索引として使えても分岐の条件にはできない。また、説明を足しても自動化バイアスは減らず、効いたのは検証の手間を増やす関与だった（`REF-066`）。したがって採ったのは「確からしさを一緒くたにさせない」までで、「ラベルを信じて流す」は採らない。数値は移さない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-report-handoff/README.md](../foundation/agent-report-handoff/README.md) と [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)（どちらも未検証）。
+
+### REF-063 常時の指示を `AGENTS.md` として保存する別の製品
+
+- **URL**: <https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-agent-instructions.html>
+- **記事種別**: 製品の公式ドキュメント
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 提供元の環境で動く運用エージェントの、常時の指示の仕様。管理画面で編集した内容は **`AGENTS.md` ファイルとして保存**され、セッション開始時に無条件で system prompt へ差し込まれる。全エージェント共通の 1 つと、エージェントの種別ごとの 1 つが併せて読み込まれる。呼び出し式の skill との差を表で示し、skill は description との照合で**読まれないことがある**のに対し常時の指示は必ず入る、と明記する。形式は markdown のみで frontmatter も付随ファイルも持てない。大きさは**上限 25KB、推奨 120 行程度**とし、理由を「指示が長いほど、実際の問題に使える余地が減る」と説明している。
+- **得られる示唆**: `AGENTS.md` が、リポジトリに置くファイル名ではなく**常時の指示という役割の名前**として使われ始めていることの実例。正本を `AGENTS.md` に置く構成を、ローカルで動く製品の都合だけで決めなくてよくなる。さらに、常時の層に**明示の上限を置く製品が現れた**点が使える。120 行という推奨は、常時読み込みを費用ではなく精度の問題として扱う見方と同じ向きで、製品側が数字まで添えた例になる。ただし置き場はリポジトリではなくサービス側なので、**同じファイルを共有できるという意味には取らない**。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agents-md/README.md](../foundation/agents-md/README.md) と [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)。
+
+### REF-064 skill の本体と参照資料を分ける公式の形
+
+- **URL**: <https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-devops-agent-skills.html>
+- **記事種別**: 製品の公式ドキュメント
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 同じ製品の skill の仕様。共通仕様（`REF-015`）の一部を採用し、**実行しない文書だけ**（markdown、PDF、画像、データ）を許す。必須は `SKILL.md` 1 つで、`references/` と `assets/` を任意で置ける。完全な例が載っており、**本体には段階ごとの調査手順、`references/` 側に判断に使う閾値の表**という分け方になっている。`description` については、曖昧または欠けていると**本体がよく書けていても skill ごと読み飛ばされる**と明記し、起動させたい具体的な場面・対象・症状を並べるよう求める。「○○用の skill」という名詞だけの説明は劣るとして、実際の文例を並べて比べている。リポジトリのディレクトリを指定して取り込み、後から同期する経路も持つ。
+- **得られる示唆**: 「本体に手順、参照資料に具体の表」という置き方が、こちらの判断だけでなく別の製品の公式例でも同じ形になっていることの裏づけ。環境固有の対応表を常時の層へ置かず呼び出し式の側へ出す、という切り分けの根拠として使える。`description` の書き方も、別の提供元の指針（`REF-014`）と独立に同じ結論に達している。取り込みの経路があるので、共有するならファイルの共有ではなくこちらが入口になる。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agents-md/README.md](../foundation/agents-md/README.md) と [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)。
+
+### REF-065 自己申告の確信度は、誤答のときほど当てにならない
+
+- **URL**: <https://arxiv.org/abs/2604.01457>
+- **記事種別**: 査読を通った論文（COLM 2026）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: モデルが**誤った答えを出すときにも高い確信度を言語化する**現象を、回路の水準で分析した研究。確信度を押し上げる信号が中盤から後半の層の特定の MLP と注意ヘッドで、最終トークンの位置に書き込まれていることを特定し、そこへ推論時に介入すると較正が大きく改善すると報告する。評価は指示調整済みのモデル 2 つと 3 つのデータセット。
+- **得られる示唆**: エージェントに「確定 / 有力 / 推定」のようなラベルを出させる構成（`ART-033`）を、**どこまで信用できるか**の線引きに使う。既定の出力に付いている確信度は較正されていないので、読む順を決める索引には使えても、**人の確認を飛ばす分岐の条件には使えない**。「推定」の件数を品質指標として数えることも、較正されていない値の集計なので意味を持たない。評価対象が運用やコーディングのエージェントではないため、採ったのは向きだけで数値は移さない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-report-handoff/README.md](../foundation/agent-report-handoff/README.md)（未検証）。
+
+### REF-066 「最後は人が確認する」が効かない理由
+
+- **URL**: <https://doi.org/10.1007/s00146-025-02422-7>
+- **記事種別**: 査読を通った総説（PRISMA に沿った 35 件のレビュー、本文は購読が必要）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 自動化バイアス（自動の推薦に過度に寄りかかること）を、医療・法務・行政のような重い領域の研究から整理した総説。要旨の範囲で確認できるのは次の 3 点。偏りには利用者側の要因（習熟、専門性、信頼の形成過程、検証にかかる手間、説明の複雑さ）が絡むこと。**説明を足してもシステムの受け入れやすさが上がるだけで、判断の精度向上や偏りの軽減には足りないことが多い**こと。最も現実的で効果の大きい介入点として**利用者の関与**が挙がり、検証の手間を増やすと誤った推薦への無批判な受容が減ったこと。
+- **得られる示唆**: 人のチェックポイントを置いたことを、それ自体で安全策として数えない根拠になる。ここから出てくる設計上の違いは明確で、報告を読みやすくする・根拠を併記する・理由を説明させるといった変更は**受け入れやすさの側**であり、見落としを減らす側ではない。代わりに、受け取った人が**その場で開ける・実行できるもの**を出させ、確認したという操作が残る形にする。これは提供元が別の文脈で言う「主張ではなく証拠を出させる」（`REF-055`）と同じ向きで、独立した経路から同じ結論に着く。本文は購読が要り要旨の範囲でしか確認していないため、採ったのは上の 3 つの向きだけで、件数や効果量は移さない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-report-handoff/README.md](../foundation/agent-report-handoff/README.md) と [../foundation/autonomous-loop-delegation/README.md](../foundation/autonomous-loop-delegation/README.md)（どちらも未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全94 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全99 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 86件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 91件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

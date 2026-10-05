@@ -212,6 +212,17 @@ tags: [knowledge, sources, discovery]
   - REF-061 SWR-Bench: Assessing LLM Performance in Real-World Code Review Comment Generation <https://arxiv.org/abs/2509.01494>（`reference`）
   - REF-062 AI-to-AI Code Reviews of GitHub Pull Requests <https://arxiv.org/abs/2608.21311>（`reference`）
 
+### ART-033 AI エージェントを組織構造に乗せる – PLAY が AWS DevOps Agent で築いた全社共通のインシデント対応基盤
+
+- 共有した URL: <https://aws.amazon.com/jp/blogs/news/play-devops-agent-case-study/>
+- 見つけて使った資料:
+  - REF-049 Building agents with the Claude Agent SDK <https://claude.com/blog/building-agents-with-the-claude-agent-sdk>（`reference`）
+  - REF-055 Best practices for Claude Code <https://code.claude.com/docs/en/best-practices>（`reference`）
+  - REF-063 Agent instructions (AWS DevOps Agent) <https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-agent-instructions.html>（`reference`）
+  - REF-064 DevOps Agent Skills (AWS DevOps Agent) <https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-devops-agent-skills.html>（`reference`）
+  - REF-065 Wired for Overconfidence: A Mechanistic Perspective on Inflated Verbalized Confidence in LLMs <https://arxiv.org/abs/2604.01457>（`reference`）
+  - REF-066 Exploring automation bias in human-AI collaboration: a review and implications for explainable AI <https://doi.org/10.1007/s00146-025-02422-7>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

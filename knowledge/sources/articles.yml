@@ -747,9 +747,9 @@ sources:
     topics: [agent_orchestration, automation, verification, agent_design]
     status: reference
     intake: found
-    found_via: [ART-013]
+    found_via: [ART-013, ART-033]
     use_when: "エージェントに任せた作業の出来上がりをどう確かめるかを決める時、検証手段の信頼度を比べる時"
-    derived: [foundation/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+    derived: [foundation/README.md, foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
   - id: REF-050
     title: Effective harnesses for long-running agents
     url: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
@@ -807,9 +807,9 @@ sources:
     topics: [agent_instructions, automation, verification, agent_orchestration]
     status: reference
     intake: found
-    found_via: [ART-013]
+    found_via: [ART-013, ART-033]
     use_when: "指示ファイルに何を書き何を書かないかを決める時、無人で回す作業の止め方の強度を選ぶ時"
-    derived: [foundation/autonomous-loop-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: REF-056
     title: "LLMs Get Lost In Multi-Turn Conversation"
     url: https://arxiv.org/abs/2505.06120
@@ -898,3 +898,52 @@ sources:
     found_via: [ART-032]
     use_when: "AI 同士のレビューがどれだけ広まっているかと、その有用性が測られているかを確かめる時"
     derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-033
+    title: AI エージェントを組織構造に乗せる – PLAY が AWS DevOps Agent で築いた全社共通のインシデント対応基盤
+    url: https://aws.amazon.com/jp/blogs/news/play-devops-agent-case-study/
+    published_at: 2026-09-25
+    topics: [agent_instructions, automation, verification, agent_orchestration]
+    status: reference
+    intake: shared
+    use_when: "エージェントに調査や一次対応を任せ、その結果を人が読んで次を決める構成を組む時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-063
+    title: Agent instructions (AWS DevOps Agent)
+    url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-agent-instructions.html
+    published_at: null
+    topics: [agent_instructions, context, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-033]
+    use_when: "常時の指示と呼び出し式の層の切り分けを、製品側が明示している上限とともに確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-064
+    title: DevOps Agent Skills (AWS DevOps Agent)
+    url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-devops-agent-skills.html
+    published_at: null
+    topics: [skills, agent_instructions, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-033]
+    use_when: "skill の本体と参照資料の分け方、description の書き方を別の製品の公式仕様で確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-065
+    title: "Wired for Overconfidence: A Mechanistic Perspective on Inflated Verbalized Confidence in LLMs"
+    url: https://arxiv.org/abs/2604.01457
+    published_at: 2026-04-01
+    topics: [reliability, evaluation, verification]
+    status: reference
+    intake: found
+    found_via: [ART-033]
+    use_when: "エージェントに自分の確信度を言わせ、それを判断の閾値に使ってよいかを疑う時"
+    derived: [foundation/agent-report-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-066
+    title: "Exploring automation bias in human-AI collaboration: a review and implications for explainable AI"
+    url: https://doi.org/10.1007/s00146-025-02422-7
+    published_at: null
+    topics: [reliability, verification, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-033]
+    use_when: "「最後は人が確認する」を安全策として数えてよいかを確かめる時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
