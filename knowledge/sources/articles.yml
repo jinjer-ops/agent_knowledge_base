@@ -26,7 +26,7 @@ sources:
     status: adopted
     intake: shared
     use_when: "常時ルール、参照資料、明示的ワークフローの置き場所を決める時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-004
     title: Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる
     url: https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup
@@ -123,8 +123,9 @@ sources:
     published_at: null
     topics: [agent_instructions, knowledge_maintenance]
     status: adopted
-    use_when: "常時読み込まれる指示の肥大化を防ぐ時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    intake: shared
+    use_when: "常時読み込まれる指示の肥大化を防ぐ時、上限の監視を仕組み側に置く時"
+    derived: [foundation/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: ART-016
     title: オントロジー × グラフ × LLM の実装と評価（基礎編）
     url: https://qiita.com/haystacker/items/853234c38ae36adbca1f
@@ -165,7 +166,7 @@ sources:
     status: reference
     intake: shared
     use_when: "CLAUDE.md、AGENTS.md、rules、auto memoryの役割と読み込み範囲・条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
@@ -174,7 +175,7 @@ sources:
     status: reference
     intake: shared
     use_when: "Claude Code skillの配置、優先順位、製品固有のfrontmatter、適用条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: REF-003
     title: Secret scanning
     url: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
@@ -267,9 +268,9 @@ sources:
     topics: [claude_code, plugins, skills, distribution]
     status: reference
     intake: found
-    found_via: [ART-006, ART-021]
+    found_via: [ART-006, ART-015, ART-021]
     use_when: "skills・subagent・hook・MCPをひとまとまりで配布し版を付けたい時、その常時コストと併せて判断する時"
-    derived: [foundation/agents-md/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agents-md/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: ART-021
     title: CLAUDE.mdをそろそろ見直す時期かも ── Claude 5世代向けの最適化手順・スキル・プロジェクト種類別の例
     url: https://qiita.com/nogataka/items/d6a54f3694726b9141f3
@@ -345,9 +346,9 @@ sources:
     topics: [context_management, claude_code, agent_instructions, skills]
     status: reference
     intake: found
-    found_via: [ART-003]
+    found_via: [ART-003, ART-015]
     use_when: "起動時に何が読み込まれるか、要約で何が消えて何が戻るかを確認する時、実際の占有を測る時"
-    derived: [foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-018
     title: Effective context engineering for AI agents
     url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
@@ -368,3 +369,13 @@ sources:
     found_via: [ART-012]
     use_when: "記憶が古くなったことをエージェント自身が気づけるか、気づいた更新を後続に反映できるかを実測で確認する時"
     derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-020
+    title: Hooks reference (Claude Code)
+    url: https://code.claude.com/docs/en/hooks
+    published_at: null
+    topics: [hooks, claude_code, automation, guardrails]
+    status: reference
+    intake: found
+    found_via: [ART-015]
+    use_when: "どのイベントで何ができるか、止められるのはどれか、出力が利用者とモデルのどちらへ行くかを確認する時"
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]

@@ -40,6 +40,14 @@ tags: [knowledge, sources, discovery]
   - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
   - REF-019 STALE: Can LLM Agents Know When Their Memories Are No Longer Valid? <https://arxiv.org/abs/2605.06527>（`reference`）
 
+### ART-015 肥大化し続けるCLAUDE.md
+
+- 共有した URL: <https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing>
+- 見つけて使った資料:
+  - REF-011 Plugins overview (Claude Code) <https://code.claude.com/docs/en/plugins/overview>（`reference`）
+  - REF-017 Explore the context window (Claude Code) <https://code.claude.com/docs/en/context-window>（`reference`）
+  - REF-020 Hooks reference (Claude Code) <https://code.claude.com/docs/en/hooks>（`reference`）
+
 ### ART-020 ようやく CLAUDE.md が不要になった
 
 - 共有した URL: <https://zenn.dev/tenkei/articles/bad7b682aed22c>
@@ -94,7 +102,6 @@ tags: [knowledge, sources, discovery]
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-013 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ <https://www.sbbit.jp/article/cont1/186558>（`adopted`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
-- ART-015 肥大化し続けるCLAUDE.md <https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing>（`adopted`）
 - ART-016 オントロジー × グラフ × LLM の実装と評価（基礎編） <https://qiita.com/haystacker/items/853234c38ae36adbca1f>（`reference`）
 - ART-017 AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計 <https://zenn.dev/minewo/articles/river-review-judgment-placement>（`adopted`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
