@@ -25,7 +25,7 @@ Human entry point: `knowledge/reading-guide.md` holds one Japanese card per sour
 
 Machine entry point: `knowledge/sources/articles.yml` is canonical for source IDs and URLs. Its `derived` field is the complete reverse index of the documents that declare a source in `source_ids`, so a reader can list every related document from the registry alone. `derived` is an index of related documents; it is not the basis for status.
 
-Other current material: `foundation/` (6 files), `organization/jinjer/` (2 files), `skills/` (2 skills), and `docs/` (this handover, the contribution guide, and the public boundary policy).
+Other current material: `foundation/` (6 files), `organization/jinjer/` (2 files), `skills/` (2 skills), and `docs/` (this handover, the contribution guide, the public boundary policy, and, since 2026-10-06, the Knowledge Inbox coordination folder `docs/knowledge-inbox/`).
 
 There are currently no separate topic, decision, experiment, or practice documents. Thirteen such documents were removed by the repository owner before this change, and the registry was rebuilt around what remains: stale `derived` paths were dropped, six sources moved from `experiment` to `reference` because no experiment charter survives, and one moved from `adopted` to `reference`. Those removals and the rebuilt registry belong to the same publication change and are not published separately. The structure still allows verified decisions, experiments, and practices to be added later; see `docs/contribution.md`.
 
@@ -73,6 +73,7 @@ Before every push, run a targeted scan for credentials, local paths, organizatio
 - Knowledge area entry point: `knowledge/README.md`
 - Reusable workflows: `skills/`
 - Contribution rules and public boundary: `docs/contribution.md`, `docs/public-boundary.md`
+- Knowledge Inbox coordination (status and open questions between the Android app and the PC worker): `docs/knowledge-inbox/`
 - Validator: `scripts/validate_knowledge.py`
 - CI workflow: `.github/workflows/knowledge-validation.yml`
 - CI audit: `docs/audits/2026-09-03-knowledge-validation-ci/`

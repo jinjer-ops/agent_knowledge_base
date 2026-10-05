@@ -23,6 +23,7 @@ Claude Code をはじめとするAIエージェントの導入設定、公開可
 - 記事・判断・実験から探す: [knowledge/](knowledge/)
 - 実行ワークフロー: [skills/](skills/)
 - 追加・公開のルール: [docs/contribution.md](docs/contribution.md) と [docs/public-boundary.md](docs/public-boundary.md)
+- Knowledge Inbox（Android アプリと PC の実行管理アプリ）との確認事項: [docs/knowledge-inbox/](docs/knowledge-inbox/)
 
 ## 3つの領域
 
