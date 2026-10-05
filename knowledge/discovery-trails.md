@@ -93,6 +93,16 @@ tags: [knowledge, sources, discovery]
   - REF-025 shunt: PreToolUse hooks emit the legacy decision field, rejected by current Claude Code <https://github.com/spotify/portal-ai-plugins/issues/19>（`reference`）
   - REF-026 Subagents (Claude Code) <https://code.claude.com/docs/en/sub-agents>（`reference`）
 
+### ART-025 Claude Codeでトークンを消費する4つの設定と対処法
+
+- 共有した URL: <https://news.yahoo.co.jp/articles/0abb4856706e3274dd5d1c6394ca819a96c28712?page=1>
+- 見つけて使った資料:
+  - ART-026 I checked my Claude Code usage and found four hidden token drains I never knew about <https://www.makeuseof.com/checked-claude-code-usage-found-four-hidden-token-drains-never-knew-about/>（`reference`）
+  - REF-017 Explore the context window (Claude Code) <https://code.claude.com/docs/en/context-window>（`reference`）
+  - REF-027 Manage costs effectively (Claude Code) <https://code.claude.com/docs/en/costs>（`reference`）
+  - REF-028 Connect to tools with MCP (Claude Code) <https://code.claude.com/docs/en/mcp>（`reference`）
+  - REF-029 Commands (Claude Code) <https://code.claude.com/docs/en/commands>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

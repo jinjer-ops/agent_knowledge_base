@@ -299,7 +299,7 @@ sources:
     status: reference
     intake: shared
     use_when: "組み込みの点検を実際に回した結果と、版上げで静かに外れる設定の種類を知りたい時"
-    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/instruction-upkeep/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
   - id: REF-013
     title: Configure models (Claude Code)
     url: https://code.claude.com/docs/en/model-config
@@ -347,9 +347,9 @@ sources:
     topics: [context_management, claude_code, agent_instructions, skills]
     status: reference
     intake: found
-    found_via: [ART-003, ART-015, ART-023]
+    found_via: [ART-003, ART-015, ART-023, ART-025]
     use_when: "起動時に何が読み込まれるか、要約で何が消えて何が戻るかを確認する時、実際の占有を測る時"
-    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
   - id: REF-018
     title: Effective context engineering for AI agents
     url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
@@ -459,3 +459,52 @@ sources:
     found_via: [ART-023]
     use_when: "重い作業を別の文脈へ分離する手段が製品側にあるか、モデルを個別に指定できるかを確認する時"
     derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: ART-025
+    title: Claude Codeでトークンを消費する4つの設定と対処法
+    url: https://news.yahoo.co.jp/articles/0abb4856706e3274dd5d1c6394ca819a96c28712?page=1
+    published_at: 2026-09-03
+    topics: [context_management, cost_control, mcp, claude_code]
+    status: reference
+    intake: shared
+    use_when: "プロンプト以外の消費元として何が挙げられているかを知る時（現行の仕様と手順名は公式資料で検算する）"
+    derived: [foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: ART-026
+    title: I checked my Claude Code usage and found four hidden token drains I never knew about
+    url: https://www.makeuseof.com/checked-claude-code-usage-found-four-hidden-token-drains-never-knew-about/
+    published_at: 2026-08-30
+    topics: [context_management, cost_control, mcp, scheduled_tasks]
+    status: reference
+    intake: found
+    found_via: [ART-025]
+    use_when: "4つの心当たりの元の記述と、著者が自分の環境で見た内容を確認する時"
+    derived: [foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-027
+    title: Manage costs effectively (Claude Code)
+    url: https://code.claude.com/docs/en/costs
+    published_at: null
+    topics: [cost_control, context_management, scheduled_tasks, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-025]
+    use_when: "使用の割り当て内訳、待機中に減る原因、公式が勧める削減方法と版の要件を確認する時"
+    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-028
+    title: Connect to tools with MCP (Claude Code)
+    url: https://code.claude.com/docs/en/mcp
+    published_at: null
+    topics: [mcp, context_management, claude_code, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-025]
+    use_when: "接続した道具の定義がいつ context に載るか、遅延と一覧の再利用がどう効くかを確認する時"
+    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-029
+    title: Commands (Claude Code)
+    url: https://code.claude.com/docs/en/commands
+    published_at: null
+    topics: [claude_code, commands, diagnostics, skills]
+    status: reference
+    intake: found
+    found_via: [ART-025]
+    use_when: "記事で紹介されたコマンド名が現行で何をするか、最低版の要件が付いていないかを引き直す時"
+    derived: [foundation/token-drain-review/README.md, knowledge/reading-guide.md]
