@@ -163,15 +163,16 @@ sources:
     status: reference
     intake: shared
     use_when: "CLAUDE.md、AGENTS.md、rules、auto memoryの役割と読み込み範囲・条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
     published_at: null
     topics: [claude_code, skills]
     status: reference
-    use_when: "Claude Code skillの配置、形式、適用条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "Claude Code skillの配置、優先順位、製品固有のfrontmatter、適用条件を確認する時"
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: REF-003
     title: Secret scanning
     url: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
@@ -305,3 +306,33 @@ sources:
     found_via: [ART-022]
     use_when: "別名が指すモデルの変化、モデル名を鍵にした設定、深さの設定の決まり方を確認する時"
     derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-014
+    title: Skill authoring best practices
+    url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
+    published_at: null
+    topics: [skills, agent_instructions, context_management, evaluation]
+    status: reference
+    intake: found
+    found_via: [REF-002]
+    use_when: "skillのdescriptionと本体を、選ばれて実際に効く形に書く時、評価を先に作って検証する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-015
+    title: Agent Skills Specification
+    url: https://agentskills.io/specification
+    published_at: null
+    topics: [skills, interoperability, specification]
+    status: reference
+    intake: found
+    found_via: [REF-002]
+    use_when: "製品をまたいで動くskillの最小形式、name・descriptionの制限、補助ファイルの置き方を確認する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-016
+    title: "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks"
+    url: https://arxiv.org/abs/2602.12670
+    published_at: 2026-02-13
+    topics: [skills, evaluation, benchmarks, agent_operations]
+    status: reference
+    intake: found
+    found_via: [REF-002]
+    use_when: "skillが効く条件と効かない条件、自動生成したskillの扱いを、実測を見て判断する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]

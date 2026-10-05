@@ -56,6 +56,14 @@ tags: [knowledge, sources, discovery]
   - REF-006 Custom instructions with AGENTS.md (Codex) <https://learn.chatgpt.com/docs/agent-configuration/agents-md>（`reference`）
   - REF-007 Provide Context with GEMINI.md Files (Gemini CLI) <https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/gemini-md.md>（`reference`）
 
+### REF-002 Extend Claude with skills
+
+- 共有した URL: <https://code.claude.com/docs/en/skills>
+- 見つけて使った資料:
+  - REF-014 Skill authoring best practices <https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices>（`reference`）
+  - REF-015 Agent Skills Specification <https://agentskills.io/specification>（`reference`）
+  - REF-016 SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks <https://arxiv.org/abs/2602.12670>（`reference`）
+
 ## 入口の記録が無い出典
 
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
@@ -78,6 +86,5 @@ tags: [knowledge, sources, discovery]
 - ART-017 AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計 <https://zenn.dev/minewo/articles/river-review-judgment-placement>（`adopted`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
 - ART-019 トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す <https://zenn.dev/helloworld/articles/bcaea69f58eae5>（`reference`）
-- REF-002 Extend Claude with skills <https://code.claude.com/docs/en/skills>（`reference`）
 - REF-003 Secret scanning <https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning>（`reference`）
 - REF-004 Markdown Architectural Decision Records <https://adr.github.io/madr/>（`reference`）
