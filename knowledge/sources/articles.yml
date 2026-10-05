@@ -67,8 +67,9 @@ sources:
     published_at: null
     topics: [codebase_search, knowledge_graph]
     status: reference
-    use_when: "大規模コードベースで通常の検索・索引では探索コストが高いと測定された時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "グラフ化の効果と品質低下を同じ段落で並べた整理を読む時、引用元の一次情報をたどる入口が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: ART-009
     title: Ollama環境構築 # 自分用メモ
     url: https://zenn.dev/jun1013/articles/17e88035111d7c
@@ -359,7 +360,7 @@ sources:
     topics: [context_management, prompt_design, agent_operations]
     status: reference
     intake: found
-    found_via: [ART-003, ART-016, ART-019]
+    found_via: [ART-003, ART-008, ART-016, ART-019]
     use_when: "指示を減らす理由を費用ではなく精度の問題として説明する時、先読みと必要時取得を比べる時"
     derived: [foundation/instruction-upkeep/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: REF-019
@@ -604,7 +605,7 @@ sources:
     topics: [retrieval, knowledge_graph, graphrag, evaluation, benchmarks]
     status: reference
     intake: found
-    found_via: [ART-016, ART-019]
+    found_via: [ART-008, ART-016, ART-019]
     use_when: "グラフ型の取得が効く質問種別と効かない質問種別、構築の取りこぼしと構築費用を確かめる時"
     derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: REF-037
@@ -626,4 +627,24 @@ sources:
     intake: found
     found_via: [ART-019]
     use_when: "記号で定義や参照を引く経路を、独自の索引を作らずに公式のプラグインで用意する時、その前提と制限を確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-039
+    title: "CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases"
+    url: https://arxiv.org/abs/2408.03910
+    published_at: null
+    topics: [knowledge_graph, codebase_search, cost_control, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-008]
+    use_when: "コードをグラフのデータベースにして照会させる構成が、費用と精度にどう効くかを一次情報で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-040
+    title: "Codebase-Memory: Tree-Sitter-Based Knowledge Graphs for LLM Code Exploration via MCP"
+    url: https://arxiv.org/abs/2603.27277
+    published_at: 2026-03-28
+    topics: [knowledge_graph, codebase_search, cost_control, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-008]
+    use_when: "グラフ照会と素の探索を、トークン・呼び出し回数・回答品質の3つで同時に比べた数字が要る時"
     derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]

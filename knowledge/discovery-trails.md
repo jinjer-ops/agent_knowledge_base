@@ -43,6 +43,15 @@ tags: [knowledge, sources, discovery]
   - REF-010 Build skills (Codex) <https://learn.chatgpt.com/docs/build-skills>（`reference`）
   - REF-011 Plugins overview (Claude Code) <https://code.claude.com/docs/en/plugins/overview>（`reference`）
 
+### ART-008 ナレッジグラフを活用してClaude Codeのトークンを10分の1にする
+
+- 共有した URL: <https://zenn.dev/nocodesolutions/articles/19f0d415af42be>
+- 見つけて使った資料:
+  - REF-018 Effective context engineering for AI agents <https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents>（`reference`）
+  - REF-036 RAG vs. GraphRAG: A Systematic Evaluation and Key Insights <https://arxiv.org/abs/2502.11371>（`reference`）
+  - REF-039 CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases <https://arxiv.org/abs/2408.03910>（`reference`）
+  - REF-040 Codebase-Memory: Tree-Sitter-Based Knowledge Graphs for LLM Code Exploration via MCP <https://arxiv.org/abs/2603.27277>（`reference`）
+
 ### ART-012 claude のメモリを棚卸しする
 
 - 共有した URL: <https://zenn.dev/cureapp/articles/c1e963064d05fd>
@@ -173,7 +182,6 @@ tags: [knowledge, sources, discovery]
 - ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
 - ART-005 Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた <https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474>（`reference`）
 - ART-007 コードベースのナレッジ化なら、LLM Wikiで十分かもしれない <https://qiita.com/Syoitu/items/ff38655fed51a2920910>（`reference`）
-- ART-008 ナレッジグラフを活用してClaude Codeのトークンを10分の1にする <https://zenn.dev/nocodesolutions/articles/19f0d415af42be>（`reference`）
 - ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）
 - ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
