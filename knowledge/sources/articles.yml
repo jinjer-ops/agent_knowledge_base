@@ -133,8 +133,9 @@ sources:
     published_at: 2026-08-16
     topics: [local_rag, knowledge_graph, graphrag, ontology]
     status: reference
-    use_when: "多段の関係追跡・網羅・型と関係の結合を含む質問で、ベクトルRAGの取得範囲を比較したい時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "取得できていないのか答えられていないのかを分けて測りたい時、多段・網羅・結合の質問で検索の取得範囲を比較したい時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: ART-017
     title: AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計
     url: https://zenn.dev/minewo/articles/river-review-judgment-placement
@@ -239,9 +240,9 @@ sources:
     topics: [agent_instructions, monorepo, claude_code, context_management]
     status: reference
     intake: found
-    found_via: [ART-020]
+    found_via: [ART-016, ART-020]
     use_when: "大きなリポジトリで指示ファイルを階層化し、読み込み範囲と探索コストを絞る設定を確認する時"
-    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: REF-009
     title: "Nested AGENTS.md not loaded when a file in its directory is @-mentioned (nested CLAUDE.md is)"
     url: https://github.com/anthropics/claude-code/issues/98796
@@ -357,9 +358,9 @@ sources:
     topics: [context_management, prompt_design, agent_operations]
     status: reference
     intake: found
-    found_via: [ART-003]
+    found_via: [ART-003, ART-016]
     use_when: "指示を減らす理由を費用ではなく精度の問題として説明する時、先読みと必要時取得を比べる時"
-    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/instruction-upkeep/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: REF-019
     title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?"
     url: https://arxiv.org/abs/2605.06527
@@ -595,3 +596,23 @@ sources:
     found_via: [ART-029]
     use_when: "公開された比較の指標が何を測り、費用に何を含めていないかを確かめる時"
     derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-036
+    title: "RAG vs. GraphRAG: A Systematic Evaluation and Key Insights"
+    url: https://arxiv.org/abs/2502.11371
+    published_at: 2025-02-17
+    topics: [retrieval, knowledge_graph, graphrag, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-016]
+    use_when: "グラフ型の取得が効く質問種別と効かない質問種別、構築の取りこぼしと構築費用を確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-037
+    title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
+    url: https://arxiv.org/abs/2404.16130
+    published_at: 2024-04-24
+    topics: [retrieval, knowledge_graph, graphrag, summarization]
+    status: reference
+    intake: found
+    found_via: [ART-016]
+    use_when: "GraphRAG の主張を引く前に、その一次情報が対象にしている質問の種類と規模を確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
