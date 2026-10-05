@@ -17,6 +17,14 @@ tags: [knowledge, sources, discovery]
 
 ## 入口ごとの資料
 
+### ART-006 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)
+
+- 共有した URL: <https://zenn.dev/explaza/articles/20f7f41cff8428>
+- 見つけて使った資料:
+  - REF-005 AGENTS.md（コーディングエージェント向け指示ファイルの共通形式） <https://agents.md/>（`reference`）
+  - REF-010 Build skills (Codex) <https://learn.chatgpt.com/docs/build-skills>（`reference`）
+  - REF-011 Plugins overview (Claude Code) <https://code.claude.com/docs/en/plugins/overview>（`reference`）
+
 ### ART-020 ようやく CLAUDE.md が不要になった
 
 - 共有した URL: <https://zenn.dev/tenkei/articles/bad7b682aed22c>
@@ -43,7 +51,6 @@ tags: [knowledge, sources, discovery]
 - ART-003 CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録 <https://zenn.dev/pepabo/articles/claude-code-rules-skills-split>（`adopted`）
 - ART-004 Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる <https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup>（`adopted`）
 - ART-005 Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた <https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474>（`reference`）
-- ART-006 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く) <https://zenn.dev/explaza/articles/20f7f41cff8428>（`adopted`）
 - ART-007 コードベースのナレッジ化なら、LLM Wikiで十分かもしれない <https://qiita.com/Syoitu/items/ff38655fed51a2920910>（`reference`）
 - ART-008 ナレッジグラフを活用してClaude Codeのトークンを10分の1にする <https://zenn.dev/nocodesolutions/articles/19f0d415af42be>（`reference`）
 - ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）

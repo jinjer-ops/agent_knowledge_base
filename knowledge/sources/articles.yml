@@ -46,9 +46,10 @@ sources:
     title: 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)
     url: https://zenn.dev/explaza/articles/20f7f41cff8428
     published_at: 2026-07-28
-    topics: [agent_configuration, skills]
+    topics: [agent_configuration, skills, agents_md, hooks, mcp]
     status: adopted
-    use_when: "複数のコーディングエージェントで設定の重複と競合を減らす時"
+    intake: shared
+    use_when: "指示ファイルに加えてskills・hooks・MCPまで、複数のエージェント間で重複と競合を減らす時"
     derived: [foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-007
     title: コードベースのナレッジ化なら、LLM Wikiで十分かもしれない
@@ -170,7 +171,7 @@ sources:
     topics: [claude_code, skills]
     status: reference
     use_when: "Claude Code skillの配置、形式、適用条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: REF-003
     title: Secret scanning
     url: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
@@ -194,7 +195,7 @@ sources:
     topics: [agent_instructions, agents_md, interoperability]
     status: reference
     intake: found
-    found_via: [ART-020, REF-001]
+    found_via: [ART-006, ART-020, REF-001]
     use_when: "指示ファイルの正本をツール非依存の形式に寄せる時、対応ツールと入れ子の優先規則を確認する時"
     derived: [docs/contribution.md, foundation/agents-md/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md]
   - id: REF-006
@@ -245,4 +246,24 @@ sources:
     intake: found
     found_via: [ART-020]
     use_when: "入れ子のAGENTS.mdが読み込まれる条件と、入れ子のCLAUDE.mdとの差を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-010
+    title: Build skills (Codex)
+    url: https://learn.chatgpt.com/docs/build-skills
+    published_at: null
+    topics: [skills, agent_configuration, codex, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-006]
+    use_when: "Codexがskillを探す場所と形式を確認し、他のエージェントと置き場を共有できるか判断する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-011
+    title: Plugins overview (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/overview
+    published_at: null
+    topics: [claude_code, plugins, skills, distribution]
+    status: reference
+    intake: found
+    found_via: [ART-006]
+    use_when: "skills・subagent・hook・MCPをひとまとまりで配布し版を付けたい時、その常時コストと併せて判断する時"
     derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
