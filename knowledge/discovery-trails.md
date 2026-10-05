@@ -67,6 +67,15 @@ tags: [knowledge, sources, discovery]
   - REF-036 RAG vs. GraphRAG: A Systematic Evaluation and Key Insights <https://arxiv.org/abs/2502.11371>（`reference`）
   - REF-037 From Local to Global: A Graph RAG Approach to Query-Focused Summarization <https://arxiv.org/abs/2404.16130>（`reference`）
 
+### ART-019 トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す
+
+- 共有した URL: <https://zenn.dev/helloworld/articles/bcaea69f58eae5>
+- 見つけて使った資料:
+  - REF-008 Set up Claude Code in a monorepo or large codebase <https://code.claude.com/docs/en/large-codebases>（`reference`）
+  - REF-018 Effective context engineering for AI agents <https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents>（`reference`）
+  - REF-036 RAG vs. GraphRAG: A Systematic Evaluation and Key Insights <https://arxiv.org/abs/2502.11371>（`reference`）
+  - REF-038 Code intelligence plugins (Claude Code) <https://code.claude.com/docs/en/plugins/code-intelligence>（`reference`）
+
 ### ART-020 ようやく CLAUDE.md が不要になった
 
 - 共有した URL: <https://zenn.dev/tenkei/articles/bad7b682aed22c>
@@ -172,6 +181,5 @@ tags: [knowledge, sources, discovery]
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
 - ART-017 AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計 <https://zenn.dev/minewo/articles/river-review-judgment-placement>（`adopted`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
-- ART-019 トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す <https://zenn.dev/helloworld/articles/bcaea69f58eae5>（`reference`）
 - REF-003 Secret scanning <https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning>（`reference`）
 - REF-004 Markdown Architectural Decision Records <https://adr.github.io/madr/>（`reference`）

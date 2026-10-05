@@ -19,9 +19,9 @@ Acceptance criteria: a new reader can identify the three areas from the README, 
 
 ## Current state — 2026-10-06
 
-Sources: 66 records in `knowledge/sources/articles.yml`, made up of 29 article records (`ART-001`–`ART-029`) and 37 official or reference records (`REF-001`–`REF-037`). Current status split: 8 `adopted`, 58 `reference`, 0 `experiment`.
+Sources: 67 records in `knowledge/sources/articles.yml`, made up of 29 article records (`ART-001`–`ART-029`) and 38 official or reference records (`REF-001`–`REF-038`). Current status split: 8 `adopted`, 59 `reference`, 0 `experiment`.
 
-Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 66 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` was reviewed across all three public pages and is adopted only for the general automation-safety principle in `foundation/README.md`; its reported figures are not treated as local verification.
+Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 67 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` was reviewed across all three public pages and is adopted only for the general automation-safety principle in `foundation/README.md`; its reported figures are not treated as local verification.
 
 Machine entry point: `knowledge/sources/articles.yml` is canonical for source IDs and URLs. Its `derived` field is the complete reverse index of the documents that declare a source in `source_ids`, so a reader can list every related document from the registry alone. `derived` is an index of related documents; it is not the basis for status.
 
