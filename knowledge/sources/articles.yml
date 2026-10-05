@@ -283,6 +283,25 @@ sources:
     topics: [context_management, agent_instructions, prompt_design, skills]
     status: reference
     intake: found
-    found_via: [ART-021]
+    found_via: [ART-021, ART-022]
     use_when: "新しい世代のモデル向けに、規則の列挙から判断の委譲へ指示を書き換える方針を確認する時"
+    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: ART-022
+    title: "/claude-api prompt-audit で棚卸ししたら、モデルの版上げで外れた設定がぞろぞろ出てきた"
+    url: https://zenn.dev/nanora/articles/20260925-claude-prompt-audit-opus55
+    published_at: 2026-09-25
+    topics: [knowledge_maintenance, agent_instructions, model_versions, claude_code]
+    status: reference
+    intake: shared
+    use_when: "組み込みの点検を実際に回した結果と、版上げで静かに外れる設定の種類を知りたい時"
+    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-013
+    title: Configure models (Claude Code)
+    url: https://code.claude.com/docs/en/model-config
+    published_at: null
+    topics: [claude_code, model_versions, configuration, context_management]
+    status: reference
+    intake: found
+    found_via: [ART-022]
+    use_when: "別名が指すモデルの変化、モデル名を鍵にした設定、深さの設定の決まり方を確認する時"
     derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]

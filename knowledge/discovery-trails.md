@@ -41,6 +41,13 @@ tags: [knowledge, sources, discovery]
   - REF-011 Plugins overview (Claude Code) <https://code.claude.com/docs/en/plugins/overview>（`reference`）
   - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
 
+### ART-022 /claude-api prompt-audit で棚卸ししたら、モデルの版上げで外れた設定がぞろぞろ出てきた
+
+- 共有した URL: <https://zenn.dev/nanora/articles/20260925-claude-prompt-audit-opus55>
+- 見つけて使った資料:
+  - REF-012 The new rules of context engineering for Claude 5 generation models <https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models>（`reference`）
+  - REF-013 Configure models (Claude Code) <https://code.claude.com/docs/en/model-config>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
