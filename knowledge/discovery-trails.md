@@ -252,6 +252,15 @@ tags: [knowledge, sources, discovery]
   - REF-071 (Im)Paired Programming: Coding Agents Improve Productivity but Harm Understanding <https://arxiv.org/abs/2607.26375>（`reference`）
   - REF-072 Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity <https://arxiv.org/abs/2507.09089>（`reference`）
 
+### ART-036 shadcn/lint で AI エージェントにデザインシステムのルールを守らせる
+
+- 共有した URL: <https://zenn.dev/my_vision/articles/c602a080fc4a91>
+- 見つけて使った資料:
+  - REF-079 @shadcn/lint (shadcn-ui/lint) <https://github.com/shadcn-ui/lint>（`reference`）
+  - REF-080 Evals (shadcn-ui/lint) <https://github.com/shadcn-ui/lint/blob/main/docs/evals.md>（`reference`）
+  - REF-081 Is Self-Repair a Silver Bullet for Code Generation? <https://arxiv.org/abs/2306.09896>（`reference`）
+  - REF-082 Natural emergent misalignment from reward hacking <https://www.anthropic.com/research/emergent-misalignment-reward-hacking>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

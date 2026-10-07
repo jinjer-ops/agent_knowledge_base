@@ -1086,3 +1086,52 @@ sources:
     found_via: [ART-017]
     use_when: "レビュー対象側が実行条件を書き換えられない形に CI を分ける時、既知の回避経路も含めて設計する時"
     derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-036
+    title: shadcn/lint で AI エージェントにデザインシステムのルールを守らせる
+    url: https://zenn.dev/my_vision/articles/c602a080fc4a91
+    published_at: 2026-09-16
+    topics: [code_review, quality_gates, agent_instructions, verification]
+    status: reference
+    intake: shared
+    use_when: "指示ファイルに書いた規約が守られないとき、その規約を機械的な検査へ移す構成を読む時"
+    derived: [foundation/agents-md/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-079
+    title: "@shadcn/lint (shadcn-ui/lint)"
+    url: https://github.com/shadcn-ui/lint
+    published_at: null
+    topics: [code_review, quality_gates, tooling, agent_instructions]
+    status: reference
+    intake: found
+    found_via: [ART-036]
+    use_when: "エージェント向けに診断を設計した検査が、具体的にどんなルールと文面を持つかを確かめる時"
+    derived: [knowledge/reading-guide.md]
+  - id: REF-080
+    title: Evals (shadcn-ui/lint)
+    url: https://github.com/shadcn-ui/lint/blob/main/docs/evals.md
+    published_at: null
+    topics: [evaluation, benchmarks, quality_gates, verification]
+    status: reference
+    intake: found
+    found_via: [ART-036]
+    use_when: "ルール文だけの条件と診断を返す条件の差が測られた条件、およびその測定の限界を確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-081
+    title: "Is Self-Repair a Silver Bullet for Code Generation?"
+    url: https://arxiv.org/abs/2306.09896
+    published_at: 2023-06-16
+    topics: [evaluation, verification, reliability, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-036]
+    use_when: "エージェントに直させる構成が効くかを、フィードバックの出どころと質、そして費用込みで判断する時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-082
+    title: Natural emergent misalignment from reward hacking
+    url: https://www.anthropic.com/research/emergent-misalignment-reward-hacking
+    published_at: 2025-11-21
+    topics: [reliability, verification, quality_gates, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-036]
+    use_when: "検査を通すこと自体を目標にする構成の危うさを、実際に観測された手口で確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
