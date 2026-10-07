@@ -6,7 +6,7 @@ status: active
 created_at: 2026-10-06
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-006, ART-020, ART-036, REF-001, REF-002, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-042, REF-063, REF-064]
+source_ids: [ART-003, ART-006, ART-020, ART-036, ART-044, REF-001, REF-002, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-042, REF-063, REF-064, REF-120, REF-122]
 tags: [agents-md, agent-instructions, interoperability]
 ---
 
@@ -89,6 +89,16 @@ tags: [agents-md, agent-instructions, interoperability]
 
 判定に数えるのはプロジェクト側の `CLAUDE.md` だけです。ユーザー個人の `~/.claude/CLAUDE.md`、組織の管理ポリシー、`.claude/rules/` は数に入らず、`AGENTS.md` と並んで読み込まれます。つまり、個人の共通設定を持ったまま、リポジトリ側は `AGENTS.md` 一本にできます。
 
+### `AGENTS.md` を読んでいるのは、製品に同梱された plugin
+
+Claude Code の `AGENTS.md` 対応は、製品自身の機能ではなく、**同梱の plugin が担っています**（`REF-001`、`REF-120`、確認日 2026-10-07）。正本を `AGENTS.md` に寄せるなら、ここから 3 つの確認が出ます。
+
+- **無効にできる。** plugin の管理画面でこの同梱 plugin を無効にすると `AGENTS.md` は読まれず、`CLAUDE.md` だけに戻ります。そのとき設定パネルの **Project instructions** の項目自体が消えるため、設定を開いても原因が見えません。「正本が効いていない」ときに最初に見る場所になります。
+- **設定の鍵が版で変わった。** `pluginConfigs` に書く鍵は版によって名前が違い、古い版は新しい名前を無視します。同じ設定ファイルを古い版でも読むなら、古い名前で書きます。
+- **組織の方針では一括して外れない。** 利用者が入れた plugin をまとめて止める管理設定は、同梱の plugin には及びません（`REF-122`）。`AGENTS.md` 対応が組織の設定変更の巻き添えで消えることはなく、止めるときは個別の切り替えになります。
+
+言い換えると、`AGENTS.md` を読むかどうかは**利用者ごとに切り替えられる状態**であり、リポジトリ側から保証できません。上で取り込みを勧めているのと同じ理由です。取り込みの行は指示ファイルの本文なので、この切り替えの影響を受けません。
+
 ### 取り込みと symlink
 
 正本を一つにする方法は 2 つあります。
@@ -146,6 +156,8 @@ tags: [agents-md, agent-instructions, interoperability]
 **skills の共有で確かめられた形**は、正本を `.agents/skills/<名前>/` に置き、`.claude/skills/<名前>` をその正本への symlink にする構成です。両製品の公開仕様が、この形のそれぞれの側を支えています。確かめていないのは `.claude/skills` ディレクトリごと symlink にする形で、公開資料が述べているのは skill 名の項目を symlink にできる、という範囲です。Windows を含む環境では symlink 自体が使えないことがあるため、指示ファイルと同じく、まず取り込みや複製で代替できないかを検討します。
 
 Claude Code 側だけで skills・subagent・hook・MCP をひとまとまりにして版を付け配布する仕組みもあります（`REF-011`）。チームへ配る・版を管理するという目的にはこちらが向きますが、他のエージェントとは共有できず、有効にしている間は使わない回でも名前と説明が毎回の context を占めます。共有が目的なら置き場の共有、配布と版管理が目的ならまとめて配る仕組み、と目的で選び分けます。
+
+このまとまりには、2026-10 の版から**製品のプロセス内で動くコード**を同梱できるようになりました（`REF-120`、`ART-044`）。受け取る側の権限でファイル・プロセス・ネットワーク・環境変数に届き、隔離されていません。配布の仕組みを選ぶ判断に、**受け取った側が中身を確かめられるか**が加わります。入れる前の確認の手順と、既存の hook との順序は [../claude-code/README.md](../claude-code/README.md) にまとめました。
 
 ## 無理に同期しない
 

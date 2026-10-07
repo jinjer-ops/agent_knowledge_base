@@ -1570,3 +1570,52 @@ sources:
     found_via: [ART-043]
     use_when: "前段の取りこぼしを後段で直す前に、使っている埋め込みモデルの機能を使い切っているか確かめる時"
     derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: ART-044
+    title: 完全版 Claude Mods 入門 | Claude Code を自由にカスタマイズする
+    url: https://zenn.dev/nogu66/articles/claude-mods-complete-guide
+    published_at: 2026-10-02
+    topics: [claude_code, plugins, hooks, extension_points]
+    status: reference
+    intake: shared
+    use_when: "製品のプロセス内で動く拡張の作り方を、登録の形とファイル構成から順に追う時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-120
+    title: Mods overview (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/overview
+    published_at: null
+    topics: [claude_code, plugins, hooks, extension_points, security]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "hook・skill・MCP とプロセス内で動く拡張のどれに置くかを決める時、入れた拡張が何に届くかを確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-121
+    title: React to events with a mod (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/events
+    published_at: null
+    topics: [claude_code, plugins, hooks, extension_points, permissions]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "設定ファイルの hook とプロセス内の拡張がどちらの順で走り、どちらの拒否が残るかを確かめる時"
+    derived: [foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-122
+    title: Manage mods for your organization (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/admin
+    published_at: null
+    topics: [claude_code, plugins, permissions, security, managed_settings]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "既定で何が許されているか、どの保護がどの条件で載るか、入れる前に中身をどう確かめるかを決める時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-123
+    title: Mods reference (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/reference
+    published_at: null
+    topics: [claude_code, plugins, hooks, extension_points, limits]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "受け取れるイベント、呼べる API、時間と大きさの上限、関係する設定名を引く時"
+    derived: [foundation/claude-code/README.md, knowledge/reading-guide.md]

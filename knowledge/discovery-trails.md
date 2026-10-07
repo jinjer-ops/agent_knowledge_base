@@ -364,6 +364,15 @@ tags: [knowledge, sources, discovery]
   - REF-118 bge-reranker-base (Cloudflare Workers AI) <https://developers.cloudflare.com/workers-ai/models/bge-reranker-base/>（`reference`）
   - REF-119 M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation <https://arxiv.org/abs/2402.03216>（`reference`）
 
+### ART-044 完全版 Claude Mods 入門 | Claude Code を自由にカスタマイズする
+
+- 共有した URL: <https://zenn.dev/nogu66/articles/claude-mods-complete-guide>
+- 見つけて使った資料:
+  - REF-120 Mods overview (Claude Code) <https://code.claude.com/docs/en/plugins/mods/overview>（`reference`）
+  - REF-121 React to events with a mod (Claude Code) <https://code.claude.com/docs/en/plugins/mods/events>（`reference`）
+  - REF-122 Manage mods for your organization (Claude Code) <https://code.claude.com/docs/en/plugins/mods/admin>（`reference`）
+  - REF-123 Mods reference (Claude Code) <https://code.claude.com/docs/en/plugins/mods/reference>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

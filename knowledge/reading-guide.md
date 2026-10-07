@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -1518,12 +1518,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 後段に判定の層を足す前に、**前段の機能を使い切っているか**を見るための資料。このモデルを使っていても密ベクトルだけで引いている構成は珍しくなく、その場合は語を正確に指定した問いの取りこぼしが前段で起きる。前段で落ちたものは後段では戻らない。採ったのは「このモデルが複数の検索機能を持つ」という事実だけで、機能を組み合わせた場合の優劣や数値は採っていない。特定のモデルの推薦でもない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
 
+### ART-044 製品のプロセスの中で動く拡張が増えた
+
+- **URL**: <https://zenn.dev/nogu66/articles/claude-mods-complete-guide>
+- **記事種別**: 入門記事（著者 1 人。対象の版を明記し、作例を最後まで通している。実測・比較は無い）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: Claude Code に加わった拡張の仕組みの入門。登録用の関数の中でイベント名と処理を結び付ける形、処理が受け取る 3 つの引数、組織の設定・利用者・同梱・本体という層の並び、そして作例を 1 つ作って配布の形にするまでの手順。
+- **得られる示唆**: 仕組みの形を最短でつかむ入口として使える。公式資料と突き合わせた範囲では記述に誤りは見つからず、層の並びも一次情報の定義と一致していた。ただし**扱っている範囲が形の説明に寄っている**。この環境で判断が要る部分、すなわち入れた拡張が何に届くか、既存の設定ファイルの hook とどちらが先に走るか、入れる前に中身を確かめる手段があるか、組織の設定で何が守られるかは記事には無く、一次情報の側にある（`REF-120`〜`REF-123`）。そのため代表には採らず、入口として残した。版に強く依存する領域なので、記事の版（確認時点で公式資料の版より前）との差も読むときに見る。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/claude-code/README.md](../foundation/claude-code/README.md) と [../foundation/agents-md/README.md](../foundation/agents-md/README.md)（いずれも未検証）。
+
+### REF-120 入れた拡張は、自分と同じ権限で動く
+
+- **URL**: <https://code.claude.com/docs/en/plugins/mods/overview>
+- **記事種別**: 公式ドキュメント（提供元の概要ページ）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: プロセス内で動く拡張の概要。既定で有効であること、必要な版、設定ファイルに書く従来の hook は廃止されておらず併存すること、そして **隔離されていない**ことを明記している。入れた拡張ができることとして、ファイルの読み書き、プログラムの起動、ネットワーク接続、環境変数と設定ファイルの読み取り、会話の内容の閲覧と書き換え、利用者に尋ねる前の許可の判断、利用者の契約枠を使うモデル呼び出しを列挙している。サンドボックスを有効にしても、拡張が起動したプロセスはその外で動く。従来の hook・skill・MCP との使い分けの比較表と、同梱の拡張の一覧（`AGENTS.md` を読んでいるものを含む）もここにある。
+- **得られる示唆**: このテーマで最初に読む資料。置き場所の判断表に 1 行足すための比較軸がここに揃っている。より重いのは信頼の側で、**「入れる」が「自分の権限を全部渡す」と同義**だと提供元自身が書いている。鍵を環境変数や設定ファイルに置いている環境では、そこも読める範囲に入る。提供元の資料なので安全性の独立した評価ではなく、ここから「安全である」は出ない。版への依存が大きいので、使う版の資料を読み直す前提で扱う。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/claude-code/README.md](../foundation/claude-code/README.md) と [../foundation/agents-md/README.md](../foundation/agents-md/README.md)（いずれも未検証）。
+
+### REF-121 自分の hook が最終決定とは限らない
+
+- **URL**: <https://code.claude.com/docs/en/plugins/mods/events>
+- **記事種別**: 公式ドキュメント（提供元のガイド）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 拡張がイベントをどう受け取るか（見る・書き換える・自分で答える）と、**複数の拡張と従来の hook が走る順序**。管理設定に置いた `PreToolUse` の hook は拡張より先に走り、その拒否は最終。それ以外の設定ファイルに置いた `PreToolUse` の hook は**拡張の後**に走り、拡張が自分で結果を返せばそもそも走らない。さらに、許可の判断を受け取るイベントはそれらの後に走るため、**先に拒否された呼び出しを許可へ変えられる**と明記している。処理が例外を投げる・時間上限を超えた場合は、その処理が飛ばされて次へ進む。
+- **得られる示唆**: この環境の前提を 1 つ訂正する資料。「指示で確実にできないことは hook に置く」という判断は残るが、**どの設定ファイルに置いたかで最終かどうかが変わる**。個人の設定に置いた禁止は、プロセス内で動く拡張を入れていない限りにおいて有効、という条件付きの保証になった。もう 1 つは、止める側の処理は失敗すると通す側へ倒れること。拒否のために置いた処理には、失敗時に拒否を返す経路を一緒に用意しないと、落ちた瞬間に素通りする。これはゲートの設計一般の注意（[../foundation/review-design/README.md](../foundation/review-design/README.md)）と同じ向き。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/claude-code/README.md](../foundation/claude-code/README.md)（未検証）。
+
+### REF-122 既定で何が許されていて、入れる前に何を見られるか
+
+- **URL**: <https://code.claude.com/docs/en/plugins/mods/admin>
+- **記事種別**: 公式ドキュメント（提供元の管理者向けページ）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 設定を何もしない状態で利用者に何が起きるか。拡張は有効で、どこからでも入れられる。利用者の拡張から `deny` の権限ルールと管理設定の hook を守る**同梱の保護は、管理設定のある機械か、組織向けの契約でサインインしている場合にだけ読み込まれる**。その保護が載っていても、守られるのはモデルのツール呼び出しであって、拡張自身がファイルを読む・プログラムを起動する経路は対象外。入れる前に、plugin のディレクトリに対して検証のコマンドを実行すると、**受け取るイベントの一覧と呼び出す API の一覧が、実行せずに**出る。どの項目を警戒すべきかの対応表もある。
+- **得られる示唆**: 「既定でどうなっているか」を確かめる場所。最も効くのは保護の条件で、**個人の機械で組織の契約も管理設定も無い場合、その保護自体が載らない**。`deny` に書いたから安全、という読み方ができるかどうかが環境で変わる。もう 1 つは、入れる前の確認手段が提供元から用意されていること。信頼の判断を「作者を信じるか」だけに置かず、何に手が届く作りかを見てから決められる。管理者向けの設定値は、この環境では管理設定を持たないため参考の位置づけ。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/claude-code/README.md](../foundation/claude-code/README.md) と [../foundation/agents-md/README.md](../foundation/agents-md/README.md)（いずれも未検証）。
+
+### REF-123 何を受け取れて、どこで打ち切られるか
+
+- **URL**: <https://code.claude.com/docs/en/plugins/mods/reference>
+- **記事種別**: 公式ドキュメント（提供元のリファレンス）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 受け取れるイベントの一覧（ツール呼び出し、プロンプトと system prompt の各節、skill の本文、会話の各行、subagent の起動、描画、ほかの拡張の読み込み）、呼べる API の一覧、画面の拡張点、**時間と大きさの上限**、関係する設定名。自身の記述がどの版時点かを明記し、より正確な定義は手元の版が出力する型定義であるとしている。
+- **得られる示唆**: 「何ができるか」を引く場所。上限が書かれている点が実務では効き、1 回の処理に使える時間や、参照できる会話の件数には上限がある。長い処理を前提にした設計はここで落ちる。拡張点の一覧は、指示ファイルや skill の本文が**読み込まれた後に書き換えられうる**ことも示しており、常時読み込みの内容を点検する作業（[../foundation/instruction-upkeep/README.md](../foundation/instruction-upkeep/README.md)）では、ファイルの中身と実際に渡された内容が一致する前提が成り立たない場合があることになる。版時点の値なので、個別の数値は手引きへ移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/claude-code/README.md](../foundation/claude-code/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全162 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全167 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 154件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 159件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
