@@ -25,6 +25,15 @@ tags: [knowledge, sources, discovery]
   - REF-047 ExtractBench: A Benchmark and Evaluation Methodology for Complex Structured Extraction <https://arxiv.org/abs/2602.12247>（`reference`）
   - REF-048 From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction <https://arxiv.org/abs/2604.27906>（`reference`）
 
+### ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成
+
+- 共有した URL: <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>
+- 見つけて使った資料:
+  - REF-129 pptx skill (Anthropic Agent Skills) <https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md>（`reference`）
+  - REF-130 Marp CLI - PowerPoint (PPTX) conversion <https://github.com/marp-team/marp-cli>（`reference`）
+  - REF-131 PDF export (reveal.js) <https://revealjs.com/pdf-export/>（`reference`）
+  - REF-132 Revealjs presentations (Quarto) <https://quarto.org/docs/presentations/revealjs/>（`reference`）
+
 ### ART-003 CLAUDE.md の肥大化を 3 層構造で 83% 軽くした — 実測と試行錯誤の記録
 
 - 共有した URL: <https://zenn.dev/pepabo/articles/claude-code-rules-skills-split>
@@ -403,7 +412,6 @@ tags: [knowledge, sources, discovery]
 
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
 
-- ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）

@@ -17,6 +17,7 @@ sources:
     published_at: 2026-04-03
     topics: [presentations, web_slides]
     status: reference
+    intake: shared
     use_when: "コード・数式中心の技術発表をWebスライドで配信したい時"
     derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
   - id: ART-003
@@ -1670,3 +1671,43 @@ sources:
     found_via: [ART-010]
     use_when: "見た目の決定を完成物ではなく名前付きの値として持つ形を検討する時"
     derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-129
+    title: pptx skill (Anthropic Agent Skills)
+    url: https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md
+    published_at: null
+    topics: [presentations, agent_skills, document_generation, verification, licensing]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "エージェントにスライド形式のファイルを作らせるとき、どの経路で作り、生成後に何を必ず確かめるかを決める時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-130
+    title: Marp CLI - PowerPoint (PPTX) conversion
+    url: https://github.com/marp-team/marp-cli
+    published_at: null
+    topics: [presentations, markdown, pptx_export, editability, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "テキストを資料の正本にする前に、受け取る側が編集できる形式で出せるかを確かめる時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-131
+    title: PDF export (reveal.js)
+    url: https://revealjs.com/pdf-export/
+    published_at: null
+    topics: [presentations, web_slides, pdf_export, browser_requirements]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "ブラウザのスライドを配布用の PDF にする手順と、その前提・上限を確かめる時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-132
+    title: Revealjs presentations (Quarto)
+    url: https://quarto.org/docs/presentations/revealjs/
+    published_at: null
+    topics: [presentations, web_slides, overflow, authoring]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "スライドに入りきらない内容の扱いを、既定任せにせず明示的に決める時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
