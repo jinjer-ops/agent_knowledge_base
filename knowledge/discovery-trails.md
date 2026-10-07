@@ -353,6 +353,17 @@ tags: [knowledge, sources, discovery]
   - REF-115 ARAGOG: Advanced RAG Output Grading <https://arxiv.org/abs/2404.01037>（`reference`）
   - REF-116 Per-Query Gating of LLM Rerankers for Multi-Hop Retrieval <https://arxiv.org/abs/2609.22880>（`reference`）
 
+### ART-043 Cloudflare 上で Jev を使い、ごく低い費用でページ内検索を作る
+
+- 共有した URL: <https://zenn.dev/mazrean/articles/bd9b563ace18db>
+- 見つけて使った資料:
+  - REF-108 Confidence (TypeSafe AI docs) <https://docs.typesafe.ai/confidence>（`reference`）
+  - REF-111 Jevはどれだけ優秀なif文か？軽量モデルを分類器用途で比較してみた <https://journal.supa.ai/jev-classifier-benchmark/>（`reference`）
+  - REF-115 ARAGOG: Advanced RAG Output Grading <https://arxiv.org/abs/2404.01037>（`reference`）
+  - REF-117 BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models <https://arxiv.org/abs/2104.08663>（`reference`）
+  - REF-118 bge-reranker-base (Cloudflare Workers AI) <https://developers.cloudflare.com/workers-ai/models/bge-reranker-base/>（`reference`）
+  - REF-119 M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation <https://arxiv.org/abs/2402.03216>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

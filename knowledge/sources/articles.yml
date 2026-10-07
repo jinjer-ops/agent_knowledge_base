@@ -1439,7 +1439,7 @@ sources:
     topics: [decision_models, calibration, thresholds, verification]
     status: reference
     intake: found
-    found_via: [ART-041, ART-042]
+    found_via: [ART-041, ART-042, ART-043]
     use_when: "判断モデルが返す確信度を自動処理の閾値に使ってよいかを、提供元の一次情報で確かめる時"
     derived: [foundation/model-tier-selection/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
   - id: REF-109
@@ -1469,7 +1469,7 @@ sources:
     topics: [decision_models, classification, calibration, latency, cost]
     status: reference
     intake: found
-    found_via: [ART-041]
+    found_via: [ART-041, ART-043]
     use_when: "確信度の閾値で自動処理を切り分ける運用が、自分の課題で成立するかを測り方ごと参考にする時"
     derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
   - id: REF-112
@@ -1518,7 +1518,7 @@ sources:
     topics: [retrieval, rag, evaluation, benchmarks]
     status: reference
     intake: found
-    found_via: [ART-042]
+    found_via: [ART-042, ART-043]
     use_when: "取り出し方の工夫を足す前に、どの技法が実際に効いてどれが効かなかったかを独立比較で見る時"
     derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: REF-116
@@ -1530,4 +1530,43 @@ sources:
     intake: found
     found_via: [ART-042]
     use_when: "重い判定の層を毎回呼ぶか、呼ぶかどうかを先に決めるかを比べる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: ART-043
+    title: Cloudflare 上で Jev を使い、ごく低い費用でページ内検索を作る
+    url: https://zenn.dev/mazrean/articles/bd9b563ace18db
+    published_at: 2026-09-26
+    topics: [retrieval, rag, decision_models, cost, latency]
+    status: reference
+    intake: shared
+    use_when: "候補を絞ってから判断専用モデルで並べ替える構成を、費用と応答時間の実例で見る時"
+    derived: [foundation/retrieval-structure-decision/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-117
+    title: "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models"
+    url: https://arxiv.org/abs/2104.08663
+    published_at: 2021-04-17
+    topics: [retrieval, rag, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-043]
+    use_when: "候補を絞って後段で並べ替える二段構えが、品質と計算費用のどちらを買う構成なのかを確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-118
+    title: bge-reranker-base (Cloudflare Workers AI)
+    url: https://developers.cloudflare.com/workers-ai/models/bge-reranker-base/
+    published_at: null
+    topics: [retrieval, rag, decision_models, cost]
+    status: reference
+    intake: found
+    found_via: [ART-043]
+    use_when: "並べ替えの段を作る前に、使っている基盤がその仕事の専用モデルを既に提供していないか確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-119
+    title: "M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation"
+    url: https://arxiv.org/abs/2402.03216
+    published_at: 2024-02-05
+    topics: [retrieval, embeddings, japanese_text, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-043]
+    use_when: "前段の取りこぼしを後段で直す前に、使っている埋め込みモデルの機能を使い切っているか確かめる時"
     derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]

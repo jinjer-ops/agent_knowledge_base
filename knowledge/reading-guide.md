@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -1482,12 +1482,48 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 「重い層は必要なときだけ呼べばよい」という発想に対する、測られた値段。**ゲートを足すと、今度はゲートの正しさを測る仕事が増える**。害のある省略を自分で見つけられない構成では、省いた分の損失は見えないまま積もる。これは確信度で自動処理を切り分ける話（[../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)）と同じ構造の問題。査読前なので、採ったのは向きだけ。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
 
+### ART-043 候補を絞ってから、判断専用モデルで並べ替える
+
+- **URL**: <https://zenn.dev/mazrean/articles/bd9b563ace18db>
+- **記事種別**: 実装例＋概念実証（著者 1 人。**品質の評価は 1 クエリの目視比較**）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 個人サイトのページ内検索を、埋め込みで候補を作り、判断専用モデルに「はい／いいえの確率」で関連度を出させ、ある値を下回るものを落として並べ替える形で実装した記録。埋め込みの更新は継続的インテグレーションで自動化している。費用はごく小さいと報告。課題として、**間隔があくと往復が 1 秒を超えて**モデル本来の速さを生かしきれないこと、近い地域にサーバーが無いことを著者自身が挙げている。
+- **得られる示唆**: 「安く速く組める」ことの実例としては読めるが、**品質が上がったことの根拠にはならない**。正解集合も指標も無く、比較は 1 クエリ 1 例で、絞り込みの閾値の決め方も書かれていない。読むうえで効くのは 3 点。構成は二段構え（`REF-117`）に沿っていて骨格は妥当なこと、その段に置く**専用のモデルが同じ基盤に載っている**のに比べていないこと（`REF-118`。確認した時点では入力の単価も専用品のほうが安い。どちらも時点の値）、そして著者自身が書いた往復の時間の条件は、**呼び出し頻度が低い用途ほど速さの利点が消える**という一般の注意になること。使っている埋め込みモデルが密ベクトル以外の検索機能も持つ点（`REF-119`）も、後段を足す前に見る場所として残る。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md) と [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（いずれも未検証）。
+
+### REF-117 二段構えは、品質を計算費用で買う構成
+
+- **URL**: <https://arxiv.org/abs/2104.08663>
+- **記事種別**: 研究（査読済み、NeurIPS 2021 Datasets and Benchmarks Track 採択。18 データセット・10 方式）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 学習したのとは別の領域で検索モデルがどれだけ通用するかを、領域の異なる 18 のデータセットで横断的に測ったベンチマーク。語彙ベース、疎ベクトル、密ベクトル、遅延相互作用、再順位付けの 10 方式を比べ、**再順位付けと遅延相互作用の方式が平均して最良の成績を出す一方、計算費用が高い**こと、**密ベクトルと疎ベクトルは効率的だが他の方式に劣ることが多い**ことを報告している。
+- **得られる示唆**: 「安い検索で候補を作り、後段で並べ替える」という形が、思いつきではなく**測られた上での定石**であることの確認に使う。そのうえで、この結果は買っているものが品質で、払っているものが計算費用だと明示しているので、後段を足す判断は費用側の見積もりと一組になる。2021 年の評価でモデル世代は当時のものなので、採るのは方式間の関係だけで、個別の順位や数値は移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
+
+### REF-118 その仕事の専用品が、同じ基盤に載っている
+
+- **URL**: <https://developers.cloudflare.com/workers-ai/models/bge-reranker-base/>
+- **記事種別**: 公式ドキュメント（提供元のモデルページ）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 並べ替え専用のモデルのページ。公式の説明は「埋め込みモデルと違い、質問と文書を入力して**類似度を直接返す**」。入力は問い合わせと候補の一覧、任意で返す件数、出力はスコア付きの一覧。用途として検索結果の再順位付けと関連度の採点が挙がっている。入力トークンあたりの単価も記載されている。
+- **得られる示唆**: このテーマで最も実務的な一手。**汎用の判断器で置き換える前に、その仕事の専用品が手元の基盤に無いかを確かめる**、という原則の具体例になる。並べ替え・重複判定・言語判別のような古くからある課題には専用モデルがあり、基盤に最初から載っていることがある。確認した時点では入力の単価も専用品のほうが安かった。提供元自身の資料なので独立した評価ではなく、ここから性能の優劣は出ない。価格も仕様も時点の値なので、比べるときは引き直す。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md) と [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（いずれも未検証）。
+
+### REF-119 その埋め込みモデル、密ベクトルしか使っていないかも
+
+- **URL**: <https://arxiv.org/abs/2402.03216>
+- **記事種別**: 研究（プレプリント、評価は提案モデルの著者らによる）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 100 以上の言語に対応し、長い入力を扱える埋め込みモデルの一次情報。特徴として、**密ベクトル・語彙ベース（sparse）・multi-vector の 3 つの検索機能を同時に備える**ことを挙げ、異なる機能の関連度スコアを教師信号として統合する学習方法を用いたとしている。
+- **得られる示唆**: 後段に判定の層を足す前に、**前段の機能を使い切っているか**を見るための資料。このモデルを使っていても密ベクトルだけで引いている構成は珍しくなく、その場合は語を正確に指定した問いの取りこぼしが前段で起きる。前段で落ちたものは後段では戻らない。採ったのは「このモデルが複数の検索機能を持つ」という事実だけで、機能を組み合わせた場合の優劣や数値は採っていない。特定のモデルの推薦でもない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全158 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全162 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 150件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 154件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
