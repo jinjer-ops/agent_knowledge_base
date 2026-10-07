@@ -88,8 +88,9 @@ sources:
     published_at: 2026-08-07
     topics: [ui_assets, design_reuse]
     status: adopted
+    intake: shared
     use_when: "実証済みのUI部品や見た目を再利用したい時"
-    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+    derived: [foundation/design-asset-canon/README.md, foundation/presentations/README.md, knowledge/reading-guide.md]
   - id: ART-011
     title: Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明
     url: https://www.publickey1.jp/blog/26/pythonmojowindows.html
@@ -185,7 +186,7 @@ sources:
     status: reference
     intake: shared
     use_when: "Claude Code skillの配置、優先順位、製品固有のfrontmatter、適用条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/design-asset-canon/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: REF-003
     title: Secret scanning
     url: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
@@ -1619,3 +1620,53 @@ sources:
     found_via: [ART-044]
     use_when: "受け取れるイベント、呼べる API、時間と大きさの上限、関係する設定名を引く時"
     derived: [foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-124
+    title: "Figma2Code: Automating Multimodal Design to Code in the Wild"
+    url: https://arxiv.org/abs/2604.13648
+    published_at: 2026-04-15
+    topics: [ui_generation, design_to_code, structured_metadata, benchmark, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "画像だけを渡すのと、構造化された設計情報を渡すのとで生成コードがどう変わるかを、測定で確かめる時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-125
+    title: Claude Code and Figma - Set up the MCP server
+    url: https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server
+    published_at: null
+    topics: [figma, mcp, design_system, claude_code, design_tokens]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "デザインツール側に正本がある場合に、コンポーネント・変数・対応付けをエージェントへ直接渡す公式経路を確認する時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-126
+    title: Registry (shadcn/ui)
+    url: https://ui.shadcn.com/docs/registry
+    published_at: null
+    topics: [component_registry, distribution, mcp, design_system, agents]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "自前の部品・設定・ルールを、エージェントから引ける形で配る仕組みを決める時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-127
+    title: "Generated Inaccessible: Measuring WCAG Violations in AI UI Design Tools"
+    url: https://dl.acm.org/doi/10.1145/3800424.3800430
+    published_at: null
+    topics: [accessibility, wcag, ui_generation, measurement, peer_reviewed]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "AI に作らせた画面の何が落ちるか、プロンプトで要件を明記すれば直るのかを確かめる時"
+    derived: [foundation/design-asset-canon/README.md, foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-128
+    title: Design Tokens Format Module (W3C Design Tokens Community Group, draft)
+    url: https://www.designtokens.org/tr/drafts/format/
+    published_at: 2026-09-08
+    topics: [design_tokens, interchange_format, design_system, draft_spec]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "見た目の決定を完成物ではなく名前付きの値として持つ形を検討する時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]

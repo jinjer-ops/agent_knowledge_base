@@ -91,6 +91,16 @@ tags: [knowledge, sources, discovery]
   - REF-106 Ollama contains a heap out-of-bounds read vulnerability in the GGUF model loader (CVE-2026-7482) <https://github.com/advisories/GHSA-x8qc-fggm-mpqg>（`reference`）
   - REF-107 Lost in the Middle: How Language Models Use Long Contexts <https://arxiv.org/abs/2307.03172>（`reference`）
 
+### ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる
+
+- 共有した URL: <https://qiita.com/uni928/items/b4a874f0bbf91d378097>
+- 見つけて使った資料:
+  - REF-124 Figma2Code: Automating Multimodal Design to Code in the Wild <https://arxiv.org/abs/2604.13648>（`reference`）
+  - REF-125 Claude Code and Figma - Set up the MCP server <https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server>（`reference`）
+  - REF-126 Registry (shadcn/ui) <https://ui.shadcn.com/docs/registry>（`reference`）
+  - REF-127 Generated Inaccessible: Measuring WCAG Violations in AI UI Design Tools <https://dl.acm.org/doi/10.1145/3800424.3800430>（`reference`）
+  - REF-128 Design Tokens Format Module (W3C Design Tokens Community Group, draft) <https://www.designtokens.org/tr/drafts/format/>（`reference`）
+
 ### ART-012 claude のメモリを棚卸しする
 
 - 共有した URL: <https://zenn.dev/cureapp/articles/c1e963064d05fd>
@@ -394,7 +404,6 @@ tags: [knowledge, sources, discovery]
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
 
 - ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
-- ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
