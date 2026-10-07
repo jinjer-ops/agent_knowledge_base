@@ -418,6 +418,17 @@ tags: [knowledge, sources, discovery]
   - REF-015 Agent Skills Specification <https://agentskills.io/specification>（`reference`）
   - REF-016 SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks <https://arxiv.org/abs/2602.12670>（`reference`）
 
+### REF-003 Secret scanning
+
+- 共有した URL: <https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning>
+- 見つけて使った資料:
+  - REF-143 Push protection (GitHub) <https://docs.github.com/en/code-security/concepts/secret-security/push-protection>（`reference`）
+  - REF-144 Supported secret scanning patterns (GitHub) <https://docs.github.com/en/code-security/reference/secret-security/supported-secret-scanning-patterns>（`reference`）
+  - REF-145 Configure permissions (Claude Code) <https://code.claude.com/docs/en/permissions>（`reference`）
+  - REF-146 A Comparative Study of Software Secrets Reporting by Secret Detection Tools <https://arxiv.org/abs/2307.00714>（`reference`）
+  - REF-147 How Bad Can It Git? Characterizing Secret Leakage in Public GitHub Repositories <https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-3_Meli_paper.pdf>（`reference`）
+  - REF-148 The State of Secrets Sprawl 2026 <https://blog.gitguardian.com/the-state-of-secrets-sprawl-2026/>（`reference`）
+
 ### REF-004 Markdown Architectural Decision Records
 
 - 共有した URL: <https://adr.github.io/madr/>
@@ -435,4 +446,3 @@ tags: [knowledge, sources, discovery]
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
-- REF-003 Secret scanning <https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning>（`reference`）

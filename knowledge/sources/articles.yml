@@ -194,8 +194,9 @@ sources:
     published_at: null
     topics: [github, security, public_repositories]
     status: reference
-    use_when: "publicリポジトリの秘密情報検査と、漏えい時の対応を確認する時"
-    derived: [docs/public-boundary.md, foundation/claude-code/rules/review.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+    intake: shared
+    use_when: "publicリポジトリの秘密情報検査と、漏えい時の対応を確認する時。検出は公開後の層なので、止める層（REF-143）と対にして読む"
+    derived: [docs/public-boundary.md, foundation/claude-code/rules/review.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
   - id: REF-004
     title: Markdown Architectural Decision Records
     url: https://adr.github.io/madr/
@@ -1821,3 +1822,63 @@ sources:
     found_via: [REF-004]
     use_when: "エージェントに判断記録を読ませる構成を組む時、status の扱いと本文の肥大の壊れ方を先に知る時"
     derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-143
+    title: Push protection (GitHub)
+    url: https://docs.github.com/en/code-security/concepts/secret-security/push-protection
+    published_at: null
+    topics: [github, security, secret_scanning, push_protection, prevention]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "秘密をリポジトリへ入れる前に止める層の仕様を確かめる時。どの範囲で既定で効くか、バイパスが何に記録されるかを引く"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-144
+    title: Supported secret scanning patterns (GitHub)
+    url: https://docs.github.com/en/code-security/reference/secret-security/supported-secret-scanning-patterns
+    published_at: null
+    topics: [github, security, secret_scanning, coverage, generic_patterns]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "どの種類の秘密が既定で検出・遮断されるかを型ごとに確かめる時。汎用の秘密を既定の仕組みに任せてよいかを判断する時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-145
+    title: Configure permissions (Claude Code)
+    url: https://code.claude.com/docs/en/permissions
+    published_at: null
+    topics: [claude_code, permissions, secrets, deny_rules, sandbox]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "エージェントに読ませないファイルを指定する時、その deny ルールがどの経路に効き、どの経路に効かないかを確かめる時"
+    derived: [foundation/claude-code/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-146
+    title: "A Comparative Study of Software Secrets Reporting by Secret Detection Tools"
+    url: https://arxiv.org/abs/2307.00714
+    published_at: 2023-07-03
+    topics: [secrets, detection_tools, measurement, precision_recall, peer_reviewed]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "秘密検出の道具を選ぶ前に、精度と再現率のどちらを取るかを測定で確かめる時。検査の通過をどこまで証拠にしてよいかを決める時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-147
+    title: "How Bad Can It Git? Characterizing Secret Leakage in Public GitHub Repositories"
+    url: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-3_Meli_paper.pdf
+    published_at: null
+    topics: [secrets, leakage, remediation, revocation, peer_reviewed]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "秘密を出してしまった後の手順を決める時。削除・履歴の書き換え・失効のどれが本体かを実地のデータで確かめる時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-148
+    title: The State of Secrets Sprawl 2026
+    url: https://blog.gitguardian.com/the-state-of-secrets-sprawl-2026/
+    published_at: 2026-03-17
+    topics: [secrets, leakage, coding_agents, mcp, vendor_report]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "エージェントに書かせる量を増やす前に、秘密の漏えいがどこで増えているかの実地の傾向を見る時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
