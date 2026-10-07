@@ -1135,3 +1135,52 @@ sources:
     found_via: [ART-036]
     use_when: "検査を通すこと自体を目標にする構成の危うさを、実際に観測された手口で確かめる時"
     derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-037
+    title: トークンをケチってレビューをローカルLLMにやらせた話
+    url: https://zenn.dev/k_motoki/articles/11de0ba46dd1ee
+    published_at: 2026-09-13
+    topics: [code_review, cost, local_models, agent_orchestration]
+    status: reference
+    intake: shared
+    use_when: "レビューの費用が重いとき、意味的レビューを手元の小さいモデルへ逃がす構成の実例を読む時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-083
+    title: FAQ (Ollama)
+    url: https://docs.ollama.com/faq
+    published_at: null
+    topics: [local_models, context, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-037]
+    use_when: "手元で動かすモデルの文脈長の既定値と設定経路を、提供元の記述で確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-084
+    title: Chat history and embedding truncation happens silently with no user-visible indication (ollama/ollama)
+    url: https://github.com/ollama/ollama/issues/14259
+    published_at: 2026-02-14
+    topics: [local_models, context, reliability, verification]
+    status: reference
+    intake: found
+    found_via: [ART-037]
+    use_when: "入力が文脈長を超えたときに黙って落ちる経路があるかを、提供元の課題管理で確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-085
+    title: "Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models"
+    url: https://aclanthology.org/2024.emnlp-industry.91/
+    published_at: 2024-11-01
+    topics: [evaluation, reliability, verification, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-037]
+    use_when: "出力を厳密な形式に縛る設計が、判断の質に与える代償を見積もる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-086
+    title: "OpenCodeReview: Determinism over Non-Determinism for Cost-Effective Agent-Based Code Review"
+    url: https://arxiv.org/abs/2608.09290
+    published_at: 2026-08-10
+    topics: [code_review, quality_gates, cost, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-037]
+    use_when: "レビューの費用を下げたいとき、モデルの段を落とす以外にどこに梃子があるかを測定から決める時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]

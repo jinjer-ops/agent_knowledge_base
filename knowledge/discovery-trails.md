@@ -261,6 +261,15 @@ tags: [knowledge, sources, discovery]
   - REF-081 Is Self-Repair a Silver Bullet for Code Generation? <https://arxiv.org/abs/2306.09896>（`reference`）
   - REF-082 Natural emergent misalignment from reward hacking <https://www.anthropic.com/research/emergent-misalignment-reward-hacking>（`reference`）
 
+### ART-037 トークンをケチってレビューをローカルLLMにやらせた話
+
+- 共有した URL: <https://zenn.dev/k_motoki/articles/11de0ba46dd1ee>
+- 見つけて使った資料:
+  - REF-083 FAQ (Ollama) <https://docs.ollama.com/faq>（`reference`）
+  - REF-084 Chat history and embedding truncation happens silently with no user-visible indication (ollama/ollama) <https://github.com/ollama/ollama/issues/14259>（`reference`）
+  - REF-085 Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models <https://aclanthology.org/2024.emnlp-industry.91/>（`reference`）
+  - REF-086 OpenCodeReview: Determinism over Non-Determinism for Cost-Effective Agent-Based Code Review <https://arxiv.org/abs/2608.09290>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
