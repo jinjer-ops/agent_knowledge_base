@@ -80,6 +80,17 @@ tags: [knowledge, sources, discovery]
   - REF-039 CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases <https://arxiv.org/abs/2408.03910>（`reference`）
   - REF-040 Codebase-Memory: Tree-Sitter-Based Knowledge Graphs for LLM Code Exploration via MCP <https://arxiv.org/abs/2603.27277>（`reference`）
 
+### ART-009 Ollama環境構築 # 自分用メモ
+
+- 共有した URL: <https://zenn.dev/jun1013/articles/17e88035111d7c>
+- 見つけて使った資料:
+  - REF-083 FAQ (Ollama) <https://docs.ollama.com/faq>（`reference`）
+  - REF-084 Chat history and embedding truncation happens silently with no user-visible indication (ollama/ollama) <https://github.com/ollama/ollama/issues/14259>（`reference`）
+  - REF-104 Silent Brothers: Ollama Hosts Form Anonymous AI Network Beyond Platform Guardrails <https://www.sentinelone.com/labs/silent-brothers-ollama-hosts-form-anonymous-ai-network-beyond-platform-guardrails/>（`reference`）
+  - REF-105 12,000 Ollama Instances Exposed: When 'Local-First' Meets the Real World <https://blog.leakix.net/2026/02/ollama-exposed/>（`reference`）
+  - REF-106 Ollama contains a heap out-of-bounds read vulnerability in the GGUF model loader (CVE-2026-7482) <https://github.com/advisories/GHSA-x8qc-fggm-mpqg>（`reference`）
+  - REF-107 Lost in the Middle: How Language Models Use Long Contexts <https://arxiv.org/abs/2307.03172>（`reference`）
+
 ### ART-012 claude のメモリを棚卸しする
 
 - 共有した URL: <https://zenn.dev/cureapp/articles/c1e963064d05fd>
@@ -338,7 +349,6 @@ tags: [knowledge, sources, discovery]
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
 
 - ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
-- ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）
 - ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）

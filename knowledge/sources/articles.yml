@@ -76,11 +76,12 @@ sources:
   - id: ART-009
     title: Ollama環境構築 # 自分用メモ
     url: https://zenn.dev/jun1013/articles/17e88035111d7c
-    published_at: null
-    topics: [open_weight_models, ollama]
+    published_at: 2026-08-05
+    topics: [open_weight_models, ollama, local_models, context, data_boundary]
     status: reference
-    use_when: "複数のオープンウェイトモデルや埋め込みモデルを共通境界で評価する時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "手元で動かす実行基盤を入れる手順と、実際に行われる調整操作（文脈長の切り詰めなど）を知る時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
   - id: ART-010
     title: 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる
     url: https://qiita.com/uni928/items/b4a874f0bbf91d378097
@@ -1152,7 +1153,7 @@ sources:
     topics: [local_models, context, tooling]
     status: reference
     intake: found
-    found_via: [ART-005, ART-037]
+    found_via: [ART-005, ART-009, ART-037]
     use_when: "手元で動かすモデルの文脈長の既定値と設定経路を、提供元の記述で確かめる時"
     derived: [foundation/local-model-boundary/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: REF-084
@@ -1162,7 +1163,7 @@ sources:
     topics: [local_models, context, reliability, verification]
     status: reference
     intake: found
-    found_via: [ART-005, ART-037]
+    found_via: [ART-005, ART-009, ART-037]
     use_when: "入力が文脈長を超えたときに黙って落ちる経路があるかを、提供元の課題管理で確かめる時"
     derived: [foundation/local-model-boundary/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: REF-085
@@ -1381,4 +1382,44 @@ sources:
     intake: found
     found_via: [ART-005]
     use_when: "日本語の文書を埋め込むモデルを、日本語の課題での評価にもとづいて選ぶ時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-104
+    title: "Silent Brothers: Ollama Hosts Form Anonymous AI Network Beyond Platform Guardrails"
+    url: https://www.sentinelone.com/labs/silent-brothers-ollama-hosts-form-anonymous-ai-network-beyond-platform-guardrails/
+    published_at: 2026-03-06
+    topics: [local_models, data_boundary, security, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "手元で動かす実行基盤が実際にどれだけ認証なしで公開されているかを、走査の実測で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-105
+    title: "12,000 Ollama Instances Exposed: When 'Local-First' Meets the Real World"
+    url: https://blog.leakix.net/2026/02/ollama-exposed/
+    published_at: 2026-02-23
+    topics: [local_models, data_boundary, security, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "「前段に逆プロキシを置けばよい」という推奨が実際に守られているかを、独立した走査で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-106
+    title: Ollama contains a heap out-of-bounds read vulnerability in the GGUF model loader (CVE-2026-7482)
+    url: https://github.com/advisories/GHSA-x8qc-fggm-mpqg
+    published_at: 2026-05-04
+    topics: [local_models, security, data_boundary, verification]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "手元の実行基盤から会話や鍵が漏れうる経路と、修正済みの版を一次情報で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-107
+    title: "Lost in the Middle: How Language Models Use Long Contexts"
+    url: https://arxiv.org/abs/2307.03172
+    published_at: 2023-07-06
+    topics: [context, retrieval, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "文脈の窓を広げれば入れた分だけ使われる、という前提を確かめる時"
     derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
