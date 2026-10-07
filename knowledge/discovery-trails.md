@@ -282,6 +282,18 @@ tags: [knowledge, sources, discovery]
   - REF-090 GPT detectors are biased against non-native English writers <https://arxiv.org/abs/2304.02819>（`reference`）
   - REF-091 textlint-rule-preset-ja-technical-writing (textlint-ja) <https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing>（`reference`）
 
+### ART-039 【最新v1.0.8公開】AI-Slopな日本語を構造レベルで読みやすくするSkill「yomiyasu」を作りました
+
+- 共有した URL: <https://zenn.dev/algoartis/articles/0b1c731881b25c>
+- 見つけて使った資料:
+  - REF-081 Is Self-Repair a Silver Bullet for Code Generation? <https://arxiv.org/abs/2306.09896>（`reference`）
+  - REF-087 noslop (owayo/noslop) <https://github.com/owayo/noslop>（`reference`）
+  - REF-089 The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models <https://arxiv.org/abs/2502.11266>（`reference`）
+  - REF-092 yomiyasu (nanaism/yomiyasu) <https://github.com/nanaism/yomiyasu>（`reference`）
+  - REF-093 Evaluating Factuality in Text Simplification <https://aclanthology.org/2022.acl-long.506/>（`reference`）
+  - REF-094 LLM Evaluators Recognize and Favor Their Own Generations <https://proceedings.neurips.cc/paper_files/paper/2024/file/7f1f0218e45f5414c79c0679633e47bc-Paper-Conference.pdf>（`reference`）
+  - REF-095 ISO plain language standard (Plain Language Association International) <https://plainlanguage.com/what-is-plain-language/iso-plain-language-standard/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

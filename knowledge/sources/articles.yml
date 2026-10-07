@@ -1122,9 +1122,9 @@ sources:
     topics: [evaluation, verification, reliability, agent_orchestration]
     status: reference
     intake: found
-    found_via: [ART-036]
+    found_via: [ART-036, ART-039]
     use_when: "エージェントに直させる構成が効くかを、フィードバックの出どころと質、そして費用込みで判断する時"
-    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+    derived: [foundation/generated-prose-style/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: REF-082
     title: Natural emergent misalignment from reward hacking
     url: https://www.anthropic.com/research/emergent-misalignment-reward-hacking
@@ -1200,7 +1200,7 @@ sources:
     topics: [writing_quality, japanese_text, quality_gates, verification, tooling]
     status: reference
     intake: found
-    found_via: [ART-038]
+    found_via: [ART-038, ART-039]
     use_when: "文章の検査ルールを既定で有効にしてよいかを、ルールごとの誤検知の実測という形から決める時"
     derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
   - id: REF-088
@@ -1220,7 +1220,7 @@ sources:
     topics: [writing_quality, evaluation, measurement, reliability]
     status: reference
     intake: found
-    found_via: [ART-038]
+    found_via: [ART-038, ART-039]
     use_when: "文章を LLM に書き直させる工程を入れる前に、その工程が文体と書き手の手がかりに何をするかを見積もる時"
     derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
   - id: REF-090
@@ -1242,4 +1242,53 @@ sources:
     intake: found
     found_via: [ART-038]
     use_when: "日本語の読みやすさの検査が既存の道具でどこまで覆われているかを、新しい道具を入れる前に確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: ART-039
+    title: 【最新v1.0.8公開】AI-Slopな日本語を構造レベルで読みやすくするSkill「yomiyasu」を作りました
+    url: https://zenn.dev/algoartis/articles/0b1c731881b25c
+    published_at: 2026-10-01
+    topics: [writing_quality, japanese_text, skills, tooling]
+    status: reference
+    intake: shared
+    use_when: "書かせた日本語を書き直す側の道具が何を変換するのか、作者がなぜ決定論的な検査を必須にしたのかを知る時"
+    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-092
+    title: yomiyasu (nanaism/yomiyasu)
+    url: https://github.com/nanaism/yomiyasu
+    published_at: null
+    topics: [writing_quality, japanese_text, skills, verification, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-039]
+    use_when: "書き直す skill の作りを見る時、および合格表示が何を保証しないかを提供元の記述で確かめる時"
+    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-093
+    title: "Evaluating Factuality in Text Simplification"
+    url: https://aclanthology.org/2022.acl-long.506/
+    published_at: 2022-05-22
+    topics: [writing_quality, evaluation, reliability, hallucination]
+    status: reference
+    intake: found
+    found_via: [ART-039]
+    use_when: "読みやすくする書き直しを工程に入れる前に、その工程がどんな誤りを持ち込むか、既存の指標で気付けるかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-094
+    title: "LLM Evaluators Recognize and Favor Their Own Generations"
+    url: https://proceedings.neurips.cc/paper_files/paper/2024/file/7f1f0218e45f5414c79c0679633e47bc-Paper-Conference.pdf
+    published_at: 2024-12-10
+    topics: [evaluation, reliability, verification, quality_gates]
+    status: reference
+    intake: found
+    found_via: [ART-039]
+    use_when: "直したものを同じモデルに判定させる構成を置く前に、その判定がどちらへ偏るかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-095
+    title: ISO plain language standard (Plain Language Association International)
+    url: https://plainlanguage.com/what-is-plain-language/iso-plain-language-standard/
+    published_at: null
+    topics: [writing_quality, standards, documentation_generation]
+    status: reference
+    intake: found
+    found_via: [ART-039]
+    use_when: "「読みやすい」を書き手の感想ではなく読み手の達成で定義し直す時"
     derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]

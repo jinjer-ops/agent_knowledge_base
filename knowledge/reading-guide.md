@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -1221,12 +1221,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 「AI っぽい」と「読みにくい」は別のレーンで、**読みやすさの側には成熟した既存の解がある**という事実が、新しい道具を入れるかどうかの判断を大きく変える。自分が困っているのがどちらかを先に決めれば、選択肢はほぼ自動的に決まる。この環境では導入しておらず、確認したのは公開されている規則の内容と更新の周期だけ。連携方法についての記述は確認できていない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（未検証）。
 
+### ART-039 書き直す側の道具と、自己チェックを信じない設計
+
+- **URL**: <https://zenn.dev/algoartis/articles/0b1c731881b25c>
+- **記事種別**: 個人の開発記録（作者本人による skill の紹介、2026-10-01 公開、以後に追記あり）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 日本語の文章を「解体して組み直す」形で書き直すエージェント向け skill の記録。禁止語の置き換えではなく、行為者を特定して主語に戻す、比喩的な動詞を具体的な動作に言い換える、連続した名詞をほどいて述語を復元する、装飾を地の文に戻す、という順の変換を置いている。定量の記述として、160 本のコーパスで正規表現の誤検出を大きく下げたことを報告する。**LLM は自己チェックで甘く評価する傾向があるため、静的な検査スクリプトの実行を必須にした**とも書いている。
+- **得られる示唆**: 採れるのは**設計の判断**で、効果の主張ではない。報告されている定量値は**検出器の精度**であって、書き直した後の文章の品質ではない。品質の側は before/after の例と利用者の感想だけで、対照も指標も無い。一方、自己チェックを信じずに決定論的な検査へ出すという判断は、独立に測られている（`REF-094`）。入口となった前の記事（`ART-038`）の道具が「指摘する側」で誤検知を数えてから既定を決めたのと、**独立に同じ形へ到達している**点が読みどころ。導入は勧めていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md) と [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)（どちらも未検証）。
+
+### REF-092 合格表示が何を保証しないかを、提供元が自分で書いている
+
+- **URL**: <https://github.com/nanaism/yomiyasu>
+- **記事種別**: 道具の一次情報（公開リポジトリの README と構成、MIT）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 上の skill の本体。`SKILL.md` を入口に、検査スクリプト・差分を出すスクリプト・表示の確認スクリプトを同梱し、参照文書（変換の原則、不自然な語彙の一覧、用途別の指針）と回帰テスト、比較検証のデータを持つ。検査の対象は不自然な比喩動詞、過剰な装飾、絵文字、同じ文末の連続など。限界として、**完全な構文解析ではない簡易な検査であり、合格の表示は設定した規則に触れなかったことを示すだけで、文章の自然さや意味の保持を保証しない**と明記している。他の校正 skill と併用すると指示が食い違いうるとも書いている。
+- **得られる示唆**: 最も効くのは最後の限界の一文で、これは弱点ではなく**正しい限界の書き方**。合格表示を品質の保証として読むと、意味が落ちたかどうかの確認がそこで止まる。差分を出すスクリプトを持っている点も重要で、書き直しの工程に**人が見る経路**を残す具体例になる。比較検証のディレクトリはあるが、測り方と数値は確認できなかった。星の数は前の道具より 2 桁多いが、普及は有効性の証拠ではない。この環境では動かしておらず、導入は勧めていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md) と [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)（どちらも未検証）。
+
+### REF-093 読みやすくする書き直しは、事実を壊す方向に誤る
+
+- **URL**: <https://aclanthology.org/2022.acl-long.506/>
+- **記事種別**: 査読済み論文（ACL 2022、Outstanding Paper）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 文章を平易にする自動変換が、入力に忠実かどうかを扱った研究。誤りの分類体系を作り、標準的なデータセットの参照文と最先端モデルの出力の両方を調べて、**どちらにも誤りが頻繁に現れ、既存の評価指標がそれを捕まえていない**ことを示す。誤りは削除の側にも挿入の側にも出る。著者らは、誤って平易化された文章は**平易化されていない文章より悪くなりうる**と述べ、事実性を確保する研究の必要を強調している。要旨の範囲では注釈件数などの数値は確認できなかった。
+- **得られる示唆**: 「書き直させれば読みやすくなる」という前提に対する、測られた反証。重要なのは**出力を読むだけでは気付けない**という点で、消えた条件や入れ替わった主体は自然な文章として出てくる。したがって書き直しを工程に入れるなら、前後の差分を人が見られる形が条件になる。対象は英語の、主に医学文献の平易化であり、日本語の文体の書き直しに割合は移せない。2022 年時点のモデルを含む。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（未検証）。
+
+### REF-094 直した本人に合否を聞かない
+
+- **URL**: <https://proceedings.neurips.cc/paper_files/paper/2024/file/7f1f0218e45f5414c79c0679633e47bc-Paper-Conference.pdf>
+- **記事種別**: 査読済み論文（NeurIPS 2024 本会議録）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 評価役としてのモデルが**自分の出力に高い点を付ける**偏り（人の評価者は同等と判断する場合でも差が付く）を扱い、その原因として**自分の出力をそれと認識する能力**を調べた研究。複数のモデルが、自分と他のモデル・人の文章を区別する能力を初期状態で持つこと、微調整によってその認識能力と自己優遇の強さが対応して動くことを報告する。
+- **得られる示唆**: 「生成させたものを同じモデルに確認させる」という構成の既定を変える根拠。文章の推敲に限った測定ではないが、向きはそのまま効く。合否は別の決定論的な検査へ出す、という設計の裏付けになり、道具の作者が経験から述べている「自己チェックは甘くなる」（`ART-039`）に外からの裏を与える。既存の `REF-081`（直させる構成はフィードバックの質が律速）と同じ結論に合流する。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md) と [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)（どちらも未検証）。
+
+### REF-095 「読みやすい」を読み手の達成で定義する
+
+- **URL**: <https://plainlanguage.com/what-is-plain-language/iso-plain-language-standard/>
+- **記事種別**: 業界団体（Plain Language Association International）による規格の解説ページ
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 平易な言葉遣いの国際規格（2023 年 6 月発行、Plain language — Part 1: Governing principles and guidelines）の紹介。採用されている定義は、**意図した読み手が、必要なものを見つけ、見つけたものを理解し、その情報を使える**ほどに言葉・構造・設計が明確な伝達、というもの。規格本体は有償で購入が必要と書かれている。
+- **得られる示唆**: 判定の位置を、書き手の感想から**読み手の達成**へ動かせる。語彙の表を増やす前に、自分の文書で「見つかる・分かる・使える」のどれが壊れているかを決めれば、そもそも書き直しが要るのかから判断できる。**規格本体は未読**で、確認したのはこのページに引用された定義と、規格の名称・発行年だけ。規格が定める原則の構成までは確かめていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全129 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全134 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 121件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 126件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
