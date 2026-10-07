@@ -43,6 +43,18 @@ tags: [knowledge, sources, discovery]
   - REF-021 Agent SOP (strands-agents/agent-sop) <https://github.com/strands-agents/agent-sop>（`reference`）
   - REF-022 RFC 2119: Key words for use in RFCs to Indicate Requirement Levels <https://www.rfc-editor.org/rfc/rfc2119>（`reference`）
 
+### ART-005 Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた
+
+- 共有した URL: <https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474>
+- 見つけて使った資料:
+  - REF-083 FAQ (Ollama) <https://docs.ollama.com/faq>（`reference`）
+  - REF-084 Chat history and embedding truncation happens silently with no user-visible indication (ollama/ollama) <https://github.com/ollama/ollama/issues/14259>（`reference`）
+  - REF-099 Data usage (Claude Code) <https://code.claude.com/docs/en/data-usage>（`reference`）
+  - REF-100 A Systematic Evaluation of On-Device LLMs: Quantization, Performance, and Resources <https://arxiv.org/abs/2505.15030>（`reference`）
+  - REF-101 The Power of Noise: Redefining Retrieval for RAG Systems <https://arxiv.org/abs/2401.14887>（`reference`）
+  - REF-102 The Powerless Noise: How Experimental Settings Shape the Reported Power of Noise <https://arxiv.org/abs/2607.03615>（`reference`）
+  - REF-103 JMTEB (sbintuitions/JMTEB) <https://github.com/sbintuitions/JMTEB>（`reference`）
+
 ### ART-006 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)
 
 - 共有した URL: <https://zenn.dev/explaza/articles/20f7f41cff8428>
@@ -326,7 +338,6 @@ tags: [knowledge, sources, discovery]
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
 
 - ART-002 PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成 <https://zenn.dev/daming_cafe/articles/reveal-markdown-slides>（`reference`）
-- ART-005 Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた <https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474>（`reference`）
 - ART-009 Ollama環境構築 # 自分用メモ <https://zenn.dev/jun1013/articles/17e88035111d7c>（`reference`）
 - ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）

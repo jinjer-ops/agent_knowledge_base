@@ -41,10 +41,11 @@ sources:
     title: Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた
     url: https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474
     published_at: 2026-07-27
-    topics: [local_rag, open_weight_models]
+    topics: [local_rag, open_weight_models, data_boundary, cost]
     status: reference
-    use_when: "社内文書を外部送信せずに検索・回答する構成を比較する時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "資料を外へ出さないために手元で動かす構成を検討する時、その部品構成と機材の制約の実例が要る時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
   - id: ART-006
     title: 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)
     url: https://zenn.dev/explaza/articles/20f7f41cff8428
@@ -1151,9 +1152,9 @@ sources:
     topics: [local_models, context, tooling]
     status: reference
     intake: found
-    found_via: [ART-037]
+    found_via: [ART-005, ART-037]
     use_when: "手元で動かすモデルの文脈長の既定値と設定経路を、提供元の記述で確かめる時"
-    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+    derived: [foundation/local-model-boundary/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: REF-084
     title: Chat history and embedding truncation happens silently with no user-visible indication (ollama/ollama)
     url: https://github.com/ollama/ollama/issues/14259
@@ -1161,9 +1162,9 @@ sources:
     topics: [local_models, context, reliability, verification]
     status: reference
     intake: found
-    found_via: [ART-037]
+    found_via: [ART-005, ART-037]
     use_when: "入力が文脈長を超えたときに黙って落ちる経路があるかを、提供元の課題管理で確かめる時"
-    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+    derived: [foundation/local-model-boundary/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: REF-085
     title: "Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models"
     url: https://aclanthology.org/2024.emnlp-industry.91/
@@ -1331,3 +1332,53 @@ sources:
     found_via: [ART-040]
     use_when: "書き直す skill で、機械に出す範囲と人に残す範囲をどう線引きしているかの実例を見る時"
     derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-099
+    title: Data usage (Claude Code)
+    url: https://code.claude.com/docs/en/data-usage
+    published_at: null
+    topics: [data_boundary, privacy, retention, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-005]
+    use_when: "「外へ出さない」の要件を、学習に使うか・どれだけ保持するか・どこへ出ていくかに分けて確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-100
+    title: "A Systematic Evaluation of On-Device LLMs: Quantization, Performance, and Resources"
+    url: https://arxiv.org/abs/2505.15030
+    published_at: 2025-05-21
+    topics: [local_models, quantization, model_selection, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-005]
+    use_when: "手元の容量に収めるとき、小さいモデルを選ぶか大きいモデルを圧縮するかを測定から決める時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-101
+    title: "The Power of Noise: Redefining Retrieval for RAG Systems"
+    url: https://arxiv.org/abs/2401.14887
+    published_at: 2024-01-26
+    topics: [retrieval, rag, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-005]
+    use_when: "取り出した文書の件数と並べ方が回答の正確さに効くことを、査読済みの測定で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-102
+    title: "The Powerless Noise: How Experimental Settings Shape the Reported Power of Noise"
+    url: https://arxiv.org/abs/2607.03615
+    published_at: 2026-07-03
+    topics: [retrieval, rag, evaluation, reproducibility, verification]
+    status: reference
+    intake: found
+    found_via: [ART-005]
+    use_when: "取り出し方の調整について公表された効果を、自分の設定へ持ち込んでよいか判断する時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-103
+    title: JMTEB (sbintuitions/JMTEB)
+    url: https://github.com/sbintuitions/JMTEB
+    published_at: null
+    topics: [embeddings, japanese_text, retrieval, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-005]
+    use_when: "日本語の文書を埋め込むモデルを、日本語の課題での評価にもとづいて選ぶ時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
