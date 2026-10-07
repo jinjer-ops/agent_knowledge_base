@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -217,8 +217,8 @@ tags: [knowledge, reading-guide, sources]
 - **記事種別**: 技術記事（設計・疎通確認段階の実装解説）
 - **現在の扱い**: `reference`
 - **何が書かれているか**: Google Workspace を利用する社内限定サービスで、人のログイン、APIを使う機械、リポジトリ同期を担うCIを別の認証対象として扱う構成を解説している。人のログインではOIDCの署名・audience・所属ドメインを確認し、在籍確認が必要な人向けtokenと、特定の役割に結び付けるCI tokenを混同しない。Directory APIを使う場合も、鍵を常設せずワークロードの短期credentialを使い、設定不足を退職扱いにしてtokenを消さないfail-closedの考え方を示す。
-- **得られる示唆**: 「誰が使うか」だけでなく、「何の役割としてアクセスするか」と失効の根拠を分けて設計する。外部IDトークンは表示できるだけでは信頼せず署名と宛先を検証し、認証基盤の設定欠落はアクセス拒否にしても、利用者の削除や失効の証拠とは扱わない。
-- **採用・実験の裏付け**: 該当なし（`reference` のため）。
+- **得られる示唆**: 「誰が使うか」だけでなく、「何の役割としてアクセスするか」と失効の根拠を分けて設計する。外部IDトークンは表示できるだけでは信頼せず署名と宛先を検証し、認証基盤の設定欠落はアクセス拒否にしても、利用者の削除や失効の証拠とは扱わない。**2026-10-07 に同じ URL が再送されたので読み直し、3 点を加えた。** 1 つめ、**記事の質は高い**。人・機械・CI の 3 つを別の失効経路として扱う骨格はそのまま使え、「発行した人が辞めると CI が壊れる」という具体が、分ける理由を与えている。2 つめ、**代表にはしない**。著者自身が設計と疎通確認までの段階だと明記しており、運用で分かることが入っていないうえ、採否を決める 2 つの争点（何を同じ人の鍵にするか、委譲の影響範囲）の根拠が一次情報と外部の調査の側にしかない（`REF-149`、`REF-151`、`REF-152`）。3 つめ、**所属ドメインの照合は、それ単体では身元にならない**。`REF-151` が示したとおり、ドメインとアドレスは組織の所有権が変われば同じ値に戻る。この記事が在籍確認を別経路で行っているのは、結果としてその弱さを補う形になっている。鍵を常設しない構成（短期の資格情報への交換）は `REF-153` の推奨と一致するが、`REF-152` の指摘どおり、鍵を無くしても委譲の範囲は縮まない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/internal-service-access/README.md](../foundation/internal-service-access/README.md) と [../foundation/secret-exposure-layers/README.md](../foundation/secret-exposure-layers/README.md)（いずれも未検証）。
 
 ### ART-019 コード構造をグラフとLSPで探索する
 
@@ -1797,12 +1797,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 提供元の自己申告で、エージェントの寄与は commit の共著記録による代理指標なので、**倍率も件数も手引きへ移していない**。採ったのは経路の指摘で、ここは独立して確かめられる形をしている。資格情報を設定ファイルへ直接書く形が広まると、**コードを一度も通らずに秘密が版管理へ入る**ため、コードレビューにもコードを対象にした検査にも当たらない。またエージェントが絡む経路は commit だけではなく、ログ・プロンプト・出力にも出るので、止める層を commit の前後にだけ置くと素通りする。「数年後も有効」という側は `REF-147` の是正の話と同じ向きを、別の時期の別のデータで指している。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/secret-exposure-layers/README.md](../foundation/secret-exposure-layers/README.md)（未検証）。
 
+### REF-149 利用者の鍵にメールアドレスを使うな
+
+- **URL**: <https://developers.google.com/identity/openid-connect/openid-connect>
+- **記事種別**: 公式ドキュメント
+- **現在の扱い**: `reference`（確認日 2026-10-07）
+- **何が書かれているか**: Google のアカウントでログインさせる場合の OpenID Connect の仕様。ID トークンの検証手順として、提供元の公開鍵による署名の検証、発行者、宛先（自分のクライアント ID）、有効期限、そして要求した場合は所属ドメインの照合を挙げる。claim の説明で、**利用者を一意に特定する鍵にメールアドレスを使ってはならない**と明示し、アドレスが変わっても変わらない識別子を使うよう指示している。所属ドメインの claim については、組織に属する場合にだけ付くこと、そして**画面側の絞り込みに頼らず受け取ったトークンの中身をサーバ側で照合する**ことが書かれている。利用者の端末からの要求は書き換えられるためである。
+- **得られる示唆**: この領域の検証項目の正本。要点は 2 つで、**検証はサーバ側**であること、**同定の鍵はアドレスではない**こと。後者はこの環境にそのまま当たる。社内ツールでは退職者のアドレスが新しい人へ再割り当てされることがあり、アドレスを鍵にしていれば新しい人が前の人の権限を引き継ぐ。ただしこのページが推奨する変わらない識別子にも観測上の例外が報告されている（`REF-151`）ので、1 つの claim だけに身元を預けない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/internal-service-access/README.md](../foundation/internal-service-access/README.md)（未検証）。
+
+### REF-150 手前の層に任せても、検証は消えない
+
+- **URL**: <https://docs.cloud.google.com/iap/docs/signed-headers-howto>
+- **記事種別**: 公式ドキュメント
+- **現在の扱い**: `reference`（確認日 2026-10-07）
+- **何が書かれているか**: 認証を手前のプロキシに寄せる構成で、アプリ側が何を検証すべきかの仕様。プロキシは利用者の身元を 2 通りで渡す。署名の無い身元のヘッダと、署名されたトークンである。**署名の無いヘッダは、プロキシを迂回して到達できる攻撃者が偽造できる**と明記し、署名されたトークンを検証するよう指示している。守る対象として挙がるのは 3 つで、プロキシが誤って無効化された場合、経路の設定が誤っていた場合、同じ環境の内側から直接到達された場合。検証項目は鍵の識別子に対応する公開鍵での署名、発行者、宛先、有効期限（時計のずれを少し許容する）。
+- **得られる示唆**: 「認証は手前に出したから、アプリ側は何もしなくてよい」という読み方を正す。手前へ出して減るのはログイン画面と交換処理であって、**検証は残る**。この形は特定の製品の仕様というより、認証を層として外へ出す構成すべてに当たる。挙がっている 3 つの状況はどれも設定の誤りか内部からの到達で、外部からの攻撃だけを想定していない点も実務的である。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/internal-service-access/README.md](../foundation/internal-service-access/README.md)（未検証）。
+
+### REF-151 ドメインは、所有権が変われば同じ値に戻る
+
+- **URL**: <https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw>
+- **記事種別**: 提供元の調査（秘密検出を事業とする会社、2025-01-13）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 解散した組織のドメインを買い、当時の従業員のアカウントを作り直すと、ログイン連携を使っている外部のサービスに前の従業員として入れる、という調査。元の組織のメールの中身は読めないが、その組織が使っていた他社のサービス側には入れる。原因は、連携で渡される所属ドメインとアドレスを身元の鍵にしている実装にあり、**所有権の移転が claim の上では見分けられない**ため。提供元が推奨する変わらない識別子についても、**ごく一部のログインで値の変化が観測される**と報告し、それ単独では鍵にできないとする。報告は一度「修正しない」と判定され、発表の直前に再開された。調査自身は、2 つの不変な識別子が claim に追加されない限り**利用する側では防ぎきれない**と書いている。
+- **得られる示唆**: 代表の 1 つにした。`REF-149` が「アドレスを鍵にするな」と書いている一方で、**その代わりに使えと言われている識別子にも例外がある**ことを測っているのはこちらだけだからである。結論は、どれか 1 つの claim を永続の身元として信頼しない。社内の内製ツールで同じ形が出るのは、組織が消える場合より**退職者のアドレスが再割り当てされる**場合で、この読み替えは手引き側の判断であって調査が測った対象ではない。提供元の自己申告で、変化の割合の母集団と測り方はページ側にしか無いので、**数値は手引きへ移していない**。2026-10 の時点で修正を示す一次情報は確認できなかったので、未修正とは断定していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/internal-service-access/README.md](../foundation/internal-service-access/README.md)（未検証）。
+
+### REF-152 鍵を消しても、委譲は残る
+
+- **URL**: <https://www.hunters.security/en/blog/delefriend-a-newly-discovered-design-flaw-in-domain-wide-delegation-could-leave-google-workspace-vulnerable-for-takeover>
+- **記事種別**: 提供元の調査（セキュリティ企業の研究チーム）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 機械が組織の利用者のデータへ代理でアクセスするための委譲について、設計上の問題を指摘した調査。核心は、**委譲がサービスアカウントの識別子に付いていて、特定の鍵には紐づかない**こと。そのため、組織の最上位の管理権限を持たなくても、そのアカウントに新しい鍵を作れる権限さえあれば、既にある委譲をそのまま使える。影響範囲は利用者 1 人分の同意とは桁が違い、その組織のすべての利用者に及ぶ。鍵は既定で期限を持たないため長く使える。提供元への報告は受理され、公開時点では未修正。緩和策として、委譲の範囲を可能な限り狭めること、鍵を作れる権限を絞ること、使われていない委譲を定期的に外すことを挙げる。
+- **得られる示唆**: この入力で最も効いた 1 件で、**「鍵を無くす」と「権限を縮める」は別**だと示す。前の入力で作った [../foundation/secret-exposure-layers/README.md](../foundation/secret-exposure-layers/README.md) に「そもそも持たない」層を足すにあたって、この但し書きが無いと誤った安心を与えることになる。短期の資格情報へ移しても、その資格情報に鍵を作れる人がいて、広い委譲が付いたままなら、漏えいしたときの影響は縮んでいない。確かめるのは 2 つで、鍵が要るか、そして**そのアカウントに鍵を作れるのは誰か**。提供元の自己申告だが、根拠が設計の記述（委譲が何に紐づくか）なので独立に確かめやすい。検知の閾値や手順は手引きへ移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/internal-service-access/README.md](../foundation/internal-service-access/README.md) と [../foundation/secret-exposure-layers/README.md](../foundation/secret-exposure-layers/README.md)（いずれも未検証）。
+
+### REF-153 鍵は例外として扱う
+
+- **URL**: <https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys>
+- **記事種別**: 公式ドキュメント（推奨事項）
+- **現在の扱い**: `reference`（確認日 2026-10-07）
+- **何が書かれているか**: 機械が使う資格情報の鍵について、提供元自身が**可能な限り作らないよう勧める**ページ。代替として、外部の環境の資格情報を交換する仕組み、実行環境へ割り当てる方式、開発時の利用者資格情報、短期の資格情報を発行する API を挙げる。鍵の期限については、本番で期限を付けると切れたときに止まるため、期限を付けずに入れ替えで寿命を管理する方を勧めている。してはならないこととして、一時フォルダに残す、利用者間で受け渡す、ソースコードのリポジトリへ入れる、プログラムに埋め込む、が並ぶ。
+- **得られる示唆**: 秘密の扱いを層で考えるとき、**一番上に「持たない」層がある**ことの一次情報。`ART-018` はこの形を実際に組んでいる。ただし「持たない」が効くのは漏えいの経路であって権限の広さではなく、そこは `REF-152` が限界を与える。期限についての助言（本番では期限を付けず入れ替えで管理する）は、短い寿命が常に安全側ではないという向きで、この環境の他の領域にある「既定値をそのまま持ち込まない」という扱いと同じ形である。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/internal-service-access/README.md](../foundation/internal-service-access/README.md) と [../foundation/secret-exposure-layers/README.md](../foundation/secret-exposure-layers/README.md)（いずれも未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全193 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全198 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 185件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 190件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

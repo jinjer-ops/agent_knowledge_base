@@ -159,8 +159,9 @@ sources:
     published_at: 2026-09-01
     topics: [internal_services, authentication, google_workspace, oidc]
     status: reference
-    use_when: "社内限定サービスで人、機械、CIの認証対象と失効条件を分けて設計する時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "社内限定サービスで人、機械、CIの認証対象と失効条件を分けて設計する時。識別子の選び方と委譲の影響範囲は REF-151・REF-152 と対にして読む"
+    derived: [foundation/internal-service-access/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
   - id: ART-019
     title: トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す
     url: https://zenn.dev/helloworld/articles/bcaea69f58eae5
@@ -1882,3 +1883,53 @@ sources:
     found_via: [REF-003]
     use_when: "エージェントに書かせる量を増やす前に、秘密の漏えいがどこで増えているかの実地の傾向を見る時"
     derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-149
+    title: OpenID Connect (Google Identity)
+    url: https://developers.google.com/identity/openid-connect/openid-connect
+    published_at: null
+    topics: [oidc, google_identity, id_token, claims, authentication]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "Google のアカウントでログインさせる時、ID トークンの検証項目と、利用者を一意に特定する claim を確かめる時"
+    derived: [foundation/internal-service-access/README.md, knowledge/reading-guide.md]
+  - id: REF-150
+    title: Securing your app with signed headers (Identity-Aware Proxy)
+    url: https://docs.cloud.google.com/iap/docs/signed-headers-howto
+    published_at: null
+    topics: [iap, reverse_proxy, jwt, header_spoofing, google_cloud]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "認証を手前のプロキシに任せる構成で、アプリ側に何の検証が残るかを確かめる時"
+    derived: [foundation/internal-service-access/README.md, knowledge/reading-guide.md]
+  - id: REF-151
+    title: "Millions of Accounts Vulnerable due to Google's OAuth Flaw"
+    url: https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw
+    published_at: 2025-01-13
+    topics: [oauth, oidc, identity, domain_ownership, vendor_research]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "ログインしてきた人を何の値で同一人物と判定するかを決める時。メール・ドメイン・sub のどれを信頼できるかを確かめる時"
+    derived: [foundation/internal-service-access/README.md, knowledge/reading-guide.md]
+  - id: REF-152
+    title: "DeleFriend: a design flaw in Domain-Wide Delegation"
+    url: https://www.hunters.security/en/blog/delefriend-a-newly-discovered-design-flaw-in-domain-wide-delegation-could-leave-google-workspace-vulnerable-for-takeover
+    published_at: null
+    topics: [google_workspace, domain_wide_delegation, service_accounts, blast_radius, vendor_research]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "機械から Workspace の API を使う構成を組む前に、委譲が何に紐づき、誰がそれを使えるのかを確かめる時"
+    derived: [foundation/internal-service-access/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-153
+    title: Best practices for managing service account keys (Google Cloud)
+    url: https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys
+    published_at: null
+    topics: [google_cloud, service_accounts, credentials, workload_identity_federation, secrets]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "機械の資格情報を用意する時、鍵を作らずに済む方法があるかを先に確かめる時"
+    derived: [foundation/internal-service-access/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]

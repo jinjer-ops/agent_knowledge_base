@@ -159,6 +159,16 @@ tags: [knowledge, sources, discovery]
   - REF-077 Comment and Control: GitHub AI Agents as Credential Exfiltrators <https://labs.cloudsecurityalliance.org/research/csa-research-note-comment-control-github-prompt-injection-20/>（`reference`）
   - REF-078 Keeping your GitHub Actions and workflows secure Part 1: Preventing pwn requests <https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/>（`reference`）
 
+### ART-018 社内限定サービスの認証を Google Workspace でサクッと作る
+
+- 共有した URL: <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>
+- 見つけて使った資料:
+  - REF-149 OpenID Connect (Google Identity) <https://developers.google.com/identity/openid-connect/openid-connect>（`reference`）
+  - REF-150 Securing your app with signed headers (Identity-Aware Proxy) <https://docs.cloud.google.com/iap/docs/signed-headers-howto>（`reference`）
+  - REF-151 Millions of Accounts Vulnerable due to Google's OAuth Flaw <https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw>（`reference`）
+  - REF-152 DeleFriend: a design flaw in Domain-Wide Delegation <https://www.hunters.security/en/blog/delefriend-a-newly-discovered-design-flaw-in-domain-wide-delegation-could-leave-google-workspace-vulnerable-for-takeover>（`reference`）
+  - REF-153 Best practices for managing service account keys (Google Cloud) <https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys>（`reference`）
+
 ### ART-019 トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す
 
 - 共有した URL: <https://zenn.dev/helloworld/articles/bcaea69f58eae5>
@@ -445,4 +455,3 @@ tags: [knowledge, sources, discovery]
 
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
-- ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
