@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -1383,12 +1383,66 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 文脈の窓の大きさを決めるときの、もう一方の側。縮めれば入りきらない分が黙って落ち（`REF-084`）、広げれば入るが読まれるとは限らない。したがって窓は「メモリ・落ちる・読み落とす」の3つの間で決める値であり、**先に効くのは入れる量そのものを減らすこと**になる。2023年の発表で対象も当時のモデルと2種類の課題に限られるため、採るのは位置による落ち込みという向きだけで、幅は移さない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/local-model-boundary/README.md](../foundation/local-model-boundary/README.md)（未検証）。
 
+### ART-041 「文章を生成しない判断器」に何が試されているか
+
+- **URL**: <https://zenn.dev/karaage0703/articles/jev-use-cases-open-implementations>
+- **記事種別**: 解説＋まとめ（公開直後の事例と公開実装の集約。著者自身の体系的な検証はない）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 文章を生成せず、事前に定義した選択肢の中から判定と確率だけを返す種類のモデルについて、仕組みの説明、既存の技術との比較、公開されている利用例、そして同じ形を目指した公開実装十数種類の一覧。実装はそれぞれ方式も必要な学習も対応環境も違い、元のモデルの再現ではないと著者が明記している。公開直後なので性能・価格・API の仕様は変わりうる、という断りで締めている。
+- **得られる示唆**: 入口として使える点が 2 つある。1 つは、**この形が 1 つの提供元に閉じていない**こと。もう 1 つは、定義されていない値は返らないが**用意した選択肢の中から誤ったものを選ぶことはある**という、著者自身の注意。採らなかったのは個々の実装の採否で、どれも未検証のまま並んでいる。事例の列挙は用途の広がりを示すが、どれが有効だったかの測定ではない。判断の手順は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md) に置き、この記事からは枠組みだけを採った。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)（未検証）。
+
+### REF-108 確率が返ることと、較正されていることは別
+
+- **URL**: <https://docs.typesafe.ai/confidence>
+- **記事種別**: 公式ドキュメント（提供元の一次情報）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 判断モデルが返す確信度の定義と使い方。確信度は**答えと一緒に返る確率分布から計算した統計量**であり、分布が 1 つに集中していれば高く、散らばっていれば低い。正しい閾値は自分のドメインとモデルの性能に依存するので、保守的な値から始め、自分のデータで試し、結果を見ながら調整せよと書かれている。さらに「閾値は 1 つの数ではない。同じ仕組みの中でも、外したときの結果が違う行動は違う水準で区切る」と明記している。
+- **得られる示唆**: このテーマで最も効く一次情報。**提供元自身が較正を保証していない**ので、「確率が返るから閾値運用できる」とは読めない。運用の形（高い帯は自動、中間は確認、低い帯は人へ回すか何もしない）と、行動ごとに別の閾値を置くという原則は、製品に依存せずそのまま使える。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md) と [../foundation/model-tier-selection/README.md](../foundation/model-tier-selection/README.md)（いずれも未検証）。
+
+### REF-109 提供元が自分で挙げている不得手
+
+- **URL**: <https://docs.typesafe.ai/model-jaggedness/jev-1.13>
+- **記事種別**: 公式ドキュメント（特定の版について、自認している失敗様式の一覧）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 特定の版が苦手とする課題を列挙している。意図ではなく書かれた質問どおりに答えること、計算、数え上げ、日付を順序のある量ではなく文字列として読むこと、二重否定のような間接的な言い回し、無関係な記述の多い入力、**敵対的な内容への耐性不足**、矛盾した指示、そして文章生成そのもの。避けるべき使い方として、コードで正確に計算できる処理を任せること、1 つの質問に複数の判断を隠すこと、多段の推論が要る課題、必要以上の背景を渡すことを挙げている。
+- **得られる示唆**: 置き換えを検討する前の**切り分けの一覧**として使える。コードで決まる分岐はコードに残す、1 つの質問に 1 つの判断、渡す材料を絞る、の 3 つはこのページだけで根拠が付く。敵対的な内容への耐性不足は、外から来る内容の可否判定を任せて「ゲート」と数えてはいけない理由になる（同じ指摘がレビュー層にもある）。版ごとのページなので、採るときは自分が使う版のページを引き直す。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)（未検証）。
+
+### REF-110 高い確信度のまま、当たっていない課題がある
+
+- **URL**: <https://arxiv.org/abs/2609.24574>
+- **記事種別**: 研究（プレプリント、査読前。18 の分類課題・約 8 千件を 19 個の汎用モデルと比較）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 計算社会科学の注釈課題で、判断専用モデルと多数の汎用モデルを比べた評価。判断モデルは評価した課題のほとんどで最高性能の汎用モデルに届かず、一方で測定した費用は大きく低い。較正は 19 個中の多くより良いが、上位の数モデルはさらに誤差が小さい。確信度が高い項目は概ね正しくラベル付けされていたが、**1 つの課題では高い確信度を報告しながら性能が偶然と同程度**だった。
+- **得られる示唆**: このテーマで最も重い反証。**較正はモデルの性質ではなく課題ごとの性質**であり、全体の較正誤差が小さくても、特定の課題で高確信度帯が崩れうる。だから確かめ方は「全体の正答率」ではなく「確信度の帯ごとの正答率」になる。査読前なので、採ったのは規模（多数の課題と比較対象）と、この崩れ方が実在したという事実だけで、数値は手引きへ移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md) と [../foundation/model-tier-selection/README.md](../foundation/model-tier-selection/README.md)（いずれも未検証）。
+
+### REF-111 閾値運用が成立した側の測定
+
+- **URL**: <https://journal.supa.ai/jev-classifier-benchmark/>
+- **記事種別**: 独立した比較測定（4 課題・200 件あまり、5 モデル、方法を開示）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 判断専用モデルと軽量な汎用モデル 4 つを、振り分け・問い合わせ分類・規則適用の課題で比べた測定。正答率、応答時間の分位点、費用、較正誤差、確信度の帯ごとの性能を出している。規則から正解を機械的に作った課題では満点、応答時間は軽量な汎用モデルより数倍速い。一方で**費用では最安の軽量モデルに負け**、振り分けでは最良の汎用モデルに届かない。提供地域が限られることにも触れている。著者の結論は「意味の判定には向くが、数値比較や日付計算はコードに残すべき」。
+- **得られる示唆**: `REF-110` と反対側の像を出している資料で、**この 2 つが割れていること自体が結論**になる。較正が使える水準かどうかは課題に依存するので、他人の順位ではなく自分の課題で測る。費用で軽量モデルに負けた点は、「速い＝安い」とまとめないための具体例。1 人の環境の限られた件数なので、採ったのは測り方（帯ごとに見る、応答時間は分位点で見る）と向きだけ。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)（未検証）。
+
+### REF-112 振り分けだけを置き換えてみた実測
+
+- **URL**: <https://dev.classmethod.jp/en/articles/jev-for-llm-model-routing/>
+- **記事種別**: 実測記録（既存の振り分け用分類器を置き換えた単体測定）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 会話の要約を 4 段階に振り分ける処理を、汎用モデルによる分類器から判断専用モデルへ置き換え、応答時間・正答率・確信度・費用を測った記録。応答時間と費用は大きく下がり、正答率は同等かやや劣る。著者は、これが本番への組み込み前の単体測定であって実運用ではさらにオーバーヘッドが乗ること、対象が早期段階で仕様が変わりうることを明記している。
+- **得られる示唆**: このテーマの用途そのもの（分岐の置き換え）を実際にやった資料。読み取るべきは**三方向の同時変化**で、速度と費用が改善しても正答率が下がる以上、採否は「その分岐で何回間違えてよいか」でしか決まらない。単体測定であることの断りは、削る変更の判定を全体で行う原則（`../foundation/cost-change-evaluation/`）と一致する。数値は 1 人の環境のものなので移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全147 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全153 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 139件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 145件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

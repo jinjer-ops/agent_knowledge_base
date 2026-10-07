@@ -937,9 +937,9 @@ sources:
     topics: [reliability, evaluation, verification]
     status: reference
     intake: found
-    found_via: [ART-033]
+    found_via: [ART-033, ART-041]
     use_when: "エージェントに自分の確信度を言わせ、それを判断の閾値に使ってよいかを疑う時"
-    derived: [foundation/agent-report-handoff/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agent-report-handoff/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
   - id: REF-066
     title: "Exploring automation bias in human-AI collaboration: a review and implications for explainable AI"
     url: https://doi.org/10.1007/s00146-025-02422-7
@@ -1173,9 +1173,9 @@ sources:
     topics: [evaluation, reliability, verification, benchmarks]
     status: reference
     intake: found
-    found_via: [ART-037]
+    found_via: [ART-037, ART-041]
     use_when: "出力を厳密な形式に縛る設計が、判断の質に与える代償を見積もる時"
-    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+    derived: [foundation/review-design/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
   - id: REF-086
     title: "OpenCodeReview: Determinism over Non-Determinism for Cost-Effective Agent-Based Code Review"
     url: https://arxiv.org/abs/2608.09290
@@ -1423,3 +1423,62 @@ sources:
     found_via: [ART-009]
     use_when: "文脈の窓を広げれば入れた分だけ使われる、という前提を確かめる時"
     derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: ART-041
+    title: Jev の使いどころと、同じ形のオープン実装まとめ
+    url: https://zenn.dev/karaage0703/articles/jev-use-cases-open-implementations
+    published_at: 2026-09-20
+    topics: [decision_models, routing, classification, cost, latency]
+    status: reference
+    intake: shared
+    use_when: "文章を生成しない判断専用のモデルに、どんな用途が試されていて、同じ形の公開実装が何種類あるかを見渡す時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-108
+    title: Confidence (TypeSafe AI docs)
+    url: https://docs.typesafe.ai/confidence
+    published_at: null
+    topics: [decision_models, calibration, thresholds, verification]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "判断モデルが返す確信度を自動処理の閾値に使ってよいかを、提供元の一次情報で確かめる時"
+    derived: [foundation/model-tier-selection/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-109
+    title: Jev 1.13 jaggedness (TypeSafe AI docs)
+    url: https://docs.typesafe.ai/model-jaggedness/jev-1.13
+    published_at: null
+    topics: [decision_models, reliability, verification, prompt_injection]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "判断を任せる前に、提供元自身が認めている不得手な課題と失敗様式を確かめる時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-110
+    title: "Evaluating Decision Models for Text Annotation in Computational Social Science"
+    url: https://arxiv.org/abs/2609.24574
+    published_at: 2026-09-21
+    topics: [decision_models, classification, calibration, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "判断専用モデルと汎用 LLM の正答率・費用・較正の差を、独立した大規模な評価で確かめる時"
+    derived: [foundation/model-tier-selection/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-111
+    title: Jevはどれだけ優秀なif文か？軽量モデルを分類器用途で比較してみた
+    url: https://journal.supa.ai/jev-classifier-benchmark/
+    published_at: 2026-09-18
+    topics: [decision_models, classification, calibration, latency, cost]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "確信度の閾値で自動処理を切り分ける運用が、自分の課題で成立するかを測り方ごと参考にする時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-112
+    title: I tried replacing model routing with TypeSafe (Jev) to see how much faster and cheaper it would get
+    url: https://dev.classmethod.jp/en/articles/jev-for-llm-model-routing/
+    published_at: 2026-09-17
+    topics: [decision_models, routing, latency, cost, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "振り分けの判断だけを判断専用モデルへ置き換えたとき、速度と費用と正答率がどう動くかを実測で見る時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]

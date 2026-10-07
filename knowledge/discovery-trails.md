@@ -328,6 +328,18 @@ tags: [knowledge, sources, discovery]
   - REF-097 Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations <https://arxiv.org/abs/2411.00640>（`reference`）
   - REF-098 natural-japanese (coji/natural-japanese) <https://github.com/coji/natural-japanese>（`reference`）
 
+### ART-041 Jev の使いどころと、同じ形のオープン実装まとめ
+
+- 共有した URL: <https://zenn.dev/karaage0703/articles/jev-use-cases-open-implementations>
+- 見つけて使った資料:
+  - REF-065 Wired for Overconfidence: A Mechanistic Perspective on Inflated Verbalized Confidence in LLMs <https://arxiv.org/abs/2604.01457>（`reference`）
+  - REF-085 Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models <https://aclanthology.org/2024.emnlp-industry.91/>（`reference`）
+  - REF-108 Confidence (TypeSafe AI docs) <https://docs.typesafe.ai/confidence>（`reference`）
+  - REF-109 Jev 1.13 jaggedness (TypeSafe AI docs) <https://docs.typesafe.ai/model-jaggedness/jev-1.13>（`reference`）
+  - REF-110 Evaluating Decision Models for Text Annotation in Computational Social Science <https://arxiv.org/abs/2609.24574>（`reference`）
+  - REF-111 Jevはどれだけ優秀なif文か？軽量モデルを分類器用途で比較してみた <https://journal.supa.ai/jev-classifier-benchmark/>（`reference`）
+  - REF-112 I tried replacing model routing with TypeSafe (Jev) to see how much faster and cheaper it would get <https://dev.classmethod.jp/en/articles/jev-for-llm-model-routing/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
