@@ -418,6 +418,16 @@ tags: [knowledge, sources, discovery]
   - REF-015 Agent Skills Specification <https://agentskills.io/specification>（`reference`）
   - REF-016 SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks <https://arxiv.org/abs/2602.12670>（`reference`）
 
+### REF-004 Markdown Architectural Decision Records
+
+- 共有した URL: <https://adr.github.io/madr/>
+- 見つけて使った資料:
+  - REF-138 Documenting Architecture Decisions (Michael Nygard) <https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions>（`reference`）
+  - REF-139 One Size Fits All? An Empirical Comparison of ADR Templates regarding Comprehension, Usability, and Ease of Adoption <https://arxiv.org/abs/2604.27333>（`reference`）
+  - REF-140 Using Architecture Decision Records in Open Source Projects - An MSR Study on GitHub <https://research.jku.at/en/publications/using-architecture-decision-records-in-open-source-projects-an-ms/>（`reference`）
+  - REF-141 Evaluating Large Language Models for Detecting Architectural Decision Violations <https://arxiv.org/abs/2602.07609>（`reference`）
+  - REF-142 Coding Agents Love Decision Records <https://www.oreilly.com/radar/coding-agents-love-decision-records/>（`reference`）
+
 ## 入口の記録が無い出典
 
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
@@ -426,4 +436,3 @@ tags: [knowledge, sources, discovery]
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
 - REF-003 Secret scanning <https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning>（`reference`）
-- REF-004 Markdown Architectural Decision Records <https://adr.github.io/madr/>（`reference`）

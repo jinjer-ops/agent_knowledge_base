@@ -200,10 +200,11 @@ sources:
     title: Markdown Architectural Decision Records
     url: https://adr.github.io/madr/
     published_at: null
-    topics: [decision_records, documentation]
+    topics: [decision_records, documentation, adr, markdown, templates]
     status: reference
-    use_when: "重要な技術・運用上の判断を、背景とトレードオフ付きで記録する時"
-    derived: [foundation/claude-code/rules/review.md, knowledge/reading-guide.md]
+    intake: shared
+    use_when: "判断記録の形式を決めたあと、節の一覧・ファイル命名・置き場・status の候補語を引く時。形式そのものの当否は別の出典で確かめる"
+    derived: [foundation/claude-code/rules/review.md, foundation/decision-records/README.md, knowledge/reading-guide.md]
   - id: REF-005
     title: AGENTS.md（コーディングエージェント向け指示ファイルの共通形式）
     url: https://agents.md/
@@ -1770,3 +1771,53 @@ sources:
     found_via: [ART-045]
     use_when: "図の生成品質を測る既存の取り組みと、その判定を誰に任せているかを確かめる時"
     derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-138
+    title: Documenting Architecture Decisions (Michael Nygard)
+    url: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+    published_at: 2011-11-15
+    topics: [decision_records, adr, documentation, supersede, primary_source]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録の最小の節構成と、覆した判断を消さずに残す規則を一次情報で確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-139
+    title: "One Size Fits All? An Empirical Comparison of ADR Templates regarding Comprehension, Usability, and Ease of Adoption"
+    url: https://arxiv.org/abs/2604.27333
+    published_at: 2026-04-30
+    topics: [decision_records, adr, templates, measurement, preprint]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録のテンプレートを選ぶ前に、評価者の採点と実際に書いた人の結果が逆になりうることを確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-140
+    title: Using Architecture Decision Records in Open Source Projects - An MSR Study on GitHub
+    url: https://research.jku.at/en/publications/using-architecture-decision-records-in-open-source-projects-an-ms/
+    published_at: 2023-06-19
+    topics: [decision_records, adr, adoption, peer_reviewed, field_study]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録を始める前に、続かない形で始めていないかを実地のデータで確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-141
+    title: Evaluating Large Language Models for Detecting Architectural Decision Violations
+    url: https://arxiv.org/abs/2602.07609
+    published_at: 2026-02-07
+    topics: [decision_records, adr, verification, llm_evaluation, preprint]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録をエージェントに照合させる構成で、どの種類の判断なら効くかを確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-142
+    title: Coding Agents Love Decision Records
+    url: https://www.oreilly.com/radar/coding-agents-love-decision-records/
+    published_at: 2026-10-02
+    topics: [decision_records, adr, coding_agents, agents_md, practice]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "エージェントに判断記録を読ませる構成を組む時、status の扱いと本文の肥大の壊れ方を先に知る時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
