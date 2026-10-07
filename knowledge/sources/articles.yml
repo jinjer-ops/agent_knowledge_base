@@ -384,9 +384,9 @@ sources:
     topics: [hooks, claude_code, automation, guardrails]
     status: reference
     intake: found
-    found_via: [ART-015, ART-023]
+    found_via: [ART-015, ART-023, ART-038]
     use_when: "どのイベントで何ができるか、止められるのはどれか、出力が利用者とモデルのどちらへ行くかを確認する時"
-    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/generated-prose-style/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: REF-021
     title: Agent SOP (strands-agents/agent-sop)
     url: https://github.com/strands-agents/agent-sop
@@ -1053,9 +1053,9 @@ sources:
     topics: [code_review, quality_gates, verification, evaluation]
     status: reference
     intake: found
-    found_via: [ART-017]
+    found_via: [ART-017, ART-038]
     use_when: "繰り返す指摘を機械的な検査へ移してよいかを、満たすべき基準と出し先の工程から決める時"
-    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+    derived: [foundation/generated-prose-style/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: REF-076
     title: claude-code-security-review (anthropics/claude-code-security-review)
     url: https://github.com/anthropics/claude-code-security-review
@@ -1184,3 +1184,62 @@ sources:
     found_via: [ART-037]
     use_when: "レビューの費用を下げたいとき、モデルの段を落とす以外にどこに梃子があるかを測定から決める時"
     derived: [foundation/heavy-read-delegation/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-038
+    title: 日本語の「AI 臭さ」をチェックする Rust 製 Linter「noslop」を作った
+    url: https://zenn.dev/owayo/articles/e081901888ae82
+    published_at: 2026-10-02
+    topics: [writing_quality, japanese_text, quality_gates, tooling]
+    status: reference
+    intake: shared
+    use_when: "書かせた日本語の文体を機械的に検査するという選択肢の全体像と、作者が何を指摘しないと決めたかを知る時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-087
+    title: noslop (owayo/noslop)
+    url: https://github.com/owayo/noslop
+    published_at: null
+    topics: [writing_quality, japanese_text, quality_gates, verification, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "文章の検査ルールを既定で有効にしてよいかを、ルールごとの誤検知の実測という形から決める時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-088
+    title: "Delving into LLM-assisted writing in biomedical publications through excess vocabulary"
+    url: https://arxiv.org/abs/2406.07016
+    published_at: 2025-07-02
+    topics: [writing_quality, evaluation, measurement, reliability]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "「AI っぽい文体」が感覚ではなく語彙として測れるのか、どの範囲で測られたのかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-089
+    title: "The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models"
+    url: https://arxiv.org/abs/2502.11266
+    published_at: 2026-08-24
+    topics: [writing_quality, evaluation, measurement, reliability]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "文章を LLM に書き直させる工程を入れる前に、その工程が文体と書き手の手がかりに何をするかを見積もる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-090
+    title: "GPT detectors are biased against non-native English writers"
+    url: https://arxiv.org/abs/2304.02819
+    published_at: 2023-07-10
+    topics: [writing_quality, evaluation, reliability, quality_gates]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "「AI が書いたか」の判定を仕組みに組み込む前に、その判定が誰に偏って外れるかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-091
+    title: textlint-rule-preset-ja-technical-writing (textlint-ja)
+    url: https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing
+    published_at: null
+    topics: [writing_quality, japanese_text, tooling, quality_gates]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "日本語の読みやすさの検査が既存の道具でどこまで覆われているかを、新しい道具を入れる前に確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]

@@ -270,6 +270,18 @@ tags: [knowledge, sources, discovery]
   - REF-085 Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models <https://aclanthology.org/2024.emnlp-industry.91/>（`reference`）
   - REF-086 OpenCodeReview: Determinism over Non-Determinism for Cost-Effective Agent-Based Code Review <https://arxiv.org/abs/2608.09290>（`reference`）
 
+### ART-038 日本語の「AI 臭さ」をチェックする Rust 製 Linter「noslop」を作った
+
+- 共有した URL: <https://zenn.dev/owayo/articles/e081901888ae82>
+- 見つけて使った資料:
+  - REF-020 Hooks reference (Claude Code) <https://code.claude.com/docs/en/hooks>（`reference`）
+  - REF-075 Software Engineering at Google, Chapter 20: Static Analysis <https://abseil.io/resources/swe-book/html/ch20.html>（`reference`）
+  - REF-087 noslop (owayo/noslop) <https://github.com/owayo/noslop>（`reference`）
+  - REF-088 Delving into LLM-assisted writing in biomedical publications through excess vocabulary <https://arxiv.org/abs/2406.07016>（`reference`）
+  - REF-089 The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models <https://arxiv.org/abs/2502.11266>（`reference`）
+  - REF-090 GPT detectors are biased against non-native English writers <https://arxiv.org/abs/2304.02819>（`reference`）
+  - REF-091 textlint-rule-preset-ja-technical-writing (textlint-ja) <https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
