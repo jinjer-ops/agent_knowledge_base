@@ -294,6 +294,17 @@ tags: [knowledge, sources, discovery]
   - REF-094 LLM Evaluators Recognize and Favor Their Own Generations <https://proceedings.neurips.cc/paper_files/paper/2024/file/7f1f0218e45f5414c79c0679633e47bc-Paper-Conference.pdf>（`reference`）
   - REF-095 ISO plain language standard (Plain Language Association International) <https://plainlanguage.com/what-is-plain-language/iso-plain-language-standard/>（`reference`）
 
+### ART-040 新しい日本語推敲スキル「yomiyasu」がバズっていたので、Claudeで日本語推敲スキル3つを比べてみた
+
+- 共有した URL: <https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14>
+- 見つけて使った資料:
+  - REF-087 noslop (owayo/noslop) <https://github.com/owayo/noslop>（`reference`）
+  - REF-092 yomiyasu (nanaism/yomiyasu) <https://github.com/nanaism/yomiyasu>（`reference`）
+  - REF-093 Evaluating Factuality in Text Simplification <https://aclanthology.org/2022.acl-long.506/>（`reference`）
+  - REF-096 Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA <https://arxiv.org/abs/2305.14458>（`reference`）
+  - REF-097 Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations <https://arxiv.org/abs/2411.00640>（`reference`）
+  - REF-098 natural-japanese (coji/natural-japanese) <https://github.com/coji/natural-japanese>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -1266,12 +1266,48 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 判定の位置を、書き手の感想から**読み手の達成**へ動かせる。語彙の表を増やす前に、自分の文書で「見つかる・分かる・使える」のどれが壊れているかを決めれば、そもそも書き直しが要るのかから判断できる。**規格本体は未読**で、確認したのはこのページに引用された定義と、規格の名称・発行年だけ。規格が定める原則の構成までは確かめていない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（未検証）。
 
+### ART-040 同じ用途の skill が、何で違うのか
+
+- **URL**: <https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14>
+- **記事種別**: 個人の比較記事（2026-10-01 公開、以後に更新あり）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 日本語を推敲する 3 つの skill に同じ原文・同じ依頼文を渡し、出力を項目ごとに並べた記録。結果は、文体と構成を残して語句を直すもの、見出しと段落から組み直すもの、文体そのものを統一するものに分かれた。著者の結論は「どれかが上位互換ではなく、**どこまで直してほしいかで選ぶものが変わる**」。条件として、原文は 1 本（約 600 字）、各 skill 1 回ずつ、評価は著者 1 人の印象で、**意味が保たれたかは確認していない**。著者自身が「出力には揺れがあるので優劣を決める検証ではない」と明記し、検証した版がその後更新されていることも書いている。
+- **得られる示唆**: 採れるのは**直す範囲という軸**で、順位ではない。軸は好みではなく、入れる前に決められる設計の選択なので、自分の文書で何を保持したいかが決まれば候補はここで絞れる。一方、この記事は比べ方の空白も具体的に見せている。1 本 1 回は差を測る土俵に乗っておらず（`REF-097`）、見ていない「意味の保持」こそ誤りが出る場所である（`REF-093`）。著者の但し書きは限界の表明というより**読み方の指定**として扱うのが正確で、そのため「どの道具が良いか」の根拠には使っていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（未検証）。
+
+### REF-096 書き直しは、編集単位で成功と失敗に分けて測る
+
+- **URL**: <https://arxiv.org/abs/2305.14458>
+- **記事種別**: 査読済み論文（EMNLP 2023）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 文章を平易にする書き直しを、出力全体ではなく**編集ひとつずつ**で評価する枠組み。言語学的に定義した 21 種の編集型で、概念・統語・語彙それぞれの成功と失敗を覆い、840 件の書き直しについて 19,000 件の編集注釈を集めている。知見として、微調整したモデル・指示で動かしたモデル・人で**採る編集の分布が違う**こと、当時の大規模モデルは**人より質の高い編集を多く行う一方で誤りも頻繁**だったことを報告する。参照文を必要としない自動指標も併せて提案している。
+- **得られる示唆**: 「全体として良くなったか」を見ると、良い編集と悪い編集が打ち消し合って失敗が隠れる。**数えるものを編集に落とす**という形は、自分で道具を比べるときにもそのまま使える。「モデルは人より良い編集も多いが誤りも多い」という観測は、書き直しを止める理由にも通す理由にもならず、**選別の工程が要る**という結論になる。対象は英語の平易化で、2023 年時点のモデルを含む。注釈の体系も指標もそのままは持ち込んでいない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（未検証）。
+
+### REF-097 点推定だけでは、差を主張できない
+
+- **URL**: <https://arxiv.org/abs/2411.00640>
+- **記事種別**: 査読前論文（2024-11 提出）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: モデルの評価が、実験計画と統計分析の蓄積をほとんど使っていないという問題提起。評価の問いを**観測されていない母集団から引かれた標本**として扱い、評価データを分析する式、2 つのモデルの差を測る式、実験を計画する方法を示す。統計的なノイズを最小にし、情報量を最大にする形で実施し報告することを勧めている。
+- **得られる示唆**: 「前後で数字が動いた」「A の出力の方が良く見えた」を結論にしないための土台。**測る回数を決めないまま始めた比較は、たいてい何も言えずに終わる**。削減策の判定（1 桁パーセントを積む作業）でも、推敲 skill の選定でも、効く場所は同じ。要旨の範囲だけを確認しており、具体的な統計手法までは確かめていない。査読前である。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/cost-change-evaluation/README.md](../foundation/cost-change-evaluation/README.md) と [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（どちらも未検証）。
+
+### REF-098 何を機械に任せないかまで決めてある
+
+- **URL**: <https://github.com/coji/natural-japanese>
+- **記事種別**: 道具の一次情報（公開リポジトリの README、MIT）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 仕事の日本語を書く・直すためのエージェント向け skill。書く前に見出しの骨組みを決め、文体の原則を当て、**形態素解析で紋切り型の言い回しを機械的に検出し、採否は人が判断する**という分担を置いている。検査・骨組み・用語のスクリプト、180 本を超えるコーパスでの検証、固定入力による回帰チェックを同梱する。限界として、**語順や読点のような領域は機械的な判定が難しい**と明記し、目視と読解負荷の確認の併用を勧めている。
+- **得られる示唆**: 同じテーマの道具 3 つが、**独立に同じ形へ到達している**ことを確かめる 3 件目。規則ごとに誤検知を数える（`REF-087`）、検査スクリプトを必須にする（`REF-092`）、そしてここでは検出と判断を分ける。さらにこの道具は**機械に任せない範囲を自分で宣言している**。再利用できるのはこの分担で、道具そのものではない。この環境では動かしておらず、導入は勧めていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/generated-prose-style/README.md](../foundation/generated-prose-style/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全134 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全138 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 126件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 130件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

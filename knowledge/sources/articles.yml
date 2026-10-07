@@ -1200,7 +1200,7 @@ sources:
     topics: [writing_quality, japanese_text, quality_gates, verification, tooling]
     status: reference
     intake: found
-    found_via: [ART-038, ART-039]
+    found_via: [ART-038, ART-039, ART-040]
     use_when: "文章の検査ルールを既定で有効にしてよいかを、ルールごとの誤検知の実測という形から決める時"
     derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
   - id: REF-088
@@ -1259,7 +1259,7 @@ sources:
     topics: [writing_quality, japanese_text, skills, verification, tooling]
     status: reference
     intake: found
-    found_via: [ART-039]
+    found_via: [ART-039, ART-040]
     use_when: "書き直す skill の作りを見る時、および合格表示が何を保証しないかを提供元の記述で確かめる時"
     derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-093
@@ -1269,7 +1269,7 @@ sources:
     topics: [writing_quality, evaluation, reliability, hallucination]
     status: reference
     intake: found
-    found_via: [ART-039]
+    found_via: [ART-039, ART-040]
     use_when: "読みやすくする書き直しを工程に入れる前に、その工程がどんな誤りを持ち込むか、既存の指標で気付けるかを確かめる時"
     derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
   - id: REF-094
@@ -1291,4 +1291,43 @@ sources:
     intake: found
     found_via: [ART-039]
     use_when: "「読みやすい」を書き手の感想ではなく読み手の達成で定義し直す時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: ART-040
+    title: 新しい日本語推敲スキル「yomiyasu」がバズっていたので、Claudeで日本語推敲スキル3つを比べてみた
+    url: https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14
+    published_at: 2026-10-01
+    topics: [writing_quality, japanese_text, skills, evaluation]
+    status: reference
+    intake: shared
+    use_when: "同じ用途の推敲 skill が何で違うのかを、直す範囲という軸で把握する時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-096
+    title: "Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA"
+    url: https://arxiv.org/abs/2305.14458
+    published_at: 2023-05-23
+    topics: [writing_quality, evaluation, benchmarks, verification]
+    status: reference
+    intake: found
+    found_via: [ART-040]
+    use_when: "書き直しの良し悪しを、出力全体の印象ではなく編集単位の成功と失敗で比べる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-097
+    title: "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations"
+    url: https://arxiv.org/abs/2411.00640
+    published_at: 2024-11-01
+    topics: [evaluation, measurement, benchmarks, experiments]
+    status: reference
+    intake: found
+    found_via: [ART-040]
+    use_when: "前後や複数候補の比較を始める前に、何回測れば差と言えるのかを決める時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-098
+    title: natural-japanese (coji/natural-japanese)
+    url: https://github.com/coji/natural-japanese
+    published_at: null
+    topics: [writing_quality, japanese_text, skills, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-040]
+    use_when: "書き直す skill で、機械に出す範囲と人に残す範囲をどう線引きしているかの実例を見る時"
     derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
