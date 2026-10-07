@@ -106,6 +106,17 @@ tags: [knowledge, sources, discovery]
   - REF-036 RAG vs. GraphRAG: A Systematic Evaluation and Key Insights <https://arxiv.org/abs/2502.11371>（`reference`）
   - REF-037 From Local to Global: A Graph RAG Approach to Query-Focused Summarization <https://arxiv.org/abs/2404.16130>（`reference`）
 
+### ART-017 AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計
+
+- 共有した URL: <https://zenn.dev/minewo/articles/river-review-judgment-placement>
+- 見つけて使った資料:
+  - REF-073 Judgment Placement (River Review documentation) <https://river-review.the3396.com/explanation/judgment-placement/>（`reference`）
+  - REF-074 river-review (s977043/river-review) <https://github.com/s977043/river-review>（`reference`）
+  - REF-075 Software Engineering at Google, Chapter 20: Static Analysis <https://abseil.io/resources/swe-book/html/ch20.html>（`reference`）
+  - REF-076 claude-code-security-review (anthropics/claude-code-security-review) <https://github.com/anthropics/claude-code-security-review>（`reference`）
+  - REF-077 Comment and Control: GitHub AI Agents as Credential Exfiltrators <https://labs.cloudsecurityalliance.org/research/csa-research-note-comment-control-github-prompt-injection-20/>（`reference`）
+  - REF-078 Keeping your GitHub Actions and workflows secure Part 1: Preventing pwn requests <https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/>（`reference`）
+
 ### ART-019 トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す
 
 - 共有した URL: <https://zenn.dev/helloworld/articles/bcaea69f58eae5>
@@ -267,7 +278,6 @@ tags: [knowledge, sources, discovery]
 - ART-010 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる <https://qiita.com/uni928/items/b4a874f0bbf91d378097>（`adopted`）
 - ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）
-- ART-017 AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計 <https://zenn.dev/minewo/articles/river-review-judgment-placement>（`adopted`）
 - ART-018 社内限定サービスの認証を Google Workspace でサクッと作る <https://zenn.dev/dress_code/articles/6134e6bd5e46c6>（`reference`）
 - REF-003 Secret scanning <https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning>（`reference`）
 - REF-004 Markdown Architectural Decision Records <https://adr.github.io/madr/>（`reference`）
