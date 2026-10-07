@@ -392,6 +392,16 @@ tags: [knowledge, sources, discovery]
   - REF-122 Manage mods for your organization (Claude Code) <https://code.claude.com/docs/en/plugins/mods/admin>（`reference`）
   - REF-123 Mods reference (Claude Code) <https://code.claude.com/docs/en/plugins/mods/reference>（`reference`）
 
+### ART-045 アーキテクチャ図を念頭に置いて設計された斬新な自動レイアウトアルゴリズム「TALA」がオープンソース化
+
+- 共有した URL: <https://gigazine.net/news/20260909-tala-is-open-source/>
+- 見つけて使った資料:
+  - REF-133 TALA is open source (D2) <https://d2lang.com/blog/tala-is-open-source/>（`reference`）
+  - REF-134 Layouts (D2) <https://d2lang.com/tour/layouts/>（`reference`）
+  - REF-135 Creating diagrams (GitHub Docs) <https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams>（`reference`）
+  - REF-136 DiagramEval: Evaluating LLM-Generated Diagrams via Graphs <https://arxiv.org/abs/2510.25761>（`reference`）
+  - REF-137 MermaidSeqBench: An Evaluation Benchmark for NL-to-Mermaid Sequence Diagram Generation <https://arxiv.org/abs/2511.14967>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

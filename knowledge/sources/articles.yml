@@ -1711,3 +1711,62 @@ sources:
     found_via: [ART-002]
     use_when: "スライドに入りきらない内容の扱いを、既定任せにせず明示的に決める時"
     derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: ART-045
+    title: アーキテクチャ図を念頭に置いて設計された斬新な自動レイアウトアルゴリズム「TALA」がオープンソース化
+    url: https://gigazine.net/news/20260909-tala-is-open-source/
+    published_at: 2026-09-09
+    topics: [diagrams, layout_engine, open_source, architecture_diagrams]
+    status: reference
+    intake: shared
+    use_when: "構成図のレイアウトを変える選択肢があることと、その制約の所在を知る時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-133
+    title: TALA is open source (D2)
+    url: https://d2lang.com/blog/tala-is-open-source/
+    published_at: 2026-09-07
+    topics: [diagrams, layout_engine, licensing, determinism, architecture_diagrams]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "構成図向けのレイアウトエンジンを採る前に、公表されている制約（実行ごとの変動・向かない図・処理時間）を確かめる時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-134
+    title: Layouts (D2)
+    url: https://d2lang.com/tour/layouts/
+    published_at: null
+    topics: [diagrams, layout_engine, feature_matrix]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "どのレイアウトエンジンが既定で、位置の固定などの機能がどれで効くかを引く時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-135
+    title: Creating diagrams (GitHub Docs)
+    url: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams
+    published_at: null
+    topics: [diagrams, markdown, rendering, github, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "図の記法を選ぶ前に、成果物が読まれる場所でそれが描画されるかを確かめる時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-136
+    title: "DiagramEval: Evaluating LLM-Generated Diagrams via Graphs"
+    url: https://arxiv.org/abs/2510.25761
+    published_at: 2025-10-29
+    topics: [diagrams, evaluation, measurement, peer_reviewed, verification]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "生成させた図の何を確かめるか決める時。要素と関係のどちらが落ちるか、画像の類似度が指標になるかを見る"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-137
+    title: "MermaidSeqBench: An Evaluation Benchmark for NL-to-Mermaid Sequence Diagram Generation"
+    url: https://arxiv.org/abs/2511.14967
+    published_at: 2025-11-18
+    topics: [diagrams, evaluation, benchmark, llm_as_judge, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "図の生成品質を測る既存の取り組みと、その判定を誰に任せているかを確かめる時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
