@@ -340,6 +340,19 @@ tags: [knowledge, sources, discovery]
   - REF-111 Jevはどれだけ優秀なif文か？軽量モデルを分類器用途で比較してみた <https://journal.supa.ai/jev-classifier-benchmark/>（`reference`）
   - REF-112 I tried replacing model routing with TypeSafe (Jev) to see how much faster and cheaper it would get <https://dev.classmethod.jp/en/articles/jev-for-llm-model-routing/>（`reference`）
 
+### ART-042 Jev と Cosmos DB で、ベクトル検索の結果を観点別に絞る PoC
+
+- 共有した URL: <https://zenn.dev/nomhiro/articles/jev-cosmosdb-rag-filter-poc>
+- 見つけて使った資料:
+  - REF-101 The Power of Noise: Redefining Retrieval for RAG Systems <https://arxiv.org/abs/2401.14887>（`reference`）
+  - REF-102 The Powerless Noise: How Experimental Settings Shape the Reported Power of Noise <https://arxiv.org/abs/2607.03615>（`reference`）
+  - REF-103 JMTEB (sbintuitions/JMTEB) <https://github.com/sbintuitions/JMTEB>（`reference`）
+  - REF-108 Confidence (TypeSafe AI docs) <https://docs.typesafe.ai/confidence>（`reference`）
+  - REF-113 Corrective Retrieval Augmented Generation <https://arxiv.org/abs/2401.15884>（`reference`）
+  - REF-114 Integrated vector store (Azure Cosmos DB for NoSQL) <https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search>（`reference`）
+  - REF-115 ARAGOG: Advanced RAG Output Grading <https://arxiv.org/abs/2404.01037>（`reference`）
+  - REF-116 Per-Query Gating of LLM Rerankers for Multi-Hop Retrieval <https://arxiv.org/abs/2609.22880>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

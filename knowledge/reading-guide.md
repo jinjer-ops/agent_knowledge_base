@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-07
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -1437,12 +1437,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: このテーマの用途そのもの（分岐の置き換え）を実際にやった資料。読み取るべきは**三方向の同時変化**で、速度と費用が改善しても正答率が下がる以上、採否は「その分岐で何回間違えてよいか」でしか決まらない。単体測定であることの断りは、削る変更の判定を全体で行う原則（`../foundation/cost-change-evaluation/`）と一致する。数値は 1 人の環境のものなので移していない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)（未検証）。
 
+### ART-042 ベクトル検索の後ろに、観点別の判定を置いてみた
+
+- **URL**: <https://zenn.dev/nomhiro/articles/jev-cosmosdb-rag-filter-poc>
+- **記事種別**: 概念実証＋実測（著者 1 人、対照なし、文書 3 種類）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: ベクトル検索で数件のチャンクを取り、その本文を判断専用モデルに「主題が合うか」「対象読者が合うか」「答えの根拠があるか」の 3 観点で判定させて絞る構成の実装記録。類似度では正解と競合していたノイズ（話題は近いが対象読者が違う資料）を、対象読者の観点で落とせたと報告する。複数件を並列に投げても所要時間がほとんど変わらないことも測っている。著者自身が限界として、**理由は返らない**こと、**較正は統計的な性質であって個々の判断を保証しない**こと、否定形の問いに弱いこと、公開ベンチが英語中心なので日本語は自分のデータで測る必要があること、入力に上限があることを挙げている。
+- **得られる示唆**: 価値は構成と、著者自身が置いた限界の側にある。較正についての指摘は、提供元の一次情報から読み取れる立場（`REF-108`）と**独立に一致**しており、この判断を裏打ちする。理由が返らないことへの対処として、判定の記録・低確信度の別経路・較正の継続監視を呼び出しの**外側**に置いた設計は、そのまま再利用できる。一方で扱っていない論点が 3 つあり、どれも設計の分かれ目になる。観点の 1 つ「対象読者」は文書の属性として持てるなら照会の条件で落とせること（`REF-114`）、後ろに足した層は適合率しか上げられず前段の取りこぼしは戻らないこと、そしてこの形自体に先例があること（`REF-113`）。比較対象を置いていないので、優劣は判定できない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md) と [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（いずれも未検証）。
+
+### REF-113 「取り出した後に判定する」の先例
+
+- **URL**: <https://arxiv.org/abs/2401.15884>
+- **記事種別**: 研究（プレプリント、評価は提案手法の著者らによる。4 つのデータセットで評価）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 取り出した文書の質を問いに対して評価する**軽い評価器**を置き、返ってきた確信度に応じて別の取得行動を起動する構成。短い生成と長い生成の両方の課題で評価している。
+- **得られる示唆**: 「ベクトル検索の後ろに判定の層を置く」という形が 2024 年時点で既に出ていることの確認に使う。ここから読み取るのは、**設計の勘所が判定器の種類ではなく、確信度が低かったときの行き先を決めてあるかどうか**だという点。低い帯を捨てるだけなら再現率が落ちるだけになる。査読前で著者ら自身の評価なので、構成の優劣も数値も採っていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
+
+### REF-114 絞るのは判定の層か、照会の条件か
+
+- **URL**: <https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search>
+- **記事種別**: 公式ドキュメント（提供元の一次情報）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 文書と同じ場所にベクトルを置いて検索する仕組みの説明。**ベクトル検索はほかの照会フィルタや索引と `WHERE` 句で併用できる**と明記する。索引の型は 3 種類あり、総当たりの型は再現率 100% を保証する代わりに次元数の上限が厳しく、近似の型は「関連するものをすべてではなく、ほとんど返す」方式で、**同じ照会を変わらない内容に対して実行しても結果や順序が変わりうる**と書かれている。件数の上限を必ず付けること、量子化系の索引は一定件数未満では全走査になることなどの制限も列挙されている。
+- **得られる示唆**: 判定の層を足すかどうかの判断材料が 2 つ取れる。1 つは、**属性として持てる観点は照会の条件で落とせる**こと。モデルに毎回推論させる必要がない。もう 1 つは、**後ろの層は適合率しか上げられない**こと。前段が近似で揺れる以上、少数の文書を 1 回観察した結果はその揺れを見ていない。再現率が要るなら索引の型から決める。提供元自身の資料なので独立した評価ではないが、併用の可否と索引型の性質については正本。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
+
+### REF-115 工夫を足しても、効かないものは効かない
+
+- **URL**: <https://arxiv.org/abs/2404.01037>
+- **記事種別**: 研究（プレプリント、複数の取り出し技法を横並びで測った独立比較）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 素の構成を基準に、仮想文書の埋め込み、複数種類の再順位付け、最大限界関連度、複数クエリ、文の窓による取得、文書要約索引を比べ、検索の精度と回答の近さで測った比較。効いた技法がある一方で、**ある再順位付けは素の構成に対して明確な利点を示さず**、性能が落ちた技法もあった。
+- **得られる示唆**: 「層を足せば良くなる」という前提を壊すための資料。同じ名前で呼ばれる工夫でも、実装や設定で結果が逆を向く。取り出した後に判定を足す案を評価するとき、**比較対象として素の構成を必ず置く**根拠になる。査読前で対象も特定のデータセットなので、採ったのは向きだけで個別の技法の順位は移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
+
+### REF-116 ゲートを足すと、ゲートを測る仕事が増える
+
+- **URL**: <https://arxiv.org/abs/2609.22880>
+- **記事種別**: 研究（プレプリント、著者が以前の報告の誤りを自ら訂正している）
+- **現在の扱い**: `reference`
+- **何が書かれているか**: 重い判定の層を問いごとに呼ぶか省くかを、事前に手に入る統計量から決めるゲートの評価。呼び出しの約半分を省けて、省いた場合の精度低下は平均で小さく、無作為に省く場合より明確に良い。一方で**省いたせいで悪くなった事例が相当数残り**、どの問いで害が出るかの予測自体の判別力は低いと報告している。
+- **得られる示唆**: 「重い層は必要なときだけ呼べばよい」という発想に対する、測られた値段。**ゲートを足すと、今度はゲートの正しさを測る仕事が増える**。害のある省略を自分で見つけられない構成では、省いた分の損失は見えないまま積もる。これは確信度で自動処理を切り分ける話（[../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)）と同じ構造の問題。査読前なので、採ったのは向きだけ。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全153 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全158 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 145件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 150件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
