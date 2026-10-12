@@ -436,6 +436,18 @@ tags: [knowledge, sources, discovery]
   - REF-166 Context Rot: How Increasing Input Tokens Impacts LLM Performance <https://www.trychroma.com/research/context-rot>（`reference`）
   - REF-167 Diagnosing and Mitigating Context Rot in Long-horizon Search <https://arxiv.org/abs/2606.29718>（`reference`）
 
+### ART-048 Opus 5.5にプロンプトを渡したら、解説アニメーション動画ができた
+
+- 共有した URL: <https://zenn.dev/acntechjp/articles/178e40be12d347>
+- 見つけて使った資料:
+  - REF-168 Share session output as artifacts <https://code.claude.com/docs/en/artifacts>（`reference`）
+  - REF-169 Using randomness <https://www.remotion.dev/docs/using-randomness>（`reference`）
+  - REF-170 Does animation enhance learning? A meta-analysis <https://www.sciencedirect.com/science/article/abs/pii/S0360131516301336>（`reference`）
+  - REF-171 Understanding SC 2.3.1: Three Flashes or Below Threshold <https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html>（`reference`）
+  - REF-172 Understanding SC 2.2.2: Pause, Stop, Hide <https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html>（`reference`）
+  - REF-173 Understanding SC 1.2.2: Captions (Prerecorded) <https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html>（`reference`）
+  - REF-174 prefers-reduced-motion <https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

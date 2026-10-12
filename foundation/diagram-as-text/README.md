@@ -23,6 +23,8 @@ tags: [diagrams, documentation, verification, architecture, rendering]
 [../presentations/](../presentations/) は資料の形式、
 [../comprehension-debt/](../comprehension-debt/) は人の側の理解。
 ここだけが、**図そのものの正しさと、その確かめ方**を扱います。
+図が**動く**なら（解説アニメーション、遷移、動画）、確かめる対象が増えるので
+[../motion-asset-production/](../motion-asset-production/) を続けて読みます。
 
 ## 落ちるのは要素ではなく、関係
 
@@ -107,6 +109,8 @@ tags: [diagrams, documentation, verification, architecture, rendering]
 正本がテキストである限り、版管理で読める差分は保たれます。影響が出るのは、生成した画像を
 成果物として版管理に入れている場合で、そのときは中身が変わっていなくても画像が毎回差分になります。
 **画像を版管理に入れるなら、レイアウトが決定的かどうかを先に確かめます。**
+
+**この切り分けは、図が止まっている間だけ成り立ちます。** 時間軸が入ると、乱数や時刻への依存は配置ではなく出力そのものを変え、しかも**画面で再生する間は正しく見えて、書き出した結果で壊れる**という形で現れます。機構と対処は [../motion-asset-production/](../motion-asset-production/) にあります。
 
 ## 入れる前に確かめること
 

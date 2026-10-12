@@ -2091,3 +2091,82 @@ sources:
     found_via: [ART-047]
     use_when: "長い文脈で動かすエージェントが、誤るのではなく早く諦める側の故障を疑う時"
     derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: ART-048
+    title: Opus 5.5にプロンプトを渡したら、解説アニメーション動画ができた
+    url: https://zenn.dev/acntechjp/articles/178e40be12d347
+    published_at: 2026-09-24
+    topics: [animation, video_generation, code_generated_motion, explainer]
+    status: reference
+    intake: shared
+    use_when: "動く成果物をエージェントに作らせる案の入口（出力形式・書き出し・制約は一次情報で確かめる）"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-168
+    title: Share session output as artifacts
+    url: https://code.claude.com/docs/en/artifacts
+    published_at: null
+    topics: [claude_code, artifacts, csp, sharing, page_constraints]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "作らせたものを1枚のページとして共有する経路で、何が成立し何が遮断されるかを確かめる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-169
+    title: Using randomness
+    url: https://www.remotion.dev/docs/using-randomness
+    published_at: null
+    topics: [animation, determinism, parallel_rendering, randomness, video_as_code]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "コードで描いた動きが、プレビューと書き出しで食い違う理由を確かめる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-170
+    title: "Does animation enhance learning? A meta-analysis"
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0360131516301336
+    published_at: 2016-10-01
+    topics: [animation, learning, meta_analysis, peer_reviewed, multimedia]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "そもそも動かす価値があるか、どの条件で効くかを決める時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-171
+    title: "Understanding SC 2.3.1: Three Flashes or Below Threshold"
+    url: https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html
+    published_at: null
+    topics: [accessibility, wcag, flashing, photosensitivity, machine_checkable]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "生成された動きに明滅が入ったとき、目視ではなく機械で判定する時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-172
+    title: "Understanding SC 2.2.2: Pause, Stop, Hide"
+    url: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+    published_at: null
+    topics: [accessibility, wcag, motion, autoplay, controls]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "自動で動き続けるものを資料やページに埋める前に、停止手段の要否を判定する時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-173
+    title: "Understanding SC 1.2.2: Captions (Prerecorded)"
+    url: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html
+    published_at: null
+    topics: [accessibility, wcag, captions, synchronized_media, narration]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "ナレーションや音声を付けると決めた時、字幕の要否と例外を確かめる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-174
+    title: prefers-reduced-motion
+    url: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+    published_at: null
+    topics: [accessibility, css, media_query, reduced_motion, vestibular]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "動きを減らす設定への分岐を、作る段階で入れる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
