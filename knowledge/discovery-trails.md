@@ -143,6 +143,16 @@ tags: [knowledge, sources, discovery]
   - REF-056 LLMs Get Lost In Multi-Turn Conversation <https://arxiv.org/abs/2505.06120>（`reference`）
   - REF-057 Intent Mismatch Causes LLMs to Get Lost in Multi-Turn Conversation <https://arxiv.org/abs/2602.07338>（`reference`）
 
+### ART-014 リポジトリにロジックは書くな！
+
+- 共有した URL: <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>
+- 見つけて使った資料:
+  - REF-187 Repository (Patterns of Enterprise Application Architecture catalog) <https://martinfowler.com/eaaCatalog/repository.html>（`reference`）
+  - REF-188 Anemic Domain Model <https://martinfowler.com/bliki/AnemicDomainModel.html>（`reference`）
+  - REF-189 dependency-cruiser: rules reference <https://github.com/sverweij/dependency-cruiser/blob/main/doc/rules-reference.md>（`reference`）
+  - REF-190 An Empirical Evaluation of Large Language Models Applying Software Architectural Patterns <https://doi.org/10.3390/ai7060195>（`reference`）
+  - REF-191 Quantitative Analysis of Technical Debt and Pattern Violation in Large Language Model Architectures <https://arxiv.org/abs/2512.04273>（`reference`）
+
 ### ART-015 肥大化し続けるCLAUDE.md
 
 - 共有した URL: <https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing>
@@ -507,9 +517,3 @@ tags: [knowledge, sources, discovery]
   - REF-140 Using Architecture Decision Records in Open Source Projects - An MSR Study on GitHub <https://research.jku.at/en/publications/using-architecture-decision-records-in-open-source-projects-an-ms/>（`reference`）
   - REF-141 Evaluating Large Language Models for Detecting Architectural Decision Violations <https://arxiv.org/abs/2602.07609>（`reference`）
   - REF-142 Coding Agents Love Decision Records <https://www.oreilly.com/radar/coding-agents-love-decision-records/>（`reference`）
-
-## 入口の記録が無い出典
-
-共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
-
-- ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）

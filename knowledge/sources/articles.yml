@@ -122,11 +122,12 @@ sources:
   - id: ART-014
     title: リポジトリにロジックは書くな！
     url: https://zenn.dev/more_tech_blog/articles/76af481ab3816d
-    published_at: null
-    topics: [application_architecture, repository_pattern]
+    published_at: 2026-08-21
+    topics: [application_architecture, repository_pattern, layer_boundary]
     status: reference
-    use_when: "アプリケーション層とデータアクセス層の責務をレビューする時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "アプリケーション層とデータアクセス層の責務をレビューする時、層の規約を検査へ移すか決める時"
+    derived: [foundation/layer-boundary-enforcement/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: ART-015
     title: 肥大化し続けるCLAUDE.md
     url: https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing
@@ -2300,3 +2301,53 @@ sources:
     found_via: [ART-011]
     use_when: "利用者の少ない言語で生成物の正しさをどう担保するか考える時"
     derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-187
+    title: "Repository (Patterns of Enterprise Application Architecture catalog)"
+    url: https://martinfowler.com/eaaCatalog/repository.html
+    published_at: null
+    topics: [repository_pattern, layer_boundary, software_design]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "データアクセス層の責務を、検査規則に翻訳できる言い方で宣言する時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: REF-188
+    title: Anemic Domain Model
+    url: https://martinfowler.com/bliki/AnemicDomainModel.html
+    published_at: 2003-11-25
+    topics: [domain_model, layer_boundary, software_design, anti_pattern]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "データアクセス層から出した業務ロジックの行き先を決める時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: REF-189
+    title: "dependency-cruiser: rules reference"
+    url: https://github.com/sverweij/dependency-cruiser/blob/main/doc/rules-reference.md
+    published_at: null
+    topics: [static_analysis, dependency_rules, layer_boundary, ci_gate]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "層をまたぐ依存と循環を、ビルドを落とす検査にできるか確かめる時"
+    derived: [foundation/layer-boundary-enforcement/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-190
+    title: An Empirical Evaluation of Large Language Models Applying Software Architectural Patterns
+    url: https://doi.org/10.3390/ai7060195
+    published_at: 2026-05-27
+    topics: [architecture_conformance, code_generation, empirical_evaluation, rag]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "アーキテクチャの規約を文章で渡して守られるかを見積もる時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: REF-191
+    title: Quantitative Analysis of Technical Debt and Pattern Violation in Large Language Model Architectures
+    url: https://arxiv.org/abs/2512.04273
+    published_at: 2025-12-03
+    topics: [architecture_erosion, layer_violation, model_comparison, static_analysis]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "生成コードのアーキテクチャ違反を機械で数える測り方を探す時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
