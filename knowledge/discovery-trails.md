@@ -448,6 +448,17 @@ tags: [knowledge, sources, discovery]
   - REF-173 Understanding SC 1.2.2: Captions (Prerecorded) <https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html>（`reference`）
   - REF-174 prefers-reduced-motion <https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion>（`reference`）
 
+### ART-049 「Claudeを2週間で3倍速にした方法」をAnthropicが解説
+
+- 共有した URL: <https://gigazine.net/news/20260924-anthropic-faster-claude/>
+- 見つけて使った資料:
+  - REF-082 Natural emergent misalignment from reward hacking <https://www.anthropic.com/research/emergent-misalignment-reward-hacking>（`reference`）
+  - REF-175 How we made claude.ai 3x faster in two weeks <https://claude.dev/blog/how-we-made-claude-ai-faster/>（`reference`）
+  - REF-176 Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity <https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/>（`reference`）
+  - REF-177 SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents <https://arxiv.org/abs/2605.21384>（`reference`）
+  - REF-178 Why lab and field data can be different (and what to do about it) <https://web.dev/articles/lab-and-field-data-differences>（`reference`）
+  - REF-179 CI for performance: Reliable benchmarking in noisy environments <https://pythonspeed.com/articles/consistent-benchmarking-in-ci/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

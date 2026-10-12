@@ -1139,9 +1139,9 @@ sources:
     topics: [reliability, verification, quality_gates, evaluation]
     status: reference
     intake: found
-    found_via: [ART-036]
+    found_via: [ART-036, ART-049]
     use_when: "検査を通すこと自体を目標にする構成の危うさを、実際に観測された手口で確かめる時"
-    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+    derived: [foundation/measurable-target/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: ART-037
     title: トークンをケチってレビューをローカルLLMにやらせた話
     url: https://zenn.dev/k_motoki/articles/11de0ba46dd1ee
@@ -2170,3 +2170,62 @@ sources:
     found_via: [ART-048]
     use_when: "動きを減らす設定への分岐を、作る段階で入れる時"
     derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: ART-049
+    title: 「Claudeを2週間で3倍速にした方法」をAnthropicが解説
+    url: https://gigazine.net/news/20260924-anthropic-faster-claude/
+    published_at: 2026-09-24
+    topics: [performance, measurement, agent_orchestration, benchmarks]
+    status: reference
+    intake: shared
+    use_when: "エージェントに性能改善を任せた事例の入口として読む時（手順と条件は一次情報で確かめる）"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-175
+    title: How we made claude.ai 3x faster in two weeks
+    url: https://claude.dev/blog/how-we-made-claude-ai-faster/
+    published_at: 2026-09-23
+    topics: [performance, measurement, benchmarks, ci_guardrails, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "計測・ベンチマーク・CIの歯止め・人が保持する判断の組み立て方を決める時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-176
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    url: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+    published_at: 2025-07-10
+    topics: [productivity, randomized_trial, self_report, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "速くなった・良くなったという体感を根拠に使ってよいか判断する時"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-177
+    title: "SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents"
+    url: https://arxiv.org/abs/2605.21384
+    published_at: 2026-05-20
+    topics: [reward_hacking, benchmarks, coding_agents, held_out_tests]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "エージェントが合否を確かめる検査を、どこまで見せてよいか決める時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-178
+    title: Why lab and field data can be different (and what to do about it)
+    url: https://web.dev/articles/lab-and-field-data-differences
+    published_at: 2022-07-18
+    topics: [measurement, lab_data, field_data, real_user_monitoring]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "手元の試験の数値を、実際の体験の代理として使ってよいか確かめる時"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-179
+    title: "CI for performance: Reliable benchmarking in noisy environments"
+    url: https://pythonspeed.com/articles/consistent-benchmarking-in-ci/
+    published_at: 2020-12-02
+    topics: [benchmarks, ci, determinism, instruction_counts, measurement_noise]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "実行ごとにぶれない計測をCIへ置きたい時、ばらつきで小さい改善が隠れる時"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]

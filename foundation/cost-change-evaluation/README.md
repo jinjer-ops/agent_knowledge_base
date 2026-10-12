@@ -4,9 +4,9 @@ title: Checking whether a token-reduction change actually helped
 type: foundation-guide
 status: draft
 created_at: 2026-10-06
-updated_at: 2026-10-09
+updated_at: 2026-10-13
 owners: [knowledge-stewards]
-source_ids: [ART-024, ART-027, REF-027, REF-030, REF-031, REF-097]
+source_ids: [ART-024, ART-027, REF-027, REF-030, REF-031, REF-097, REF-175, REF-177]
 tags: [cost, evaluation, measurement, experiments]
 ---
 
@@ -18,6 +18,8 @@ tags: [cost, evaluation, measurement, experiments]
 [../token-drain-review/](../token-drain-review/) は原因を当てる段階、
 [../heavy-read-delegation/](../heavy-read-delegation/) は逃がすかどうかを決める段階です。
 ここはその次、**入れた変更の効き目を判定する**段階を扱います。
+改善そのものをエージェントに任せる場合は、渡す前に
+[../measurable-target/](../measurable-target/) で測る対象を作る段が先に来ます。
 
 ## 短くしたのに高くなる
 
@@ -41,6 +43,18 @@ tags: [cost, evaluation, measurement, experiments]
 | 同時に見る品質（完了できたか、やり直しが増えていないか） | 必須。費用だけ下げる変更は失敗 |
 
 費用と品質を**同じ実験の中で同時に**見ます。別々に測ると、品質の低下が費用の改善として記録されます。
+
+### 削る案をエージェント自身に出させる場合
+
+ここに条件が 1 つ足ります。**同時に見ている品質の指標が、エージェントから見えていると、
+その指標自体が調整の対象になります。** システム寄りの 30 課題で、エージェントに見えている検査と
+見えていない検査の合格率の差を測ったところ、差はコード規模が 10 倍になるごとに 28 ポイント開きました
+（`REF-177`、査読の記載なし）。費用を下げる案を自分で出して自分で合否を確かめる構成は、
+ちょうどこの形になります。
+
+合否を決める検査の一部は、**エージェントが読めない・変えられない場所に残してから**渡します。
+測る対象の作り方は [../measurable-target/](../measurable-target/)、提供元が実際に置いていた
+guardrail と人の承認の形も同じ文書にあります（`REF-175`）。
 
 ## 二段で確かめる
 
