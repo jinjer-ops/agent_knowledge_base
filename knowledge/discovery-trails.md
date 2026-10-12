@@ -481,6 +481,19 @@ tags: [knowledge, sources, discovery]
   - REF-178 Why lab and field data can be different (and what to do about it) <https://web.dev/articles/lab-and-field-data-differences>（`reference`）
   - REF-179 CI for performance: Reliable benchmarking in noisy environments <https://pythonspeed.com/articles/consistent-benchmarking-in-ci/>（`reference`）
 
+### ART-050 デザインハーネスを個人開発で組んだ — AI が作る画面のずれを止めるまで
+
+- 共有した URL: <https://zenn.dev/yoshihiko555/articles/e9801e0ad1efb8>
+- 見つけて使った資料:
+  - REF-127 Generated Inaccessible: Measuring WCAG Violations in AI UI Design Tools <https://dl.acm.org/doi/10.1145/3800424.3800430>（`reference`）
+  - REF-128 Design Tokens Format Module (W3C Design Tokens Community Group, draft) <https://www.designtokens.org/tr/drafts/format/>（`reference`）
+  - REF-192 The Automated Accessibility Coverage Report (Deque) <https://www.deque.com/automated-accessibility-testing-coverage/>（`reference`）
+  - REF-193 Visual comparisons (Playwright docs) <https://playwright.dev/docs/test-snapshots>（`reference`）
+  - REF-194 Theme variables (Tailwind CSS docs) <https://tailwindcss.com/docs/theme>（`reference`）
+  - REF-195 MLLM as a UI Judge: Benchmarking Multimodal LLMs for Predicting Human Perception of User Interfaces <https://arxiv.org/abs/2510.08783>（`reference`）
+  - REF-196 Can Multimodal LLMs Model Expert Ratings in Mobile UI Usability Evaluation? <https://link.springer.com/chapter/10.1007/978-3-032-30549-7_12>（`reference`）
+  - REF-197 What Are Developers Actually Discussing When Visual Regression Tests Fail? <https://arxiv.org/abs/2608.07020>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

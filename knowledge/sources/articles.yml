@@ -1663,7 +1663,7 @@ sources:
     topics: [accessibility, wcag, ui_generation, measurement, peer_reviewed]
     status: reference
     intake: found
-    found_via: [ART-010]
+    found_via: [ART-010, ART-050]
     use_when: "AI に作らせた画面の何が落ちるか、プロンプトで要件を明記すれば直るのかを確かめる時"
     derived: [foundation/design-asset-canon/README.md, foundation/presentations/README.md, knowledge/reading-guide.md]
   - id: REF-128
@@ -1673,7 +1673,7 @@ sources:
     topics: [design_tokens, interchange_format, design_system, draft_spec]
     status: reference
     intake: found
-    found_via: [ART-010]
+    found_via: [ART-010, ART-050]
     use_when: "見た目の決定を完成物ではなく名前付きの値として持つ形を検討する時"
     derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
   - id: REF-129
@@ -2351,3 +2351,72 @@ sources:
     found_via: [ART-014]
     use_when: "生成コードのアーキテクチャ違反を機械で数える測り方を探す時"
     derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: ART-050
+    title: デザインハーネスを個人開発で組んだ — AI が作る画面のずれを止めるまで
+    url: https://zenn.dev/yoshihiko555/articles/e9801e0ad1efb8
+    published_at: 2026-10-11
+    topics: [ui_consistency, design_tokens, visual_regression, lint_gate, llm_judge]
+    status: reference
+    intake: shared
+    use_when: "AIに作らせた画面が少しずつずれるのを止める構成の入口（効果の裏付けは一次情報と測定側で確かめる）"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-192
+    title: "The Automated Accessibility Coverage Report (Deque)"
+    url: https://www.deque.com/automated-accessibility-testing-coverage/
+    published_at: null
+    topics: [accessibility, automated_testing, coverage_limits, wcag]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "規則で判定する検査を入れたあと、残りがどれだけあるかを見積もる時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-193
+    title: "Visual comparisons (Playwright docs)"
+    url: https://playwright.dev/docs/test-snapshots
+    published_at: null
+    topics: [visual_regression, screenshot_diff, environment_dependence, thresholds]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "描画した画面を比べる検査の前提条件と、許容値の扱いを決める時"
+    derived: [foundation/design-asset-canon/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-194
+    title: "Theme variables (Tailwind CSS docs)"
+    url: https://tailwindcss.com/docs/theme
+    published_at: null
+    topics: [design_tokens, css_variables, single_source_of_truth, ui_consistency]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "色や寸法の決定を名前付きの値として1か所に持たせたい時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-195
+    title: "MLLM as a UI Judge: Benchmarking Multimodal LLMs for Predicting Human Perception of User Interfaces"
+    url: https://arxiv.org/abs/2510.08783
+    published_at: 2025-10-09
+    topics: [llm_judge, ui_evaluation, human_alignment, multimodal]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "規則にできない見た目の観点をモデルに採点させてよいか判断する時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-196
+    title: Can Multimodal LLMs Model Expert Ratings in Mobile UI Usability Evaluation?
+    url: https://link.springer.com/chapter/10.1007/978-3-032-30549-7_12
+    published_at: null
+    topics: [llm_judge, ui_evaluation, expert_ratings, usability, overestimation]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "静止画から採点させる構成が、どの観点で甘く出るかを確かめる時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-197
+    title: What Are Developers Actually Discussing When Visual Regression Tests Fail?
+    url: https://arxiv.org/abs/2608.07020
+    published_at: 2026-08-07
+    topics: [visual_regression, review_cost, failure_taxonomy, ci_gate]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "見た目の検査を工程に入れたとき、何が拾われ、人の時間がどれだけ増えるかを見込む時"
+    derived: [foundation/design-asset-canon/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
