@@ -1933,3 +1933,92 @@ sources:
     found_via: [ART-018]
     use_when: "機械の資格情報を用意する時、鍵を作らずに済む方法があるかを先に確かめる時"
     derived: [foundation/internal-service-access/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: ART-046
+    title: Windows + AIコーディングエージェントで踏んだ罠をまとめた
+    url: https://zenn.dev/mukuil_blog/articles/9a048ea2e8dec4
+    published_at: 2026-09-17
+    topics: [windows, encoding, line_endings, cloud_sync, agent_file_io]
+    status: reference
+    intake: shared
+    use_when: "Windows でエージェントにファイルを読み書きさせていて、出力は正しいのに結果が壊れる時の入口"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-154
+    title: about_Character_Encoding (PowerShell 5.1)
+    url: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-5.1
+    published_at: null
+    topics: [powershell, encoding, bom, utf8, windows]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "Windows のシェルにファイルを読み書きさせる前に、その版の既定の符号化と BOM の扱いを確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-155
+    title: Use UTF-8 code pages in Windows apps
+    url: https://learn.microsoft.com/en-us/windows/apps/design/globalizing/use-utf8-code-page
+    published_at: null
+    topics: [windows, encoding, utf8, code_page, system_settings]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "符号化の問題を道具ごとではなく系の設定で片づけられないかを検討する時、その適用範囲と条件を確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-156
+    title: Configuring Git to handle line endings
+    url: https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings
+    published_at: null
+    topics: [git, line_endings, gitattributes, normalization, windows]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "改行の扱いを利用者ごとの設定ではなくリポジトリ側で決める時、既存リポジトリを正規化する時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-157
+    title: Set Files On-Demand states in Windows
+    url: https://learn.microsoft.com/en-us/onedrive/files-on-demand-windows
+    published_at: null
+    topics: [onedrive, files_on_demand, placeholder, file_attributes, windows]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "同期フォルダのファイルに中身があるかを、落とさずに確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-158
+    title: "Edit tool silently destroys some files in OneDrive-synced folders via non-deterministic delete-then-rename race (Windows)"
+    url: https://github.com/anthropics/claude-code/issues/65229
+    published_at: 2026-06-04
+    topics: [claude_code, windows, onedrive, data_loss, file_replacement]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "同期フォルダの下でエージェントにファイルを編集させる前に、置換書き込みがどう失敗するかを確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-159
+    title: "Cowork silently corrupts files in OneDrive folders with Files-On-Demand"
+    url: https://github.com/anthropics/claude-code/issues/62140
+    published_at: 2026-05-25
+    topics: [claude_code, windows, onedrive, truncation, data_loss]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "読み取った内容がファイルの全体だと仮定してよいかを疑う時、置き札を検出する方法が要る時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-160
+    title: "Explore agent triggers unscoped file access, causing OneDrive to download cloud-only files"
+    url: https://github.com/anthropics/claude-code/issues/35513
+    published_at: 2026-03-17
+    topics: [claude_code, subagents, onedrive, hydration, traversal_cost]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "広い探索を下位エージェントへ委譲する前に、トークン以外の費用が出る環境かを確かめる時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-161
+    title: Claude Code advanced setup
+    url: https://code.claude.com/docs/en/setup
+    published_at: null
+    topics: [claude_code, windows, setup, shell, sandboxing]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "Windows でどのシェルの道具が使われるか、隔離が使えるかを確かめる時"
+    derived: [foundation/claude-code/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]

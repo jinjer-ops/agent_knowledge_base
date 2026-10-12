@@ -412,6 +412,19 @@ tags: [knowledge, sources, discovery]
   - REF-136 DiagramEval: Evaluating LLM-Generated Diagrams via Graphs <https://arxiv.org/abs/2510.25761>（`reference`）
   - REF-137 MermaidSeqBench: An Evaluation Benchmark for NL-to-Mermaid Sequence Diagram Generation <https://arxiv.org/abs/2511.14967>（`reference`）
 
+### ART-046 Windows + AIコーディングエージェントで踏んだ罠をまとめた
+
+- 共有した URL: <https://zenn.dev/mukuil_blog/articles/9a048ea2e8dec4>
+- 見つけて使った資料:
+  - REF-154 about_Character_Encoding (PowerShell 5.1) <https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-5.1>（`reference`）
+  - REF-155 Use UTF-8 code pages in Windows apps <https://learn.microsoft.com/en-us/windows/apps/design/globalizing/use-utf8-code-page>（`reference`）
+  - REF-156 Configuring Git to handle line endings <https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings>（`reference`）
+  - REF-157 Set Files On-Demand states in Windows <https://learn.microsoft.com/en-us/onedrive/files-on-demand-windows>（`reference`）
+  - REF-158 Edit tool silently destroys some files in OneDrive-synced folders via non-deterministic delete-then-rename race (Windows) <https://github.com/anthropics/claude-code/issues/65229>（`reference`）
+  - REF-159 Cowork silently corrupts files in OneDrive folders with Files-On-Demand <https://github.com/anthropics/claude-code/issues/62140>（`reference`）
+  - REF-160 Explore agent triggers unscoped file access, causing OneDrive to download cloud-only files <https://github.com/anthropics/claude-code/issues/35513>（`reference`）
+  - REF-161 Claude Code advanced setup <https://code.claude.com/docs/en/setup>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

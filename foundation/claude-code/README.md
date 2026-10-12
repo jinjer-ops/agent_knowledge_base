@@ -4,9 +4,9 @@ title: Claude Code starter
 type: setup-guide
 status: active
 created_at: 2026-09-01
-updated_at: 2026-10-07
+updated_at: 2026-10-13
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-006, ART-012, ART-015, ART-044, REF-001, REF-002, REF-008, REF-017, REF-020, REF-120, REF-121, REF-122, REF-123, REF-145]
+source_ids: [ART-003, ART-006, ART-012, ART-015, ART-044, REF-001, REF-002, REF-008, REF-017, REF-020, REF-120, REF-121, REF-122, REF-123, REF-145, REF-161]
 tags: [claude-code, setup, skills]
 ---
 
@@ -87,6 +87,23 @@ project/
 Claude Code は、作業ディレクトリとその上位に `CLAUDE.md` / `.claude/CLAUDE.md` / `CLAUDE.local.md` が無いときに `AGENTS.md` を直接読みます。判定に数えるのはプロジェクト側のこれらだけで、ユーザー個人の `~/.claude/CLAUDE.md`、組織の管理ポリシー、`.claude/rules/` は数に入らず並んで読み込まれます。
 
 両方を読ませる設定はユーザー設定・管理設定だけで有効で、プロジェクト設定からは指定できません。リポジトリ側から確実に効かせたい場合は、`CLAUDE.md` の先頭で `AGENTS.md` を取り込みます。Windows を含むチームでは symlink ではなく取り込みを使います。条件と制約は [../agents-md/README.md](../agents-md/README.md) にまとめてあります。
+
+## Windows で動かす場合
+
+同じ設定でも、**どのシェルの道具が使われるかが機械によって変わります**（`REF-161`、確認日 2026-10-13）。
+Git for Windows が入っていれば Bash の道具が使われ、入っていなければ PowerShell の道具が使われます。
+両方が揃っている構成では両方が並び、どちらを使うかはその場の判断になります。Bash が見つからない場合に
+場所を指定する環境変数も用意されています。
+
+**Windows でそのまま動かす構成では、サンドボックスが利用できません**（`REF-161`）。隔離を前提にした
+判断（「危なければサンドボックスで止まる」）は、この構成では成り立ちません。前節の止める層の話は、
+サンドボックスが無い前提で読みます。
+
+どちらの道具が選ばれたかは、生成されるファイルの符号化と改行にそのまま出ます。日本語を含む
+スクリプトや設定ファイルを書かせる場合、どちらの処理系がそれを読むかで正解が変わり、
+片方に合わせるともう片方が壊れます。クラウド同期フォルダの下では、編集が黙って失敗する経路も
+報告されています。この層の判断は、製品に依存しないので
+[../windows-file-hazards/](../windows-file-hazards/) にまとめてあります。
 
 ## 大きなリポジトリ
 
