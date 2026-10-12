@@ -179,7 +179,7 @@ sources:
     status: reference
     intake: shared
     use_when: "CLAUDE.md、AGENTS.md、rules、auto memoryの役割と読み込み範囲・条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/plan-handoff/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
@@ -2022,3 +2022,72 @@ sources:
     found_via: [ART-046]
     use_when: "Windows でどのシェルの道具が使われるか、隔離が使えるかを確かめる時"
     derived: [foundation/claude-code/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: ART-047
+    title: Claudeは計画、Antigravityは実行。AIを2つ使い分けたら開発が回りはじめた
+    url: https://www.lifehacker.jp/article/2609-antigravity-writes-better-code-than-claude-still-use-claude-first/
+    published_at: 2026-09-15
+    topics: [coding_agents, planning, handoff, tool_split, antigravity]
+    status: reference
+    intake: shared
+    use_when: "計画を書かせる道具と実装させる道具を分けようと考えた時、その構成の論点を洗い出す入口が要る時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-162
+    title: Rules — Antigravity docs
+    url: https://antigravity.google/docs/rules/
+    published_at: null
+    topics: [agents_md, rules, instruction_files, size_limits, antigravity]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "AGENTS.md を複数の製品に読ませる時、常時の指示の上限と超過時の挙動を確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-163
+    title: Artifacts — Antigravity docs
+    url: https://antigravity.google/docs/artifacts
+    published_at: null
+    topics: [planning, artifacts, review_surface, antigravity]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "製品が作る計画を、別の道具へ渡せる成果物として扱ってよいかを確かめる時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-164
+    title: Choose a permission mode
+    url: https://code.claude.com/docs/en/permission-modes
+    published_at: null
+    topics: [claude_code, plan_mode, permissions, approval_flow]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "計画の段階で編集が止まる前提を置く時、承認後に何が引き継がれるかを確かめる時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-165
+    title: "From Plan to Action: How Well Do Agents Follow the Plan?"
+    url: https://arxiv.org/abs/2604.12147
+    published_at: 2026-04-13
+    topics: [planning, plan_compliance, coding_agents, swe_bench, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "計画を先に作らせることの効き目と、計画が逆効果になる条件を知りたい時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-166
+    title: "Context Rot: How Increasing Input Tokens Impacts LLM Performance"
+    url: https://www.trychroma.com/research/context-rot
+    published_at: 2025-07-14
+    topics: [long_context, degradation, distractors, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "文脈窓の大きさを「全部見えている」と読み替えてよいかを確かめる時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-167
+    title: Diagnosing and Mitigating Context Rot in Long-horizon Search
+    url: https://arxiv.org/abs/2606.29718
+    published_at: 2026-06-29
+    topics: [long_context, agents, premature_termination, mitigation, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "長い文脈で動かすエージェントが、誤るのではなく早く諦める側の故障を疑う時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]

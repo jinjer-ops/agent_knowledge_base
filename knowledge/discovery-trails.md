@@ -425,6 +425,17 @@ tags: [knowledge, sources, discovery]
   - REF-160 Explore agent triggers unscoped file access, causing OneDrive to download cloud-only files <https://github.com/anthropics/claude-code/issues/35513>（`reference`）
   - REF-161 Claude Code advanced setup <https://code.claude.com/docs/en/setup>（`reference`）
 
+### ART-047 Claudeは計画、Antigravityは実行。AIを2つ使い分けたら開発が回りはじめた
+
+- 共有した URL: <https://www.lifehacker.jp/article/2609-antigravity-writes-better-code-than-claude-still-use-claude-first/>
+- 見つけて使った資料:
+  - REF-162 Rules — Antigravity docs <https://antigravity.google/docs/rules/>（`reference`）
+  - REF-163 Artifacts — Antigravity docs <https://antigravity.google/docs/artifacts>（`reference`）
+  - REF-164 Choose a permission mode <https://code.claude.com/docs/en/permission-modes>（`reference`）
+  - REF-165 From Plan to Action: How Well Do Agents Follow the Plan? <https://arxiv.org/abs/2604.12147>（`reference`）
+  - REF-166 Context Rot: How Increasing Input Tokens Impacts LLM Performance <https://www.trychroma.com/research/context-rot>（`reference`）
+  - REF-167 Diagnosing and Mitigating Context Rot in Long-horizon Search <https://arxiv.org/abs/2606.29718>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
