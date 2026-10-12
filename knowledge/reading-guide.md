@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-13
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -187,11 +187,11 @@ tags: [knowledge, reading-guide, sources]
 ### ART-011 Mojo のオープンソース公開
 
 - **URL**: <https://www.publickey1.jp/blog/26/pythonmojowindows.html>
-- **記事種別**: ニュース記事（製品発表の報道）
-- **現在の扱い**: `reference`
+- **記事種別**: ニュース記事（製品発表の報道、2026-08-20）
+- **現在の扱い**: `reference`（再評価日 2026-10-13）
 - **何が書かれているか**: Python ライクな言語 Mojo のコンパイラとツールチェーンが Apache 2.0 ライセンスで公開されたという報道。関連ライブラリのソースも同時公開された。Python より高速に実行できるコンパイル言語で、特定ベンダの GPU に依存しない設計を掲げ、複数社のプロセッサへの対応を表明している。開発元は2026年6月に買収されており、Microsoft との協業による Windows 版の開発も発表されたが、リリース時期は未定とされる。
-- **得られる示唆**: これは製品発表の記録であり、性能の裏付けではない。この repository の作業環境は Windows で、記事の時点で Windows 版の時期が未定であるため、手元で試せる状態にない。動向の記録として保持する。
-- **採用・実験の裏付け**: 該当なし（`reference` のため）。
+- **得られる示唆**: これは製品発表の記録であり、性能の裏付けではない。この repository の作業環境は Windows で、記事の時点で Windows 版の時期が未定であるため、手元で試せる状態にない。**2026-10-13 の再評価で、入口としての位置づけを変えた。** 一次情報（`REF-180`、`REF-181`）を読むと、公開の 1 週間前に 1.0 へ到達しており、その 1.0 の中身が統合（変数宣言の一本化、ポインタ型の統合、多数の改名）だった。つまり**公開されている大量のコードと、モデルが学習した時期の言語は、今の版ではない**。この構図は言語を問わず起きるので、記事はそこへの入口として扱う。記事自体から性能や採否の判断は採っていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md)（未検証）。この言語はこの環境で動かしておらず、導入は勧めていない。
 
 ### ART-014 リポジトリ層にロジックを書かない
 
@@ -2111,6 +2111,69 @@ tags: [knowledge, reading-guide, sources]
 - **何が書かれているか**: 共有環境の CI では実時間の計測にノイズが多く、小さい性能変化を検出できない。代わりに **CPU の命令数を指標にする**方法を、道具と実行例つきで示している。限界も明記されており、命令数はキャッシュ・分岐予測・命令レベル並列を模していないため実際の速さとは別物で、計測自体も実行より大幅に遅い。
 - **得られる示唆**: 代表の 1 つにした。`REF-175` が決定的な計測を使った理由を、**道具に依存しない形で説明している**からである。採ったのは形だけで、(1) エージェントが何度も回すので計測は安いこと、(2) ばらつく数は改善を隠すので決定的な代理の数を使うこと、(3) 代理である以上、実地との相関を別に確かめること。**この環境で道具を動かしていないので、導入は勧めていない。** 命令数という具体も、言語と実行基盤に依存するためそのままは移していない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/measurable-target/README.md](../foundation/measurable-target/README.md)（未検証）。
+
+### REF-180 コンパイラとツールチェーンの公開、Windows 対応は時期未定
+
+- **URL**: <https://www.modular.com/blog/modcon-announcements>
+- **記事種別**: 提供元の公式発表（2026-08-18）
+- **現在の扱い**: `reference`（確認日 2026-10-13）
+- **何が書かれているか**: 言語全体を Apache 2.0 で公開したという発表。コンパイラとすべてのツールが対象で、標準ライブラリ（2024 年）とカーネル（2025 年）の段階的な公開の最後の部分にあたる。ネイティブ Windows 対応は Microsoft の Windows チームとの協業で「開発中」とされ、**時期の表明はない**。それまでは WSL 経由。複数のプロセッサ系統への対応も併せて発表されている。
+- **得られる示唆**: 送信記事（`ART-011`）の事実関係を一次情報で確かめるために読んだ。採ったのは日付・公開範囲・ライセンス・Windows 対応の状態という事実だけで、性能やハードウェア対応にまつわる主張（開発工数の削減など）は提供元の自己申告なので採っていない。この環境は Windows なので、「ネイティブ対応の時期が未定」は**検証の土台が手元に無い**ことを意味する。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md)（未検証）。この言語の導入は勧めていない。
+
+### REF-181 1.0 の中身は統合であり、以後も破壊的変更はありうる
+
+- **URL**: <https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here>
+- **記事種別**: 提供元の公式発表（2026-08-11）
+- **現在の扱い**: `reference`（確認日 2026-10-13）
+- **何が書かれているか**: 1.0 到達の発表。1.x の間は原則として追加のみで、言語が足元で動き続けることはないと約束しつつ、同じ段落で「それでも破壊的変更はありうる。成熟した言語の進め方に倣って慎重に扱う」と断っている。1.0 で行われたのは統合で、変数宣言を 1 つのキーワードに一本化、クロージャの書き方の統一、ポインタ型を 1 つに集約、語彙の精度を上げるための多数の改名が挙げられている。
+- **得られる示唆**: **この入力で最も効いた資料。** 公開されている解説やコードの大半は 1.0 より前の書き方であり、モデルの学習データも同様である、という構図をここから確定できた。二次情報には「非推奨の別名と自動修正が付く」とあるが、この公式ページでは確認できなかったので使っていない。安定性の約束を、版を指定しなくてよい根拠として読まない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md)（未検証）。
+
+### REF-182 存在しない依存名は、聞き直しても同じものが返る
+
+- **URL**: <https://www.usenix.org/publications/loginonline/we-have-package-you-comprehensive-analysis-package-hallucinations-code>
+- **記事種別**: 査読付き国際会議の論文（USENIX Security 2025）とその解説ページ
+- **現在の扱い**: `reference`（確認日 2026-10-13）
+- **何が書かれているか**: 16 のコード生成モデルに約 19,000 件の問いを与え、生成されたパッケージ名を公開レジストリと突き合わせた測定。存在しない名前の割合は商用のモデルで約 5%、公開重みのモデルで約 21%。実在しない名前はユニークで 205,474 件。内訳は純粋な捏造 51%、実在する 2 つの名前の混同 38%、綴り違い 13%。**同じ問いを与え直すと約 45% が同じ名前で再現し、続けて 10 回聞くうちに約 60% が再び現れた。** 緩和策も試しており、幻覚の無いデータで微調整すると誤りは 8 割以上減ったが、コードの品質そのものが落ちた。
+- **得られる示唆**: 採ったのは率ではなく**再現性**である。聞き直して同じ答えが返ってくることは、存在の根拠にならない。確認はレジストリに引かせる側で行う。対象は Python と JavaScript のパッケージ名だけで、ほかの言語や API 名には測られていないので、「薄い言語ではもっと悪い」という推測はここからは出せない。潤沢な言語ですらこの率が出る、という事実だけを使っている。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md) と [../foundation/model-tier-selection/README.md](../foundation/model-tier-selection/README.md)（いずれも未検証）。率をこの環境の基準にはしていない。
+
+### REF-183 モデル間の差は縮んだが、5 つ全部が同じ名前を発明していた
+
+- **URL**: <https://arxiv.org/abs/2605.17062>
+- **記事種別**: プレプリント（単著、査読の記載なし。初出 2026-05-16、改訂あり）
+- **現在の扱い**: `reference`（確認日 2026-10-13）
+- **何が書かれているか**: `REF-182` の手順を 2026 年前後の前線モデル 5 つで繰り返した再評価。率は 4.62%〜6.10% に収まり、モデル間の開きがひと桁圧縮された。一方で、**5 つのモデルすべてが同一に発明した名前が 127 件**（PyPI に 109、npm に 18）あり、うち 53 件はレジストリ側の既存の防御を通り抜けて取得可能なままだった。言語間の非対称性も以前の報告と逆転している。
+- **得られる示唆**: この入力における**反対方向の根拠**として登録した。率は確かに下がっており、「最近のモデルでも 2 割が捏造される」という読み方は現状に合わない。それでも結論は変わらない。**別のモデルに聞いて一致しても、独立した確認にはならない。** 査読の記載がなく単著なので、確認したのは要旨の範囲で、個々のモデルの順位は使っていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md) と [../foundation/model-tier-selection/README.md](../foundation/model-tier-selection/README.md)（いずれも未検証）。
+
+### REF-184 版を指定しても、半分は版に合わない
+
+- **URL**: <https://arxiv.org/abs/2507.12367>
+- **記事種別**: プレプリント（ベンチマーク、初出 2025-07-16）
+- **現在の扱い**: `reference`（確認日 2026-10-13）
+- **何が書かれているか**: Python の 328 問からなる、版を指定した上で解かせるベンチマーク。各問に対象ライブラリの版と手書きの単体テストが付いており、**実行して合否を判定する**。対象は広く使われているライブラリ 11 種の、文書化された破壊的変更。最前線の構成でも成功率は 48〜51% にとどまる。
+- **得られる示唆**: **指示に版を書くことは対処ではない。** 版を文字で与えても半分は合わないのだから、対処はその版で実際に動かして判定する経路を先に用意することになる。緩和策（誤り文の差し戻し・検索・エージェント構成）の効果は公開ページから確認できなかったので、ここでは基準値だけを使っている。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md)（未検証）。
+
+### REF-185 誤りを落とすのは、言葉の工夫ではなく型の層
+
+- **URL**: <https://arxiv.org/abs/2504.09246>
+- **記事種別**: 査読付き国際会議の論文（PLDI 2025、初出 2025-04-12）
+- **現在の扱い**: `reference`（確認日 2026-10-13）
+- **何が書かれているか**: 生成の過程そのものを型システムで制約する手法。接頭辞オートマトンと型探索を使い、単純型付き言語で形式化した上で TypeScript で実証している。**コンパイルエラーを半分以上減らした**とされ、対象は HumanEval と MBPP、30B 超の公開重みモデルを含む複数の規模・系統。
+- **得られる示唆**: 採ったのは手法ではなく**順序**である。この種の誤りの大半は、指示の書き方ではなく型検査・ビルド・テスト実行という機械の層で落ちる。だから新しい言語で書かせる前に確かめるのは、その言語の検査器とテスト実行がこの機械で回るかどうかになる。二次的な要約にはベンチマーク別の削減率と「コンパイルエラーの大半は型検査の失敗」という数値があるが、**一次情報のページで確認できなかったので使っていない**。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md)（未検証）。この手法の導入は勧めていない。
+
+### REF-186 利用者の少ない言語では、実行で濾す以外に足場が無かった
+
+- **URL**: <https://arxiv.org/abs/2308.09895>
+- **記事種別**: 査読付き論文（PACMPL / OOPSLA 2024、初出 2023-08-19、改訂あり）
+- **現在の扱い**: `reference`（確認日 2026-10-13）
+- **何が書かれているか**: 利用者の多い言語の訓練データを、少ない言語（Julia・Lua・OCaml・R・Racket）へ翻訳して学習データを作る手法。著者らは、モデルは低資源の言語が苦手なのだからその翻訳自体が定義からして信用できない、と明記している。採った手段は、元のコードから単体テストを生成し、**テストを通らない翻訳を捨てる**こと。これで微調整したモデルは、公開されている他のモデルを上回った。
+- **得られる示唆**: この分野で低資源の言語を扱う足場になったのが、モデルの自信でも人の目視でもなく**実行結果**だった、という事実だけを採っている。個別の言語の数値や、微調整という手段そのものは移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/low-resource-language-codegen/README.md](../foundation/low-resource-language-codegen/README.md)（未検証）。
 
 ---
 

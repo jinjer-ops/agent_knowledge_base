@@ -110,6 +110,18 @@ tags: [knowledge, sources, discovery]
   - REF-127 Generated Inaccessible: Measuring WCAG Violations in AI UI Design Tools <https://dl.acm.org/doi/10.1145/3800424.3800430>（`reference`）
   - REF-128 Design Tokens Format Module (W3C Design Tokens Community Group, draft) <https://www.designtokens.org/tr/drafts/format/>（`reference`）
 
+### ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明
+
+- 共有した URL: <https://www.publickey1.jp/blog/26/pythonmojowindows.html>
+- 見つけて使った資料:
+  - REF-180 ModCon 2026: Open source, open cloud, open silicon <https://www.modular.com/blog/modcon-announcements>（`reference`）
+  - REF-181 Modular 26.5: Mojo 1.0 is here! <https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here>（`reference`）
+  - REF-182 We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs <https://www.usenix.org/publications/loginonline/we-have-package-you-comprehensive-analysis-package-hallucinations-code>（`reference`）
+  - REF-183 The Range Shrinks, the Threat Remains: Re-evaluating LLM Package Hallucinations on the 2026 Frontier-Model Cohort <https://arxiv.org/abs/2605.17062>（`reference`）
+  - REF-184 GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities <https://arxiv.org/abs/2507.12367>（`reference`）
+  - REF-185 Type-Constrained Code Generation with Language Models <https://arxiv.org/abs/2504.09246>（`reference`）
+  - REF-186 Knowledge Transfer from High-Resource to Low-Resource Programming Languages for Code LLMs <https://arxiv.org/abs/2308.09895>（`reference`）
+
 ### ART-012 claude のメモリを棚卸しする
 
 - 共有した URL: <https://zenn.dev/cureapp/articles/c1e963064d05fd>
@@ -500,5 +512,4 @@ tags: [knowledge, sources, discovery]
 
 共有と調査の区別を付ける前に登録した出典。共有 URL として処理されると上へ移る。
 
-- ART-011 Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明 <https://www.publickey1.jp/blog/26/pythonmojowindows.html>（`reference`）
 - ART-014 リポジトリにロジックは書くな！ <https://zenn.dev/more_tech_blog/articles/76af481ab3816d>（`reference`）

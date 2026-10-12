@@ -95,11 +95,12 @@ sources:
   - id: ART-011
     title: Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明
     url: https://www.publickey1.jp/blog/26/pythonmojowindows.html
-    published_at: null
-    topics: [ml_infrastructure, mojo]
+    published_at: 2026-08-20
+    topics: [ml_infrastructure, mojo, language_versioning, code_generation]
     status: reference
-    use_when: "既存ML処理で計算ホットスポットが特定され、Python実装との比較を行う時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "出たばかりの言語・版をエージェントに書かせるか判断する時の入口（公開範囲・版・対応環境は一次情報で確かめる）"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
   - id: ART-012
     title: claude のメモリを棚卸しする
     url: https://zenn.dev/cureapp/articles/c1e963064d05fd
@@ -2229,3 +2230,73 @@ sources:
     found_via: [ART-049]
     use_when: "実行ごとにぶれない計測をCIへ置きたい時、ばらつきで小さい改善が隠れる時"
     derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-180
+    title: "ModCon 2026: Open source, open cloud, open silicon"
+    url: https://www.modular.com/blog/modcon-announcements
+    published_at: 2026-08-18
+    topics: [mojo, open_source, licensing, toolchain, windows_support]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "ある言語・処理系の公開範囲とライセンス、対応環境の現状を一次情報で確かめる時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-181
+    title: "Modular 26.5: Mojo 1.0 is here!"
+    url: https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here
+    published_at: 2026-08-11
+    topics: [mojo, versioning, breaking_changes, stability_guarantees]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "1.0 到達時に何が変わり、以後どこまで安定すると言われているかを一次情報で確かめる時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-182
+    title: "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs"
+    url: https://www.usenix.org/publications/loginonline/we-have-package-you-comprehensive-analysis-package-hallucinations-code
+    published_at: 2025-06-17
+    topics: [package_hallucination, supply_chain, code_generation, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "生成されたコードの依存名をどこまで信用してよいか決める時、聞き直しが確認になるか判断する時"
+    derived: [foundation/low-resource-language-codegen/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-183
+    title: "The Range Shrinks, the Threat Remains: Re-evaluating LLM Package Hallucinations on the 2026 Frontier-Model Cohort"
+    url: https://arxiv.org/abs/2605.17062
+    published_at: 2026-05-16
+    topics: [package_hallucination, replication, supply_chain, model_comparison]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "モデルを変える・段を上げることが依存名の確認になるか判断する時"
+    derived: [foundation/low-resource-language-codegen/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-184
+    title: "GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities"
+    url: https://arxiv.org/abs/2507.12367
+    published_at: 2025-07-16
+    topics: [versioning, benchmarks, execution_based_evaluation, code_generation]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "指示に版を書けば版に合ったコードが出ると仮定してよいか確かめる時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-185
+    title: Type-Constrained Code Generation with Language Models
+    url: https://arxiv.org/abs/2504.09246
+    published_at: 2025-04-12
+    topics: [type_systems, constrained_decoding, compilation_errors, code_generation]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "生成コードの誤りを、指示の工夫と機械の検査層のどちらで落とすか決める時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-186
+    title: Knowledge Transfer from High-Resource to Low-Resource Programming Languages for Code LLMs
+    url: https://arxiv.org/abs/2308.09895
+    published_at: 2023-08-19
+    topics: [low_resource_languages, code_llm, test_filtering, training_data]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "利用者の少ない言語で生成物の正しさをどう担保するか考える時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
