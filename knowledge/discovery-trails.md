@@ -494,6 +494,15 @@ tags: [knowledge, sources, discovery]
   - REF-196 Can Multimodal LLMs Model Expert Ratings in Mobile UI Usability Evaluation? <https://link.springer.com/chapter/10.1007/978-3-032-30549-7_12>（`reference`）
   - REF-197 What Are Developers Actually Discussing When Visual Regression Tests Fail? <https://arxiv.org/abs/2608.07020>（`reference`）
 
+### ART-051 判断専用モデルを日本語校正プラグインへ実際に組み込み、所要時間を測った記録
+
+- 共有した URL: <https://zenn.dev/bamboo_nova/articles/c6176164dcffd0>
+- 見つけて使った資料:
+  - REF-198 Parallel questions (TypeSafe AI cookbooks) <https://docs.typesafe.ai/cookbooks/parallel_questions>（`reference`）
+  - REF-199 When Does Confidence-Based Cascade Deferral Suffice? <https://arxiv.org/abs/2307.02764>（`reference`）
+  - REF-200 Run Claude Code programmatically (headless / `-p`) <https://code.claude.com/docs/en/headless>（`reference`）
+  - REF-201 Jev: Inside TypeSafe AI's First System One Decision Model <https://www.hyperstack.cloud/technical-resources/tutorials/jev-inside-typesafe-ais-first-system-one-decision-model>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
