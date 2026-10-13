@@ -6,16 +6,18 @@ sources:
     title: Google、AIを使って非構造化テキストから構造化データを抽出するオープンソースPythonライブラリ「LangExtract」をリリース
     url: https://gihyo.jp/article/2025/08/langextract
     published_at: 2025-08-01
-    topics: [knowledge_ingestion, structured_extraction]
+    topics: [knowledge_ingestion, structured_extraction, documentation_generation]
     status: reference
-    use_when: "出典位置を保持したまま、非構造化テキストを判断カードへ抽出したい時"
-    derived: [docs/contribution.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "取り込み時に散文ではなく項目として取り出す案の入口（現況と制限は一次情報で確かめる）"
+    derived: [docs/contribution.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: ART-002
     title: PowerPoint との戦いはやめよう — Markdown と Reveal.js でスライド作成
     url: https://zenn.dev/daming_cafe/articles/reveal-markdown-slides
     published_at: 2026-04-03
     topics: [presentations, web_slides]
     status: reference
+    intake: shared
     use_when: "コード・数式中心の技術発表をWebスライドで配信したい時"
     derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
   - id: ART-003
@@ -24,165 +26,2397 @@ sources:
     published_at: 2026-04-21
     topics: [agent_instructions, skills]
     status: adopted
+    intake: shared
     use_when: "常時ルール、参照資料、明示的ワークフローの置き場所を決める時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-004
     title: Claude Fable 5 が使えるうちに Agent SOP を導入して整備させる
     url: https://zenn.dev/ryu1maniwa25/articles/fable5-agent-sop-setup
-    published_at: null
-    topics: [agent_operations, sop]
+    published_at: 2026-07-03
+    topics: [agent_operations, sop, skills, procedure_extraction]
     status: adopted
-    use_when: "高リスクまたは再現性が必要な作業手順を構造化する時"
-    derived: [foundation/claude-code/rules/review.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md]
+    intake: shared
+    use_when: "高リスクまたは再現性が必要な作業手順を構造化する時、過去の作業記録から再利用できる手順を掘り出す時"
+    derived: [foundation/claude-code/rules/review.md, foundation/skill-authoring/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md]
   - id: ART-005
     title: Mac mini（M4 Pro / 48GB）で「完全ローカル」のLLM + RAG環境を構築してみた
     url: https://qiita.com/y-okayama-tb/items/0127a7c5203f44507474
     published_at: 2026-07-27
-    topics: [local_rag, open_weight_models]
+    topics: [local_rag, open_weight_models, data_boundary, cost]
     status: reference
-    use_when: "社内文書を外部送信せずに検索・回答する構成を比較する時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "資料を外へ出さないために手元で動かす構成を検討する時、その部品構成と機材の制約の実例が要る時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
   - id: ART-006
     title: 【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)
     url: https://zenn.dev/explaza/articles/20f7f41cff8428
     published_at: 2026-07-28
-    topics: [agent_configuration, skills]
+    topics: [agent_configuration, skills, agents_md, hooks, mcp]
     status: adopted
-    use_when: "複数のコーディングエージェントで設定の重複と競合を減らす時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "指示ファイルに加えてskills・hooks・MCPまで、複数のエージェント間で重複と競合を減らす時"
+    derived: [foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/README.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-007
     title: コードベースのナレッジ化なら、LLM Wikiで十分かもしれない
     url: https://qiita.com/Syoitu/items/ff38655fed51a2920910
     published_at: 2026-07-30
-    topics: [knowledge_system, llm_wiki]
+    topics: [knowledge_system, llm_wiki, codebase_search, cost_control]
     status: reference
-    use_when: "素材を検索し直すだけでなく、整理済みの知識を育てたい時"
-    derived: [knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "取り込み時に生成した文書を置く案を検討する時、その初期費用の実例が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: ART-008
     title: ナレッジグラフを活用してClaude Codeのトークンを10分の1にする
     url: https://zenn.dev/nocodesolutions/articles/19f0d415af42be
     published_at: null
     topics: [codebase_search, knowledge_graph]
     status: reference
-    use_when: "大規模コードベースで通常の検索・索引では探索コストが高いと測定された時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "グラフ化の効果と品質低下を同じ段落で並べた整理を読む時、引用元の一次情報をたどる入口が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: ART-009
     title: Ollama環境構築 # 自分用メモ
     url: https://zenn.dev/jun1013/articles/17e88035111d7c
-    published_at: null
-    topics: [open_weight_models, ollama]
+    published_at: 2026-08-05
+    topics: [open_weight_models, ollama, local_models, context, data_boundary]
     status: reference
-    use_when: "複数のオープンウェイトモデルや埋め込みモデルを共通境界で評価する時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "手元で動かす実行基盤を入れる手順と、実際に行われる調整操作（文脈長の切り詰めなど）を知る時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
   - id: ART-010
     title: 自分のHTML資産を増やすと、AIで見た目の良いサイトを作りやすくなる
     url: https://qiita.com/uni928/items/b4a874f0bbf91d378097
     published_at: 2026-08-07
     topics: [ui_assets, design_reuse]
     status: adopted
+    intake: shared
     use_when: "実証済みのUI部品や見た目を再利用したい時"
-    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+    derived: [foundation/design-asset-canon/README.md, foundation/presentations/README.md, knowledge/reading-guide.md]
   - id: ART-011
     title: Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明
     url: https://www.publickey1.jp/blog/26/pythonmojowindows.html
-    published_at: null
-    topics: [ml_infrastructure, mojo]
+    published_at: 2026-08-20
+    topics: [ml_infrastructure, mojo, language_versioning, code_generation]
     status: reference
-    use_when: "既存ML処理で計算ホットスポットが特定され、Python実装との比較を行う時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "出たばかりの言語・版をエージェントに書かせるか判断する時の入口（公開範囲・版・対応環境は一次情報で確かめる）"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
   - id: ART-012
     title: claude のメモリを棚卸しする
     url: https://zenn.dev/cureapp/articles/c1e963064d05fd
-    published_at: null
-    topics: [knowledge_maintenance, agent_memory]
+    published_at: 2026-08-21
+    topics: [knowledge_maintenance, agent_memory, verification]
     status: adopted
-    use_when: "知識台帳やエージェント向け文書の鮮度・孤児・肥大化を点検する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "エージェントが自分で書いた記憶の鮮度を点検する時、外の事実と突き合わせて古い前提を見つける時"
+    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md, skills/knowledge-curator/SKILL.md]
   - id: ART-013
     title: 「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ
     url: https://www.sbbit.jp/article/cont1/186558
     published_at: 2026-08-21
     topics: [agent_orchestration, automation]
     status: adopted
+    intake: shared
     use_when: "複数エージェントの自動化を検討し、再現可能な測定例と比較する時"
-    derived: [foundation/README.md, knowledge/reading-guide.md]
+    derived: [foundation/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
   - id: ART-014
     title: リポジトリにロジックは書くな！
     url: https://zenn.dev/more_tech_blog/articles/76af481ab3816d
-    published_at: null
-    topics: [application_architecture, repository_pattern]
+    published_at: 2026-08-21
+    topics: [application_architecture, repository_pattern, layer_boundary]
     status: reference
-    use_when: "アプリケーション層とデータアクセス層の責務をレビューする時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "アプリケーション層とデータアクセス層の責務をレビューする時、層の規約を検査へ移すか決める時"
+    derived: [foundation/layer-boundary-enforcement/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: ART-015
     title: 肥大化し続けるCLAUDE.md
     url: https://zenn.dev/tokium_dev/articles/claude-md-keeps-growing
     published_at: null
     topics: [agent_instructions, knowledge_maintenance]
     status: adopted
-    use_when: "常時読み込まれる指示の肥大化を防ぐ時"
-    derived: [foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+    intake: shared
+    use_when: "常時読み込まれる指示の肥大化を防ぐ時、上限の監視を仕組み側に置く時"
+    derived: [foundation/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
   - id: ART-016
     title: オントロジー × グラフ × LLM の実装と評価（基礎編）
     url: https://qiita.com/haystacker/items/853234c38ae36adbca1f
     published_at: 2026-08-16
     topics: [local_rag, knowledge_graph, graphrag, ontology]
     status: reference
-    use_when: "多段の関係追跡・網羅・型と関係の結合を含む質問で、ベクトルRAGの取得範囲を比較したい時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "取得できていないのか答えられていないのかを分けて測りたい時、多段・網羅・結合の質問で検索の取得範囲を比較したい時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: ART-017
     title: AIコードレビューを4層に分ける。River ReviewのJudgment Placement設計
     url: https://zenn.dev/minewo/articles/river-review-judgment-placement
     published_at: 2026-08-31
     topics: [ai_code_review, review_automation, quality_gates, human_oversight]
     status: adopted
+    intake: shared
     use_when: "コードレビューの判断を決定論的検査、ルール検出、意味的レビュー、人間承認へ分けたい時"
-    derived: [foundation/claude-code/rules/review.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/rules/review.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: ART-018
     title: 社内限定サービスの認証を Google Workspace でサクッと作る
     url: https://zenn.dev/dress_code/articles/6134e6bd5e46c6
     published_at: 2026-09-01
     topics: [internal_services, authentication, google_workspace, oidc]
     status: reference
-    use_when: "社内限定サービスで人、機械、CIの認証対象と失効条件を分けて設計する時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "社内限定サービスで人、機械、CIの認証対象と失効条件を分けて設計する時。識別子の選び方と委譲の影響範囲は REF-151・REF-152 と対にして読む"
+    derived: [foundation/internal-service-access/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
   - id: ART-019
     title: トークン2000分の1——オントロジー×ナレッジグラフでClaude Codeの推測を消す
     url: https://zenn.dev/helloworld/articles/bcaea69f58eae5
     published_at: 2026-09-01
     topics: [knowledge_graph, codebase_search, agent_context]
     status: reference
-    use_when: "コードベース探索でグラフ、意味検索、言語サーバーを組み合わせる価値を比較検証する時"
-    derived: [knowledge/reading-guide.md]
+    intake: shared
+    use_when: "公開された削減率が何と何の比かを確かめる時、グラフや意味検索を入れたあとに毎回かかる運用費用を見積もる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
   - id: REF-001
     title: How Claude remembers your project
     url: https://code.claude.com/docs/en/memory
     published_at: null
-    topics: [agent_instructions, claude_code, memory]
+    topics: [agent_instructions, claude_code, memory, agents_md]
     status: reference
-    use_when: "CLAUDE.md、rules、auto memoryの役割と読み込み範囲を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+    intake: shared
+    use_when: "CLAUDE.md、AGENTS.md、rules、auto memoryの役割と読み込み範囲・条件を確認する時"
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/plan-handoff/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
   - id: REF-002
     title: Extend Claude with skills
     url: https://code.claude.com/docs/en/skills
     published_at: null
     topics: [claude_code, skills]
     status: reference
-    use_when: "Claude Code skillの配置、形式、適用条件を確認する時"
-    derived: [docs/contribution.md, foundation/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
+    intake: shared
+    use_when: "Claude Code skillの配置、優先順位、製品固有のfrontmatter、適用条件を確認する時"
+    derived: [docs/contribution.md, foundation/README.md, foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/design-asset-canon/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md, skills/knowledge-curator/SKILL.md]
   - id: REF-003
     title: Secret scanning
     url: https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning
     published_at: null
     topics: [github, security, public_repositories]
     status: reference
-    use_when: "publicリポジトリの秘密情報検査と、漏えい時の対応を確認する時"
-    derived: [docs/public-boundary.md, foundation/claude-code/rules/review.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+    intake: shared
+    use_when: "publicリポジトリの秘密情報検査と、漏えい時の対応を確認する時。検出は公開後の層なので、止める層（REF-143）と対にして読む"
+    derived: [docs/public-boundary.md, foundation/claude-code/rules/review.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
   - id: REF-004
     title: Markdown Architectural Decision Records
     url: https://adr.github.io/madr/
     published_at: null
-    topics: [decision_records, documentation]
+    topics: [decision_records, documentation, adr, markdown, templates]
     status: reference
-    use_when: "重要な技術・運用上の判断を、背景とトレードオフ付きで記録する時"
-    derived: [foundation/claude-code/rules/review.md, knowledge/reading-guide.md]
+    intake: shared
+    use_when: "判断記録の形式を決めたあと、節の一覧・ファイル命名・置き場・status の候補語を引く時。形式そのものの当否は別の出典で確かめる"
+    derived: [foundation/claude-code/rules/review.md, foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-005
+    title: AGENTS.md（コーディングエージェント向け指示ファイルの共通形式）
+    url: https://agents.md/
+    published_at: null
+    topics: [agent_instructions, agents_md, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-006, ART-020, REF-001]
+    use_when: "指示ファイルの正本をツール非依存の形式に寄せる時、対応ツールと入れ子の優先規則を確認する時"
+    derived: [docs/contribution.md, foundation/agents-md/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md, organization/jinjer/environment-guidance.md]
+  - id: REF-006
+    title: Custom instructions with AGENTS.md (Codex)
+    url: https://learn.chatgpt.com/docs/agent-configuration/agents-md
+    published_at: null
+    topics: [agent_instructions, agents_md, codex]
+    status: reference
+    intake: found
+    found_via: [ART-020, REF-001]
+    use_when: "CodexがAGENTS.mdを探す順序、上書き用ファイル名、結合規則、サイズ上限を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-007
+    title: Provide Context with GEMINI.md Files (Gemini CLI)
+    url: https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/gemini-md.md
+    published_at: null
+    topics: [agent_instructions, agents_md, gemini_cli]
+    status: reference
+    intake: found
+    found_via: [REF-001]
+    use_when: "Gemini CLIの文脈ファイル名を設定で切り替え、階層的な読み込み範囲を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: ART-020
+    title: ようやく CLAUDE.md が不要になった
+    url: https://zenn.dev/tenkei/articles/bad7b682aed22c
+    published_at: 2026-09-24
+    topics: [agent_instructions, agents_md, claude_code]
+    status: reference
+    intake: shared
+    use_when: "Claude CodeがAGENTS.mdをネイティブに読むようになった経緯と、入れ子での扱いの差を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-008
+    title: Set up Claude Code in a monorepo or large codebase
+    url: https://code.claude.com/docs/en/large-codebases
+    published_at: null
+    topics: [agent_instructions, monorepo, claude_code, context_management]
+    status: reference
+    intake: found
+    found_via: [ART-016, ART-019, ART-020]
+    use_when: "大きなリポジトリで指示ファイルを階層化し、読み込み範囲と探索コストを絞る設定を確認する時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-009
+    title: "Nested AGENTS.md not loaded when a file in its directory is @-mentioned (nested CLAUDE.md is)"
+    url: https://github.com/anthropics/claude-code/issues/98796
+    published_at: null
+    topics: [agent_instructions, agents_md, claude_code, known_issues]
+    status: reference
+    intake: found
+    found_via: [ART-020]
+    use_when: "入れ子のAGENTS.mdが読み込まれる条件と、入れ子のCLAUDE.mdとの差を確認する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-010
+    title: Build skills (Codex)
+    url: https://learn.chatgpt.com/docs/build-skills
+    published_at: null
+    topics: [skills, agent_configuration, codex, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-006]
+    use_when: "Codexがskillを探す場所と形式を確認し、他のエージェントと置き場を共有できるか判断する時"
+    derived: [foundation/agents-md/README.md, knowledge/reading-guide.md]
+  - id: REF-011
+    title: Plugins overview (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/overview
+    published_at: null
+    topics: [claude_code, plugins, skills, distribution]
+    status: reference
+    intake: found
+    found_via: [ART-006, ART-015, ART-021]
+    use_when: "skills・subagent・hook・MCPをひとまとまりで配布し版を付けたい時、その常時コストと併せて判断する時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: ART-021
+    title: CLAUDE.mdをそろそろ見直す時期かも ── Claude 5世代向けの最適化手順・スキル・プロジェクト種類別の例
+    url: https://qiita.com/nogataka/items/d6a54f3694726b9141f3
+    published_at: 2026-09-05
+    topics: [agent_instructions, knowledge_maintenance, context_management, claude_code]
+    status: reference
+    intake: shared
+    use_when: "肥大化した指示ファイルを棚卸しし、残す・書き換える・移すを分類する時"
+    derived: [foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-012
+    title: The new rules of context engineering for Claude 5 generation models
+    url: https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models
+    published_at: 2026-07-24
+    topics: [context_management, agent_instructions, prompt_design, skills]
+    status: reference
+    intake: found
+    found_via: [ART-003, ART-004, ART-012, ART-021, ART-022]
+    use_when: "新しい世代のモデル向けに、規則の列挙から判断の委譲へ指示を書き換える方針を確認する時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: ART-022
+    title: "/claude-api prompt-audit で棚卸ししたら、モデルの版上げで外れた設定がぞろぞろ出てきた"
+    url: https://zenn.dev/nanora/articles/20260925-claude-prompt-audit-opus55
+    published_at: 2026-09-25
+    topics: [knowledge_maintenance, agent_instructions, model_versions, claude_code]
+    status: reference
+    intake: shared
+    use_when: "組み込みの点検を実際に回した結果と、版上げで静かに外れる設定の種類を知りたい時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-013
+    title: Configure models (Claude Code)
+    url: https://code.claude.com/docs/en/model-config
+    published_at: null
+    topics: [claude_code, model_versions, configuration, context_management]
+    status: reference
+    intake: found
+    found_via: [ART-022, ART-028]
+    use_when: "別名が指すモデルの変化、モデル名を鍵にした設定、深さの設定の決まり方を確認する時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-014
+    title: Skill authoring best practices
+    url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
+    published_at: null
+    topics: [skills, agent_instructions, context_management, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-004, REF-002]
+    use_when: "skillのdescriptionと本体を、選ばれて実際に効く形に書く時、評価を先に作って検証する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-015
+    title: Agent Skills Specification
+    url: https://agentskills.io/specification
+    published_at: null
+    topics: [skills, interoperability, specification]
+    status: reference
+    intake: found
+    found_via: [REF-002]
+    use_when: "製品をまたいで動くskillの最小形式、name・descriptionの制限、補助ファイルの置き方を確認する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-016
+    title: "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks"
+    url: https://arxiv.org/abs/2602.12670
+    published_at: 2026-02-13
+    topics: [skills, evaluation, benchmarks, agent_operations]
+    status: reference
+    intake: found
+    found_via: [ART-004, REF-002]
+    use_when: "skillが効く条件と効かない条件、自動生成したskillの扱いを、実測を見て判断する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-017
+    title: Explore the context window (Claude Code)
+    url: https://code.claude.com/docs/en/context-window
+    published_at: null
+    topics: [context_management, claude_code, agent_instructions, skills]
+    status: reference
+    intake: found
+    found_via: [ART-003, ART-015, ART-023, ART-025, ART-031, ART-035]
+    use_when: "起動時に何が読み込まれるか、要約で何が消えて何が戻るかを確認する時、実際の占有を測る時"
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/comprehension-debt/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-018
+    title: Effective context engineering for AI agents
+    url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+    published_at: 2025-09-29
+    topics: [context_management, prompt_design, agent_operations]
+    status: reference
+    intake: found
+    found_via: [ART-003, ART-008, ART-016, ART-019]
+    use_when: "指示を減らす理由を費用ではなく精度の問題として説明する時、先読みと必要時取得を比べる時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-019
+    title: "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?"
+    url: https://arxiv.org/abs/2605.06527
+    published_at: null
+    topics: [agent_memory, evaluation, benchmarks, verification]
+    status: reference
+    intake: found
+    found_via: [ART-012]
+    use_when: "記憶が古くなったことをエージェント自身が気づけるか、気づいた更新を後続に反映できるかを実測で確認する時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-020
+    title: Hooks reference (Claude Code)
+    url: https://code.claude.com/docs/en/hooks
+    published_at: null
+    topics: [hooks, claude_code, automation, guardrails]
+    status: reference
+    intake: found
+    found_via: [ART-015, ART-023, ART-038]
+    use_when: "どのイベントで何ができるか、止められるのはどれか、出力が利用者とモデルのどちらへ行くかを確認する時"
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/generated-prose-style/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-021
+    title: Agent SOP (strands-agents/agent-sop)
+    url: https://github.com/strands-agents/agent-sop
+    published_at: null
+    topics: [sop, skills, agent_operations, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-004]
+    use_when: "反復手順を、入力・段階・制約の強さを分けた形式で書く時、skillへ変換できる中間形式を確認する時"
+    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-022
+    title: "RFC 2119: Key words for use in RFCs to Indicate Requirement Levels"
+    url: https://www.rfc-editor.org/rfc/rfc2119
+    published_at: null
+    topics: [specification, normative_keywords, procedure_writing]
+    status: reference
+    intake: found
+    found_via: [ART-004]
+    use_when: "手順や規則の制約に強さの段階を付ける時、強い語をどこまで使ってよいかを確認する時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: ART-023
+    title: Spotifyのエンジニアが Claude Code のトークン消費を約90%削減した方法とは?
+    url: https://article.auone.jp/090465f4-bbd4-4e07-8236-ac82cebd9552
+    published_at: 2026-09-12
+    topics: [context_management, cost_control, model_routing, claude_code]
+    status: reference
+    intake: shared
+    use_when: "読み取りの委譲でトークンを削るという話の入口を確認する時（数値と限界は一次情報側で確かめる）"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: ART-024
+    title: "Spotify Cut Claude Code Tokens by 90%. We Measured the Same Pattern Ourselves and Got a Different Number"
+    url: https://thakicloud.com/tech-blog/en/tutorials/spotify-shunt-token-routing/
+    published_at: 2026-09-07
+    topics: [context_management, cost_control, measurement, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-023, ART-027]
+    use_when: "閾値による読み取り遮断が自分の環境で何割に効くかを、公開値ではなく手元の分布から決める時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-023
+    title: Portal by Spotify cut my Claude Code token usage by 90%
+    url: https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90
+    published_at: 2026-09-03
+    topics: [context_management, cost_control, model_routing, delegation]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "読み取りと定型生成を安いモデルへ回す構成と、著者自身が挙げた委譲できない作業を確認する時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-024
+    title: "shunt plugin (spotify/portal-ai-plugins)"
+    url: https://github.com/spotify/portal-ai-plugins/blob/main/plugins/shunt/README.md
+    published_at: null
+    topics: [hooks, delegation, claude_code, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "閾値で読み取りを止めて委譲へ誘導する実装の構成と、動かすための前提を確認する時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-025
+    title: "shunt: PreToolUse hooks emit the legacy decision field, rejected by current Claude Code"
+    url: https://github.com/spotify/portal-ai-plugins/issues/19
+    published_at: 2026-09-25
+    topics: [hooks, claude_code, compatibility, verification]
+    status: reference
+    intake: found
+    found_via: [ART-023]
+    use_when: "既製の hook を入れる前に、出力形式が現行版で受け付けられるかを確かめる理由が要る時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-026
+    title: Subagents (Claude Code)
+    url: https://code.claude.com/docs/en/sub-agents
+    published_at: null
+    topics: [subagents, context_management, delegation, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-023, ART-028, ART-029]
+    use_when: "重い作業を別の文脈へ分離する手段が製品側にあるか、モデルを個別に指定できるかを確認する時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: ART-025
+    title: Claude Codeでトークンを消費する4つの設定と対処法
+    url: https://news.yahoo.co.jp/articles/0abb4856706e3274dd5d1c6394ca819a96c28712?page=1
+    published_at: 2026-09-03
+    topics: [context_management, cost_control, mcp, claude_code]
+    status: reference
+    intake: shared
+    use_when: "プロンプト以外の消費元として何が挙げられているかを知る時（現行の仕様と手順名は公式資料で検算する）"
+    derived: [foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: ART-026
+    title: I checked my Claude Code usage and found four hidden token drains I never knew about
+    url: https://www.makeuseof.com/checked-claude-code-usage-found-four-hidden-token-drains-never-knew-about/
+    published_at: 2026-08-30
+    topics: [context_management, cost_control, mcp, scheduled_tasks]
+    status: reference
+    intake: found
+    found_via: [ART-025]
+    use_when: "4つの心当たりの元の記述と、著者が自分の環境で見た内容を確認する時"
+    derived: [foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-027
+    title: Manage costs effectively (Claude Code)
+    url: https://code.claude.com/docs/en/costs
+    published_at: null
+    topics: [cost_control, context_management, scheduled_tasks, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-025, ART-027, ART-028]
+    use_when: "使用の割り当て内訳、待機中に減る原因、公式が勧める削減方法と版の要件を確認する時"
+    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/cost-change-evaluation/README.md, foundation/model-tier-selection/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-028
+    title: Connect to tools with MCP (Claude Code)
+    url: https://code.claude.com/docs/en/mcp
+    published_at: null
+    topics: [mcp, context_management, claude_code, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-025]
+    use_when: "接続した道具の定義がいつ context に載るか、遅延と一覧の再利用がどう効くかを確認する時"
+    derived: [foundation/claude-code/hooks/always-on-budget/README.md, foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: REF-029
+    title: Commands (Claude Code)
+    url: https://code.claude.com/docs/en/commands
+    published_at: null
+    topics: [claude_code, commands, diagnostics, skills]
+    status: reference
+    intake: found
+    found_via: [ART-025]
+    use_when: "記事で紹介されたコマンド名が現行で何をするか、最低版の要件が付いていないかを引き直す時"
+    derived: [foundation/token-drain-review/README.md, knowledge/reading-guide.md]
+  - id: ART-027
+    title: 「トークンを削ったのにコストが増えた」 GitHubが明かすAIコーディング“効率化の落とし穴”
+    url: https://atmarkit.itmedia.co.jp/ait/spv/2609/17/news023.html
+    published_at: 2026-09-17
+    topics: [cost_control, evaluation, agent_operations, coding_agents]
+    status: reference
+    intake: shared
+    use_when: "削減策が逆効果になる話の入口を確認する時（本文未確認のため、内容は一次情報で確かめる）"
+    derived: [foundation/cost-change-evaluation/README.md, knowledge/reading-guide.md]
+  - id: REF-030
+    title: How we make AI coding more cost efficient without sacrificing task quality
+    url: https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/
+    published_at: 2026-09-02
+    topics: [cost_control, evaluation, experiments, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-027, ART-029]
+    use_when: "出力を短くすると総額が増える仕組み、削減の測り方（単位と二段の検証）、安全な圧縮の基準を確認する時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/heavy-read-delegation/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-031
+    title: How we're making GitHub Copilot smarter with fewer tools
+    url: https://github.blog/ai-and-ml/github-copilot/how-were-making-github-copilot-smarter-with-fewer-tools/
+    published_at: 2025-11-19
+    topics: [tooling, evaluation, context_management, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-027]
+    use_when: "道具の数そのものが精度と待ち時間に効くか、減らして良くなる種類の変更を確認する時"
+    derived: [foundation/cost-change-evaluation/README.md, knowledge/reading-guide.md]
+  - id: ART-028
+    title: GitHub Copilot のモデル選び 2026/09 版
+    url: https://qiita.com/aktsmm/items/bccfc0e945545fe17e58
+    published_at: 2026-09-23
+    topics: [model_selection, cost_control, coding_agents]
+    status: reference
+    intake: shared
+    use_when: "安いモデルから試して上げる段取りと、1作業あたりの実測費用の開きを知る時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-032
+    title: Models overview (Claude)
+    url: https://platform.claude.com/docs/en/about-claude/models/overview
+    published_at: null
+    topics: [model_selection, pricing, effort, claude]
+    status: reference
+    intake: found
+    found_via: [ART-028]
+    use_when: "段階ごとの単価・既定のeffort・用途の記述を現在の値で引き直す時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-033
+    title: Copilot requests (GitHub Docs)
+    url: https://docs.github.com/en/copilot/concepts/billing/copilot-requests
+    published_at: null
+    topics: [pricing, billing, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-028]
+    use_when: "課金の単位が要求の件数か token かを確かめる時、記事の費用の数字を自分の請求へ持ち込めるか判断する時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: ART-029
+    title: 上位モデルと安いモデルを組み合わせるハーネス「Fusion」が登場
+    url: https://gigazine.net/news/20260914-cognition-fusion/
+    published_at: 2026-09-14
+    topics: [model_selection, cost_control, delegation, coding_agents]
+    status: reference
+    intake: shared
+    use_when: "役割で2つのモデルに分ける構成が話題になった経緯を確認する時（数値は一次情報で確かめる）"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: ART-030
+    title: LLMにWikiを書かせて半年、一番役に立った画面はLLMの文章を使っていなかった
+    url: https://zenn.dev/rescuenow/articles/5aa26aebd7ae78
+    published_at: 2026-09-16
+    topics: [knowledge_system, llm_wiki, documentation_generation, summarization, knowledge_graph]
+    status: reference
+    intake: shared
+    use_when: "生成した文書を置いた後、半年の運用で何が使われ何が使われなかったかの記録が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-034
+    title: Fusion (Cognition)
+    url: https://cognition.com/blog/local-fusion
+    published_at: 2026-09-11
+    topics: [model_selection, cost_control, delegation, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-029]
+    use_when: "上位と安いモデルの役割分けの構成、別文脈にする理由、提供元の実測値と著者自身の限界を確認する時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-035
+    title: Coding Agent Index v1.5 Methodology (Artificial Analysis)
+    url: https://artificialanalysis.ai/methodology/coding-agents-benchmarking
+    published_at: null
+    topics: [evaluation, benchmarks, cost_control, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-029]
+    use_when: "公開された比較の指標が何を測り、費用に何を含めていないかを確かめる時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-036
+    title: "RAG vs. GraphRAG: A Systematic Evaluation and Key Insights"
+    url: https://arxiv.org/abs/2502.11371
+    published_at: 2025-02-17
+    topics: [retrieval, knowledge_graph, graphrag, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-008, ART-016, ART-019]
+    use_when: "グラフ型の取得が効く質問種別と効かない質問種別、構築の取りこぼしと構築費用を確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-037
+    title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
+    url: https://arxiv.org/abs/2404.16130
+    published_at: 2024-04-24
+    topics: [retrieval, knowledge_graph, graphrag, summarization]
+    status: reference
+    intake: found
+    found_via: [ART-016]
+    use_when: "GraphRAG の主張を引く前に、その一次情報が対象にしている質問の種類と規模を確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-038
+    title: Code intelligence plugins (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/code-intelligence
+    published_at: null
+    topics: [claude_code, plugins, lsp, codebase_search, code_navigation]
+    status: reference
+    intake: found
+    found_via: [ART-019]
+    use_when: "記号で定義や参照を引く経路を、独自の索引を作らずに公式のプラグインで用意する時、その前提と制限を確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-039
+    title: "CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases"
+    url: https://arxiv.org/abs/2408.03910
+    published_at: null
+    topics: [knowledge_graph, codebase_search, cost_control, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-008]
+    use_when: "コードをグラフのデータベースにして照会させる構成が、費用と精度にどう効くかを一次情報で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-040
+    title: "Codebase-Memory: Tree-Sitter-Based Knowledge Graphs for LLM Code Exploration via MCP"
+    url: https://arxiv.org/abs/2603.27277
+    published_at: 2026-03-28
+    topics: [knowledge_graph, codebase_search, cost_control, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-008]
+    use_when: "グラフ照会と素の探索を、トークン・呼び出し回数・回答品質の3つで同時に比べた数字が要る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-041
+    title: Evaluating Repository-level Software Documentation via Question Answering and Feature-Driven Development
+    url: https://arxiv.org/abs/2604.06793
+    published_at: 2026-04-08
+    topics: [documentation_generation, codebase_search, evaluation, benchmarks, coding_agents]
+    status: reference
+    intake: found
+    found_via: [ART-007]
+    use_when: "取り込み時に生成した文書が、下流の課題解決と場所の特定にどれだけ効くかを一次情報で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-042
+    title: OpenWiki (langchain-ai/openwiki)
+    url: https://github.com/langchain-ai/openwiki
+    published_at: null
+    topics: [documentation_generation, knowledge_system, agents_md, ci, codebase_search]
+    status: reference
+    intake: found
+    found_via: [ART-007]
+    use_when: "生成した文書を陳腐化させない仕組み（証拠の紐付け・差分更新・指示ファイルの管理ブロック）の実装例を確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-043
+    title: Identifying Inaccurate Descriptions in LLM-generated Code Comments via Test Execution
+    url: https://arxiv.org/abs/2406.14836
+    published_at: 2024-06-21
+    topics: [documentation_generation, evaluation, hallucination, code_comprehension]
+    status: reference
+    intake: found
+    found_via: [ART-007]
+    use_when: "生成した説明文をそのまま正本に置く前に、事実誤りがどの程度混ざるかを確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-044
+    title: "From Single to Multi: How LLMs Hallucinate in Multi-Document Summarization"
+    url: https://aclanthology.org/2025.findings-naacl.293/
+    published_at: 2024-10-17
+    topics: [summarization, hallucination, evaluation, benchmarks, documentation_generation]
+    status: reference
+    intake: found
+    found_via: [ART-030]
+    use_when: "複数の資料をまとめさせた出力で、何が歪み何が落ちるかを型と数値で確かめる時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-045
+    title: "When Summaries Distort Decisions: Information Fidelity in LLM-Compressed Financial Analysis"
+    url: https://arxiv.org/abs/2606.29251
+    published_at: 2026-06-28
+    topics: [summarization, context_compression, delegation, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-030]
+    use_when: "文脈を圧縮して渡す構成が、下流の判断をどう変えうるかを確かめる時"
+    derived: [foundation/heavy-read-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-046
+    title: LangExtract (google/langextract)
+    url: https://github.com/google/langextract
+    published_at: null
+    topics: [structured_extraction, knowledge_ingestion, source_grounding, documentation_generation]
+    status: reference
+    intake: found
+    found_via: [ART-001]
+    use_when: "抽出した項目を元テキストの位置に結び付ける仕組みと、その保証の範囲を一次情報で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-047
+    title: "ExtractBench: A Benchmark and Evaluation Methodology for Complex Structured Extraction"
+    url: https://arxiv.org/abs/2602.12247
+    published_at: 2026-02-12
+    topics: [structured_extraction, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-001]
+    use_when: "抽出するスキーマの広さを決める時、抽出結果の正しさをどう採点するかを決める時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-048
+    title: "From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction"
+    url: https://arxiv.org/abs/2604.27906
+    published_at: 2026-04-30
+    topics: [structured_extraction, memory, knowledge_ingestion, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-001]
+    use_when: "記憶や知識を、散文で貯めるか項目として書くかを決める時、更新と削除を表現できる形を考える時"
+    derived: [foundation/memory-upkeep/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-049
+    title: Building agents with the Claude Agent SDK
+    url: https://claude.com/blog/building-agents-with-the-claude-agent-sdk
+    published_at: 2025-09-29
+    topics: [agent_orchestration, automation, verification, agent_design]
+    status: reference
+    intake: found
+    found_via: [ART-013, ART-033]
+    use_when: "エージェントに任せた作業の出来上がりをどう確かめるかを決める時、検証手段の信頼度を比べる時"
+    derived: [foundation/README.md, foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-050
+    title: Effective harnesses for long-running agents
+    url: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+    published_at: 2025-11-26
+    topics: [agent_orchestration, automation, long_horizon, recovery]
+    status: reference
+    intake: found
+    found_via: [ART-013, ART-031]
+    use_when: "1回の文脈に収まらない作業をエージェントに続けさせる時、復帰と早期の完了宣言の抑止を設計する時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-051
+    title: Building effective agents
+    url: https://www.anthropic.com/engineering/building-effective-agents
+    published_at: 2024-12-19
+    topics: [agent_orchestration, automation, agent_design]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "決め打ちの手順にするか自律に任せるかを分ける時、反復上限と人のチェックポイントの原典を引く時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-052
+    title: Scaling managed agents
+    url: https://www.anthropic.com/engineering/managed-agents
+    published_at: 2026-04-08
+    topics: [agent_orchestration, automation, long_horizon, agent_design]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "自律ループの足場が前提にしている仮定が古くなっていないかを疑う時、落ちた後に再開できる形を考える時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-053
+    title: "Measuring AI Ability to Complete Long Software Tasks"
+    url: https://arxiv.org/abs/2503.14499
+    published_at: 2025-03-18
+    topics: [agent_orchestration, automation, evaluation, long_horizon]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "どれくらいの長さの作業まで任せてよいかを、求める成功率から決める時"
+    derived: [foundation/README.md, foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-054
+    title: "When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents"
+    url: https://arxiv.org/abs/2607.01641
+    published_at: 2026-07-02
+    topics: [agent_orchestration, automation, reliability, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "停止条件を書かずにループを回した場合に何が起きるかを確かめる時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-055
+    title: Best practices for Claude Code
+    url: https://code.claude.com/docs/en/best-practices
+    published_at: null
+    topics: [agent_instructions, automation, verification, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-013, ART-033]
+    use_when: "指示ファイルに何を書き何を書かないかを決める時、無人で回す作業の止め方の強度を選ぶ時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-056
+    title: "LLMs Get Lost In Multi-Turn Conversation"
+    url: https://arxiv.org/abs/2505.06120
+    published_at: 2025-05-09
+    topics: [reliability, evaluation, long_horizon, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "何周も往復させる構成が、単発と同じ品質で動くと見込んでよいかを確かめる時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-057
+    title: "Intent Mismatch Causes LLMs to Get Lost in Multi-Turn Conversation"
+    url: https://arxiv.org/abs/2602.07338
+    published_at: 2026-02-07
+    topics: [reliability, evaluation, long_horizon, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-013]
+    use_when: "多ターンで品質が落ちる原因をモデル側に帰してよいかを疑う時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: ART-031
+    title: ループエンジニアリング（ralph loop）で業務システムのUIを一新してみた
+    url: https://zenn.dev/sompojapan_dx/articles/846c6038fee45d
+    published_at: 2026-09-04
+    topics: [agent_orchestration, automation, long_horizon, verification]
+    status: reference
+    intake: shared
+    use_when: "同じ指示で何周も自動で回す構成を組む時、その構成が実際にどこで壊れるかを知りたい時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: REF-058
+    title: Ralph Wiggum as a "software engineer"
+    url: https://ghuntley.com/ralph/
+    published_at: 2025-07-14
+    topics: [agent_orchestration, automation, long_horizon]
+    status: reference
+    intake: found
+    found_via: [ART-031]
+    use_when: "同じ指示を繰り返し流す技法の不変条件と、提唱者自身が挙げる限界を引く時"
+    derived: [foundation/autonomous-loop-delegation/README.md, knowledge/reading-guide.md]
+  - id: ART-032
+    title: HTMLを社内共有するサービスを、コードを読まずに作る - 1人で25万行を回す自動運用の記録
+    url: https://zenn.dev/coji/articles/solo-software-factory-without-reading-code
+    published_at: 2026-09-07
+    topics: [agent_orchestration, automation, code_review, verification]
+    status: reference
+    intake: shared
+    use_when: "人の確認を両端だけに寄せる体制を検討する時、検査の仕組みを増やしすぎた場合に何が起きるかを知りたい時"
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-059
+    title: Maintainer development workflow (artifactshare)
+    url: https://github.com/artifactshare/artifactshare/blob/d50596d7d61ec4d54056f413a8e161af04618b3c/docs/development-workflow.md
+    published_at: null
+    topics: [agent_orchestration, automation, code_review, verification]
+    status: reference
+    intake: found
+    found_via: [ART-032]
+    use_when: "レビューの合格条件・回数上限・指摘の分類を実際の文面として引く時、規則を増やしすぎない書き方を見る時"
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-060
+    title: "Refute-or-Promote: An Adversarial Stage-Gated Multi-Agent Review Methodology for High-Precision LLM-Assisted Defect Discovery"
+    url: https://arxiv.org/abs/2604.19049
+    published_at: 2026-04-21
+    topics: [code_review, evaluation, reliability, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-032]
+    use_when: "モデルが挙げた指摘のうちどれだけが誤りかを見積もる時、反駁の段を入れるかどうかを決める時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-061
+    title: "SWR-Bench: Assessing LLM Performance in Real-World Code Review Comment Generation"
+    url: https://arxiv.org/abs/2509.01494
+    published_at: 2025-09-01
+    topics: [code_review, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-032]
+    use_when: "レビューを1本にするか複数束ねるかを決める時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-062
+    title: AI-to-AI Code Reviews of GitHub Pull Requests
+    url: https://arxiv.org/abs/2608.21311
+    published_at: 2026-08-21
+    topics: [code_review, evaluation, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-032]
+    use_when: "AI 同士のレビューがどれだけ広まっているかと、その有用性が測られているかを確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-033
+    title: AI エージェントを組織構造に乗せる – PLAY が AWS DevOps Agent で築いた全社共通のインシデント対応基盤
+    url: https://aws.amazon.com/jp/blogs/news/play-devops-agent-case-study/
+    published_at: 2026-09-25
+    topics: [agent_instructions, automation, verification, agent_orchestration]
+    status: reference
+    intake: shared
+    use_when: "エージェントに調査や一次対応を任せ、その結果を人が読んで次を決める構成を組む時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-063
+    title: Agent instructions (AWS DevOps Agent)
+    url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-agent-instructions.html
+    published_at: null
+    topics: [agent_instructions, context, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-033]
+    use_when: "常時の指示と呼び出し式の層の切り分けを、製品側が明示している上限とともに確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-064
+    title: DevOps Agent Skills (AWS DevOps Agent)
+    url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-devops-agent-skills.html
+    published_at: null
+    topics: [skills, agent_instructions, interoperability]
+    status: reference
+    intake: found
+    found_via: [ART-033]
+    use_when: "skill の本体と参照資料の分け方、description の書き方を別の製品の公式仕様で確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-065
+    title: "Wired for Overconfidence: A Mechanistic Perspective on Inflated Verbalized Confidence in LLMs"
+    url: https://arxiv.org/abs/2604.01457
+    published_at: 2026-04-01
+    topics: [reliability, evaluation, verification]
+    status: reference
+    intake: found
+    found_via: [ART-033, ART-041]
+    use_when: "エージェントに自分の確信度を言わせ、それを判断の閾値に使ってよいかを疑う時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-066
+    title: "Exploring automation bias in human-AI collaboration: a review and implications for explainable AI"
+    url: https://doi.org/10.1007/s00146-025-02422-7
+    published_at: null
+    topics: [reliability, verification, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-033, ART-035]
+    use_when: "「最後は人が確認する」を安全策として数えてよいかを確かめる時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: ART-034
+    title: 月30万円かかるAIは「学習しない社員」だった――LayerXが回し始めた仕事の“自己改善ループ”
+    url: https://www.itmedia.co.jp/business/spv/2609/25/news019_2.html
+    published_at: 2026-09-25
+    topics: [agent_memory, automation, evaluation, context]
+    status: reference
+    intake: shared
+    use_when: "モデルの重みが変わらない前提で、改善をどこに積むかを考え始めた時の入口として"
+    derived: [knowledge/reading-guide.md]
+  - id: REF-067
+    title: "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models"
+    url: https://arxiv.org/abs/2510.04618
+    published_at: 2025-10-06
+    topics: [context, agent_memory, evaluation, agent_instructions]
+    status: reference
+    intake: found
+    found_via: [ART-034]
+    use_when: "文脈や指示を自動で短くしていく運用の失敗様式を引く時、書き足す形と書き直す形を分ける根拠が要る時"
+    derived: [foundation/instruction-upkeep/README.md, foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-068
+    title: Useful Memories Become Faulty When Continuously Updated by LLMs
+    url: https://arxiv.org/abs/2605.12978
+    published_at: 2026-05-13
+    topics: [agent_memory, reliability, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-034]
+    use_when: "記憶を増やし続けてよいかを疑う時、まとめ直す処理を既定にしてよいかを決める時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-069
+    title: "MemDelta: Controlled Baselines and Hidden Confounds in Agent Memory Evaluation"
+    url: https://arxiv.org/abs/2606.29914
+    published_at: 2026-06-29
+    topics: [agent_memory, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-034]
+    use_when: "記憶の仕組みを変えた効果を測る時、何と比べ何を同時に変えないかを決める時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: ART-035
+    title: AIに丸投げしないで理解するためのAI開発手法（2026年8月現在）
+    url: https://zenn.dev/avaintelligence/articles/dont-outsource-understanding-to-ai
+    published_at: 2026-08-28
+    topics: [verification, agent_orchestration, code_review, skills]
+    status: reference
+    intake: shared
+    use_when: "AI に書かせる量が増えて中身を把握できなくなってきた時、人が理解する工程をどこに置くかを決める時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-070
+    title: How AI assistance impacts the formation of coding skills
+    url: https://www.anthropic.com/research/AI-assistance-coding-skills
+    published_at: 2026-01-29
+    topics: [verification, evaluation, reliability]
+    status: reference
+    intake: found
+    found_via: [ART-035]
+    use_when: "AI に書かせたときに理解がどれだけ落ちるか、どんな使い方なら保たれるかを引く時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-071
+    title: "(Im)Paired Programming: Coding Agents Improve Productivity but Harm Understanding"
+    url: https://arxiv.org/abs/2607.26375
+    published_at: 2026-07-29
+    topics: [verification, evaluation, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-035]
+    use_when: "エージェントに編集させる形と、自分で当てはめる形の差を、完了の速さ以外の軸で見る時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-072
+    title: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
+    url: https://arxiv.org/abs/2507.09089
+    published_at: 2025-07-12
+    topics: [evaluation, reliability, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-035]
+    use_when: "「速くなった」「分かっている」という自己評価を根拠にしてよいかを疑う時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-073
+    title: "Judgment Placement (River Review documentation)"
+    url: https://river-review.the3396.com/explanation/judgment-placement/
+    published_at: null
+    topics: [code_review, review_automation, quality_gates, human_oversight]
+    status: reference
+    intake: found
+    found_via: [ART-017]
+    use_when: "レビューの判断を決定論的検査・ルール検出・AI・人のどの層に置くかという枠組みを、解説記事ではなく提供元の定義で確かめる時"
+    derived: [knowledge/reading-guide.md]
+  - id: REF-074
+    title: river-review (s977043/river-review)
+    url: https://github.com/s977043/river-review
+    published_at: null
+    topics: [code_review, review_automation, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-017]
+    use_when: "記事で説明された枠組みを実装している側の規模・ライセンス・保守の形を確かめる時"
+    derived: [knowledge/reading-guide.md]
+  - id: REF-075
+    title: "Software Engineering at Google, Chapter 20: Static Analysis"
+    url: https://abseil.io/resources/swe-book/html/ch20.html
+    published_at: null
+    topics: [code_review, quality_gates, verification, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-017, ART-038]
+    use_when: "繰り返す指摘を機械的な検査へ移してよいかを、満たすべき基準と出し先の工程から決める時"
+    derived: [foundation/generated-prose-style/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-076
+    title: claude-code-security-review (anthropics/claude-code-security-review)
+    url: https://github.com/anthropics/claude-code-security-review
+    published_at: null
+    topics: [code_review, security, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-017]
+    use_when: "AI レビューを CI に置くとき、提供元自身が保証していない範囲と推奨設定を確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-077
+    title: "Comment and Control: GitHub AI Agents as Credential Exfiltrators"
+    url: https://labs.cloudsecurityalliance.org/research/csa-research-note-comment-control-github-prompt-injection-20/
+    published_at: 2026-04-17
+    topics: [security, code_review, reliability, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-017]
+    use_when: "レビュー対象の文面がそのままエージェントへの指示になりうることを、実証された事例で確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-078
+    title: "Keeping your GitHub Actions and workflows secure Part 1: Preventing pwn requests"
+    url: https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/
+    published_at: 2021-08-03
+    topics: [security, quality_gates, verification]
+    status: reference
+    intake: found
+    found_via: [ART-017]
+    use_when: "レビュー対象側が実行条件を書き換えられない形に CI を分ける時、既知の回避経路も含めて設計する時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-036
+    title: shadcn/lint で AI エージェントにデザインシステムのルールを守らせる
+    url: https://zenn.dev/my_vision/articles/c602a080fc4a91
+    published_at: 2026-09-16
+    topics: [code_review, quality_gates, agent_instructions, verification]
+    status: reference
+    intake: shared
+    use_when: "指示ファイルに書いた規約が守られないとき、その規約を機械的な検査へ移す構成を読む時"
+    derived: [foundation/agents-md/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-079
+    title: "@shadcn/lint (shadcn-ui/lint)"
+    url: https://github.com/shadcn-ui/lint
+    published_at: null
+    topics: [code_review, quality_gates, tooling, agent_instructions]
+    status: reference
+    intake: found
+    found_via: [ART-036]
+    use_when: "エージェント向けに診断を設計した検査が、具体的にどんなルールと文面を持つかを確かめる時"
+    derived: [knowledge/reading-guide.md]
+  - id: REF-080
+    title: Evals (shadcn-ui/lint)
+    url: https://github.com/shadcn-ui/lint/blob/main/docs/evals.md
+    published_at: null
+    topics: [evaluation, benchmarks, quality_gates, verification]
+    status: reference
+    intake: found
+    found_via: [ART-036]
+    use_when: "ルール文だけの条件と診断を返す条件の差が測られた条件、およびその測定の限界を確かめる時"
+    derived: [foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-081
+    title: "Is Self-Repair a Silver Bullet for Code Generation?"
+    url: https://arxiv.org/abs/2306.09896
+    published_at: 2023-06-16
+    topics: [evaluation, verification, reliability, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-036, ART-039]
+    use_when: "エージェントに直させる構成が効くかを、フィードバックの出どころと質、そして費用込みで判断する時"
+    derived: [foundation/generated-prose-style/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-082
+    title: Natural emergent misalignment from reward hacking
+    url: https://www.anthropic.com/research/emergent-misalignment-reward-hacking
+    published_at: 2025-11-21
+    topics: [reliability, verification, quality_gates, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-036, ART-049]
+    use_when: "検査を通すこと自体を目標にする構成の危うさを、実際に観測された手口で確かめる時"
+    derived: [foundation/measurable-target/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-037
+    title: トークンをケチってレビューをローカルLLMにやらせた話
+    url: https://zenn.dev/k_motoki/articles/11de0ba46dd1ee
+    published_at: 2026-09-13
+    topics: [code_review, cost, local_models, agent_orchestration]
+    status: reference
+    intake: shared
+    use_when: "レビューの費用が重いとき、意味的レビューを手元の小さいモデルへ逃がす構成の実例を読む時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-083
+    title: FAQ (Ollama)
+    url: https://docs.ollama.com/faq
+    published_at: null
+    topics: [local_models, context, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-005, ART-009, ART-037]
+    use_when: "手元で動かすモデルの文脈長の既定値と設定経路を、提供元の記述で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-084
+    title: Chat history and embedding truncation happens silently with no user-visible indication (ollama/ollama)
+    url: https://github.com/ollama/ollama/issues/14259
+    published_at: 2026-02-14
+    topics: [local_models, context, reliability, verification]
+    status: reference
+    intake: found
+    found_via: [ART-005, ART-009, ART-037]
+    use_when: "入力が文脈長を超えたときに黙って落ちる経路があるかを、提供元の課題管理で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-085
+    title: "Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models"
+    url: https://aclanthology.org/2024.emnlp-industry.91/
+    published_at: 2024-11-01
+    topics: [evaluation, reliability, verification, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-037, ART-041]
+    use_when: "出力を厳密な形式に縛る設計が、判断の質に与える代償を見積もる時"
+    derived: [foundation/review-design/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-086
+    title: "OpenCodeReview: Determinism over Non-Determinism for Cost-Effective Agent-Based Code Review"
+    url: https://arxiv.org/abs/2608.09290
+    published_at: 2026-08-10
+    topics: [code_review, quality_gates, cost, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-037]
+    use_when: "レビューの費用を下げたいとき、モデルの段を落とす以外にどこに梃子があるかを測定から決める時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-038
+    title: 日本語の「AI 臭さ」をチェックする Rust 製 Linter「noslop」を作った
+    url: https://zenn.dev/owayo/articles/e081901888ae82
+    published_at: 2026-10-02
+    topics: [writing_quality, japanese_text, quality_gates, tooling]
+    status: reference
+    intake: shared
+    use_when: "書かせた日本語の文体を機械的に検査するという選択肢の全体像と、作者が何を指摘しないと決めたかを知る時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-087
+    title: noslop (owayo/noslop)
+    url: https://github.com/owayo/noslop
+    published_at: null
+    topics: [writing_quality, japanese_text, quality_gates, verification, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-038, ART-039, ART-040]
+    use_when: "文章の検査ルールを既定で有効にしてよいかを、ルールごとの誤検知の実測という形から決める時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-088
+    title: "Delving into LLM-assisted writing in biomedical publications through excess vocabulary"
+    url: https://arxiv.org/abs/2406.07016
+    published_at: 2025-07-02
+    topics: [writing_quality, evaluation, measurement, reliability]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "「AI っぽい文体」が感覚ではなく語彙として測れるのか、どの範囲で測られたのかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-089
+    title: "The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models"
+    url: https://arxiv.org/abs/2502.11266
+    published_at: 2026-08-24
+    topics: [writing_quality, evaluation, measurement, reliability]
+    status: reference
+    intake: found
+    found_via: [ART-038, ART-039]
+    use_when: "文章を LLM に書き直させる工程を入れる前に、その工程が文体と書き手の手がかりに何をするかを見積もる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-090
+    title: "GPT detectors are biased against non-native English writers"
+    url: https://arxiv.org/abs/2304.02819
+    published_at: 2023-07-10
+    topics: [writing_quality, evaluation, reliability, quality_gates]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "「AI が書いたか」の判定を仕組みに組み込む前に、その判定が誰に偏って外れるかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-091
+    title: textlint-rule-preset-ja-technical-writing (textlint-ja)
+    url: https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing
+    published_at: null
+    topics: [writing_quality, japanese_text, tooling, quality_gates]
+    status: reference
+    intake: found
+    found_via: [ART-038]
+    use_when: "日本語の読みやすさの検査が既存の道具でどこまで覆われているかを、新しい道具を入れる前に確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: ART-039
+    title: 【最新v1.0.8公開】AI-Slopな日本語を構造レベルで読みやすくするSkill「yomiyasu」を作りました
+    url: https://zenn.dev/algoartis/articles/0b1c731881b25c
+    published_at: 2026-10-01
+    topics: [writing_quality, japanese_text, skills, tooling]
+    status: reference
+    intake: shared
+    use_when: "書かせた日本語を書き直す側の道具が何を変換するのか、作者がなぜ決定論的な検査を必須にしたのかを知る時"
+    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-092
+    title: yomiyasu (nanaism/yomiyasu)
+    url: https://github.com/nanaism/yomiyasu
+    published_at: null
+    topics: [writing_quality, japanese_text, skills, verification, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-039, ART-040]
+    use_when: "書き直す skill の作りを見る時、および合格表示が何を保証しないかを提供元の記述で確かめる時"
+    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-093
+    title: "Evaluating Factuality in Text Simplification"
+    url: https://aclanthology.org/2022.acl-long.506/
+    published_at: 2022-05-22
+    topics: [writing_quality, evaluation, reliability, hallucination]
+    status: reference
+    intake: found
+    found_via: [ART-039, ART-040]
+    use_when: "読みやすくする書き直しを工程に入れる前に、その工程がどんな誤りを持ち込むか、既存の指標で気付けるかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-094
+    title: "LLM Evaluators Recognize and Favor Their Own Generations"
+    url: https://proceedings.neurips.cc/paper_files/paper/2024/file/7f1f0218e45f5414c79c0679633e47bc-Paper-Conference.pdf
+    published_at: 2024-12-10
+    topics: [evaluation, reliability, verification, quality_gates]
+    status: reference
+    intake: found
+    found_via: [ART-039]
+    use_when: "直したものを同じモデルに判定させる構成を置く前に、その判定がどちらへ偏るかを確かめる時"
+    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+  - id: REF-095
+    title: ISO plain language standard (Plain Language Association International)
+    url: https://plainlanguage.com/what-is-plain-language/iso-plain-language-standard/
+    published_at: null
+    topics: [writing_quality, standards, documentation_generation]
+    status: reference
+    intake: found
+    found_via: [ART-039]
+    use_when: "「読みやすい」を書き手の感想ではなく読み手の達成で定義し直す時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: ART-040
+    title: 新しい日本語推敲スキル「yomiyasu」がバズっていたので、Claudeで日本語推敲スキル3つを比べてみた
+    url: https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14
+    published_at: 2026-10-01
+    topics: [writing_quality, japanese_text, skills, evaluation]
+    status: reference
+    intake: shared
+    use_when: "同じ用途の推敲 skill が何で違うのかを、直す範囲という軸で把握する時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-096
+    title: "Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA"
+    url: https://arxiv.org/abs/2305.14458
+    published_at: 2023-05-23
+    topics: [writing_quality, evaluation, benchmarks, verification]
+    status: reference
+    intake: found
+    found_via: [ART-040]
+    use_when: "書き直しの良し悪しを、出力全体の印象ではなく編集単位の成功と失敗で比べる時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-097
+    title: "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations"
+    url: https://arxiv.org/abs/2411.00640
+    published_at: 2024-11-01
+    topics: [evaluation, measurement, benchmarks, experiments]
+    status: reference
+    intake: found
+    found_via: [ART-040]
+    use_when: "前後や複数候補の比較を始める前に、何回測れば差と言えるのかを決める時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-098
+    title: natural-japanese (coji/natural-japanese)
+    url: https://github.com/coji/natural-japanese
+    published_at: null
+    topics: [writing_quality, japanese_text, skills, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-040]
+    use_when: "書き直す skill で、機械に出す範囲と人に残す範囲をどう線引きしているかの実例を見る時"
+    derived: [foundation/generated-prose-style/README.md, knowledge/reading-guide.md]
+  - id: REF-099
+    title: Data usage (Claude Code)
+    url: https://code.claude.com/docs/en/data-usage
+    published_at: null
+    topics: [data_boundary, privacy, retention, claude_code]
+    status: reference
+    intake: found
+    found_via: [ART-005]
+    use_when: "「外へ出さない」の要件を、学習に使うか・どれだけ保持するか・どこへ出ていくかに分けて確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-100
+    title: "A Systematic Evaluation of On-Device LLMs: Quantization, Performance, and Resources"
+    url: https://arxiv.org/abs/2505.15030
+    published_at: 2025-05-21
+    topics: [local_models, quantization, model_selection, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-005]
+    use_when: "手元の容量に収めるとき、小さいモデルを選ぶか大きいモデルを圧縮するかを測定から決める時"
+    derived: [foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-101
+    title: "The Power of Noise: Redefining Retrieval for RAG Systems"
+    url: https://arxiv.org/abs/2401.14887
+    published_at: 2024-01-26
+    topics: [retrieval, rag, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-005, ART-042]
+    use_when: "取り出した文書の件数と並べ方が回答の正確さに効くことを、査読済みの測定で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-102
+    title: "The Powerless Noise: How Experimental Settings Shape the Reported Power of Noise"
+    url: https://arxiv.org/abs/2607.03615
+    published_at: 2026-07-03
+    topics: [retrieval, rag, evaluation, reproducibility, verification]
+    status: reference
+    intake: found
+    found_via: [ART-005, ART-042]
+    use_when: "取り出し方の調整について公表された効果を、自分の設定へ持ち込んでよいか判断する時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-103
+    title: JMTEB (sbintuitions/JMTEB)
+    url: https://github.com/sbintuitions/JMTEB
+    published_at: null
+    topics: [embeddings, japanese_text, retrieval, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-005, ART-042]
+    use_when: "日本語の文書を埋め込むモデルを、日本語の課題での評価にもとづいて選ぶ時"
+    derived: [foundation/local-model-boundary/README.md, foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-104
+    title: "Silent Brothers: Ollama Hosts Form Anonymous AI Network Beyond Platform Guardrails"
+    url: https://www.sentinelone.com/labs/silent-brothers-ollama-hosts-form-anonymous-ai-network-beyond-platform-guardrails/
+    published_at: 2026-03-06
+    topics: [local_models, data_boundary, security, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "手元で動かす実行基盤が実際にどれだけ認証なしで公開されているかを、走査の実測で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-105
+    title: "12,000 Ollama Instances Exposed: When 'Local-First' Meets the Real World"
+    url: https://blog.leakix.net/2026/02/ollama-exposed/
+    published_at: 2026-02-23
+    topics: [local_models, data_boundary, security, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "「前段に逆プロキシを置けばよい」という推奨が実際に守られているかを、独立した走査で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-106
+    title: Ollama contains a heap out-of-bounds read vulnerability in the GGUF model loader (CVE-2026-7482)
+    url: https://github.com/advisories/GHSA-x8qc-fggm-mpqg
+    published_at: 2026-05-04
+    topics: [local_models, security, data_boundary, verification]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "手元の実行基盤から会話や鍵が漏れうる経路と、修正済みの版を一次情報で確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-107
+    title: "Lost in the Middle: How Language Models Use Long Contexts"
+    url: https://arxiv.org/abs/2307.03172
+    published_at: 2023-07-06
+    topics: [context, retrieval, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-009]
+    use_when: "文脈の窓を広げれば入れた分だけ使われる、という前提を確かめる時"
+    derived: [foundation/local-model-boundary/README.md, knowledge/reading-guide.md]
+  - id: ART-041
+    title: Jev の使いどころと、同じ形のオープン実装まとめ
+    url: https://zenn.dev/karaage0703/articles/jev-use-cases-open-implementations
+    published_at: 2026-09-20
+    topics: [decision_models, routing, classification, cost, latency]
+    status: reference
+    intake: shared
+    use_when: "文章を生成しない判断専用のモデルに、どんな用途が試されていて、同じ形の公開実装が何種類あるかを見渡す時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-108
+    title: Confidence (TypeSafe AI docs)
+    url: https://docs.typesafe.ai/confidence
+    published_at: null
+    topics: [decision_models, calibration, thresholds, verification]
+    status: reference
+    intake: found
+    found_via: [ART-041, ART-042, ART-043]
+    use_when: "判断モデルが返す確信度を自動処理の閾値に使ってよいかを、提供元の一次情報で確かめる時"
+    derived: [foundation/model-tier-selection/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-109
+    title: Jev 1.13 jaggedness (TypeSafe AI docs)
+    url: https://docs.typesafe.ai/model-jaggedness/jev-1.13
+    published_at: null
+    topics: [decision_models, reliability, verification, prompt_injection]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "判断を任せる前に、提供元自身が認めている不得手な課題と失敗様式を確かめる時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-110
+    title: "Evaluating Decision Models for Text Annotation in Computational Social Science"
+    url: https://arxiv.org/abs/2609.24574
+    published_at: 2026-09-21
+    topics: [decision_models, classification, calibration, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "判断専用モデルと汎用 LLM の正答率・費用・較正の差を、独立した大規模な評価で確かめる時"
+    derived: [foundation/model-tier-selection/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-111
+    title: Jevはどれだけ優秀なif文か？軽量モデルを分類器用途で比較してみた
+    url: https://journal.supa.ai/jev-classifier-benchmark/
+    published_at: 2026-09-18
+    topics: [decision_models, classification, calibration, latency, cost]
+    status: reference
+    intake: found
+    found_via: [ART-041, ART-043]
+    use_when: "確信度の閾値で自動処理を切り分ける運用が、自分の課題で成立するかを測り方ごと参考にする時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-112
+    title: I tried replacing model routing with TypeSafe (Jev) to see how much faster and cheaper it would get
+    url: https://dev.classmethod.jp/en/articles/jev-for-llm-model-routing/
+    published_at: 2026-09-17
+    topics: [decision_models, routing, latency, cost, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-041]
+    use_when: "振り分けの判断だけを判断専用モデルへ置き換えたとき、速度と費用と正答率がどう動くかを実測で見る時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: ART-042
+    title: Jev と Cosmos DB で、ベクトル検索の結果を観点別に絞る PoC
+    url: https://zenn.dev/nomhiro/articles/jev-cosmosdb-rag-filter-poc
+    published_at: 2026-09-19
+    topics: [retrieval, rag, decision_models, classification, latency]
+    status: reference
+    intake: shared
+    use_when: "ベクトル検索の後ろに判定の層を置く構成が、どんな形になるかを実装例で見る時"
+    derived: [foundation/retrieval-structure-decision/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-113
+    title: "Corrective Retrieval Augmented Generation"
+    url: https://arxiv.org/abs/2401.15884
+    published_at: 2024-01-29
+    topics: [retrieval, rag, decision_models, thresholds, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-042]
+    use_when: "取り出した結果を軽い評価器で判定し、確信度で次の行動を切り替える構成の先例を確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-114
+    title: Integrated vector store (Azure Cosmos DB for NoSQL)
+    url: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search
+    published_at: null
+    topics: [retrieval, rag, verification, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-042]
+    use_when: "ベクトル検索を属性の条件と併用できるか、索引の型で再現率がどう変わるかを提供元の一次情報で確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-115
+    title: "ARAGOG: Advanced RAG Output Grading"
+    url: https://arxiv.org/abs/2404.01037
+    published_at: 2024-04-01
+    topics: [retrieval, rag, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-042, ART-043]
+    use_when: "取り出し方の工夫を足す前に、どの技法が実際に効いてどれが効かなかったかを独立比較で見る時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-116
+    title: Per-Query Gating of LLM Rerankers for Multi-Hop Retrieval
+    url: https://arxiv.org/abs/2609.22880
+    published_at: 2026-09-19
+    topics: [retrieval, rag, cost, evaluation, thresholds]
+    status: reference
+    intake: found
+    found_via: [ART-042]
+    use_when: "重い判定の層を毎回呼ぶか、呼ぶかどうかを先に決めるかを比べる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: ART-043
+    title: Cloudflare 上で Jev を使い、ごく低い費用でページ内検索を作る
+    url: https://zenn.dev/mazrean/articles/bd9b563ace18db
+    published_at: 2026-09-26
+    topics: [retrieval, rag, decision_models, cost, latency]
+    status: reference
+    intake: shared
+    use_when: "候補を絞ってから判断専用モデルで並べ替える構成を、費用と応答時間の実例で見る時"
+    derived: [foundation/retrieval-structure-decision/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-117
+    title: "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models"
+    url: https://arxiv.org/abs/2104.08663
+    published_at: 2021-04-17
+    topics: [retrieval, rag, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-043]
+    use_when: "候補を絞って後段で並べ替える二段構えが、品質と計算費用のどちらを買う構成なのかを確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: REF-118
+    title: bge-reranker-base (Cloudflare Workers AI)
+    url: https://developers.cloudflare.com/workers-ai/models/bge-reranker-base/
+    published_at: null
+    topics: [retrieval, rag, decision_models, cost]
+    status: reference
+    intake: found
+    found_via: [ART-043]
+    use_when: "並べ替えの段を作る前に、使っている基盤がその仕事の専用モデルを既に提供していないか確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-119
+    title: "M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation"
+    url: https://arxiv.org/abs/2402.03216
+    published_at: 2024-02-05
+    topics: [retrieval, embeddings, japanese_text, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-043]
+    use_when: "前段の取りこぼしを後段で直す前に、使っている埋め込みモデルの機能を使い切っているか確かめる時"
+    derived: [foundation/retrieval-structure-decision/README.md, knowledge/reading-guide.md]
+  - id: ART-044
+    title: 完全版 Claude Mods 入門 | Claude Code を自由にカスタマイズする
+    url: https://zenn.dev/nogu66/articles/claude-mods-complete-guide
+    published_at: 2026-10-02
+    topics: [claude_code, plugins, hooks, extension_points]
+    status: reference
+    intake: shared
+    use_when: "製品のプロセス内で動く拡張の作り方を、登録の形とファイル構成から順に追う時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-120
+    title: Mods overview (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/overview
+    published_at: null
+    topics: [claude_code, plugins, hooks, extension_points, security]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "hook・skill・MCP とプロセス内で動く拡張のどれに置くかを決める時、入れた拡張が何に届くかを確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-121
+    title: React to events with a mod (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/events
+    published_at: null
+    topics: [claude_code, plugins, hooks, extension_points, permissions]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "設定ファイルの hook とプロセス内の拡張がどちらの順で走り、どちらの拒否が残るかを確かめる時"
+    derived: [foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-122
+    title: Manage mods for your organization (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/admin
+    published_at: null
+    topics: [claude_code, plugins, permissions, security, managed_settings]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "既定で何が許されているか、どの保護がどの条件で載るか、入れる前に中身をどう確かめるかを決める時"
+    derived: [foundation/agents-md/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-123
+    title: Mods reference (Claude Code)
+    url: https://code.claude.com/docs/en/plugins/mods/reference
+    published_at: null
+    topics: [claude_code, plugins, hooks, extension_points, limits]
+    status: reference
+    intake: found
+    found_via: [ART-044]
+    use_when: "受け取れるイベント、呼べる API、時間と大きさの上限、関係する設定名を引く時"
+    derived: [foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-124
+    title: "Figma2Code: Automating Multimodal Design to Code in the Wild"
+    url: https://arxiv.org/abs/2604.13648
+    published_at: 2026-04-15
+    topics: [ui_generation, design_to_code, structured_metadata, benchmark, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "画像だけを渡すのと、構造化された設計情報を渡すのとで生成コードがどう変わるかを、測定で確かめる時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-125
+    title: Claude Code and Figma - Set up the MCP server
+    url: https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server
+    published_at: null
+    topics: [figma, mcp, design_system, claude_code, design_tokens]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "デザインツール側に正本がある場合に、コンポーネント・変数・対応付けをエージェントへ直接渡す公式経路を確認する時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-126
+    title: Registry (shadcn/ui)
+    url: https://ui.shadcn.com/docs/registry
+    published_at: null
+    topics: [component_registry, distribution, mcp, design_system, agents]
+    status: reference
+    intake: found
+    found_via: [ART-010]
+    use_when: "自前の部品・設定・ルールを、エージェントから引ける形で配る仕組みを決める時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-127
+    title: "Generated Inaccessible: Measuring WCAG Violations in AI UI Design Tools"
+    url: https://dl.acm.org/doi/10.1145/3800424.3800430
+    published_at: null
+    topics: [accessibility, wcag, ui_generation, measurement, peer_reviewed]
+    status: reference
+    intake: found
+    found_via: [ART-010, ART-050]
+    use_when: "AI に作らせた画面の何が落ちるか、プロンプトで要件を明記すれば直るのかを確かめる時"
+    derived: [foundation/design-asset-canon/README.md, foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-128
+    title: Design Tokens Format Module (W3C Design Tokens Community Group, draft)
+    url: https://www.designtokens.org/tr/drafts/format/
+    published_at: 2026-09-08
+    topics: [design_tokens, interchange_format, design_system, draft_spec]
+    status: reference
+    intake: found
+    found_via: [ART-010, ART-050]
+    use_when: "見た目の決定を完成物ではなく名前付きの値として持つ形を検討する時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-129
+    title: pptx skill (Anthropic Agent Skills)
+    url: https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md
+    published_at: null
+    topics: [presentations, agent_skills, document_generation, verification, licensing]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "エージェントにスライド形式のファイルを作らせるとき、どの経路で作り、生成後に何を必ず確かめるかを決める時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-130
+    title: Marp CLI - PowerPoint (PPTX) conversion
+    url: https://github.com/marp-team/marp-cli
+    published_at: null
+    topics: [presentations, markdown, pptx_export, editability, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "テキストを資料の正本にする前に、受け取る側が編集できる形式で出せるかを確かめる時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-131
+    title: PDF export (reveal.js)
+    url: https://revealjs.com/pdf-export/
+    published_at: null
+    topics: [presentations, web_slides, pdf_export, browser_requirements]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "ブラウザのスライドを配布用の PDF にする手順と、その前提・上限を確かめる時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: REF-132
+    title: Revealjs presentations (Quarto)
+    url: https://quarto.org/docs/presentations/revealjs/
+    published_at: null
+    topics: [presentations, web_slides, overflow, authoring]
+    status: reference
+    intake: found
+    found_via: [ART-002]
+    use_when: "スライドに入りきらない内容の扱いを、既定任せにせず明示的に決める時"
+    derived: [foundation/presentations/README.md, knowledge/reading-guide.md]
+  - id: ART-045
+    title: アーキテクチャ図を念頭に置いて設計された斬新な自動レイアウトアルゴリズム「TALA」がオープンソース化
+    url: https://gigazine.net/news/20260909-tala-is-open-source/
+    published_at: 2026-09-09
+    topics: [diagrams, layout_engine, open_source, architecture_diagrams]
+    status: reference
+    intake: shared
+    use_when: "構成図のレイアウトを変える選択肢があることと、その制約の所在を知る時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-133
+    title: TALA is open source (D2)
+    url: https://d2lang.com/blog/tala-is-open-source/
+    published_at: 2026-09-07
+    topics: [diagrams, layout_engine, licensing, determinism, architecture_diagrams]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "構成図向けのレイアウトエンジンを採る前に、公表されている制約（実行ごとの変動・向かない図・処理時間）を確かめる時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-134
+    title: Layouts (D2)
+    url: https://d2lang.com/tour/layouts/
+    published_at: null
+    topics: [diagrams, layout_engine, feature_matrix]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "どのレイアウトエンジンが既定で、位置の固定などの機能がどれで効くかを引く時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-135
+    title: Creating diagrams (GitHub Docs)
+    url: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams
+    published_at: null
+    topics: [diagrams, markdown, rendering, github, tooling]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "図の記法を選ぶ前に、成果物が読まれる場所でそれが描画されるかを確かめる時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-136
+    title: "DiagramEval: Evaluating LLM-Generated Diagrams via Graphs"
+    url: https://arxiv.org/abs/2510.25761
+    published_at: 2025-10-29
+    topics: [diagrams, evaluation, measurement, peer_reviewed, verification]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "生成させた図の何を確かめるか決める時。要素と関係のどちらが落ちるか、画像の類似度が指標になるかを見る"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-137
+    title: "MermaidSeqBench: An Evaluation Benchmark for NL-to-Mermaid Sequence Diagram Generation"
+    url: https://arxiv.org/abs/2511.14967
+    published_at: 2025-11-18
+    topics: [diagrams, evaluation, benchmark, llm_as_judge, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-045]
+    use_when: "図の生成品質を測る既存の取り組みと、その判定を誰に任せているかを確かめる時"
+    derived: [foundation/diagram-as-text/README.md, knowledge/reading-guide.md]
+  - id: REF-138
+    title: Documenting Architecture Decisions (Michael Nygard)
+    url: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+    published_at: 2011-11-15
+    topics: [decision_records, adr, documentation, supersede, primary_source]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録の最小の節構成と、覆した判断を消さずに残す規則を一次情報で確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-139
+    title: "One Size Fits All? An Empirical Comparison of ADR Templates regarding Comprehension, Usability, and Ease of Adoption"
+    url: https://arxiv.org/abs/2604.27333
+    published_at: 2026-04-30
+    topics: [decision_records, adr, templates, measurement, preprint]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録のテンプレートを選ぶ前に、評価者の採点と実際に書いた人の結果が逆になりうることを確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-140
+    title: Using Architecture Decision Records in Open Source Projects - An MSR Study on GitHub
+    url: https://research.jku.at/en/publications/using-architecture-decision-records-in-open-source-projects-an-ms/
+    published_at: 2023-06-19
+    topics: [decision_records, adr, adoption, peer_reviewed, field_study]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録を始める前に、続かない形で始めていないかを実地のデータで確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-141
+    title: Evaluating Large Language Models for Detecting Architectural Decision Violations
+    url: https://arxiv.org/abs/2602.07609
+    published_at: 2026-02-07
+    topics: [decision_records, adr, verification, llm_evaluation, preprint]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "判断記録をエージェントに照合させる構成で、どの種類の判断なら効くかを確かめる時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-142
+    title: Coding Agents Love Decision Records
+    url: https://www.oreilly.com/radar/coding-agents-love-decision-records/
+    published_at: 2026-10-02
+    topics: [decision_records, adr, coding_agents, agents_md, practice]
+    status: reference
+    intake: found
+    found_via: [REF-004]
+    use_when: "エージェントに判断記録を読ませる構成を組む時、status の扱いと本文の肥大の壊れ方を先に知る時"
+    derived: [foundation/decision-records/README.md, knowledge/reading-guide.md]
+  - id: REF-143
+    title: Push protection (GitHub)
+    url: https://docs.github.com/en/code-security/concepts/secret-security/push-protection
+    published_at: null
+    topics: [github, security, secret_scanning, push_protection, prevention]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "秘密をリポジトリへ入れる前に止める層の仕様を確かめる時。どの範囲で既定で効くか、バイパスが何に記録されるかを引く"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-144
+    title: Supported secret scanning patterns (GitHub)
+    url: https://docs.github.com/en/code-security/reference/secret-security/supported-secret-scanning-patterns
+    published_at: null
+    topics: [github, security, secret_scanning, coverage, generic_patterns]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "どの種類の秘密が既定で検出・遮断されるかを型ごとに確かめる時。汎用の秘密を既定の仕組みに任せてよいかを判断する時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-145
+    title: Configure permissions (Claude Code)
+    url: https://code.claude.com/docs/en/permissions
+    published_at: null
+    topics: [claude_code, permissions, secrets, deny_rules, sandbox]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "エージェントに読ませないファイルを指定する時、その deny ルールがどの経路に効き、どの経路に効かないかを確かめる時"
+    derived: [foundation/claude-code/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-146
+    title: "A Comparative Study of Software Secrets Reporting by Secret Detection Tools"
+    url: https://arxiv.org/abs/2307.00714
+    published_at: 2023-07-03
+    topics: [secrets, detection_tools, measurement, precision_recall, peer_reviewed]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "秘密検出の道具を選ぶ前に、精度と再現率のどちらを取るかを測定で確かめる時。検査の通過をどこまで証拠にしてよいかを決める時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-147
+    title: "How Bad Can It Git? Characterizing Secret Leakage in Public GitHub Repositories"
+    url: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-3_Meli_paper.pdf
+    published_at: null
+    topics: [secrets, leakage, remediation, revocation, peer_reviewed]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "秘密を出してしまった後の手順を決める時。削除・履歴の書き換え・失効のどれが本体かを実地のデータで確かめる時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+  - id: REF-148
+    title: The State of Secrets Sprawl 2026
+    url: https://blog.gitguardian.com/the-state-of-secrets-sprawl-2026/
+    published_at: 2026-03-17
+    topics: [secrets, leakage, coding_agents, mcp, vendor_report]
+    status: reference
+    intake: found
+    found_via: [REF-003]
+    use_when: "エージェントに書かせる量を増やす前に、秘密の漏えいがどこで増えているかの実地の傾向を見る時"
+    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-149
+    title: OpenID Connect (Google Identity)
+    url: https://developers.google.com/identity/openid-connect/openid-connect
+    published_at: null
+    topics: [oidc, google_identity, id_token, claims, authentication]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "Google のアカウントでログインさせる時、ID トークンの検証項目と、利用者を一意に特定する claim を確かめる時"
+    derived: [foundation/internal-service-access/README.md, knowledge/reading-guide.md]
+  - id: REF-150
+    title: Securing your app with signed headers (Identity-Aware Proxy)
+    url: https://docs.cloud.google.com/iap/docs/signed-headers-howto
+    published_at: null
+    topics: [iap, reverse_proxy, jwt, header_spoofing, google_cloud]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "認証を手前のプロキシに任せる構成で、アプリ側に何の検証が残るかを確かめる時"
+    derived: [foundation/internal-service-access/README.md, knowledge/reading-guide.md]
+  - id: REF-151
+    title: "Millions of Accounts Vulnerable due to Google's OAuth Flaw"
+    url: https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw
+    published_at: 2025-01-13
+    topics: [oauth, oidc, identity, domain_ownership, vendor_research]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "ログインしてきた人を何の値で同一人物と判定するかを決める時。メール・ドメイン・sub のどれを信頼できるかを確かめる時"
+    derived: [foundation/internal-service-access/README.md, knowledge/reading-guide.md]
+  - id: REF-152
+    title: "DeleFriend: a design flaw in Domain-Wide Delegation"
+    url: https://www.hunters.security/en/blog/delefriend-a-newly-discovered-design-flaw-in-domain-wide-delegation-could-leave-google-workspace-vulnerable-for-takeover
+    published_at: null
+    topics: [google_workspace, domain_wide_delegation, service_accounts, blast_radius, vendor_research]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "機械から Workspace の API を使う構成を組む前に、委譲が何に紐づき、誰がそれを使えるのかを確かめる時"
+    derived: [foundation/internal-service-access/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-153
+    title: Best practices for managing service account keys (Google Cloud)
+    url: https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys
+    published_at: null
+    topics: [google_cloud, service_accounts, credentials, workload_identity_federation, secrets]
+    status: reference
+    intake: found
+    found_via: [ART-018]
+    use_when: "機械の資格情報を用意する時、鍵を作らずに済む方法があるかを先に確かめる時"
+    derived: [foundation/internal-service-access/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+  - id: ART-046
+    title: Windows + AIコーディングエージェントで踏んだ罠をまとめた
+    url: https://zenn.dev/mukuil_blog/articles/9a048ea2e8dec4
+    published_at: 2026-09-17
+    topics: [windows, encoding, line_endings, cloud_sync, agent_file_io]
+    status: reference
+    intake: shared
+    use_when: "Windows でエージェントにファイルを読み書きさせていて、出力は正しいのに結果が壊れる時の入口"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-154
+    title: about_Character_Encoding (PowerShell 5.1)
+    url: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-5.1
+    published_at: null
+    topics: [powershell, encoding, bom, utf8, windows]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "Windows のシェルにファイルを読み書きさせる前に、その版の既定の符号化と BOM の扱いを確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-155
+    title: Use UTF-8 code pages in Windows apps
+    url: https://learn.microsoft.com/en-us/windows/apps/design/globalizing/use-utf8-code-page
+    published_at: null
+    topics: [windows, encoding, utf8, code_page, system_settings]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "符号化の問題を道具ごとではなく系の設定で片づけられないかを検討する時、その適用範囲と条件を確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-156
+    title: Configuring Git to handle line endings
+    url: https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings
+    published_at: null
+    topics: [git, line_endings, gitattributes, normalization, windows]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "改行の扱いを利用者ごとの設定ではなくリポジトリ側で決める時、既存リポジトリを正規化する時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-157
+    title: Set Files On-Demand states in Windows
+    url: https://learn.microsoft.com/en-us/onedrive/files-on-demand-windows
+    published_at: null
+    topics: [onedrive, files_on_demand, placeholder, file_attributes, windows]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "同期フォルダのファイルに中身があるかを、落とさずに確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-158
+    title: "Edit tool silently destroys some files in OneDrive-synced folders via non-deterministic delete-then-rename race (Windows)"
+    url: https://github.com/anthropics/claude-code/issues/65229
+    published_at: 2026-06-04
+    topics: [claude_code, windows, onedrive, data_loss, file_replacement]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "同期フォルダの下でエージェントにファイルを編集させる前に、置換書き込みがどう失敗するかを確かめる時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-159
+    title: "Cowork silently corrupts files in OneDrive folders with Files-On-Demand"
+    url: https://github.com/anthropics/claude-code/issues/62140
+    published_at: 2026-05-25
+    topics: [claude_code, windows, onedrive, truncation, data_loss]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "読み取った内容がファイルの全体だと仮定してよいかを疑う時、置き札を検出する方法が要る時"
+    derived: [foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-160
+    title: "Explore agent triggers unscoped file access, causing OneDrive to download cloud-only files"
+    url: https://github.com/anthropics/claude-code/issues/35513
+    published_at: 2026-03-17
+    topics: [claude_code, subagents, onedrive, hydration, traversal_cost]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "広い探索を下位エージェントへ委譲する前に、トークン以外の費用が出る環境かを確かめる時"
+    derived: [foundation/heavy-read-delegation/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-161
+    title: Claude Code advanced setup
+    url: https://code.claude.com/docs/en/setup
+    published_at: null
+    topics: [claude_code, windows, setup, shell, sandboxing]
+    status: reference
+    intake: found
+    found_via: [ART-046]
+    use_when: "Windows でどのシェルの道具が使われるか、隔離が使えるかを確かめる時"
+    derived: [foundation/claude-code/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: ART-047
+    title: Claudeは計画、Antigravityは実行。AIを2つ使い分けたら開発が回りはじめた
+    url: https://www.lifehacker.jp/article/2609-antigravity-writes-better-code-than-claude-still-use-claude-first/
+    published_at: 2026-09-15
+    topics: [coding_agents, planning, handoff, tool_split, antigravity]
+    status: reference
+    intake: shared
+    use_when: "計画を書かせる道具と実装させる道具を分けようと考えた時、その構成の論点を洗い出す入口が要る時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-162
+    title: Rules — Antigravity docs
+    url: https://antigravity.google/docs/rules/
+    published_at: null
+    topics: [agents_md, rules, instruction_files, size_limits, antigravity]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "AGENTS.md を複数の製品に読ませる時、常時の指示の上限と超過時の挙動を確かめる時"
+    derived: [foundation/agents-md/README.md, foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-163
+    title: Artifacts — Antigravity docs
+    url: https://antigravity.google/docs/artifacts
+    published_at: null
+    topics: [planning, artifacts, review_surface, antigravity]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "製品が作る計画を、別の道具へ渡せる成果物として扱ってよいかを確かめる時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-164
+    title: Choose a permission mode
+    url: https://code.claude.com/docs/en/permission-modes
+    published_at: null
+    topics: [claude_code, plan_mode, permissions, approval_flow]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "計画の段階で編集が止まる前提を置く時、承認後に何が引き継がれるかを確かめる時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-165
+    title: "From Plan to Action: How Well Do Agents Follow the Plan?"
+    url: https://arxiv.org/abs/2604.12147
+    published_at: 2026-04-13
+    topics: [planning, plan_compliance, coding_agents, swe_bench, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "計画を先に作らせることの効き目と、計画が逆効果になる条件を知りたい時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-166
+    title: "Context Rot: How Increasing Input Tokens Impacts LLM Performance"
+    url: https://www.trychroma.com/research/context-rot
+    published_at: 2025-07-14
+    topics: [long_context, degradation, distractors, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "文脈窓の大きさを「全部見えている」と読み替えてよいかを確かめる時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: REF-167
+    title: Diagnosing and Mitigating Context Rot in Long-horizon Search
+    url: https://arxiv.org/abs/2606.29718
+    published_at: 2026-06-29
+    topics: [long_context, agents, premature_termination, mitigation, preprint]
+    status: reference
+    intake: found
+    found_via: [ART-047]
+    use_when: "長い文脈で動かすエージェントが、誤るのではなく早く諦める側の故障を疑う時"
+    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+  - id: ART-048
+    title: Opus 5.5にプロンプトを渡したら、解説アニメーション動画ができた
+    url: https://zenn.dev/acntechjp/articles/178e40be12d347
+    published_at: 2026-09-24
+    topics: [animation, video_generation, code_generated_motion, explainer]
+    status: reference
+    intake: shared
+    use_when: "動く成果物をエージェントに作らせる案の入口（出力形式・書き出し・制約は一次情報で確かめる）"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-168
+    title: Share session output as artifacts
+    url: https://code.claude.com/docs/en/artifacts
+    published_at: null
+    topics: [claude_code, artifacts, csp, sharing, page_constraints]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "作らせたものを1枚のページとして共有する経路で、何が成立し何が遮断されるかを確かめる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-169
+    title: Using randomness
+    url: https://www.remotion.dev/docs/using-randomness
+    published_at: null
+    topics: [animation, determinism, parallel_rendering, randomness, video_as_code]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "コードで描いた動きが、プレビューと書き出しで食い違う理由を確かめる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-170
+    title: "Does animation enhance learning? A meta-analysis"
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0360131516301336
+    published_at: 2016-10-01
+    topics: [animation, learning, meta_analysis, peer_reviewed, multimedia]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "そもそも動かす価値があるか、どの条件で効くかを決める時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-171
+    title: "Understanding SC 2.3.1: Three Flashes or Below Threshold"
+    url: https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html
+    published_at: null
+    topics: [accessibility, wcag, flashing, photosensitivity, machine_checkable]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "生成された動きに明滅が入ったとき、目視ではなく機械で判定する時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-172
+    title: "Understanding SC 2.2.2: Pause, Stop, Hide"
+    url: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+    published_at: null
+    topics: [accessibility, wcag, motion, autoplay, controls]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "自動で動き続けるものを資料やページに埋める前に、停止手段の要否を判定する時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-173
+    title: "Understanding SC 1.2.2: Captions (Prerecorded)"
+    url: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html
+    published_at: null
+    topics: [accessibility, wcag, captions, synchronized_media, narration]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "ナレーションや音声を付けると決めた時、字幕の要否と例外を確かめる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: REF-174
+    title: prefers-reduced-motion
+    url: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+    published_at: null
+    topics: [accessibility, css, media_query, reduced_motion, vestibular]
+    status: reference
+    intake: found
+    found_via: [ART-048]
+    use_when: "動きを減らす設定への分岐を、作る段階で入れる時"
+    derived: [foundation/motion-asset-production/README.md, knowledge/reading-guide.md]
+  - id: ART-049
+    title: 「Claudeを2週間で3倍速にした方法」をAnthropicが解説
+    url: https://gigazine.net/news/20260924-anthropic-faster-claude/
+    published_at: 2026-09-24
+    topics: [performance, measurement, agent_orchestration, benchmarks]
+    status: reference
+    intake: shared
+    use_when: "エージェントに性能改善を任せた事例の入口として読む時（手順と条件は一次情報で確かめる）"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-175
+    title: How we made claude.ai 3x faster in two weeks
+    url: https://claude.dev/blog/how-we-made-claude-ai-faster/
+    published_at: 2026-09-23
+    topics: [performance, measurement, benchmarks, ci_guardrails, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "計測・ベンチマーク・CIの歯止め・人が保持する判断の組み立て方を決める時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-176
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    url: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+    published_at: 2025-07-10
+    topics: [productivity, randomized_trial, self_report, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "速くなった・良くなったという体感を根拠に使ってよいか判断する時"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-177
+    title: "SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents"
+    url: https://arxiv.org/abs/2605.21384
+    published_at: 2026-05-20
+    topics: [reward_hacking, benchmarks, coding_agents, held_out_tests]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "エージェントが合否を確かめる検査を、どこまで見せてよいか決める時"
+    derived: [foundation/cost-change-evaluation/README.md, foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-178
+    title: Why lab and field data can be different (and what to do about it)
+    url: https://web.dev/articles/lab-and-field-data-differences
+    published_at: 2022-07-18
+    topics: [measurement, lab_data, field_data, real_user_monitoring]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "手元の試験の数値を、実際の体験の代理として使ってよいか確かめる時"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-179
+    title: "CI for performance: Reliable benchmarking in noisy environments"
+    url: https://pythonspeed.com/articles/consistent-benchmarking-in-ci/
+    published_at: 2020-12-02
+    topics: [benchmarks, ci, determinism, instruction_counts, measurement_noise]
+    status: reference
+    intake: found
+    found_via: [ART-049]
+    use_when: "実行ごとにぶれない計測をCIへ置きたい時、ばらつきで小さい改善が隠れる時"
+    derived: [foundation/measurable-target/README.md, knowledge/reading-guide.md]
+  - id: REF-180
+    title: "ModCon 2026: Open source, open cloud, open silicon"
+    url: https://www.modular.com/blog/modcon-announcements
+    published_at: 2026-08-18
+    topics: [mojo, open_source, licensing, toolchain, windows_support]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "ある言語・処理系の公開範囲とライセンス、対応環境の現状を一次情報で確かめる時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-181
+    title: "Modular 26.5: Mojo 1.0 is here!"
+    url: https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here
+    published_at: 2026-08-11
+    topics: [mojo, versioning, breaking_changes, stability_guarantees]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "1.0 到達時に何が変わり、以後どこまで安定すると言われているかを一次情報で確かめる時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-182
+    title: "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs"
+    url: https://www.usenix.org/publications/loginonline/we-have-package-you-comprehensive-analysis-package-hallucinations-code
+    published_at: 2025-06-17
+    topics: [package_hallucination, supply_chain, code_generation, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "生成されたコードの依存名をどこまで信用してよいか決める時、聞き直しが確認になるか判断する時"
+    derived: [foundation/low-resource-language-codegen/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-183
+    title: "The Range Shrinks, the Threat Remains: Re-evaluating LLM Package Hallucinations on the 2026 Frontier-Model Cohort"
+    url: https://arxiv.org/abs/2605.17062
+    published_at: 2026-05-16
+    topics: [package_hallucination, replication, supply_chain, model_comparison]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "モデルを変える・段を上げることが依存名の確認になるか判断する時"
+    derived: [foundation/low-resource-language-codegen/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-184
+    title: "GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities"
+    url: https://arxiv.org/abs/2507.12367
+    published_at: 2025-07-16
+    topics: [versioning, benchmarks, execution_based_evaluation, code_generation]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "指示に版を書けば版に合ったコードが出ると仮定してよいか確かめる時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-185
+    title: Type-Constrained Code Generation with Language Models
+    url: https://arxiv.org/abs/2504.09246
+    published_at: 2025-04-12
+    topics: [type_systems, constrained_decoding, compilation_errors, code_generation]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "生成コードの誤りを、指示の工夫と機械の検査層のどちらで落とすか決める時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-186
+    title: Knowledge Transfer from High-Resource to Low-Resource Programming Languages for Code LLMs
+    url: https://arxiv.org/abs/2308.09895
+    published_at: 2023-08-19
+    topics: [low_resource_languages, code_llm, test_filtering, training_data]
+    status: reference
+    intake: found
+    found_via: [ART-011]
+    use_when: "利用者の少ない言語で生成物の正しさをどう担保するか考える時"
+    derived: [foundation/low-resource-language-codegen/README.md, knowledge/reading-guide.md]
+  - id: REF-187
+    title: "Repository (Patterns of Enterprise Application Architecture catalog)"
+    url: https://martinfowler.com/eaaCatalog/repository.html
+    published_at: null
+    topics: [repository_pattern, layer_boundary, software_design]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "データアクセス層の責務を、検査規則に翻訳できる言い方で宣言する時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: REF-188
+    title: Anemic Domain Model
+    url: https://martinfowler.com/bliki/AnemicDomainModel.html
+    published_at: 2003-11-25
+    topics: [domain_model, layer_boundary, software_design, anti_pattern]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "データアクセス層から出した業務ロジックの行き先を決める時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: REF-189
+    title: "dependency-cruiser: rules reference"
+    url: https://github.com/sverweij/dependency-cruiser/blob/main/doc/rules-reference.md
+    published_at: null
+    topics: [static_analysis, dependency_rules, layer_boundary, ci_gate]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "層をまたぐ依存と循環を、ビルドを落とす検査にできるか確かめる時"
+    derived: [foundation/layer-boundary-enforcement/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-190
+    title: An Empirical Evaluation of Large Language Models Applying Software Architectural Patterns
+    url: https://doi.org/10.3390/ai7060195
+    published_at: 2026-05-27
+    topics: [architecture_conformance, code_generation, empirical_evaluation, rag]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "アーキテクチャの規約を文章で渡して守られるかを見積もる時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: REF-191
+    title: Quantitative Analysis of Technical Debt and Pattern Violation in Large Language Model Architectures
+    url: https://arxiv.org/abs/2512.04273
+    published_at: 2025-12-03
+    topics: [architecture_erosion, layer_violation, model_comparison, static_analysis]
+    status: reference
+    intake: found
+    found_via: [ART-014]
+    use_when: "生成コードのアーキテクチャ違反を機械で数える測り方を探す時"
+    derived: [foundation/layer-boundary-enforcement/README.md, knowledge/reading-guide.md]
+  - id: ART-050
+    title: デザインハーネスを個人開発で組んだ — AI が作る画面のずれを止めるまで
+    url: https://zenn.dev/yoshihiko555/articles/e9801e0ad1efb8
+    published_at: 2026-10-11
+    topics: [ui_consistency, design_tokens, visual_regression, lint_gate, llm_judge]
+    status: reference
+    intake: shared
+    use_when: "AIに作らせた画面が少しずつずれるのを止める構成の入口（効果の裏付けは一次情報と測定側で確かめる）"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-192
+    title: "The Automated Accessibility Coverage Report (Deque)"
+    url: https://www.deque.com/automated-accessibility-testing-coverage/
+    published_at: null
+    topics: [accessibility, automated_testing, coverage_limits, wcag]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "規則で判定する検査を入れたあと、残りがどれだけあるかを見積もる時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-193
+    title: "Visual comparisons (Playwright docs)"
+    url: https://playwright.dev/docs/test-snapshots
+    published_at: null
+    topics: [visual_regression, screenshot_diff, environment_dependence, thresholds]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "描画した画面を比べる検査の前提条件と、許容値の扱いを決める時"
+    derived: [foundation/design-asset-canon/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-194
+    title: "Theme variables (Tailwind CSS docs)"
+    url: https://tailwindcss.com/docs/theme
+    published_at: null
+    topics: [design_tokens, css_variables, single_source_of_truth, ui_consistency]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "色や寸法の決定を名前付きの値として1か所に持たせたい時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-195
+    title: "MLLM as a UI Judge: Benchmarking Multimodal LLMs for Predicting Human Perception of User Interfaces"
+    url: https://arxiv.org/abs/2510.08783
+    published_at: 2025-10-09
+    topics: [llm_judge, ui_evaluation, human_alignment, multimodal]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "規則にできない見た目の観点をモデルに採点させてよいか判断する時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-196
+    title: Can Multimodal LLMs Model Expert Ratings in Mobile UI Usability Evaluation?
+    url: https://link.springer.com/chapter/10.1007/978-3-032-30549-7_12
+    published_at: null
+    topics: [llm_judge, ui_evaluation, expert_ratings, usability, overestimation]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "静止画から採点させる構成が、どの観点で甘く出るかを確かめる時"
+    derived: [foundation/design-asset-canon/README.md, knowledge/reading-guide.md]
+  - id: REF-197
+    title: What Are Developers Actually Discussing When Visual Regression Tests Fail?
+    url: https://arxiv.org/abs/2608.07020
+    published_at: 2026-08-07
+    topics: [visual_regression, review_cost, failure_taxonomy, ci_gate]
+    status: reference
+    intake: found
+    found_via: [ART-050]
+    use_when: "見た目の検査を工程に入れたとき、何が拾われ、人の時間がどれだけ増えるかを見込む時"
+    derived: [foundation/design-asset-canon/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]

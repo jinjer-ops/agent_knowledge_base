@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-01
 updated_at: 2026-10-06
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-003, ART-012, REF-001, REF-002]
+source_ids: [ART-001, ART-003, ART-012, REF-001, REF-002, REF-005]
 tags: [contribution, knowledge, skills]
 ---
 
@@ -38,8 +38,8 @@ tags: [contribution, knowledge, skills]
 
 ## 設定・skillを追加する
 
-- 常時必要な短い事実は `foundation/` の雛形または対象プロジェクトの `CLAUDE.md` に置く。
-- 反復可能で、起動条件・入力・検証・終了条件が明確な作業だけを `skills/` に追加する。
+- 常時必要な短い事実は `foundation/` の雛形、または対象プロジェクトの正本 `AGENTS.md` に置く。特定のエージェントにしか意味のない指示だけを、そのツールの入口ファイルに置く。
+- 反復可能で、起動条件・入力・検証・終了条件が明確な作業だけを `skills/` に追加する。書き方と確認の手順は [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md) に従う。必ず実行させたい処理は skill ではなく hook にする。
 - 特定の会社・案件だけに関係する内容は、公開可能な原則まで抽象化できる場合だけ `organization/jinjer/` に置く。
 - 不明な内容や未検証の仮説は、断定せず `knowledge/experiments/` または `reference` として保持する。
 

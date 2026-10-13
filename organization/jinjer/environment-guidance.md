@@ -4,9 +4,9 @@ title: jinjer environment guidance
 type: organization-practice
 status: active
 created_at: 2026-09-01
-updated_at: 2026-09-01
+updated_at: 2026-10-06
 owners: [knowledge-stewards]
-source_ids: [ART-003, ART-004, ART-006, ART-012]
+source_ids: [ART-003, ART-004, ART-006, ART-012, REF-005]
 tags: [jinjer, environment, handover]
 ---
 
@@ -14,7 +14,7 @@ tags: [jinjer, environment, handover]
 
 ## 適用順序
 
-1. [foundation/](../../foundation/) の雛形から始め、対象リポジトリの目的・受け入れ条件・検証方法だけを `CLAUDE.md` に追加する。
+1. [foundation/](../../foundation/) の雛形から始め、対象リポジトリの目的・受け入れ条件・検証方法だけを正本の `AGENTS.md` に追加する。ツール固有の指示だけを各ツールの入口ファイルに置く。
 2. 会社・プロジェクトに固有の判断は、そのリポジトリのアクセス制御された文書に置く。このpublicリポジトリへ複写しない。
 3. 繰り返し使う公開可能な知見だけを、`knowledge/` または `skills/` へ昇格させる。
 4. 誰かが引き継ぐ作業は、目的、境界、現在状態、次の手順、検証、ロールバックを残す。
