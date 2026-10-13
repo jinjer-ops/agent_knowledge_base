@@ -2420,3 +2420,52 @@ sources:
     found_via: [ART-050]
     use_when: "見た目の検査を工程に入れたとき、何が拾われ、人の時間がどれだけ増えるかを見込む時"
     derived: [foundation/design-asset-canon/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: ART-051
+    title: 判断専用モデルを日本語校正プラグインへ実際に組み込み、所要時間を測った記録
+    url: https://zenn.dev/bamboo_nova/articles/c6176164dcffd0
+    published_at: 2026-10-12
+    topics: [decision_models, latency, batching, thresholds, measurement]
+    status: reference
+    intake: shared
+    use_when: "判断専用モデルを実際の処理へ入れるとき、束ね方・確信度の切り分け・落ちたときの戻し先がどんな形になるかを実装例で見る時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-198
+    title: Parallel questions (TypeSafe AI cookbooks)
+    url: https://docs.typesafe.ai/cookbooks/parallel_questions
+    published_at: null
+    topics: [decision_models, batching, cost, latency, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-051]
+    use_when: "複数の判定を 1 回の呼び出しに束ねてよいか、束ねると何が減るのかを提供元の一次情報で確かめる時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-199
+    title: "When Does Confidence-Based Cascade Deferral Suffice?"
+    url: https://arxiv.org/abs/2307.02764
+    published_at: 2023-07-06
+    topics: [decision_models, thresholds, calibration, cascades, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-051]
+    use_when: "小さい判定器の確信度を閾値にして大きいモデルへ回す構成が、どの条件で最適でなくなるかを査読済みの分析で確かめる時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-200
+    title: Run Claude Code programmatically (headless / `-p`)
+    url: https://code.claude.com/docs/en/headless
+    published_at: null
+    topics: [claude_code, automation, startup_cost, measurement, trust_boundary]
+    status: reference
+    intake: found
+    found_via: [ART-051]
+    use_when: "自動実行の `-p` が起動時に何を読み込み何に接続するかを確かめる時、またはそれを速度比較の基準線に使ってよいか判断する時"
+    derived: [foundation/claude-code/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-201
+    title: "Jev: Inside TypeSafe AI's First System One Decision Model"
+    url: https://www.hyperstack.cloud/technical-resources/tutorials/jev-inside-typesafe-ais-first-system-one-decision-model
+    published_at: null
+    topics: [decision_models, latency, measurement, reproduction, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-051]
+    use_when: "「文章を生成しない」こと自体がどれだけの速度差になるかを、ハードウェアと要求を揃えた比較で確かめる時"
+    derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
