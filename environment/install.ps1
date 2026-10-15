@@ -82,7 +82,9 @@ function Sync-Instructions([string]$Runtime, $Spec) {
     $path = Join-Path $userHome $Spec.Instructions
     $header = "$marker — edit the files named below, not this one."
     if ($Spec.Mode -eq 'import') {
-        $lines = @($header, "@$sharedRules") + @($overlays | ForEach-Object { "@$_" })
+        # Claude Code の読み込み（@パス）は「\」区切りのパスを解決しない（2026-10-15 に確かめた）。「/」で書く。
+        $lines = @($header, "@$($sharedRules -replace '\\', '/')") +
+            @($overlays | ForEach-Object { "@$($_ -replace '\\', '/')" })
         $content = ($lines -join "`n") + "`n"
     } else {
         $parts = @($header, "<!-- source: $sharedRules -->", '', (Get-Content -Raw -LiteralPath $sharedRules))
