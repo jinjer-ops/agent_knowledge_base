@@ -4,7 +4,7 @@ title: Knowledge area entry point
 type: overview
 status: active
 created_at: 2026-09-02
-updated_at: 2026-09-02
+updated_at: 2026-10-15
 owners: [knowledge-stewards]
 tags: [knowledge, sources, reading-guide]
 ---
@@ -18,6 +18,8 @@ tags: [knowledge, sources, reading-guide]
 | 人が読んで理解する | [reading-guide.md](reading-guide.md) | source ID ごとの日本語カード |
 | 機械・エージェントが参照する | [sources/articles.yml](sources/articles.yml) | 構造化した出典台帳 |
 | 共有した URL と、そこから見つけた資料を追う | [discovery-trails.md](discovery-trails.md) | 台帳から生成する一覧 |
+| 判断の理由と、採らなかった案を読む | [decisions/](decisions/) | 判断ごとの記録 |
+| 運用で得た教訓を読む | [practices/](practices/) | 主題ごとの文書（外部の出典ではなく運用の記録から起こしたもの） |
 
 ## 使い分け
 
