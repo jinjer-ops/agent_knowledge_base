@@ -20,3 +20,7 @@ private/
 # Local coordination records for this working copy. Kept on disk, not published.
 /CLAUDE.md
 docs/codex-briefs/
+
+# Python bytecode written when the tests run.
+__pycache__/
+*.pyc
