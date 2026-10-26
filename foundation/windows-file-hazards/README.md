@@ -4,9 +4,9 @@ title: Windows でエージェントにファイルを触らせるとき
 type: foundation-guide
 status: draft
 created_at: 2026-10-13
-updated_at: 2026-10-13
+updated_at: 2026-10-26
 owners: [knowledge-stewards]
-source_ids: [ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161]
+source_ids: [ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, REF-202]
 tags: [windows, encoding, line-endings, cloud-sync, file-io, data-loss]
 ---
 
@@ -170,6 +170,25 @@ attrib +p <パス>     # 中身を落としてから触る
 Get-Item <パス> | Select-Object Name, Length, LastWriteTime, Attributes
 (Get-FileHash <パス>).Hash
 ```
+
+### 検出した後、何から戻すか（この節は訂正です）
+
+上の 3 と 4 は**検出**です。気づけるようになるだけで、**正しい中身はどこからも来ません**。
+ここまでの記述はそこで止まっており、切り詰められた中身を何から復元するかを扱っていませんでした。
+
+この環境で効く条件を 2 つだけ書いておきます（詳細は
+[../change-recovery-layers/](../change-recovery-layers/)）。
+
+- **対処 4 の「別の場所で作らせてから自分で移す」は、取り消せる層を 1 つ外します。**
+  組み込みの編集ツールが一度も触っていないファイルは、セッションの巻き戻しの対象外です
+  （`REF-202`）。移す操作をシェルで行うと、移した先のファイルはその層に入りません。
+  移すなら、移した直後にコミットする側を手順に含めます。
+- **対処 1 の「作業ツリーを同期の外へ置く」も同じ形です。** 同期の層が版の履歴や
+  ごみ箱を兼ねていた場合、外へ出すと戻せる層が 1 つ減ります。壊れる経路を 1 本閉じて
+  戻す経路を 1 本閉じたなら、差し引きは改善とは限りません。出すなら、戻せる層を先に
+  立ててから出します。
+
+どちらも、**検出の層と復元の層は別に数える**という同じ理由から出ています。
 
 ## どのシェルの道具になるか
 

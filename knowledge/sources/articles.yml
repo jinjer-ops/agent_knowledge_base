@@ -2469,3 +2469,62 @@ sources:
     found_via: [ART-051]
     use_when: "「文章を生成しない」こと自体がどれだけの速度差になるかを、ハードウェアと要求を揃えた比較で確かめる時"
     derived: [foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: ART-052
+    title: 古いPCが無料で高機能NASに。「TrueNAS Community Edition」構築手順
+    url: https://pc.watch.impress.co.jp/docs/topic/readitnow/2150894.html
+    published_at: 2026-04-30
+    topics: [storage, nas, zfs, redundancy, self_hosting, data_durability]
+    status: reference
+    intake: shared
+    use_when: "手元に自分のストレージの層を持つ構成が、実際にどんな手順と部材になるかを一例で見る時"
+    derived: [foundation/change-recovery-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-202
+    title: "Checkpointing (Claude Code docs)"
+    url: https://code.claude.com/docs/en/checkpointing
+    published_at: null
+    topics: [claude_code, checkpoints, recovery, subagents, version_control]
+    status: reference
+    intake: found
+    found_via: [ART-052]
+    use_when: "セッションの巻き戻しで何が戻り何が戻らないか（シェル・背景のサブエージェント・symlink・保持期間）を確かめる時"
+    derived: [foundation/change-recovery-layers/README.md, foundation/claude-code/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+  - id: REF-203
+    title: "git-gc (Git reference manual)"
+    url: https://git-scm.com/docs/git-gc
+    published_at: null
+    topics: [git, garbage_collection, reflog, recovery, retention]
+    status: reference
+    intake: found
+    found_via: [ART-052]
+    use_when: "「あとで reflog から拾える」という前提が、いつまで・どの範囲で成り立つかを確かめる時"
+    derived: [foundation/change-recovery-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-204
+    title: "Scrub and Resilver (OpenZFS documentation)"
+    url: https://openzfs.github.io/openzfs-docs/Basic%20Concepts/Operations/Scrub%20and%20Resilver.html
+    published_at: null
+    topics: [zfs, checksums, data_integrity, redundancy, detection]
+    status: reference
+    intake: found
+    found_via: [ART-052]
+    use_when: "破損の検出と修復が別の能力であることを、実装元の記述で確かめる時"
+    derived: [foundation/change-recovery-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-205
+    title: "An Analysis of Data Corruption in the Storage Stack (FAST '08)"
+    url: https://www.usenix.org/conference/fast-08/analysis-data-corruption-storage-stack
+    published_at: null
+    topics: [data_integrity, silent_corruption, measurement, storage, reliability]
+    status: reference
+    intake: found
+    found_via: [ART-052]
+    use_when: "安価・再利用のディスクに検出の層が要るかを、大規模な実測にもとづいて判断する時"
+    derived: [foundation/change-recovery-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-206
+    title: "TrueNAS Hardware Guide"
+    url: https://www.truenas.com/docs/scale/gettingstarted/tnhardwareguide/
+    published_at: null
+    topics: [truenas, hardware, ecc_memory, storage, requirements]
+    status: reference
+    intake: found
+    found_via: [ART-052]
+    use_when: "ECC メモリの要否や最小構成について、二次情報の断定を提供元の現行の記述で検算する時"
+    derived: [foundation/change-recovery-layers/README.md, knowledge/reading-guide.md]
