@@ -503,6 +503,16 @@ tags: [knowledge, sources, discovery]
   - REF-200 Run Claude Code programmatically (headless / `-p`) <https://code.claude.com/docs/en/headless>（`reference`）
   - REF-201 Jev: Inside TypeSafe AI's First System One Decision Model <https://www.hyperstack.cloud/technical-resources/tutorials/jev-inside-typesafe-ais-first-system-one-decision-model>（`reference`）
 
+### ART-052 古いPCが無料で高機能NASに。「TrueNAS Community Edition」構築手順
+
+- 共有した URL: <https://pc.watch.impress.co.jp/docs/topic/readitnow/2150894.html>
+- 見つけて使った資料:
+  - REF-202 Checkpointing (Claude Code docs) <https://code.claude.com/docs/en/checkpointing>（`reference`）
+  - REF-203 git-gc (Git reference manual) <https://git-scm.com/docs/git-gc>（`reference`）
+  - REF-204 Scrub and Resilver (OpenZFS documentation) <https://openzfs.github.io/openzfs-docs/Basic%20Concepts/Operations/Scrub%20and%20Resilver.html>（`reference`）
+  - REF-205 An Analysis of Data Corruption in the Storage Stack (FAST '08) <https://www.usenix.org/conference/fast-08/analysis-data-corruption-storage-stack>（`reference`）
+  - REF-206 TrueNAS Hardware Guide <https://www.truenas.com/docs/scale/gettingstarted/tnhardwareguide/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

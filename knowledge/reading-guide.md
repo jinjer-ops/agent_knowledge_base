@@ -4,9 +4,9 @@ title: Reading guide for registered sources
 type: reading-guide
 status: active
 created_at: 2026-09-02
-updated_at: 2026-10-13
+updated_at: 2026-10-26
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -2328,12 +2328,66 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: この領域で最も設計の見方を変える 1 件として使っている。公開される置き換えの報告が十倍・百倍の差を出すのに対し、**比べる経路とハードウェアを揃えると差はこの水準に落ちる**。差の大部分は、文章を生成しないことではなく、比較対象側の呼び出し経路に含まれる起動と往復から来ている、という読み方の根拠になる。これを `ART-051` の倍率を読み解く側として [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md) に書いた。採ったのは**向きだけ**で、絶対値は移していない。製品そのものの再現ではないこと、1 つの課題・1 台での測定であること、発行元が計算機を売る立場であることはいずれも限界として扱い、どの製品の採用も勧めていない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/typed-decision-gating/README.md](../foundation/typed-decision-gating/README.md)（未検証）。
 
+### ART-052 冗長の列を 1 つ足す手順。消した・上書きしたは 1 行も埋まらない
+
+- **URL**: <https://pc.watch.impress.co.jp/docs/topic/readitnow/2150894.html>
+- **記事種別**: 媒体の実務者向け手順記事（対照も実測もない）。**登録した URL は「今すぐ読みたい！人気記事」という再掲の案内ページで、本文を持ちません**（掲載日 2026-10-24）。本文は同じ媒体の特集記事 <https://pc.watch.impress.co.jp/docs/topic/feature/2105357.html>（2026-04-30 公開）にあり、そちらを読んで評価しました。同じ記事なので ID は 1 つにし、台帳の `published_at` には本文側の公開日を入れています
+- **現在の扱い**: `reference`（確認日 2026-10-26）
+- **何が書かれているか**: 使わなくなった PC にストレージ専用の OS を入れ、NAS として使えるようにするまでの手順。ISO を入手して起動用 USB を作り、インストールし、日本語化とユーザー登録を済ませ、ストレージプールを作って共有フォルダを設定する、という流れ。筆者の実例は 4 台の HDD による RAID-Z1 のプールで、「1 台壊れても復旧できる」構成として紹介されている。ハードウェアの最小条件として 2 コア以上の 64bit CPU、8GB、システム用に 16GB 以上の SSD を挙げる。スナップショットは「機能として備わっている」と触れるだけで、手順も運用も書かれていない。転送速度などの**実測値は 1 つも無い**。消費電力・冷却、ネットワークの実速度、バックアップの設計、保守とアップグレード、共有の安全設定は範囲外。
+- **得られる示唆**: この領域を新しく立てる入口として使った。記事そのものは NAS の作り方だが、この環境に移すと **「エージェントが変えたものを、どの層で取り戻すか」** という問いになる。その枠に置くと、この構成が埋めるのは**冗長の列 1 つだけ**だと分かる。1 台壊れても読めるようになるが、消した・上書きしたという失い方は 1 行も埋まらない。冗長は、同じ操作が全部の複製へ同時に届くことを防がないからである。スナップショットについても、同じプールの中にある以上は「機械の外」の層にならない。もう 1 つ、記事の前提を提供元の現行ページ（`REF-206`）で検算したところ、**起動ディスクの最小が食い違っていた**（記事は 16GB 以上、公式は 20GB 以上）。最小メモリ 8GB は一致する。導入する場合は記事ではなく提供元の現行ページで確かめる。そして「古い PC を再利用する」という前提そのものが、`REF-205` の実測では**検出の層が要る側**にあたる。記事はそこに触れていない。数値は手引きへ移しておらず、製品の導入も勧めていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md)（未検証）。
+
+### REF-202 巻き戻せるのはセッションの中だけ。シェルと背景のサブエージェントは外にいる
+
+- **URL**: <https://code.claude.com/docs/en/checkpointing>
+- **記事種別**: 製品の公式ドキュメント（ページに公開日の表記は無く、記述は版に依存する）
+- **現在の扱い**: `reference`（確認日 2026-10-26）
+- **何が書かれているか**: セッション中のファイル編集を自動で記録し、`/rewind` で以前の状態へ戻す仕組みの説明。記録の対象は**組み込みのファイル編集ツールが加えた変更**で、会話を始める入力ごとにその直前の状態を取る。制限が明示されており、(1) **編集ツールが一度も触っていないファイルをシェルが変えた場合は追跡されず、そのまま残る**（一度編集ツールで触った後なら、その後のシェルの変更も巻き戻る）、(2) **背景で動くサブエージェント**（既定で背景になる forked skill、背景のレビュー実行を含む）が会話で触っていないファイルへ加えた編集は復元されない、(3) **symlink と hard link は巻き戻しで飛ばされ**、警告だけが出る、(4) セッションの外の変更と並行する別セッションの編集は追跡されない。保持はセッションあたり直近 100 件で、既定ではそのセッションが最後に記録してから約 30 日ほどで掃除され、その後の巻き戻しは `No files were restored` で失敗する（保持期間を延ばす設定項目がある）。節の見出しとして **「Not a replacement for version control」** が立っている。
+- **得られる示唆**: この領域の代表の 1 つとして使っている。価値があるのは機能の説明ではなく、**境界が公式に書かれていること**である。この環境の「止める層」の設計（権限・hook・mod）は、破壊的な操作を hook に預ける形になっているが、**止まらなかったときの受け皿がどこまで届くか**はこれまでどこにも書かれていなかった。そして届かない範囲が、この環境が実際に使っている形と重なる。下位エージェントに並列で書かせる構成と、シェル経由でファイルを動かす構成は、どちらもこの層の外にある。[../foundation/claude-code/README.md](../foundation/claude-code/README.md) には製品固有の境界の表として、[../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md) には層全体の数え方として書いた。あわせて [../foundation/windows-file-hazards/README.md](../foundation/windows-file-hazards/README.md) の対処「別の場所で作らせてから自分で移す」を訂正した。移す操作をシェルで行うと、移した先はこの層に入らないからである。既定値（100 件・約 30 日）は版に依存するので、手引きには「期限と射程がある」という設計上の事実として書き、推奨値としては扱っていない。この環境で巻き戻しを一度も試していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md)、[../foundation/claude-code/README.md](../foundation/claude-code/README.md)、[../foundation/windows-file-hazards/README.md](../foundation/windows-file-hazards/README.md)（いずれも未検証）。
+
+### REF-203 「あとで reflog から拾える」には期限があり、掃除はこちらが何もしなくても進む
+
+- **URL**: <https://git-scm.com/docs/git-gc>
+- **記事種別**: 製品の公式リファレンス（man ページ。記述は版に依存する）
+- **現在の扱い**: `reference`（確認日 2026-10-26）
+- **何が書かれているか**: リポジトリの不要物を掃除するコマンドの説明。**オブジェクトを作る一般的な porcelain コマンドが実行されるたびに、前回から十分に増えたかを確認して自動で走る**（`gc.auto` の既定は 6700 個のルーズオブジェクト）。走るときは `prune --expire 2.weeks.ago` を呼び、この猶予を過ぎた到達不能オブジェクトを消す。reflog については、参照の移動の記録を 90 日、現在の先端から辿れなくなった記録を 30 日で消すと書かれている。あわせて、**別のプロセスと同時に走った場合に、まだ参照の作られていないオブジェクトを消してしまう危険が残る**こと、その対策は完全ではないことが注意として書かれている。
+- **得られる示唆**: 2 段目の層にも時計があることの根拠として使っている。「間違えてもコミットしてあるから戻せる」「reflog から拾える」は、実際には**期限つきの約束**で、しかも掃除は利用者が何もしなくても、エージェントが普通にコミットを積んでいるだけで進む。もう 1 つ重要なのは射程で、**コミットしていない作業ツリーの変更と未追跡ファイルはこの層の中に無い**。`REF-202` の境界と重ねると、エージェントが作ってまだコミットしていない成果物が、1 段目にも 2 段目にも入っていない状態になりうることが分かる。これが [../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md) の表の中心になった。並行実行の注意は、この環境が複数のエージェントに同じリポジトリを触らせる構成を持つため、そのまま当たる条件として記録した。既定値は版に依存するので推奨値としては扱っていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md)（未検証）。
+
+### REF-204 検出と修復は別の能力。チェックサムは正しい中身を持っていない
+
+- **URL**: <https://openzfs.github.io/openzfs-docs/Basic%20Concepts/Operations/Scrub%20and%20Resilver.html>
+- **記事種別**: 実装元の公式ドキュメント（ページに公開日の表記は無し）
+- **現在の扱い**: `reference`（確認日 2026-10-26）
+- **何が書かれているか**: プール全体を走査して各ブロックのチェックサムを照合する操作の説明。全ブロックにチェックサムを持つので、データが誤っていることを推測ではなく判定できる。冗長性（ミラー・raidz・draid・複製数 2 以上）がある場合は正しい複製を取ってきて書き直せるが、**冗長性が無い場合は「破損を検出し、どのファイルが影響を受けたかを正確に報告することはできるが、修復はできない」**と明記されている。実行間隔の目安として、民生用のディスクは月次、企業向けは四半期が一般的な基準線として挙げられている。
+- **得られる示唆**: この領域で一番効く区別の出どころとして使っている。**チェックサムは「どこが壊れたか」を教えるだけで、正しい中身を持っていない**。正しい中身は別のところにある複製からしか来ない。これは ZFS に固有の性質ではなく層の性質で、この環境にそのまま移せる。実際、[../foundation/windows-file-hazards/README.md](../foundation/windows-file-hazards/README.md) が勧めている対処（編集の前後で大きさとハッシュを比べる）は検出であり、検出したあと何から戻すかをあの手引きは持っていなかった。この区別を根拠に、同手引きへ訂正の節を足し、[../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md) では「検出・冗長・履歴・機械の外」を別々の能力として数える表にした。ZFS そのものをこの環境へ導入することは勧めていない。採ったのは形だけで、実行間隔の目安も手引きへは移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md)（未検証）。
+
+### REF-205 再利用・安価側のディスクは、1 桁多く黙って壊れる
+
+- **URL**: <https://www.usenix.org/conference/fast-08/analysis-data-corruption-storage-stack>
+- **記事種別**: 査読付き論文（USENIX FAST '08）。実運用環境での大規模な実測。ページに公開日の表記を確認できなかったので台帳では空にしている（会議名から 2008 年であることだけが分かる）
+- **現在の扱い**: `reference`（確認日 2026-10-26）
+- **何が書かれているか**: 本番のストレージシステムで **153 万台のディスクを 41 か月**にわたって観測し、その間に **40 万件を超えるチェックサム不一致**を記録した分析。主な結果として、**nearline 級のディスク（とそのアダプタ）は企業向けのディスクより 1 桁多く不一致を出す**こと、同じディスクの中での不一致は独立した事象ではなく空間的・時間的にまとまって出ること、**同じシステム内の別々のディスクの間でも独立ではない**ことを報告している。著者らはここから破損に耐える設計の教訓を導いている。
+- **得られる示唆**: 入口の記事（`ART-052`）が前提にしている「古い PC と手持ちのディスクを再利用する」という構成が、**検出の層が要る側にある**ことの根拠として登録した。採ったのは向きだけで、発生率をこの環境へ持ち込んでいない（2008 年の測定で、対象は当時の企業向けストレージである）。もう 1 つ採ったのは独立性の方で、**壊れるときは 1 ブロックずつではなく、同じシステムの複数のディスクにまたがりうる**という点。これは「複製を 1 つ増やせば確率が掛け算で下がる」という直観が成り立たない向きを示すので、冗長の列を足すことと機械の外へ出すことを別に数える理由になる。153 万台・41 か月・40 万件・1 桁という数値はこのカードにだけ残し、手引きへは移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md)（未検証）。
+
+### REF-206 「ECC 必須」は提供元の記述ではない。勧めているのは利用者だと書いてある
+
+- **URL**: <https://www.truenas.com/docs/scale/gettingstarted/tnhardwareguide/>
+- **記事種別**: 提供元の公式ドキュメント（ページの最終更新は 2026-09-11、対象の版の表記は TrueNAS 28 Early）
+- **現在の扱い**: `reference`（確認日 2026-10-26）
+- **何が書かれているか**: 現行のハードウェア要件。最小メモリは 8GB で、ディスクを 8 台より多く足す場合は 1 台につき 1GB 追加するのが多くの用途で有効と書かれている。起動デバイスの最小は **20GB の SSD**で、より大きければ起動環境を多く保持できるとしている。ECC メモリについては、**「most users _strongly_ recommend ECC RAM as another data integrity defense」** という書き方で、続けて **「Many TrueNAS systems operate every day without ECC RAM」** とも書かれている。中古・再利用のハードウェアについても明示的に触れており、利用者の間で一般的であることを認めたうえで、中古ドライブは販売者が年齢や状態を正しく伝えないことがあるので自分で確かめるよう注意している。
+- **得られる示唆**: 二次情報の断定を検算する用途で使った。収穫が 2 つある。第 1 に、**「ECC が無いと使えない」も「提供元が必須としている」も、この一次情報からは出てこない**。公式の書き方は、強く勧めているのが**利用者である**という形で、同じページが ECC 無しの運用が日常的に成立していることも書いている。調べ物の段階で得た要約は「公式が strongly recommend」となっていたが、ページを開くと主語が違っていたので直した。第 2 に、**入口の記事（`ART-052`）の起動ディスクの数値が現行の公式と食い違う**（記事は 16GB 以上、公式は 20GB 以上）。最小メモリ 8GB は一致する。あわせて、提供元自身が中古ドライブの状態確認を促している点は、`REF-205` の実測と同じ向きを指す。数値は手引きへ移しておらず、製品の導入も勧めていない。版の表記が Early であることからも分かるとおり、この内容は版に依存する。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/change-recovery-layers/README.md](../foundation/change-recovery-layers/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全252 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全258 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 244件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 250件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
