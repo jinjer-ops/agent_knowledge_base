@@ -2528,3 +2528,92 @@ sources:
     found_via: [ART-052]
     use_when: "ECC メモリの要否や最小構成について、二次情報の断定を提供元の現行の記述で検算する時"
     derived: [foundation/change-recovery-layers/README.md, knowledge/reading-guide.md]
+  - id: ART-053
+    title: 「GitHub」に対抗する開発者向けプラットフォーム「Entire」が正式公開
+    url: https://japan.zdnet.com/article/35254006/
+    published_at: null
+    topics: [git_forge, code_review, pull_request, agent_changes]
+    status: reference
+    intake: shared
+    use_when: "エージェント前提のコード基盤という売り文句を、取り込みの門の設計の問題に読み替える入口（本文未確認）"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-207
+    title: "Entire Launches an Independent Git Forge for Agent-Human Collaboration"
+    url: https://entire.com/news/entire-launches-an-independent-git-forge-for-agent-human-collaboration
+    published_at: 2026-10-26
+    topics: [git_forge, code_review, pull_request, agent_changes, vendor_claims]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "「評価項目が全部通れば差分を見ずにマージする」という設計を、提供元自身の表現で確かめる時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-208
+    title: "Small CLs (Google Engineering Practices)"
+    url: https://google.github.io/eng-practices/review/developer/small-cls.html
+    published_at: null
+    topics: [code_review, change_size, pull_request, batch_size]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "門を通す1件をどこで切るかを、行数ではなく「1つの事柄か」と散らばりで決める時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-209
+    title: "About protected branches (GitHub Docs)"
+    url: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+    published_at: null
+    topics: [branch_protection, merge_gate, permissions, github]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "「保護を入れた」と「保護が効いている」の差、特に誰が既定で迂回できるかを確かめる時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-210
+    title: "Managing a merge queue (GitHub Docs)"
+    url: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue
+    published_at: null
+    topics: [merge_queue, continuous_integration, merge_gate, github]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "並行して出てくる変更の取り込み順と、「古い基点で緑だった」問題の扱いを決める時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-211
+    title: "Studying Quality Improvements Recommended via Manual and Automated Code Review"
+    url: https://arxiv.org/abs/2602.11925
+    published_at: 2026-02-12
+    topics: [code_review, automated_review, measurement, llm_evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "自動レビューを足した分だけ人のレビューを減らしてよいかを、測られた重なりで判断する時"
+    derived: [foundation/change-intake-gate/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-212
+    title: "Who Pays the Review Cost? Triage, Fairness, and Accountability in AI-authored Pull Requests"
+    url: https://arxiv.org/abs/2610.11179
+    published_at: 2026-10-08
+    topics: [code_review, pull_request, agent_changes, governance, survey]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "AI が書いた変更を人がどの条件で受け入れるか、変更の種類ごとの差を踏まえて門を分ける時"
+    derived: [foundation/change-intake-gate/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-213
+    title: "Rethinking Code Review in the Age of AI: A Vision for Agentic Code Review"
+    url: https://arxiv.org/abs/2605.17548
+    published_at: 2026-05-17
+    topics: [code_review, agentic_workflow, human_oversight, vision_paper]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "レビュアーをエージェントの監督者にする構想でも、人をどの判断点に残すと書かれているかを確かめる時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-214
+    title: "To What Extent Does Agent-generated Code Require Maintenance? An Empirical Study"
+    url: https://arxiv.org/abs/2605.06464
+    published_at: 2026-05-07
+    topics: [agent_changes, maintenance, measurement, empirical_study]
+    status: reference
+    intake: found
+    found_via: [ART-053]
+    use_when: "取り込んだ後の手入れが誰に戻ってくるかを、取り込みの門の判断と分けて見積もる時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]

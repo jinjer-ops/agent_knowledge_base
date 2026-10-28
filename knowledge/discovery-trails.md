@@ -513,6 +513,19 @@ tags: [knowledge, sources, discovery]
   - REF-205 An Analysis of Data Corruption in the Storage Stack (FAST '08) <https://www.usenix.org/conference/fast-08/analysis-data-corruption-storage-stack>（`reference`）
   - REF-206 TrueNAS Hardware Guide <https://www.truenas.com/docs/scale/gettingstarted/tnhardwareguide/>（`reference`）
 
+### ART-053 「GitHub」に対抗する開発者向けプラットフォーム「Entire」が正式公開
+
+- 共有した URL: <https://japan.zdnet.com/article/35254006/>
+- 見つけて使った資料:
+  - REF-207 Entire Launches an Independent Git Forge for Agent-Human Collaboration <https://entire.com/news/entire-launches-an-independent-git-forge-for-agent-human-collaboration>（`reference`）
+  - REF-208 Small CLs (Google Engineering Practices) <https://google.github.io/eng-practices/review/developer/small-cls.html>（`reference`）
+  - REF-209 About protected branches (GitHub Docs) <https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches>（`reference`）
+  - REF-210 Managing a merge queue (GitHub Docs) <https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue>（`reference`）
+  - REF-211 Studying Quality Improvements Recommended via Manual and Automated Code Review <https://arxiv.org/abs/2602.11925>（`reference`）
+  - REF-212 Who Pays the Review Cost? Triage, Fairness, and Accountability in AI-authored Pull Requests <https://arxiv.org/abs/2610.11179>（`reference`）
+  - REF-213 Rethinking Code Review in the Age of AI: A Vision for Agentic Code Review <https://arxiv.org/abs/2605.17548>（`reference`）
+  - REF-214 To What Extent Does Agent-generated Code Require Maintenance? An Empirical Study <https://arxiv.org/abs/2605.06464>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
