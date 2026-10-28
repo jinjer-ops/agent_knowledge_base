@@ -983,7 +983,7 @@ sources:
     topics: [agent_memory, reliability, evaluation]
     status: reference
     intake: found
-    found_via: [ART-034]
+    found_via: [ART-034, ART-056]
     use_when: "記憶を増やし続けてよいかを疑う時、まとめ直す処理を既定にしてよいかを決める時"
     derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
   - id: REF-069
@@ -2735,3 +2735,32 @@ sources:
     found_via: [ART-055]
     use_when: "「形式に縛ると質が落ちる」という結論を使う前に、その測定の手続きへの反論と、利害関係のある出どころを突き合わせる時"
     derived: [foundation/generate-or-select/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: ART-056
+    title: Claude Codeで定期的にやっておきたい MEMORY.md の大掃除
+    url: https://zenn.dev/loglass/articles/f69996279763ab
+    published_at: 2026-09-24
+    topics: [agent_memory, agent_instructions, claude_code, context, maintenance]
+    status: reference
+    intake: shared
+    use_when: "自動の記憶の索引が上限に当たってきたとき、何を残し何を話題別ファイルへ畳むかの手順の実例を見る時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-225
+    title: Prompt caching (Claude Docs)
+    url: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+    published_at: null
+    topics: [cost, context, caching, claude_code, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-056]
+    use_when: "毎回読ませている共通部分を削る判断の前に、繰り返し部分が実際どの単価で課金されるかを確かめる時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: REF-226
+    title: "We Are What We Repeatedly Do: Improving Long Context Instruction Following"
+    url: https://aclanthology.org/2026.findings-eacl.254/
+    published_at: 2026-03-01
+    topics: [agent_instructions, context, evaluation, benchmarks]
+    status: reference
+    intake: found
+    found_via: [ART-056]
+    use_when: "「長い指示ほど守られにくい」を根拠として使う前に、査読を経た評価が何を測っているかを確かめる時"
+    derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]

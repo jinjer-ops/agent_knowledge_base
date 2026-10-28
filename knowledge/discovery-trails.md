@@ -548,6 +548,14 @@ tags: [knowledge, sources, discovery]
   - REF-223 CRANE: Reasoning with Constrained LLM Generation <https://arxiv.org/abs/2502.09061>（`reference`）
   - REF-224 Say What You Mean: A Response to 'Let Me Speak Freely' <https://blog.dottxt.ai/say-what-you-mean.html>（`reference`）
 
+### ART-056 Claude Codeで定期的にやっておきたい MEMORY.md の大掃除
+
+- 共有した URL: <https://zenn.dev/loglass/articles/f69996279763ab>
+- 見つけて使った資料:
+  - REF-068 Useful Memories Become Faulty When Continuously Updated by LLMs <https://arxiv.org/abs/2605.12978>（`reference`）
+  - REF-225 Prompt caching (Claude Docs) <https://platform.claude.com/docs/en/build-with-claude/prompt-caching>（`reference`）
+  - REF-226 We Are What We Repeatedly Do: Improving Long Context Instruction Following <https://aclanthology.org/2026.findings-eacl.254/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
