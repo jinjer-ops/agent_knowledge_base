@@ -1012,7 +1012,7 @@ sources:
     topics: [verification, evaluation, reliability]
     status: reference
     intake: found
-    found_via: [ART-035]
+    found_via: [ART-035, ART-057]
     use_when: "AI に書かせたときに理解がどれだけ落ちるか、どんな使い方なら保たれるかを引く時"
     derived: [foundation/agent-report-handoff/README.md, foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
   - id: REF-071
@@ -2764,3 +2764,42 @@ sources:
     found_via: [ART-056]
     use_when: "「長い指示ほど守られにくい」を根拠として使う前に、査読を経た評価が何を測っているかを確かめる時"
     derived: [foundation/memory-upkeep/README.md, knowledge/reading-guide.md]
+  - id: ART-057
+    title: AIに実装を任せながら、Rustを学び続けたい。「Rust Learning Lab」を作りました
+    url: https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023
+    published_at: 2026-10-02
+    topics: [comprehension, learning, agent_orchestration, skills]
+    status: reference
+    intake: shared
+    use_when: "書かせる量が増えて自分の理解が育たなくなったとき、問いを立てる工程を道具として置く形の実例を見る時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-227
+    title: "The Illusion of Understanding: A Randomized Controlled Trial of LLM-Generated Lay Summaries of Brain MRI Reports"
+    url: https://www.medrxiv.org/content/10.64898/2026.08.05.26359773v1.full
+    published_at: 2026-08-07
+    topics: [comprehension, verification, evaluation, human_in_the_loop]
+    status: reference
+    intake: found
+    found_via: [ART-057]
+    use_when: "読みやすい説明を足す変更を入れる前に、自己評価の理解と客観的な理解が分かれることを無作為化比較試験で確かめる時"
+    derived: [foundation/agent-report-handoff/README.md, foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-228
+    title: "Fluency Illusion: A Review on Influence of ChatGPT in Classroom Settings"
+    url: https://www.mdpi.com/2078-2489/17/3/299
+    published_at: 2026-03-19
+    topics: [comprehension, learning, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-057]
+    use_when: "「流暢な説明ほど分かった気になる」が 1 分野の偶然ではないことを、分野横断の整理で確かめる時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: REF-229
+    title: Retrieval practice may not benefit mathematical word-problem solving
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9987560/
+    published_at: 2023-02-20
+    topics: [learning, comprehension, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-057]
+    use_when: "「自分から問う形にすれば身につく」を根拠として使う前に、宣言的知識と手順的な問題解決で効果が分かれることを確かめる時"
+    derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]

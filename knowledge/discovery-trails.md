@@ -556,6 +556,15 @@ tags: [knowledge, sources, discovery]
   - REF-225 Prompt caching (Claude Docs) <https://platform.claude.com/docs/en/build-with-claude/prompt-caching>（`reference`）
   - REF-226 We Are What We Repeatedly Do: Improving Long Context Instruction Following <https://aclanthology.org/2026.findings-eacl.254/>（`reference`）
 
+### ART-057 AIに実装を任せながら、Rustを学び続けたい。「Rust Learning Lab」を作りました
+
+- 共有した URL: <https://syu-m-5151.hatenablog.com/entry/2026/10/02/163023>
+- 見つけて使った資料:
+  - REF-070 How AI assistance impacts the formation of coding skills <https://www.anthropic.com/research/AI-assistance-coding-skills>（`reference`）
+  - REF-227 The Illusion of Understanding: A Randomized Controlled Trial of LLM-Generated Lay Summaries of Brain MRI Reports <https://www.medrxiv.org/content/10.64898/2026.08.05.26359773v1.full>（`reference`）
+  - REF-228 Fluency Illusion: A Review on Influence of ChatGPT in Classroom Settings <https://www.mdpi.com/2078-2489/17/3/299>（`reference`）
+  - REF-229 Retrieval practice may not benefit mathematical word-problem solving <https://pmc.ncbi.nlm.nih.gov/articles/PMC9987560/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
