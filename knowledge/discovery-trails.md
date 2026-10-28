@@ -526,6 +526,17 @@ tags: [knowledge, sources, discovery]
   - REF-213 Rethinking Code Review in the Age of AI: A Vision for Agentic Code Review <https://arxiv.org/abs/2605.17548>（`reference`）
   - REF-214 To What Extent Does Agent-generated Code Require Maintenance? An Empirical Study <https://arxiv.org/abs/2605.06464>（`reference`）
 
+### ART-054 コードを読まずにマージするために必要なこと
+
+- 共有した URL: <https://zenn.dev/nrs/articles/c777388530aa84>
+- 見つけて使った資料:
+  - REF-212 Who Pays the Review Cost? Triage, Fairness, and Accountability in AI-authored Pull Requests <https://arxiv.org/abs/2610.11179>（`reference`）
+  - REF-215 Ship / Show / Ask <https://martinfowler.com/articles/ship-show-ask.html>（`reference`）
+  - REF-216 An empirical study of the impact of modern code review practices on software quality <https://link.springer.com/article/10.1007/s10664-015-9381-9>（`reference`）
+  - REF-217 On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub <https://arxiv.org/abs/2509.14745>（`reference`）
+  - REF-218 Where Accountability Lives: Mapping Human Responsibility to Workflow Artifacts in Agentic Software Development <https://arxiv.org/abs/2608.15678>（`reference`）
+  - REF-219 Balancing AI tensions (DORA) <https://dora.dev/insights/balancing-ai-tensions/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
