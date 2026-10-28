@@ -1180,9 +1180,9 @@ sources:
     topics: [evaluation, reliability, verification, benchmarks]
     status: reference
     intake: found
-    found_via: [ART-037, ART-041]
+    found_via: [ART-037, ART-041, ART-055]
     use_when: "出力を厳密な形式に縛る設計が、判断の質に与える代償を見積もる時"
-    derived: [foundation/review-design/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+    derived: [foundation/generate-or-select/README.md, foundation/review-design/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
   - id: REF-086
     title: "OpenCodeReview: Determinism over Non-Determinism for Cost-Effective Agent-Based Code Review"
     url: https://arxiv.org/abs/2608.09290
@@ -2676,3 +2676,62 @@ sources:
     found_via: [ART-054]
     use_when: "取り込み量を増やす変更を入れる前に、スループットと不安定性が同じ向きに動くことを前提に置く時"
     derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: ART-055
+    title: json-render と Jev で UI を組み立ててみた
+    url: https://azukiazusa.dev/blog/json-render-jev/
+    published_at: 2026-09-20
+    topics: [generative_ui, structured_output, decision_models, component_catalog]
+    status: reference
+    intake: shared
+    use_when: "モデルに画面を組み立てさせるとき、部品の値まで生成させる形と、値の入った候補から選ばせる形の違いを実装例で見る時"
+    derived: [foundation/generate-or-select/README.md, knowledge/reading-guide.md]
+  - id: REF-220
+    title: "json-render (Vercel Labs)"
+    url: https://github.com/vercel-labs/json-render
+    published_at: null
+    topics: [generative_ui, structured_output, component_catalog, guardrails]
+    status: reference
+    intake: found
+    found_via: [ART-055]
+    use_when: "カタログで部品を限定する構成が、何を止めて何を止めないのかを提供元の記述で確かめる時"
+    derived: [foundation/generate-or-select/README.md, knowledge/reading-guide.md]
+  - id: REF-221
+    title: "Constrained Decoding Eliminates Structural Failures in Small LLMs but Reveals a Scale-Dependent Semantic Gap"
+    url: https://arxiv.org/abs/2609.23742
+    published_at: 2026-09-20
+    topics: [structured_output, constrained_decoding, evaluation, semantic_correctness]
+    status: reference
+    intake: found
+    found_via: [ART-055]
+    use_when: "形式の制約を入れたとき、構造の適合と中身の正しさのどちらが上がるのかを分けて見積もる時"
+    derived: [foundation/generate-or-select/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-222
+    title: "Repair, Not Improvement: Decomposing Constrained Decoding in Tool-Call Abstention"
+    url: https://arxiv.org/abs/2608.13959
+    published_at: 2026-08-14
+    topics: [structured_output, constrained_decoding, abstention, tool_calling, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-055]
+    use_when: "選択肢を列挙する判定を設計するとき、「どれでもない」を集合に入れる必要があるかを測定から確かめる時"
+    derived: [foundation/generate-or-select/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-223
+    title: "CRANE: Reasoning with Constrained LLM Generation"
+    url: https://arxiv.org/abs/2502.09061
+    published_at: 2025-02-13
+    topics: [structured_output, constrained_decoding, reasoning, grammar, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-055]
+    use_when: "出力の文法をどこまで厳しくするかを決める時、縛りを強くすることが改善にならない理由を査読済みの根拠で確かめる時"
+    derived: [foundation/generate-or-select/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
+  - id: REF-224
+    title: "Say What You Mean: A Response to 'Let Me Speak Freely'"
+    url: https://blog.dottxt.ai/say-what-you-mean.html
+    published_at: null
+    topics: [structured_output, constrained_decoding, evaluation, reproduction]
+    status: reference
+    intake: found
+    found_via: [ART-055]
+    use_when: "「形式に縛ると質が落ちる」という結論を使う前に、その測定の手続きへの反論と、利害関係のある出どころを突き合わせる時"
+    derived: [foundation/generate-or-select/README.md, foundation/typed-decision-gating/README.md, knowledge/reading-guide.md]
