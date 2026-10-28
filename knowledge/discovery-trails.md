@@ -537,6 +537,17 @@ tags: [knowledge, sources, discovery]
   - REF-218 Where Accountability Lives: Mapping Human Responsibility to Workflow Artifacts in Agentic Software Development <https://arxiv.org/abs/2608.15678>（`reference`）
   - REF-219 Balancing AI tensions (DORA) <https://dora.dev/insights/balancing-ai-tensions/>（`reference`）
 
+### ART-055 json-render と Jev で UI を組み立ててみた
+
+- 共有した URL: <https://azukiazusa.dev/blog/json-render-jev/>
+- 見つけて使った資料:
+  - REF-085 Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models <https://aclanthology.org/2024.emnlp-industry.91/>（`reference`）
+  - REF-220 json-render (Vercel Labs) <https://github.com/vercel-labs/json-render>（`reference`）
+  - REF-221 Constrained Decoding Eliminates Structural Failures in Small LLMs but Reveals a Scale-Dependent Semantic Gap <https://arxiv.org/abs/2609.23742>（`reference`）
+  - REF-222 Repair, Not Improvement: Decomposing Constrained Decoding in Tool-Call Abstention <https://arxiv.org/abs/2608.13959>（`reference`）
+  - REF-223 CRANE: Reasoning with Constrained LLM Generation <https://arxiv.org/abs/2502.09061>（`reference`）
+  - REF-224 Say What You Mean: A Response to 'Let Me Speak Freely' <https://blog.dottxt.ai/say-what-you-mean.html>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
