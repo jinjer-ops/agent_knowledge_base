@@ -2594,7 +2594,7 @@ sources:
     topics: [code_review, pull_request, agent_changes, governance, survey]
     status: reference
     intake: found
-    found_via: [ART-053]
+    found_via: [ART-053, ART-054]
     use_when: "AI が書いた変更を人がどの条件で受け入れるか、変更の種類ごとの差を踏まえて門を分ける時"
     derived: [foundation/change-intake-gate/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
   - id: REF-213
@@ -2616,4 +2616,63 @@ sources:
     intake: found
     found_via: [ART-053]
     use_when: "取り込んだ後の手入れが誰に戻ってくるかを、取り込みの門の判断と分けて見積もる時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: ART-054
+    title: コードを読まずにマージするために必要なこと
+    url: https://zenn.dev/nrs/articles/c777388530aa84
+    published_at: 2026-10-27
+    topics: [merge_gate, code_review, agent_changes, team_agreement, accountability]
+    status: reference
+    intake: shared
+    use_when: "人の承認を門から外すときに、技術ではなく合意として決める項目を洗い出す入口にする時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-215
+    title: "Ship / Show / Ask"
+    url: https://martinfowler.com/articles/ship-show-ask.html
+    published_at: 2021-09-08
+    topics: [merge_gate, code_review, branching, risk_routing]
+    status: reference
+    intake: found
+    found_via: [ART-054]
+    use_when: "レビューを「必須にする／外す」の二択にせず、変更ごとに経路を分ける設計を採る時"
+    derived: [foundation/change-intake-gate/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-216
+    title: "An empirical study of the impact of modern code review practices on software quality"
+    url: https://link.springer.com/article/10.1007/s10664-015-9381-9
+    published_at: 2016-10-01
+    topics: [code_review, review_coverage, defect_measurement, empirical_study]
+    status: reference
+    intake: found
+    found_via: [ART-054]
+    use_when: "レビューを通さずに入る変更の割合を上げた場合に、後からどれだけ欠陥が増えるかを見積もる時"
+    derived: [foundation/change-intake-gate/README.md, foundation/review-design/README.md, knowledge/reading-guide.md]
+  - id: REF-217
+    title: "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub"
+    url: https://arxiv.org/abs/2509.14745
+    published_at: 2025-09-18
+    topics: [agent_changes, pull_request, code_review, empirical_study]
+    status: reference
+    intake: found
+    found_via: [ART-054]
+    use_when: "エージェントが出した変更を読まずに通した場合、どれだけが追加の手直しを必要とするかを見積もる時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-218
+    title: "Where Accountability Lives: Mapping Human Responsibility to Workflow Artifacts in Agentic Software Development"
+    url: https://arxiv.org/abs/2608.15678
+    published_at: 2026-08-16
+    topics: [accountability, agent_changes, merge_gate, governance, document_study]
+    status: reference
+    intake: found
+    found_via: [ART-054]
+    use_when: "「責任は組織が持つ」と決める前に、義務がどこに置かれ、検証した記録がどの成果物に残るかを確かめる時"
+    derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]
+  - id: REF-219
+    title: "Balancing AI tensions (DORA)"
+    url: https://dora.dev/insights/balancing-ai-tensions/
+    published_at: 2026-03-10
+    topics: [delivery_performance, instability, trust, ai_adoption]
+    status: reference
+    intake: found
+    found_via: [ART-054]
+    use_when: "取り込み量を増やす変更を入れる前に、スループットと不安定性が同じ向きに動くことを前提に置く時"
     derived: [foundation/change-intake-gate/README.md, knowledge/reading-guide.md]

@@ -18,7 +18,7 @@ REPO = Path(__file__).resolve().parent.parent
 REGISTRY = "knowledge/sources/articles.yml"
 GUIDE = "knowledge/reading-guide.md"
 EXCLUDED_DIRS = ("docs/codex-briefs",)
-EXPECTED_SOURCE_COUNT = 267
+EXPECTED_SOURCE_COUNT = 273
 RETIRED_TERM = "local guidance"
 
 ID_RE = re.compile(r"^  - id: ((?:ART|REF)-[0-9]+)$", re.M)
