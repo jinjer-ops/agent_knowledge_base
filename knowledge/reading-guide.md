@@ -4,9 +4,9 @@ title: Reading guide for registered sources
 type: reading-guide
 status: active
 created_at: 2026-09-02
-updated_at: 2026-10-28
+updated_at: 2026-10-31
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -2636,12 +2636,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: **この領域で反対方向を指す根拠として登録した。** 既存の手引きは「受け身で読まず、自分から問え」で終わっていたが、その手当てが**何に対して効くか**には境目がある。プログラミングは宣言的知識（この値はどこから来るか、この型は何を保証するか）と手順的な問題解決（同じ種類の問題を次に自分で解けるか）の両方を含むので、**問いを立てる形で前者は育っても後者は別に数える**、という分け方を手引きに足した。入口の記事（`ART-057`）の「相談する技能と実装する技能は分けて評価すべき」と独立に一致している。**対象は数学の文章題でプログラミングではない。** 採ったのは境目が存在するという事実だけで、プログラミングで同じだと主張していない。実験の条件・人数はこのカードにのみ残した。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/comprehension-debt/README.md](../foundation/comprehension-debt/README.md)（未検証）。
 
+### ART-058 層を並べる構成は使える。ただし「強制の層」と「最善努力の層」が混ざっている
+
+- **URL**: <https://zenn.dev/sonicmoov/articles/67aaeb49be69ec>
+- **記事種別**: 企業テックブログの実践記録（2026-10-28。azarashi、株式会社ソニックムーブ）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: 1 操作ごとの確認を出さないモードで使うことを前提に、個人・チーム・組織の 3 層へ 10 個の設定・hook・テストを割り当てた記録。個人の権限設定とチーム共有の権限設定、秘密ファイルの読み取り・許可外の送信・破壊的操作・設定の書き換えをそれぞれ拒否する 4 つの hook、OS の隔離、組織用の強制設定、防御力を試すための受信サーバとダミーの秘密、無人実行の指針、という並びである。著者の検証は 2026-10 の macOS・2.1.29x 系で、ダミーの秘密を置き、12 の操作を 3 つのモードで試し、別端末の受信サーバで漏えいを確かめる形。結果として、読み取りはどのモードでも止まった、破壊的操作は自動承認では確認なしに走った、hook を入れると止まった、と報告している。著者自身が、版で挙動が変わるので公式を見ること、一部の項目は未検証であることを明記している。
+- **得られる示唆**: この入力の入口。採ったのは**層を並べて、どれが何を止めるかを数える**という構成と、確認を外す判断を起点に置く問題設定である。**代表にはしない。** 検証はあるが 1 環境・1 版・対照なしで、採否を決める 3 点——モードごとに何が強制で何が最善努力か、自動の安全判定を門に数えてよいか、この OS に隔離の層が在るか——の根拠がいずれも一次情報と外部の実証の側にあるため。**一次情報との食い違いを 2 つ記録する。** (a) 記事は自動承認を「確認なしで破壊的操作が走る」として扱うが、公式にはその層に判定モデルがあり、削除系の重い操作はどのモードでも確認か拒否が残る（`REF-164`）。(b) 記事の「設定の書き換えを hook で防ぐ」に当たる保護は製品側に既にある（保護パス、`REF-231`）。ただし最も緩いモードでは確認が飛ぶので、記事の対処が無意味になるわけではない。**最も効いた読み替えは、記事の中心である自前の正規表現 hook が、公式自身の言う「コマンド文字列に依存しない強制」の層ではないこと**で、そこは隔離の側である（`REF-145`）。著者の検証値（操作数・モード数・結果）はこのカードにのみ残し、手引きへは 1 つも移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/permission-boundary-layers/README.md](../foundation/permission-boundary-layers/README.md)（未検証）。
+
+### REF-230 自動の安全判定は、権限ルールの「後」に走る 2 つ目の門
+
+- **URL**: <https://code.claude.com/docs/en/auto-mode-config>
+- **記事種別**: 提供元の公式ドキュメント（設定のリファレンス）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: 自動承認のモードで走る判定モデルの設定方法。判定モデルは**権限システムの後に走る 2 つ目の門**であり、`deny` と明示の `ask` はその前に評価されて止めるか尋ねる、と明記されている。規則は無条件の禁止・利用者の意図で解除できる禁止・その例外・利用者の明示の意図、という 4 段の優先順位を持つ。信頼する基盤（リポジトリ、保管場所、ドメイン、社内の服務）は自然文で宣言する形で、既定では作業中のリポジトリとその参照先しか信頼しない。設定の読み取り範囲が明示されていて、**リポジトリの中に置かれた設定の該当ブロックは読まない**。理由も書かれており、取り込んだリポジトリやビルドの段が自分への許可を注入できてしまうため。狭い許可ルールは判定モデルより先に解決されるので、規則の接頭辞が想定しなかった引数は判定モデルに見えない（全コマンドを通す設定は別にあり、往復が増える）。既定を引き継ぐ指定を書かずに配列を置くと、組み込みの規則が丸ごと消える。
+- **得られる示唆**: **この入力で最も効いた一次情報。** 提供元の設計そのものが、強制の層（権限ルール）と最善努力の層（判定モデル）を分けていることが確認できる。「決して実行させてはならない操作は、判定モデルが相談される前に止まる `deny` を管理設定に置け」という記述が、判定モデルを境界に数えないことの提供元側の根拠になる。**設定の読み取り範囲の規則は、自分で門を作るときの一般形として採った**——判定する側は、判定される側が書き換えられる場所から設定を読まない。既定の置換の罠（追記のつもりが置換）も、設定ファイル一般の注意として記録した。**項目名と手順は版に依存するので、製品固有の内容は [../foundation/claude-code/README.md](../foundation/claude-code/README.md) 側にだけ置き、層の数え方は製品非依存の手引きへ移した。**
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/claude-code/README.md](../foundation/claude-code/README.md) と [../foundation/permission-boundary-layers/README.md](../foundation/permission-boundary-layers/README.md)（いずれも未検証）。
+
+### REF-231 隔離されるのはシェルのコマンドだけで、hook はその外で動く
+
+- **URL**: <https://code.claude.com/docs/en/sandboxing>
+- **記事種別**: 提供元の公式ドキュメント
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: OS の機構による隔離の仕様。対応は macOS・Linux・**WSL2** で、**ネイティブの Windows では利用できない**。ファイル側は作業ディレクトリと一時領域だけ書き込み可、読み取りは機械のほぼ全体（資格情報のファイルを含む）で、別途の指定で絞る。ネットワークは直接の経路を持たず、手元の代理を通して許可ドメインだけに繋ぐ（既定は空、TCP のみ）。**保護パス**（設定ディレクトリ、シェルの起動ファイル、版管理の設定と hook など）は、明示的に書き込み許可へ入れても開かない。そして**隔離の外で動くもの**が列挙されている——組み込みのファイル操作と Web 取得、接続した外部ツールのサーバ、**hook**、状態表示のコマンド、言語サーバ、除外指定に当たるコマンド、利用者が直接入力したコマンド。隔離の中で失敗したコマンドは「隔離無しで再試行」を要求でき、最も緩いモードでは**その再試行が自動承認される**（止める設定はある）。
+- **得られる示唆**: **既存の記述に対する訂正が 2 つ出た。** (1) [../foundation/claude-code/README.md](../foundation/claude-code/README.md) は「Windows では隔離が使えない」で止まっていたが、WSL2 では使える。Windows の機械で文字列の照合に依存しない層を得る手段が在ることになる。(2) 同じ手引きは「確実に効かせたいことは hook へ」と書いているが、**hook は隔離の外で利用者の権限のまま動く**。止める処理を hook に置くことと、その処理が隔離されていることは別である。あわせて、最も緩いモードでは隔離の外し直しが自動承認される点を、モードの表に入れた。**パッケージ名・設定キー・既定値は手引きへ移していない**（版と配布に依存するため）。この環境で隔離を有効にしたことは一度も無い。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/claude-code/README.md](../foundation/claude-code/README.md) と [../foundation/permission-boundary-layers/README.md](../foundation/permission-boundary-layers/README.md)（いずれも未検証）。
+
+### REF-232 反対の根拠：自動の安全判定が有効なまま、要約の依頼 1 つから実行に至った
+
+- **URL**: <https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/>
+- **記事種別**: 個人の研究ブログによる攻撃の実証（2026-08-26。Johann Rehberger / wunderwuzzi）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: 自動承認のモードを有効にしたまま、「このページを要約して」という依頼 1 つから遠隔コード実行まで到達させた連鎖の記録。取得の道具が拒否応答を受けるとシェルの取得コマンドへ移り、書庫を取得する。エージェントは**同梱の実行ファイルを正しく拒否し、自分で復号のスクリプトを書く**。それを展開先で走らせると、標準ライブラリと同じ名前のファイルが先に読まれ、そこから子プロセスが起動して遠隔の段を実行する。成功率は条件により 60〜80%（各 5 回。著者自身が「小標本であり普遍的な値ではない」と明記）。提供元は報告を仕様どおりと判定している。著者は、公表されている評価値（固定のシナリオ集合で成功率 0.00%）とこの実証は**同時に成立する**と書き、「自動承認は隔離した環境で動かし監視することの代わりにはならない」「承認されたことは安全の証拠ではない」とまとめ、隔離・egress の制限・監視・資格情報を見せないことを挙げている。
+- **得られる示唆**: **この領域で反対方向を指す根拠として登録した。** 提供元の資料だけを読むと、判定モデルを層として数えたくなる。実証があることで、**最善努力の層として数える**という結論が独立に支えられる。**評価値の読み方も一般化した**——ベンチマークの 0% は「破れない」ではなく「測った範囲では出なかった」である。**もう 1 つ、見落としやすい観測を採った。** 判定モデルはマルウェアの起動を通し、**それを停止しようとしたコマンドを止めた**。止める側が常に安全な向きへ倒れるとは限らない、という形になる。連鎖の核が文字としての指示ではなく**言語の探索順序**だった点も採り、「取得物の置き場と実行の作業ディレクトリを分ける」という形で手引きに書いた。**数値（成功率・試行数）は手引きへ移していない。** 個人のブログで査読は無く、対象の版も限定されている。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/permission-boundary-layers/README.md](../foundation/permission-boundary-layers/README.md)、[../foundation/claude-code/README.md](../foundation/claude-code/README.md)、[../foundation/autonomous-loop-delegation/README.md](../foundation/autonomous-loop-delegation/README.md)（いずれも未検証）。
+
+### REF-233 自動の権限審査を備えた実装でも、横断すると同じ向きだった
+
+- **URL**: <https://arxiv.org/abs/2608.27299>
+- **記事種別**: 査読前のプレプリント（arXiv、2026-08-27。Xingbang He ほか 8 名）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: 低い権限で入ってきた内容が、文脈を組み立てる過程で高い権限の指示として扱われてしまう「指示の権限昇格」を定義し、6 つのコーディング・エージェントの実行基盤に対して、機密性・完全性・可用性・遠隔コード実行にまたがる 13 の攻撃目標を試した報告。結果として、操作の実行が制限されていない条件では 6 つすべてで 13 目標が達成され、**自動の権限審査を備えた 3 つでも全目標が達成された**。実行基盤が提供する持続的な目標と定期実行の機構を使って再現できた、としている。
+- **得られる示唆**: `REF-232` が 1 製品で示したことが、**その製品に限った話ではない**ことを示すために登録した。自動の権限審査がある実装へ乗り換えれば済む、という選択肢を閉じる役割である。**持続的な目標と定期実行で再現した**という記述も採った——定期実行そのものが経路になるので、[../foundation/autonomous-loop-delegation/README.md](../foundation/autonomous-loop-delegation/README.md) の停止条件・上限・終了時の検査を、敵対的な入力への防御として数えない、という訂正の根拠になっている。**査読前であり、本文は要旨の範囲でしか確認していない。** 対象の実行基盤名も、攻撃目標の内訳も採っていない。採ったのは「自動の権限審査があっても達成された」という向きだけで、件数は手引きへ移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/permission-boundary-layers/README.md](../foundation/permission-boundary-layers/README.md) と [../foundation/autonomous-loop-delegation/README.md](../foundation/autonomous-loop-delegation/README.md)（いずれも未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全286 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全291 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 278件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 283件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

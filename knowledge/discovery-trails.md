@@ -565,6 +565,19 @@ tags: [knowledge, sources, discovery]
   - REF-228 Fluency Illusion: A Review on Influence of ChatGPT in Classroom Settings <https://www.mdpi.com/2078-2489/17/3/299>（`reference`）
   - REF-229 Retrieval practice may not benefit mathematical word-problem solving <https://pmc.ncbi.nlm.nih.gov/articles/PMC9987560/>（`reference`）
 
+### ART-058 Auto mode時代のClaude Codeを守る。検証済み10キットで始めるセキュリティ対策【全員・チーム・組織別】
+
+- 共有した URL: <https://zenn.dev/sonicmoov/articles/67aaeb49be69ec>
+- 見つけて使った資料:
+  - REF-020 Hooks reference (Claude Code) <https://code.claude.com/docs/en/hooks>（`reference`）
+  - REF-145 Configure permissions (Claude Code) <https://code.claude.com/docs/en/permissions>（`reference`）
+  - REF-161 Claude Code advanced setup <https://code.claude.com/docs/en/setup>（`reference`）
+  - REF-164 Choose a permission mode <https://code.claude.com/docs/en/permission-modes>（`reference`）
+  - REF-230 Configure auto mode (Claude Code) <https://code.claude.com/docs/en/auto-mode-config>（`reference`）
+  - REF-231 Sandboxing (Claude Code) <https://code.claude.com/docs/en/sandboxing>（`reference`）
+  - REF-232 Breaking Claude Code Opus 5 Auto Mode with Indirect Prompt Injection <https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/>（`reference`）
+  - REF-233 When Context Gets Root: Privilege Escalation in LLM Harnesses <https://arxiv.org/abs/2608.27299>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

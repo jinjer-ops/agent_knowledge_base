@@ -393,9 +393,9 @@ sources:
     topics: [hooks, claude_code, automation, guardrails]
     status: reference
     intake: found
-    found_via: [ART-015, ART-023, ART-038]
+    found_via: [ART-015, ART-023, ART-038, ART-058]
     use_when: "どのイベントで何ができるか、止められるのはどれか、出力が利用者とモデルのどちらへ行くかを確認する時"
-    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/generated-prose-style/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/claude-code/hooks/always-on-budget/README.md, foundation/generated-prose-style/README.md, foundation/heavy-read-delegation/README.md, foundation/instruction-upkeep/README.md, foundation/permission-boundary-layers/README.md, knowledge/reading-guide.md]
   - id: REF-021
     title: Agent SOP (strands-agents/agent-sop)
     url: https://github.com/strands-agents/agent-sop
@@ -1852,9 +1852,9 @@ sources:
     topics: [claude_code, permissions, secrets, deny_rules, sandbox]
     status: reference
     intake: found
-    found_via: [REF-003]
+    found_via: [ART-058, REF-003]
     use_when: "エージェントに読ませないファイルを指定する時、その deny ルールがどの経路に効き、どの経路に効かないかを確かめる時"
-    derived: [foundation/claude-code/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
   - id: REF-146
     title: "A Comparative Study of Software Secrets Reporting by Secret Detection Tools"
     url: https://arxiv.org/abs/2307.00714
@@ -2021,9 +2021,9 @@ sources:
     topics: [claude_code, windows, setup, shell, sandboxing]
     status: reference
     intake: found
-    found_via: [ART-046]
+    found_via: [ART-046, ART-058]
     use_when: "Windows でどのシェルの道具が使われるか、隔離が使えるかを確かめる時"
-    derived: [foundation/claude-code/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, foundation/windows-file-hazards/README.md, knowledge/reading-guide.md]
   - id: ART-047
     title: Claudeは計画、Antigravityは実行。AIを2つ使い分けたら開発が回りはじめた
     url: https://www.lifehacker.jp/article/2609-antigravity-writes-better-code-than-claude-still-use-claude-first/
@@ -2060,9 +2060,9 @@ sources:
     topics: [claude_code, plan_mode, permissions, approval_flow]
     status: reference
     intake: found
-    found_via: [ART-047]
-    use_when: "計画の段階で編集が止まる前提を置く時、承認後に何が引き継がれるかを確かめる時"
-    derived: [foundation/plan-handoff/README.md, knowledge/reading-guide.md]
+    found_via: [ART-047, ART-058]
+    use_when: "計画の段階で編集が止まる前提を置く時、承認後に何が引き継がれるかを確かめる時。どのモードで何が外れ、何が外れないかを確かめる時"
+    derived: [foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, foundation/plan-handoff/README.md, knowledge/reading-guide.md]
   - id: REF-165
     title: "From Plan to Action: How Well Do Agents Follow the Plan?"
     url: https://arxiv.org/abs/2604.12147
@@ -2803,3 +2803,52 @@ sources:
     found_via: [ART-057]
     use_when: "「自分から問う形にすれば身につく」を根拠として使う前に、宣言的知識と手順的な問題解決で効果が分かれることを確かめる時"
     derived: [foundation/comprehension-debt/README.md, knowledge/reading-guide.md]
+  - id: ART-058
+    title: Auto mode時代のClaude Codeを守る。検証済み10キットで始めるセキュリティ対策【全員・チーム・組織別】
+    url: https://zenn.dev/sonicmoov/articles/67aaeb49be69ec
+    published_at: 2026-10-28
+    topics: [claude_code, permissions, security, hooks, sandboxing, unattended_execution]
+    status: reference
+    intake: shared
+    use_when: "1 操作ごとの確認を外す構成へ移るとき、個人・チーム・組織のどの層に何を置くかの見取り図を実例で見る時"
+    derived: [foundation/permission-boundary-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-230
+    title: Configure auto mode (Claude Code)
+    url: https://code.claude.com/docs/en/auto-mode-config
+    published_at: null
+    topics: [claude_code, permissions, auto_mode, classifier, managed_settings]
+    status: reference
+    intake: found
+    found_via: [ART-058]
+    use_when: "自動承認の判定モデルが権限ルールのどちら側で走るか、どの設定ファイルから読むか、既定の規則をどう保つかを確かめる時"
+    derived: [foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-231
+    title: Sandboxing (Claude Code)
+    url: https://code.claude.com/docs/en/sandboxing
+    published_at: null
+    topics: [claude_code, sandboxing, isolation, hooks, windows, wsl]
+    status: reference
+    intake: found
+    found_via: [ART-058]
+    use_when: "この機械で OS の隔離が使えるか、何が隔離の外で動くかを確かめる時"
+    derived: [foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-232
+    title: Breaking Claude Code Opus 5 Auto Mode with Indirect Prompt Injection
+    url: https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/
+    published_at: 2026-08-26
+    topics: [prompt_injection, security, auto_mode, claude_code, unattended_execution]
+    status: reference
+    intake: found
+    found_via: [ART-058]
+    use_when: "自動の安全判定を境界として数えてよいかを決める時、外部の本文を読む無人実行の経路を具体で確かめる時"
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, knowledge/reading-guide.md]
+  - id: REF-233
+    title: "When Context Gets Root: Privilege Escalation in LLM Harnesses"
+    url: https://arxiv.org/abs/2608.27299
+    published_at: 2026-08-27
+    topics: [prompt_injection, security, agent_orchestration, evaluation, scheduled_tasks]
+    status: reference
+    intake: found
+    found_via: [ART-058]
+    use_when: "自動の権限審査がある実装なら防げる、という見込みを置く前に、横断した測定の向きを確かめる時"
+    derived: [foundation/autonomous-loop-delegation/README.md, foundation/permission-boundary-layers/README.md, knowledge/reading-guide.md]
