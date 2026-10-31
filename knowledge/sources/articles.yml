@@ -1832,9 +1832,9 @@ sources:
     topics: [github, security, secret_scanning, push_protection, prevention]
     status: reference
     intake: found
-    found_via: [REF-003]
+    found_via: [ART-059, REF-003]
     use_when: "秘密をリポジトリへ入れる前に止める層の仕様を確かめる時。どの範囲で既定で効くか、バイパスが何に記録されるかを引く"
-    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+    derived: [foundation/agent-config-integrity/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
   - id: REF-144
     title: Supported secret scanning patterns (GitHub)
     url: https://docs.github.com/en/code-security/reference/secret-security/supported-secret-scanning-patterns
@@ -1842,9 +1842,9 @@ sources:
     topics: [github, security, secret_scanning, coverage, generic_patterns]
     status: reference
     intake: found
-    found_via: [REF-003]
+    found_via: [ART-059, REF-003]
     use_when: "どの種類の秘密が既定で検出・遮断されるかを型ごとに確かめる時。汎用の秘密を既定の仕組みに任せてよいかを判断する時"
-    derived: [foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
+    derived: [foundation/agent-config-integrity/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md, skills/repository-publish/SKILL.md]
   - id: REF-145
     title: Configure permissions (Claude Code)
     url: https://code.claude.com/docs/en/permissions
@@ -1852,9 +1852,9 @@ sources:
     topics: [claude_code, permissions, secrets, deny_rules, sandbox]
     status: reference
     intake: found
-    found_via: [ART-058, REF-003]
+    found_via: [ART-058, ART-059, REF-003]
     use_when: "エージェントに読ませないファイルを指定する時、その deny ルールがどの経路に効き、どの経路に効かないかを確かめる時"
-    derived: [foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agent-config-integrity/README.md, foundation/claude-code/README.md, foundation/permission-boundary-layers/README.md, foundation/secret-exposure-layers/README.md, knowledge/reading-guide.md]
   - id: REF-146
     title: "A Comparative Study of Software Secrets Reporting by Secret Detection Tools"
     url: https://arxiv.org/abs/2307.00714
@@ -2852,3 +2852,82 @@ sources:
     found_via: [ART-058]
     use_when: "自動の権限審査がある実装なら防げる、という見込みを置く前に、横断した測定の向きを確かめる時"
     derived: [foundation/autonomous-loop-delegation/README.md, foundation/permission-boundary-layers/README.md, knowledge/reading-guide.md]
+  - id: ART-059
+    title: 検証済み10キットで始める、Claude Code時代のGitHubセキュリティ対策【チーム・組織別】
+    url: https://zenn.dev/sonicmoov/articles/4d689e69095478
+    published_at: 2026-10-28
+    topics: [github, security, agent_configuration, ci, code_owners, prompt_injection]
+    status: reference
+    intake: shared
+    use_when: "エージェントの設定がリポジトリに入っていて他人も触れる構成のとき、何が脅威として挙がるかを具体の一覧で見る時"
+    derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]
+  - id: REF-234
+    title: About code owners (GitHub Docs)
+    url: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+    published_at: null
+    topics: [github, code_owners, review, branch_protection, agent_configuration]
+    status: reference
+    intake: found
+    found_via: [ART-059]
+    use_when: "変更できる人を絞る設定が、どの条件で必須になり、どの条件で黙って効かなくなるかを確かめる時"
+    derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]
+  - id: REF-235
+    title: Secure use reference (GitHub Actions)
+    url: https://docs.github.com/en/actions/reference/security/secure-use
+    published_at: null
+    topics: [github, ci, security, secrets, prompt_injection, supply_chain]
+    status: reference
+    intake: found
+    found_via: [ART-059]
+    use_when: "CI でエージェントや外部入力を扱うワークフローを書く前に、トークン権限・未信頼コード・入力の展開・第三者の処理の固定を確かめる時"
+    derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]
+  - id: REF-236
+    title: Claude Code GitHub Actions
+    url: https://code.claude.com/docs/en/github-actions
+    published_at: null
+    topics: [claude_code, github, ci, permissions, github_app, secrets]
+    status: reference
+    intake: found
+    found_via: [ART-059]
+    use_when: "コメントでエージェントを起動する構成にする前に、誰が起動できるか、アプリにどの権限が付くか、秘密がどう渡るかを確かめる時"
+    derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]
+  - id: REF-237
+    title: Security (Claude Code)
+    url: https://code.claude.com/docs/en/security
+    published_at: null
+    topics: [claude_code, security, workspace_trust, prompt_injection, hooks]
+    status: reference
+    intake: found
+    found_via: [ART-059]
+    use_when: "信頼の確認がどの session で出るか、設定変更を監査・遮断する層があるかを確かめる時"
+    derived: [foundation/agent-config-integrity/README.md, foundation/claude-code/README.md, knowledge/reading-guide.md]
+  - id: REF-238
+    title: "GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines"
+    url: https://arxiv.org/abs/2606.09935
+    published_at: 2026-06-07
+    topics: [prompt_injection, ci, security, evaluation, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-059]
+    use_when: "CI に置いたエージェントが既定の構成でどこまで耐えるかを、実リポジトリ上の測定で確かめる時"
+    derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]
+  - id: REF-239
+    title: "Rules File Backdoor: how hidden instructions in AI configuration files weaponize code agents"
+    url: https://www.pillar.security/blog/new-vulnerability-in-github-copilot-and-cursor-how-hackers-can-weaponize-code-agents
+    published_at: 2025-03-18
+    topics: [prompt_injection, agent_configuration, supply_chain, security, code_review]
+    status: reference
+    intake: found
+    found_via: [ART-059]
+    use_when: "指示ファイルの差分を読む運用を根拠にする前に、人に見えずモデルには読める書き方が実証されていることを確かめる時"
+    derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]
+  - id: REF-240
+    title: GitHub now provides a warning about hidden Unicode text
+    url: https://github.blog/changelog/2025-05-01-github-now-provides-a-warning-about-hidden-unicode-text/
+    published_at: 2025-05-01
+    topics: [github, code_review, prompt_injection, agent_configuration]
+    status: reference
+    intake: found
+    found_via: [ART-059]
+    use_when: "不可視文字の検査を自前で書く前に、プラットフォーム側に既定で出る警告の対象を確かめる時"
+    derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]

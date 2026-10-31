@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-10-31
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -2681,12 +2681,84 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: `REF-232` が 1 製品で示したことが、**その製品に限った話ではない**ことを示すために登録した。自動の権限審査がある実装へ乗り換えれば済む、という選択肢を閉じる役割である。**持続的な目標と定期実行で再現した**という記述も採った——定期実行そのものが経路になるので、[../foundation/autonomous-loop-delegation/README.md](../foundation/autonomous-loop-delegation/README.md) の停止条件・上限・終了時の検査を、敵対的な入力への防御として数えない、という訂正の根拠になっている。**査読前であり、本文は要旨の範囲でしか確認していない。** 対象の実行基盤名も、攻撃目標の内訳も採っていない。採ったのは「自動の権限審査があっても達成された」という向きだけで、件数は手引きへ移していない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/permission-boundary-layers/README.md](../foundation/permission-boundary-layers/README.md) と [../foundation/autonomous-loop-delegation/README.md](../foundation/autonomous-loop-delegation/README.md)（いずれも未検証）。
 
+### ART-059 脅威の列挙は具体的。ただし対処の多くは、既定で在る層と重なっている
+
+- **URL**: <https://zenn.dev/sonicmoov/articles/4d689e69095478>
+- **記事種別**: 企業テックブログの実践記録（2026-10-28。azarashi、株式会社ソニックムーブ）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: 同じ著者・同じ日の前件（`ART-058`）が個人の機械側を扱うのに対し、こちらは GitHub 側。チーム向け・組織向けに 10 個の成果物を並べる。権限設定と hook、エージェントの設定ファイルにコードオーナーを定めること、不可視文字と HTML コメントを検出する自前のスクリプトとそれを必須チェックにするワークフロー、Actions で読み取り専用の道具だけを与えてエージェントを動かす雛形、脆弱性の受け取り口の文書、除外設定、自己偵察の skill、ブランチ保護の ruleset。脅威としては、人には見えずモデルには読める指示、issue や PR のコメント経由の注入、**取り込んだ PR の接続設定や hook がローカルで動くこと**、依存名のタイポスクワッティングを挙げる。検証は 2026-10、個人アカウントの公開ダミーリポジトリで、非公開リポジトリ・有料の保護設定・組織固有の挙動・Windows は未検証だと著者が明記している。
+- **得られる示唆**: この入力の入口。**脅威の列挙がこの領域で最も具体的**で、特に「取り込んだ PR の設定がローカルで動く」は一次情報で裏が取れた（`REF-145`）。しかも**理由は記事より一般的**で、`-p` かどうかではなく**信頼が git リポジトリの root に紐づく**ことから来る。代表にはしない。検証が 1 アカウント・公開ダミー・対照なしで、採否を決める 4 点（取り込みで何が走るか、不可視文字に既定の層があるか、コードオーナーの指定が静かに失敗する条件、CI で誰が起動できてどの権限が付くか）の根拠がすべて公式と一次の開示の側にあるため。**一次情報との食い違いを 2 つ記録する。** (a) 記事は秘密の検出を有料の追加機能として扱い別の道具を勧めるが、**公開リポジトリでは検出と push 時の遮断が既定で使える**（`REF-143`）。ただし既定の対象は提供元の型が決まった資格情報に限られる（`REF-144`）ので、別手段が不要という意味にはならない。(b) 不可視文字の検査は、2025-05 以降プラットフォーム側に警告がある（`REF-240`）。著者の検証値と道具の版はこのカードにのみ残し、手引きへは移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md)（未検証）。
+
+### REF-234 変更できる人を絞る設定は、3 通りの静かな失敗をする
+
+- **URL**: <https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners>
+- **記事種別**: 提供元の公式ドキュメント
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: 特定のパスの変更に所有者のレビューを要求する仕組みの仕様。判定に使われるのは**プルリクエストの取り込み先ブランチにあるファイル**。必須にするにはブランチ保護側で「所有者のレビューを必須にする」を有効にする必要がある。**順序が重要で、最後に一致したパターンが最も強い**。**構文が無効な行は飛ばされる**。存在しない利用者や権限の足りない相手を指定した場合は所有者が割り当てられない。ファイルは 3 MB 未満。除外パターンや文字範囲など、一部の書き方は使えない。ファイル自身にも所有者を定めるよう勧めている。
+- **得られる示唆**: この領域で**最も実務に効いた一次情報**。「エージェントの設定ファイルに所有者を定める」という対処は、置いただけでは通知にしかならず、保護設定・行の順序・相手の権限の 3 つが揃って初めて門になる。しかも**失敗がエラーにならない**（無効な行は飛ばされ、権限の無い相手は割り当てられない）。判定が取り込み先のファイルで行われることは守る側に有利な性質なので、そのまま採って手引きに書いた。迂回できる人の話は別で、既存の [../foundation/change-intake-gate/README.md](../foundation/change-intake-gate/README.md) の結論（保護は既定では管理者に適用されない）と組にして読む。**項目名と上限は版に依存するので、手引きには条件の形だけを残した。** この環境では設定していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md)（未検証）。
+
+### REF-235 書き込み権を持つ人は、そのリポジトリの秘密を全部読める
+
+- **URL**: <https://docs.github.com/en/actions/reference/security/secure-use>
+- **記事種別**: 提供元の公式ドキュメント
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: CI のワークフローを安全に書くための指針。既定のトークン権限を内容の読み取りだけに落とすこと。特権付きの起動（`pull_request_target`、`workflow_run`）で**未信頼のコードをチェックアウトしない**こと。題名や本文のような未信頼の値をインラインのスクリプトへ直接展開せず、中間の環境変数に入れること。第三者の処理は完全なコミット識別子で固定し、できれば中身を読むこと。そして**書き込み権を持つ利用者は、リポジトリに設定された全ての秘密を読める**こと。
+- **得られる示唆**: エージェントを CI で動かす構成の一般則としてそのまま使える。**最も効いたのは最後の 1 行**で、公式の統合が持つ「起動には書き込み権が要る」という門（`REF-236`）と重ねると、**起動できる集合の全員が秘密に届く**という意味になる。門を 1 つ足したつもりで、実は同じ集合を 2 回数えている構成になりやすい。未信頼の入力を中間の変数に入れるという指針も、この領域の既存の結論（文字列として展開すると命令になる）と同じ形で、[../foundation/permission-boundary-layers/README.md](../foundation/permission-boundary-layers/README.md) の文字列照合の限界と対になる。**設定キーと既定値は手引きへ移していない。** この環境ではワークフローを 1 つも書いていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md)（未検証）。
+
+### REF-236 起動の門は 2 つある。ただしアプリの権限はまとめて付く
+
+- **URL**: <https://code.claude.com/docs/en/github-actions>
+- **記事種別**: 提供元の公式ドキュメント
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: コメントでエージェントを起動する公式の統合の仕様。起動の前に 2 つの検査があり、**起動した利用者に書き込み権が要る**ことと、**bot は既定で拒否される**こと（ループを防ぐため。定期実行はその予定を最後に変えた利用者に帰属する）。アプリが使うのは内容・issue・プルリクエストの 3 つの権限だが、**インストール時に受け入れるのは workflow の読み書き・リポジトリの hook の読み書き・Actions の読み書き・管理情報の読み取りまで含む一式**で、**部分的な承認はできない**。最小限にしたい場合は必要な 3 つだけを持つ自前のアプリを作る、と書かれている。公開リポジトリでは fork からのプルリクエストの実行に秘密が渡らない。**秘密を削除しても、その資格情報は有効なまま**で、失効は発行元の側で行う。
+- **得られる示唆**: 「誰が起動できるか」と「何の権限で動くか」を分けて数えるための一次情報。2 つの門は強制側で有用だが、**権限の側はまとめて付く**ので、導入の判断は「この統合が使う 3 つ」ではなく「一式を受け入れるか」で行う。秘密を消しても失効しないという記述は、既存の [../foundation/secret-exposure-layers/README.md](../foundation/secret-exposure-layers/README.md) の結論（是正は失効が本体）と独立に一致しており、同じ形が別の製品の文書にも現れている。**この環境ではこの統合を導入していない。** 権限の一覧は版で変わるため、手引きには「まとめて付く」という形だけを残した。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md)（未検証）。
+
+### REF-237 設定変更を監査・遮断する層が、製品側にある
+
+- **URL**: <https://code.claude.com/docs/en/security>
+- **記事種別**: 提供元の公式ドキュメント
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: 安全側の仕組みの一覧。対話セッションでは、信頼していないフォルダで始めると信頼の確認が出て、`.mcp.json` のサーバには別の承認がある。**`-p` の session ではどちらも出ない。** 取得した Web ページは、多くの場合モデルが要約したものがエージェントへ渡る。未信頼の内容を扱うときの助言として、提案されたコマンドを読む、未信頼の内容を直接流し込まない、重要なファイルへの変更を確かめる、**仮想機械を使う**、が挙がっている。チーム向けの項に、**`ConfigChange` hook でセッション中の設定変更を監査・遮断できる**と書かれている。全体に「これらの保護は危険を大きく減らすが、どんな攻撃にも免疫がある系は無い」という警告が付く。
+- **得られる示唆**: **`ConfigChange` hook が、前件（`ART-058`）の「設定の書き換えを自前の hook で防ぐ」に当たる公式の層**である。自前で組む前にこちらを見る、という順序を [../foundation/claude-code/README.md](../foundation/claude-code/README.md) に書いた。信頼の確認が `-p` で出ないことは既存の記述と一致するが、**何が信頼の確認を待たずに走るかの一覧は権限のページ側（`REF-145`）にあり、そちらが決定的だった。** 未信頼の内容についての助言に仮想機械が入っている点は、前件の研究者の助言（隔離した環境で動かす）と同じ向きで、提供元自身が書いている。**この環境では `ConfigChange` hook を設定していない。**
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md) と [../foundation/claude-code/README.md](../foundation/claude-code/README.md)（いずれも未検証）。
+
+### REF-238 既定の構成では、試した提供元すべてが少なくとも 1 種類に対して脆弱だった
+
+- **URL**: <https://arxiv.org/abs/2606.09935>
+- **記事種別**: 査読前のプレプリント（arXiv、2026-06-07。Jafar Isbarov ほか 3 名）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: CI のワークフローに組み込まれたエージェントへの注入攻撃を、模擬ではなく**実在のリポジトリ上で**試した報告。4 つの提供元の構成に対し、設定ファイルへの注入、資格情報の窃取、判断の操作、可用性の妨害にまたがる 11 種類の攻撃を定義して実施している。結果は、**試したすべての提供元が、既定の構成で少なくとも 1 種類に対して脆弱**。著者の結論は、**最も重大な脆弱性は構造的であり、CI/CD の基盤が資格情報と設定ファイルをどう扱うかから生じる**というもので、攻撃の種類ごとに最小費用の対処を示したうえで、その対処の及ぶ範囲と限界も分析している。
+- **得られる示唆**: この領域の設計（第 1〜4 節）が**資格情報と設定ファイルの 2 点に集中していること**を、独立に支持する測定として登録した。道具の選択ではなくその 2 点に効き目がある、という向きである。前件で登録した 2 つの実証（`REF-232`・`REF-233`）が自分の機械と実行基盤の側を扱うのに対し、こちらは CI の側で、3 件が別々の層から同じ結論へ到達している。**査読前であり、提供元名も攻撃の内訳も採っていない。** 採ったのは「既定の構成で全提供元が少なくとも 1 種類に脆弱だった」という向きと、著者の構造的という結論だけ。要旨の範囲で確認した。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md)（未検証）。
+
+### REF-239 人には見えずモデルには読める指示が、実証されている
+
+- **URL**: <https://www.pillar.security/blog/new-vulnerability-in-github-copilot-and-cursor-how-hackers-can-weaponize-code-agents>
+- **記事種別**: セキュリティ企業による一次の開示（2025-03-18。Pillar Security、Ziv Karliner ほか）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: コーディング支援の**規則ファイル**に、ゼロ幅結合子や双方向テキスト記号といった不可視の文字で指示を埋め込む攻撃の実証。2 つの製品で、見かけ上は無害な規則ファイルから、生成される HTML へ攻撃者のドメインのスクリプトが差し込まれること、**その追加をモデルが応答で一切述べないこと**を示している。報告のうち運用に効くのは 2 点で、埋め込んだ文字は**プラットフォームのプルリクエスト承認画面でも見えなかった**こと、規則ファイルは**フォークを越えて残る**こと。提供元 2 社の初期の回答はいずれも「利用者の責任」だった。
+- **得られる示唆**: 「指示ファイルの差分を人が読んでいるから大丈夫」という前提を外すために登録した。採ったのは**機構**（人に見えずモデルには読める書き方が存在し、承認画面も素通りする）と**伝播**（フォークを越える）だけ。**対象は別の 2 製品で、2025-03 の時点の話である。** 製品ごとの現在の挙動は確かめていない。そして**少なくともプラットフォームの表示側は当時と変わっている**（`REF-240`）。この 2 件を並べて初めて、「自前の検査を書く前に、既定で出る警告の対象を見る」という順序が出る。自前の検査スクリプトはこの環境に置いていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md)（未検証）。
+
+### REF-240 隠れた文字については、プラットフォーム側に既定の警告が足されている
+
+- **URL**: <https://github.blog/changelog/2025-05-01-github-now-provides-a-warning-about-hidden-unicode-text/>
+- **記事種別**: 提供元の変更履歴（2025-05-01）
+- **現在の扱い**: `reference`（確認日 2026-10-31）
+- **何が書かれているか**: ファイルの内容に隠れた Unicode のテキストが含まれる場合、プラットフォーム上で警告を表示するようになったという記録。**見た目と解釈が食い違いうること、特に AI によってそうなりうること**を理由として挙げ、確認の方法として、その文字を表示する編集環境で開き、必要な文字かどうかを確かめるよう案内している。双方向テキストについては 2021 年から同種の警告があり、こちらは該当する脆弱性の識別子が示されている。
+- **得られる示唆**: **`REF-239` の対処を現在の状態へ更新する役割**。入口の記事が自前のスクリプトとして置いている検査は、少なくともこのプラットフォーム上の差分については既定の層と重なる。したがって手引きには「自前の検査を書く前に、既定で出る警告が何を対象にしているかを見る」という順序を書き、自前の検査が要る範囲を**警告が届かない経路**（手元の編集環境、プラットフォームの外から来る指示ファイルや skill、配布された plugin）に限定した。**警告は表示であって門ではない**ので、必須の検査に相当するものではない。この環境で実際に警告が出るところは見ていない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/agent-config-integrity/README.md](../foundation/agent-config-integrity/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全291 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全299 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 283件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 291件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

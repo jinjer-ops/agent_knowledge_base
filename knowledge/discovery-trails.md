@@ -578,6 +578,21 @@ tags: [knowledge, sources, discovery]
   - REF-232 Breaking Claude Code Opus 5 Auto Mode with Indirect Prompt Injection <https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/>（`reference`）
   - REF-233 When Context Gets Root: Privilege Escalation in LLM Harnesses <https://arxiv.org/abs/2608.27299>（`reference`）
 
+### ART-059 検証済み10キットで始める、Claude Code時代のGitHubセキュリティ対策【チーム・組織別】
+
+- 共有した URL: <https://zenn.dev/sonicmoov/articles/4d689e69095478>
+- 見つけて使った資料:
+  - REF-143 Push protection (GitHub) <https://docs.github.com/en/code-security/concepts/secret-security/push-protection>（`reference`）
+  - REF-144 Supported secret scanning patterns (GitHub) <https://docs.github.com/en/code-security/reference/secret-security/supported-secret-scanning-patterns>（`reference`）
+  - REF-145 Configure permissions (Claude Code) <https://code.claude.com/docs/en/permissions>（`reference`）
+  - REF-234 About code owners (GitHub Docs) <https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners>（`reference`）
+  - REF-235 Secure use reference (GitHub Actions) <https://docs.github.com/en/actions/reference/security/secure-use>（`reference`）
+  - REF-236 Claude Code GitHub Actions <https://code.claude.com/docs/en/github-actions>（`reference`）
+  - REF-237 Security (Claude Code) <https://code.claude.com/docs/en/security>（`reference`）
+  - REF-238 GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines <https://arxiv.org/abs/2606.09935>（`reference`）
+  - REF-239 Rules File Backdoor: how hidden instructions in AI configuration files weaponize code agents <https://www.pillar.security/blog/new-vulnerability-in-github-copilot-and-cursor-how-hackers-can-weaponize-code-agents>（`reference`）
+  - REF-240 GitHub now provides a warning about hidden Unicode text <https://github.blog/changelog/2025-05-01-github-now-provides-a-warning-about-hidden-unicode-text/>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
