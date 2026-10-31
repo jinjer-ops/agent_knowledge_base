@@ -4,9 +4,9 @@ title: Deciding what has to run locally when material must not leave
 type: foundation-guide
 status: draft
 created_at: 2026-10-07
-updated_at: 2026-10-07
+updated_at: 2026-10-31
 owners: [knowledge-stewards]
-source_ids: [ART-005, ART-009, REF-083, REF-084, REF-099, REF-103, REF-104, REF-105, REF-106, REF-107]
+source_ids: [ART-005, ART-009, REF-083, REF-084, REF-099, REF-103, REF-104, REF-105, REF-106, REF-107, REF-245, REF-246]
 tags: [data-boundary, local-models, rag, embeddings, privacy, security, context]
 ---
 
@@ -87,6 +87,20 @@ tags: [data-boundary, local-models, rag, embeddings, privacy, security, context]
 
 生成を手元へ置くと決めた場合、選ぶ軸は段ではなく「容量に収まる範囲でどこまで圧縮するか」に
 変わります。測定にもとづく整理は [../model-tier-selection/](../model-tier-selection/) にあります。
+
+### 資料が文字でないなら、表の手前にもう 1 つ部品がある
+
+**上の表は、資料が初めから文字であることを前提にしています。** 録音・録画を扱う場合、3 部品の
+手前に**文字に起こす部品**が入ります。これを表に足さないと、置き場所の判断を終えた時点で
+作業が終わったように見えてしまいます。
+
+この部品だけ性質が違います。ほかの 3 つは資料を**運ぶ・探す**のに対し、ここは資料を**作ります**。
+出てくるテキストは録音の写しではなく生成物で、**音声にまったく存在しない句や文が混じることが
+測られています**（`REF-245`）。しかも誤り率の低さはそれを捕まえません（`REF-246`）。
+
+したがって、**「外へ出さない」が満たされたことは「入力が信用できる」を意味しません。**
+手元で文字起こしをしても、この性質は変わりません。扱う資料に音声が含まれるなら、
+置き場所を決めた後に [../speech-transcript-intake/](../speech-transcript-intake/) を読みます。
 
 ## 埋め込みは、使う言語の評価で選ぶ
 
@@ -213,3 +227,7 @@ tags: [data-boundary, local-models, rag, embeddings, privacy, security, context]
   再現も確かめていません。
 - 文脈長の扱い（`REF-083`・`REF-084`）は一つの実行基盤についての記述と報告です。別の基盤を
   使うなら、同じ故障があるかを自分で確かめます。
+- `REF-245`・`REF-246` は**要旨の範囲でしか確認していません**。前者は英語の特定コーパスと
+  特定モデル、後者は複数モデルの横断分析です。ここで採ったのは「文字起こしの出力は生成物で
+  あり、誤り率がその性質を捕まえない」という向きだけで、割合も対象も
+  [../speech-transcript-intake/](../speech-transcript-intake/) 側に置いています。

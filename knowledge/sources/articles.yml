@@ -2931,3 +2931,82 @@ sources:
     found_via: [ART-059]
     use_when: "不可視文字の検査を自前で書く前に、プラットフォーム側に既定で出る警告の対象を確かめる時"
     derived: [foundation/agent-config-integrity/README.md, knowledge/reading-guide.md]
+  - id: ART-060
+    title: NVIDIA、40言語対応の無償文字起こしAI「Nemotron 3.5 Transcribe」
+    url: https://pc.watch.impress.co.jp/docs/news/2152693.html
+    published_at: 2026-10-30
+    topics: [speech_to_text, open_weights, local_models, multilingual, licensing]
+    status: reference
+    intake: shared
+    use_when: "手元で動かせる文字起こしモデルが選択肢に入るか、言語数・ライセンス・必要な機材の桁を最初に当たる時"
+    derived: [foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: REF-241
+    title: NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (model card)
+    url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+    published_at: null
+    topics: [speech_to_text, open_weights, evaluation, licensing, local_models, diarization]
+    status: reference
+    intake: found
+    found_via: [ART-060]
+    use_when: "この文字起こしモデルを使うと決める前に、用途ごとの誤り率・言語ごとの対応段階・必要な機材・提供元が書いた制限を確かめる時"
+    derived: [foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: REF-242
+    title: "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt"
+    url: https://huggingface.co/blog/nvidia/nemotron-transcribe-granary
+    published_at: 2026-10-28
+    topics: [speech_to_text, open_weights, evaluation, fine_tuning, datasets]
+    status: reference
+    intake: found
+    found_via: [ART-060]
+    use_when: "公表された順位や誤り率がどの条件で測られたか、提供元自身がどこを抜き取り確認しろと書いているかを確かめる時"
+    derived: [foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: REF-243
+    title: OpenMDW License 1.1
+    url: https://openmdw.ai/license/1-1/
+    published_at: null
+    topics: [licensing, open_weights, legal]
+    status: reference
+    intake: found
+    found_via: [ART-060]
+    use_when: "「無償で商用利用可」と紹介された重みを業務で使う前に、配布の条件・特許条項・無保証の範囲を条文で確かめる時"
+    derived: [foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: REF-244
+    title: Open ASR Leaderboard (evaluation harness)
+    url: https://github.com/huggingface/open_asr_leaderboard
+    published_at: null
+    topics: [speech_to_text, evaluation, benchmark, reproducibility]
+    status: reference
+    intake: found
+    found_via: [ART-060]
+    use_when: "文字起こしモデルを公表 WER の順位で選ぼうとした時、その数字が何を測っていて何を測っていないかを確かめる時"
+    derived: [foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: REF-245
+    title: "Careless Whisper: Speech-to-Text Hallucination Harms"
+    url: https://arxiv.org/abs/2402.08021
+    published_at: 2024-02-12
+    topics: [speech_to_text, hallucination, evaluation, fairness, accessibility]
+    status: reference
+    intake: found
+    found_via: [ART-060]
+    use_when: "文字起こしの出力を引用や判断の材料にする前に、誤りが「聞き落とし」ではなく「音声に無い文の追加」として出ることを確かめる時"
+    derived: [foundation/local-model-boundary/README.md, foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: REF-246
+    title: "Lost in Transcription, Found in Distribution Shift: Demystifying Hallucination in Speech Foundation Models"
+    url: https://arxiv.org/abs/2502.12414
+    published_at: 2025-02-18
+    topics: [speech_to_text, hallucination, evaluation, benchmark, metrics]
+    status: reference
+    intake: found
+    found_via: [ART-060]
+    use_when: "誤り率の低さを根拠に文字起こしモデルを選ぼうとした時、その指標が作り話を捕まえないことを確かめる時"
+    derived: [foundation/local-model-boundary/README.md, foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: REF-247
+    title: How to Reduce Whisper Hallucination
+    url: https://arxiv.org/abs/2609.32560
+    published_at: 2026-09-26
+    topics: [speech_to_text, hallucination, fine_tuning, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-060]
+    use_when: "文字起こしの作り話が学習側の手当てでどこまで減るか、どこから残るかを確かめる時"
+    derived: [foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]

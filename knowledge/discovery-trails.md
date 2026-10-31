@@ -593,6 +593,18 @@ tags: [knowledge, sources, discovery]
   - REF-239 Rules File Backdoor: how hidden instructions in AI configuration files weaponize code agents <https://www.pillar.security/blog/new-vulnerability-in-github-copilot-and-cursor-how-hackers-can-weaponize-code-agents>（`reference`）
   - REF-240 GitHub now provides a warning about hidden Unicode text <https://github.blog/changelog/2025-05-01-github-now-provides-a-warning-about-hidden-unicode-text/>（`reference`）
 
+### ART-060 NVIDIA、40言語対応の無償文字起こしAI「Nemotron 3.5 Transcribe」
+
+- 共有した URL: <https://pc.watch.impress.co.jp/docs/news/2152693.html>
+- 見つけて使った資料:
+  - REF-241 NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (model card) <https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B>（`reference`）
+  - REF-242 NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt <https://huggingface.co/blog/nvidia/nemotron-transcribe-granary>（`reference`）
+  - REF-243 OpenMDW License 1.1 <https://openmdw.ai/license/1-1/>（`reference`）
+  - REF-244 Open ASR Leaderboard (evaluation harness) <https://github.com/huggingface/open_asr_leaderboard>（`reference`）
+  - REF-245 Careless Whisper: Speech-to-Text Hallucination Harms <https://arxiv.org/abs/2402.08021>（`reference`）
+  - REF-246 Lost in Transcription, Found in Distribution Shift: Demystifying Hallucination in Speech Foundation Models <https://arxiv.org/abs/2502.12414>（`reference`）
+  - REF-247 How to Reduce Whisper Hallucination <https://arxiv.org/abs/2609.32560>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
