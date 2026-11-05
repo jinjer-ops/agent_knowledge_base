@@ -605,6 +605,16 @@ tags: [knowledge, sources, discovery]
   - REF-246 Lost in Transcription, Found in Distribution Shift: Demystifying Hallucination in Speech Foundation Models <https://arxiv.org/abs/2502.12414>（`reference`）
   - REF-247 How to Reduce Whisper Hallucination <https://arxiv.org/abs/2609.32560>（`reference`）
 
+### ART-061 バイブコーディングで機能を継ぎ足していて見えてきたClaudeCodeの実装のクセ
+
+- 共有した URL: <https://zenn.dev/uguisu_blog/articles/45d1f446ece415>
+- 見つけて使った資料:
+  - REF-055 Best practices for Claude Code <https://code.claude.com/docs/en/best-practices>（`reference`）
+  - REF-248 SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks <https://arxiv.org/abs/2603.24755>（`reference`）
+  - REF-249 ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases <https://arxiv.org/abs/2510.20270>（`reference`）
+  - REF-250 CrossCodeEval: A Diverse and Multilingual Benchmark for Cross-File Code Completion <https://arxiv.org/abs/2310.11248>（`reference`）
+  - REF-251 The Maintainability Gap: 2026 AI Code Quality Research <https://www.gitclear.com/the_ai_code_quality_maintainability_gap>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

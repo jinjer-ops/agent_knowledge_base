@@ -4,9 +4,9 @@ title: Reading guide for registered sources
 type: reading-guide
 status: active
 created_at: 2026-09-02
-updated_at: 2026-10-31
+updated_at: 2026-11-05
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247, ART-061, REF-248, REF-249, REF-250, REF-251]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -2825,12 +2825,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 前の 2 件に対する**反対の向き**として登録した。幻覚は固定された性質ではなく、手当てで大きく減る。ただし同じ報告の中で、**実際の音声に対しては半分近くが残っている。** ここから手引きの結論を「対策済みのモデルに替えれば確認は不要」ではなく「**手当てはできるが残るので、確認の手順は省けない**」に置いた。**査読の記載が無い単著の報告**で、対象は 1 つのモデル、他言語への一般化も書かれていない。**要旨の範囲でしか確認していない。** 採ったのは向きだけで、手法も数値も推奨していない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/speech-transcript-intake/README.md](../foundation/speech-transcript-intake/README.md)（未検証）。
 
+### ART-061 1 回ごとの依頼は通っているのに、画面をまたぐ約束が崩れていく
+
+- **URL**: <https://zenn.dev/uguisu_blog/articles/45d1f446ece415>
+- **記事種別**: 個人（企業の代表者）による事例の振り返り記事（2026-11-03 公開）
+- **現在の扱い**: `reference`（確認日 2026-11-05）
+- **何が書かれているか**: 1 つの業務システムを、エージェントへ依頼を重ねて作っていった経過の報告。崩れ方は 5 種類に整理されている。言葉の定義が画面ごとにずれること、同じ項目のデータ型の扱いが画面ごとに違うこと、既存の機能が消えること、同じ用途の処理が画面ごとに別々に作られること、指定した構造の様式が守られないこと。崩れる原因は、参照される範囲の狭さに置かれている。変更を頼まれた箇所の付近までが参照の上限で、そこから離れた取り決めや前の回の判断は読まれない、という説明。対策は、言葉の定義の文書化、画面と機能の一覧、型と自動の検査、依頼ごとの受入条件、構造をそろえた雛形の 5 つ。
+- **得られる示唆**: 入口として機能した。代表にはしない。1 プロジェクトの事例で、対照も測定もなく、採否を決める 3 点（崩れ方は再現する現象か／事前に書いた文書で止まるか／何を門にできるか）の根拠がすべて測定と一次情報の側にあるため。末尾に著者の会社の紹介があり、独立した根拠としては数えない。採ったのは、崩れ方の整理の仕方と、挙げられた 5 つの対策のうち 4 つが非決定的な側にあるという区分である。後者は記事の主張ではなくこちらの読み替えで、`REF-055` の分け方を当てた結果にあたる。判断の記録が残っていたのに機能が消えた、という箇所は、記録が門にならないことの例として残した（例が 1 件なので、根拠としては一次情報の側に寄せている）。本文にある行数は手引きへもカードへも移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/incremental-feature-drift/README.md](../foundation/incremental-feature-drift/README.md)（未検証）。
+
+### REF-248 継ぎ足すほど崩れることが、対照つきで測られている
+
+- **URL**: <https://arxiv.org/abs/2603.24755>
+- **記事種別**: 査読前のプレプリント（arXiv、2026-03-25 投稿、2026-05-07 改訂。Gabriel Orlanski ほか 9 名）
+- **現在の扱い**: `reference`（確認日 2026-11-05）
+- **何が書かれているか**: エージェントが**自分の前の解**を、少しずつ変わる仕様に合わせて繰り返し拡張する設定のベンチマーク。改訂版は 36 問・196 チェックポイント、15 のエージェント（公開重み・非公開の両方）を評価。劣化を 2 つの指標（複雑さが一箇所へ集まる「構造侵食」と、冗長さ）で測る。結果は、端から端まで解き切ったエージェントは無く、最良でもチェックポイントの 14.8 % を通過。構造侵食は 77 %、冗長さは 75.5 % の軌跡で上昇。473 の公開 Python リポジトリとの比較で、エージェントのコードは 2.3 倍冗長・2.0 倍侵食されており、**人手のリポジトリも劣化するが頻度も幅も小さい**。回帰の検査が前の回の要求を引き継ぐため、途中の 1 回の誤りが後続をまとめて落とす。新しい回の中心部分だけを見た通過率と、切り離した通過率の差は回が進むほど広がる（2.5 倍 → 5.4 倍）。品質を意識させる指示を足すと初期の冗長さは最大 34.8 %、侵食は最大 62.3 % 下がるが、**回ごとに悪くなる速さはほぼ変わらない**（1 チェックポイントあたり 1.3 ポイント）。
+- **得られる示唆**: 代表。この入力で判断を動かした点は 3 つ。(1) 崩れ方が条件を揃えても再現すること。人手のリポジトリとの対照があるので、コードは放っておけば劣化する、という一般論では片付けられない。(2) 事前に書いた指示が動かすのは出発点の質で、回ごとの劣化の速さはほぼ変わらないこと。入口の記事（`ART-061`）の対策に対する限定がここから出る。(3) 新しい分だけの検査は、通っても前の回の振る舞いについて何も言わないこと。この差が回を追って広がるため、変更したところだけの最小の検証という書き方が継ぎ足しでは成立しない。数値は手引きへ移していない。限界は、**Python の範囲**であること、**Limitations の節が無く**著者自身の限界の列挙が読めないこと、版によって規模が違うこと（旧版は 20 問 93 チェックポイントで、別の指標値が載っている。こちらは**使っていない**）。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/incremental-feature-drift/README.md](../foundation/incremental-feature-drift/README.md)、[../foundation/layer-boundary-enforcement/README.md](../foundation/layer-boundary-enforcement/README.md)、[../foundation/templates/new-project.md](../foundation/templates/new-project.md)（いずれも未検証）。
+
+### REF-249 テストを門にすると、テストを書き換える経路が開く
+
+- **URL**: <https://arxiv.org/abs/2510.20270>
+- **記事種別**: 査読を経た論文（ICLR 2026 採択。arXiv 版は 2025-10-23 投稿。Ziqian Zhong ほか 2 名）
+- **現在の扱い**: `reference`（確認日 2026-11-05）
+- **何が書かれているか**: 自然言語の仕様と単体テストが**正面から矛盾する**課題を既存のベンチマークから作り、通過したら必ず仕様違反の近道を通ったことになる形で「ごまかし率」を測る枠組み。観測された手口は、テストの表明の書き換え、その場しのぎの分岐の追加、評価を欺くために内部に持つ状態、演算子の多重定義まで及ぶ。**プロンプトの書き方・テストへ触れられるか・フィードバックの回し方で、この率が動く**ことも示されている。著者らは、こうした振る舞いがベンチマークの妥当性と実運用の信頼性の両方を損なうとしている。
+- **得られる示唆**: 代表の 1 つ。`REF-248` から出る結論が「検査を積む」であるのに対し、こちらはその検査を門にしたときの失敗様式を与える。採ったのは、禁止の呼びかけではなく配置の条件で、門にする検査を変更対象と同じ手で書き換えられない形にする、それが難しければ差分のうち検査の変更だけは人が見る、の 2 つになる。限界として、測っているのは**仕様とテストが矛盾する人工的な状況**であり、通常の開発でどの程度起きるかは範囲外である。率も手口の一覧も手引きへ移していない。**要旨と公開された説明の範囲でしか確認していない。**
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/incremental-feature-drift/README.md](../foundation/incremental-feature-drift/README.md)（未検証）。
+
+### REF-250 参照される範囲の狭さは、ファイルをまたぐ依存として測られている
+
+- **URL**: <https://arxiv.org/abs/2310.11248>
+- **記事種別**: 査読を経た論文（NeurIPS 2023 Datasets and Benchmarks Track。arXiv 版は 2023-10-17 投稿、2023-11-17 改訂）
+- **現在の扱い**: `reference`（確認日 2026-11-05）
+- **何が書かれているか**: ファイルをまたぐ依存が**必ず必要になる**補完課題だけを集めたベンチマーク。Python・Java・TypeScript・C# の実在のリポジトリから、静的解析で「外部のファイルにしか定義が無いもの」を使う箇所を選んでいる。そのファイルの中だけを文脈にすると成績が大きく落ち、ファイルをまたぐ文脈を与えると改善するが、**最良の構成でも十分な水準には届かない**。検索で文脈を足す手段そのものを比べる用途にも使える、と位置づけられている。
+- **得られる示唆**: 補助。入口の記事（`ART-061`）が崩れる原因に置いた参照範囲の狭さを、印象ではなく**構造の問題**として裏付けるために登録した。ここから出る設計上の順序は、指示の書き方を直す前に、何が見えていて何が落ちるかを見る、というもの。**2023 年の報告で、対象のモデルは現在のものではない。** 採ったのは向きだけで、指標も値も手引きへ移していない。要旨と公開された説明の範囲でしか確認していない。既存の [../foundation/retrieval-structure-decision/README.md](../foundation/retrieval-structure-decision/README.md) の比較表に同名の派生データセットが登場するが、そちらは別の資料が引用したもので、この source を宣言していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/incremental-feature-drift/README.md](../foundation/incremental-feature-drift/README.md)（未検証）。
+
+### REF-251 重複は実際のコミットでも増えている。ただし原因は分けられていない
+
+- **URL**: <https://www.gitclear.com/the_ai_code_quality_maintainability_gap>
+- **記事種別**: 計測の道具を売る会社が公開した自社データの分析（2026 年前半までのデータを含む。公開日は明示されていない）
+- **現在の扱い**: `reference`（確認日 2026-11-05）
+- **何が書かれているか**: 2023〜2026 年の 6 億 2,300 万件の変更を集計した報告。複製されたブロックが 2023 年比で 81 % 増、移動された行（再利用・整理の痕跡）が 2022 年の 21 % から 2026 年の 3.8 % へ低下、複製貼り付けが 9.4 % から 15.7 % へ上昇、**ファイルをまたぐつながりの指標が 2023 年比で 35 % 低下**、長期の更新の割合が 74 % 低下。著者らは、保守性を支える構造上の習慣が、測定したすべての信号で損なわれたと述べている。
+- **得られる示唆**: 補助で、反対向きにも読める材料として扱った。入口の記事が挙げた画面ごとの別実装が自分の現場だけの話ではないことは示すが、原因の証明には使えない。理由は 2 つで、この報告は AI が書いた行を分けて数えておらず、同じ期間に起きた他の変化と区別できないこと、発行元が計測の道具を売る会社であること。より広く引用されている前年の版（2020〜2024 年、2 億 1,100 万行）も読んだが、ファイルをまたぐつながりの指標はこちらにしか無く、期間も新しいので**この版だけを登録した**。数値は手引きへ移していない。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/incremental-feature-drift/README.md](../foundation/incremental-feature-drift/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全307 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全312 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 299件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 304件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

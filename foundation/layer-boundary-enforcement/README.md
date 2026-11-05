@@ -4,9 +4,9 @@ title: Enforcing layer boundaries in code an agent writes
 type: foundation-guide
 status: draft
 created_at: 2026-10-13
-updated_at: 2026-10-13
+updated_at: 2026-11-05
 owners: [knowledge-stewards]
-source_ids: [ART-014, REF-187, REF-188, REF-189, REF-190, REF-191]
+source_ids: [ART-014, REF-187, REF-188, REF-189, REF-190, REF-191, REF-248]
 tags: [architecture, layering, static-analysis, code-generation, verification]
 ---
 
@@ -92,6 +92,16 @@ getter と setter の入れ物になり、サービス層がトランザクシ�
 査読前で、かつ規模を上げた条件が含まれていないためです。`REF-190` が落ちると言っているのは
 まさにその規模の側です。ただし同じ報告が、AST を解析して違反を数えるという**測り方**を
 採っている点は、この手引きの前提と一致します。
+
+もう 1 つ、別の軸から同じ向きを示す測定があります。`REF-190` が見ているのが**規模**なのに対し、
+繰り返し拡張を測った報告（`REF-248`）が見ているのは**回数**です。エージェントが自分の前の解を
+何度も拡張する設定で、構造の偏り（複雑さが一箇所へ集まる）が大半の軌跡で回を追って上がる、
+と報告されています。内訳まで出ている点がここでは重要で、品質を意識させる**指示を足すと初期の偏りは
+大きく下がる一方、回ごとに悪くなる速さはほとんど変わりません**。
+つまり文章の規則は、規模でも回数でも同じ側へ外れます。足せるのは出発点であって、傾きではありません。
+数値は移していません（Python の範囲の測定で、この環境では回していません）。
+継ぎ足しを前提にしたときの置き場所は
+[../incremental-feature-drift/](../incremental-feature-drift/) にあります。
 
 ## 向きの側を、落ちる検査にする
 
