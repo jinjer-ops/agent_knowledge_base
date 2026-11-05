@@ -817,9 +817,9 @@ sources:
     topics: [agent_instructions, automation, verification, agent_orchestration]
     status: reference
     intake: found
-    found_via: [ART-013, ART-033]
+    found_via: [ART-013, ART-033, ART-061]
     use_when: "指示ファイルに何を書き何を書かないかを決める時、無人で回す作業の止め方の強度を選ぶ時"
-    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, foundation/instruction-upkeep/README.md, knowledge/reading-guide.md]
+    derived: [foundation/agent-report-handoff/README.md, foundation/autonomous-loop-delegation/README.md, foundation/incremental-feature-drift/README.md, foundation/instruction-upkeep/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md]
   - id: REF-056
     title: "LLMs Get Lost In Multi-Turn Conversation"
     url: https://arxiv.org/abs/2505.06120
@@ -3010,3 +3010,52 @@ sources:
     found_via: [ART-060]
     use_when: "文字起こしの作り話が学習側の手当てでどこまで減るか、どこから残るかを確かめる時"
     derived: [foundation/speech-transcript-intake/README.md, knowledge/reading-guide.md]
+  - id: ART-061
+    title: バイブコーディングで機能を継ぎ足していて見えてきたClaudeCodeの実装のクセ
+    url: https://zenn.dev/uguisu_blog/articles/45d1f446ece415
+    published_at: 2026-11-03
+    topics: [iterative_development, code_generation, architecture_conformance, domain_modeling, regression]
+    status: reference
+    intake: shared
+    use_when: "同じコードベースへ依頼を重ねて機能を足させた結果、画面をまたぐ整合が崩れた時に、崩れ方の種類を並べる入口が要る時"
+    derived: [foundation/incremental-feature-drift/README.md, knowledge/reading-guide.md]
+  - id: REF-248
+    title: "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks"
+    url: https://arxiv.org/abs/2603.24755
+    published_at: 2026-03-25
+    topics: [iterative_development, benchmark, regression, code_quality, code_generation, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-061]
+    use_when: "継ぎ足しで崩れるのが再現する現象かを確かめる時、事前に書いた品質の指示が劣化の速さを変えるかを確かめる時"
+    derived: [foundation/incremental-feature-drift/README.md, foundation/layer-boundary-enforcement/README.md, foundation/templates/new-project.md, knowledge/reading-guide.md]
+  - id: REF-249
+    title: "ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases"
+    url: https://arxiv.org/abs/2510.20270
+    published_at: 2025-10-23
+    topics: [verification, reward_hacking, benchmark, evaluation, ci_gate]
+    status: reference
+    intake: found
+    found_via: [ART-061]
+    use_when: "テストを合格条件の門にすると決める前に、テスト自体を書き換える経路がどれだけ使われるかを確かめる時"
+    derived: [foundation/incremental-feature-drift/README.md, knowledge/reading-guide.md]
+  - id: REF-250
+    title: "CrossCodeEval: A Diverse and Multilingual Benchmark for Cross-File Code Completion"
+    url: https://arxiv.org/abs/2310.11248
+    published_at: 2023-10-17
+    topics: [code_generation, benchmark, context_window, retrieval, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-061]
+    use_when: "参照される範囲の狭さが印象か構造かを確かめる時、文脈を足す手当ての上限を見る時"
+    derived: [foundation/incremental-feature-drift/README.md, knowledge/reading-guide.md]
+  - id: REF-251
+    title: "The Maintainability Gap: 2026 AI Code Quality Research"
+    url: https://www.gitclear.com/the_ai_code_quality_maintainability_gap
+    published_at: null
+    topics: [code_quality, code_duplication, refactoring, measurement, vendor_report]
+    status: reference
+    intake: found
+    found_via: [ART-061]
+    use_when: "重複実装やファイル間のつながりの減少が自分の現場だけの話かを当たる時、ただし原因の証明には使わない時"
+    derived: [foundation/incremental-feature-drift/README.md, knowledge/reading-guide.md]
