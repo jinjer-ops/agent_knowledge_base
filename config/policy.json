@@ -15,6 +15,7 @@
     "^…"
   ],
   "conversational_rule_exempt_paths": [],
+  "allowed_terms": [],
   "operational_log_paths": [
     "(?:^|/)backups/BACKUP_LOG\\.md$",
     "(?:^|/)backups/[^/]+/BACKUP_LOG\\.md$"

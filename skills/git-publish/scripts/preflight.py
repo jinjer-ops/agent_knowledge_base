@@ -149,8 +149,60 @@ def load_policy(path):
         reasons[ident.lower()] = reason
     data["_allow"] = allow
     data["_reasons"] = reasons
+    data["_terms"] = load_allowed_terms(data.get("allowed_terms"))
     data["_path"] = path
     return data
+
+
+# 組織の設定で許す語（allowed_terms）が外せる規則。人を指さない社内の語（機能の名前など）が
+# 「〇〇さんに」の形で P03 に当たるときだけに使う。秘密・実在パスの規則は語で外させない。
+ALLOWED_TERM_RULES = {"P03"}
+
+
+def load_allowed_terms(entries):
+    """allowed_terms を検証して {規則: {語, ...}} を返す。形が違えば検査を起動しない（fail-closed）。"""
+    if entries is None:
+        return {}
+    if not isinstance(entries, list):
+        raise PolicyError("allowed_terms が配列でない")
+    out = {}
+    for i, entry in enumerate(entries):
+        if not isinstance(entry, dict):
+            raise PolicyError(f"allowed_terms[{i}] がオブジェクトでない")
+        term = entry.get("term")
+        rules = entry.get("rules")
+        reason = (entry.get("reason") or "").strip()
+        if not isinstance(term, str) or len(term.strip()) < 2:
+            raise PolicyError(f"allowed_terms[{i}] の term が無いか短すぎる")
+        if not isinstance(rules, list) or not rules or not set(rules) <= ALLOWED_TERM_RULES:
+            raise PolicyError(
+                f"allowed_terms[{i}] ({term}) の rules は {sorted(ALLOWED_TERM_RULES)} の中から 1 つ以上")
+        if len(reason) < 10:
+            raise PolicyError(f"allowed_terms[{i}] ({term}) に理由が無い。許す語は理由付きで 1 件ずつ書く")
+        for rid in rules:
+            out.setdefault(rid, set()).add(term.strip())
+    return out
+
+
+# P03 の一致から、末尾の助詞を除いた名前の部分を取り出す
+P03_PARTICLE = re.compile(r"(?:が|は|に|の|より|から|へ|と)$")
+# fetch の credentials（送り方の指定）。値は same-origin・include・omit だけで、秘密の値ではない。
+# 名前は credentials そのもの（前にオブジェクトの道を付けてよい）に限る。dbCredentials などは外さない
+FETCH_CREDENTIALS = re.compile(
+    r"(?i)^(?:[A-Za-z0-9_$]+\.)*credentials\s*[:=]\s*([\"'])(?:same-origin|include|omit)\1$")
+
+
+def first_finding_match(rid, pat, line, terms):
+    """行の中で、指摘にする最初の一致を返す。外してよい一致は飛ばし、同じ行の後ろの一致は見続ける。"""
+    for m in pat.finditer(line):
+        text = m.group(0)
+        if rid == "S08" and FETCH_CREDENTIALS.match(text):
+            continue
+        allowed = terms.get(rid)
+        if allowed and rid == "P03" and P03_PARTICLE.sub("", text) in allowed:
+            continue
+        return m
+    return None
 
 
 def placeholder_matcher(policy):
@@ -505,7 +557,7 @@ def check_content(path, blob, findings, authors, policy, placeholder, wording_li
                 continue
             if rid == "C01" and is_brief:
                 continue
-            m = pat.search(line)
+            m = first_finding_match(rid, pat, line, policy.get("_terms") or {})
             if not m:
                 continue
             if rid in ("S08", "S14") and PLACEHOLDER.search(line):

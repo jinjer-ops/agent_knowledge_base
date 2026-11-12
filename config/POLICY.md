@@ -4,7 +4,7 @@ title: 公開前検査の組織固有設定 — 何を許容し、何を許容�
 type: policy-implementation
 status: active
 created_at: 2026-09-02
-updated_at: 2026-10-15
+updated_at: 2026-11-12
 owners: [knowledge-stewards]
 related:
   - ../README.md
@@ -19,7 +19,7 @@ tags: [preflight, policy, allowlist, fixtures]
 **この文書はルールの正本ではない。** 正本は共通運用ルールを定める索引リポジトリの `CONVENTIONS.md` である。
 そこに定義の無い許容をここへ足さない。
 
-## 4つの設定項目
+## 5つの設定項目
 
 ### 1. `organization_accounts` — 許可する組織アカウント識別子
 
@@ -70,6 +70,20 @@ tags: [preflight, policy, allowlist, fixtures]
 - サブディレクトリのログを追跡するには、対象リポジトリ側の `.gitignore` で
   「親ディレクトリを再包含 → 中身を除外 → ログだけ再包含」の順に書く必要がある。設定を足すだけでは
   追跡候補にならない。
+
+### 5. `allowed_terms` — 許す語（個人への言及の規則 P03 だけ）
+
+人を指さない社内の語（画面の機能の名前など）が「〇〇さんに」の形をとると、個人への言及（`P03`）として検出される。
+語を変えると、画面や文書の意味が変わる。
+
+**そこで、許す語を1件ずつ、理由と外す規則を添えて組織の設定に書く。** 公開の既定値（この `policy.json`）は空のまま置く。
+社内の語は組織ごとに違い、共通の層に置く理由が無いため。
+
+- 各エントリは `term` / `rules` / `reason` を持つ。`rules` に書けるのは `P03` だけで、`reason` が10文字未満なら検査は起動しない
+  （読み込み時に検証し、終了コード 2 で止まる）。秘密情報・実在パスの規則は、語で外させない。
+- 外すのは、助詞を除いた一致が `term` と同じときだけである。許した語を含む長い名前と、同じ行の別の人への言及は、引き続き検出する。
+- 境界は `test_allowed_term_passes_only_where_policy_lists_it`・`test_allowed_term_does_not_cover_names_around_it`・
+  `test_allowed_term_entries_are_validated`・`test_shared_policy_declares_no_allowed_terms` が確認する。
 
 ## 変更するときの順序
 
