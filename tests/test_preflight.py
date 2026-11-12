@@ -562,6 +562,96 @@ class PreflightBoundaryTest(unittest.TestCase):
         )
         self.assertEqual(p.returncode, 2, "policy が無いのに検査を続行した")
 
+    # --- fetch の credentials は、トークンの直書きとして数えない -----------------
+    def test_fetch_credentials_option_passes(self):
+        """fetch の credentials は送り方の指定（same-origin・include・omit）で、秘密の値ではない。"""
+        self.repo.write("app/api.js", "".join([
+            'fetch(url, { method: "POST", ', "credentials", ': "same-origin" });\n',
+            "init.", "credentials", " = 'include';\n",
+            "const opts = { ", "credentials", ': "omit" };\n',
+        ]))
+        self.repo.stage("app/api.js")
+        code, data = self.repo.run()
+        self.assertNotIn("S08", rules(data, "BLOCK"), "fetch の credentials を秘密として止めた")
+        self.assertEqual(code, 0, "BLOCK: %s" % rules(data, "BLOCK"))
+
+    def test_credentials_with_other_values_still_blocks(self):
+        """値が送り方の指定でなければ、名前が credentials でも止める。同じ行の別の秘密も止める。"""
+        cases = {
+            "app/a.js": "const c = { " + "credentials" + ': "' + "q8Zt" * 4 + '" };\n',
+            "app/b.js": "fetch(u, { " + "credentials" + ': "same-origin", api' + "Token" + ': "' + "k3Wv" * 4 + '" });\n',
+            "app/c.js": "const db" + "Credentials" + ' = "same-origin-' + "x7Pq" * 3 + '";\n',
+        }
+        for rel, text in cases.items():
+            with self.subTest(rel=rel):
+                self.repo.write(rel, text)
+                self.repo.stage(rel)
+        code, data = self.repo.run()
+        hits = sorted({f["path"] for f in data["findings"] if f["rule"] == "S08" and f["severity"] == "BLOCK"})
+        self.assertEqual(hits, sorted(cases), "止めるべき直書きを通した: %s" % hits)
+        self.assertNotEqual(code, 0)
+
+    # --- 組織の設定で許す語（P03 だけ） ---------------------------------------
+    def _term_policy(self, entries):
+        with open(POLICY, encoding="utf-8") as f:
+            policy = json.load(f)
+        policy["allowed_terms"] = entries
+        path = os.path.join(self.repo.path, "policy-with-terms-%s.json" % uuid.uuid4().hex[:6])
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(policy, f, ensure_ascii=False)
+        return path
+
+    def test_allowed_term_passes_only_where_policy_lists_it(self):
+        """許す語の**仕組み**を検査する。語は合成（「案内係さん」）で、同梱の設定には依存しない。"""
+        term = "案内係" + "さん"
+        self.repo.write("docs/guide.md", "# 使い方\n\n画面の右上の「%sに聞く」から質問を送る。\n" % term)
+        self.repo.stage("docs/guide.md")
+        code, data = self.repo.run()
+        self.assertIn("P03", rules(data, "BLOCK"), "設定に無い語が通った（仕組みの前提が崩れている）")
+        path = self._term_policy([{"term": term, "rules": ["P03"], "reason": "画面の機能の名前で、人を指さない（合成の例）"}])
+        code, data = self.repo.run(policy=path)
+        self.assertNotIn("P03", rules(data, "BLOCK"), "許した語を止めた")
+        self.assertEqual(code, 0, "BLOCK: %s" % rules(data, "BLOCK"))
+
+    def test_allowed_term_does_not_cover_names_around_it(self):
+        """許した語を含む長い名前と、同じ行の別の人への言及は、引き続き止める。"""
+        term = "案内係" + "さん"
+        path = self._term_policy([{"term": term, "rules": ["P03"], "reason": "画面の機能の名前で、人を指さない（合成の例）"}])
+        cases = {
+            "docs/a.md": "# a\n\n受付" + term + "に聞く。\n",
+            "docs/b.md": "# b\n\n" + term + "に聞いてから、" + chr(0x9AD8) + chr(0x6728) + "さんに渡す。\n",
+        }
+        for rel, text in cases.items():
+            self.repo.write(rel, text)
+            self.repo.stage(rel)
+        code, data = self.repo.run(policy=path)
+        hits = sorted({f["path"] for f in data["findings"] if f["rule"] == "P03" and f["severity"] == "BLOCK"})
+        self.assertEqual(hits, sorted(cases), "許した語のまわりの人への言及を通した: %s" % hits)
+
+    def test_allowed_term_entries_are_validated(self):
+        """理由の無い語・P03 以外の規則を外そうとする語は、検査を起動しない（fail-closed）。"""
+        bad_entries = [
+            [{"term": "案内係" + "さん", "rules": ["P03"]}],
+            [{"term": "案内係" + "さん", "rules": ["S08"], "reason": "秘密の検査を語で外そうとする（合成の例）"}],
+            [{"term": "", "rules": ["P03"], "reason": "空の語は何でも通してしまう（合成の例）"}],
+            [{"term": "案内係" + "さん", "rules": [], "reason": "規則の指定が無い（合成の例）"}],
+            {"term": "案内係" + "さん"},
+        ]
+        for entries in bad_entries:
+            with self.subTest(entries=entries):
+                p = subprocess.run(
+                    [sys.executable, PREFLIGHT, "--repo", self.repo.path, "--policy", self._term_policy(entries),
+                     "--receipt-dir", self.repo.receipts],
+                    stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                )
+                self.assertEqual(p.returncode, 2, "不正な allowed_terms で検査を続行した")
+                self.assertIn("allowed_terms", p.stderr.decode("utf-8", "replace"))
+
+    def test_shared_policy_declares_no_allowed_terms(self):
+        """語そのものは組織の設定に置く。公開の既定値には置かない。"""
+        declared = load_policy().get("allowed_terms") or []
+        self.assertEqual(list(declared), [], "公開の既定値に許す語がある: %s" % declared)
+
 
 def _take_fixture_root_argument(argv):
     """`--fixture-root <dir>` を取り出して環境変数へ移す（unittest へは渡さない）。"""
