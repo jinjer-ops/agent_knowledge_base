@@ -47,9 +47,39 @@ Windows PowerShell 5.1 では `powershell -ExecutionPolicy Bypass -File environm
 | `-ReplaceCopies` | 既にあるコピーや、別の所へのリンクを置き換える。コピーは消さず `~/.agent-environment-backup/<日時>/` へ移す |
 | `-Antigravity` | Antigravity にも入れる |
 
+| `-GateManifest <path>` | 門に使う版を固定して入れる（下の「門の版を固定する」） |
+| `-Update` | 固定の置き場を新しくする。設定のリポジトリは fast-forward だけ、道具のリポジトリは設定が指す SHA へ |
+| `-EnvironmentTarget User\|Process\|None` | 一覧の `environment` を書く先。既定は `User`（利用者の環境変数。Windows だけ） |
+
 自分で書いた `CLAUDE.md`・`AGENTS.md` が既にあるときは上書きせず、足す行を表示します。書き換えるのは、導入スクリプトが作ったファイル（先頭が `# GENERATED FILE`）だけです。
 
 入れたら、各エージェントのセッションを開き直してください。
+
+## 門の版を固定する
+
+公開前の検査（`skills/git-publish`）のような「門」として使う skill は、このリポジトリの作業用の clone から入れると、その clone がそのとき載っている枝で中身が変わります。`-GateManifest` を渡すと、作業用の clone とは別の、読むだけの clone から入れます。
+
+- 版を決めるのは、組織の設定を置くリポジトリ（以下、設定のリポジトリ）の pins ファイルです。このリポジトリのどのコミットを使うかを、40 桁の SHA で書きます。
+- 設定のリポジトリは、既定の枝に fast-forward だけで付いていきます。このリポジトリは、pins の SHA に detach して取り出します。
+- 固定の置き場に手を入れると、`-Check` が知らせ、`-Update` は止まります（上書きしません）。
+
+一覧（JSON）の形は次のとおりです。URL や置き場は各自の値にします。`environment` の値には `{policy}`（設定のリポジトリの置き場）・`{tool}`（このリポジトリの固定の置き場）・`{home}` が使えます。
+
+```json
+{
+  "pinned_root": "~/.agent-environment/pinned",
+  "policy_repository": {"name": "org-config", "url": "https://github.com/<org>/<config-repo>.git",
+                        "branch": "main", "pins_file": "config/gate-pins.json"},
+  "tool_repository": {"name": "agent_knowledge_base", "url": "https://github.com/<owner>/agent_knowledge_base.git",
+                      "pin_key": "agent_knowledge_base"},
+  "environment": {"GIT_PUBLISH_POLICY": "{policy}/config/git-publish-policy.json",
+                  "PREFLIGHT": "{home}/.claude/skills/git-publish/scripts/preflight.py"}
+}
+```
+
+pins ファイルの形は `{"agent_knowledge_base": {"sha": "<40 桁>"}}` です。版を上げるときは、設定のリポジトリへの PR にします。
+
+固定の置き場から入れると、skill を `~/.claude/skills` から直すことはできなくなります。直すときは作業用の clone で直して PR にし、マージの後に pins を上げます。
 
 ## 共有するものと、しないもの
 
@@ -63,7 +93,7 @@ Windows PowerShell 5.1 では `powershell -ExecutionPolicy Bypass -File environm
 
 ## 直すとき
 
-入った先はこのリポジトリを指しているので、skill を直すと、このリポジトリの変更として現れます。共有してよい変更は PR にします（公開前の手順は [../skills/git-publish/SKILL.md](../skills/git-publish/SKILL.md)）。組織に固有の内容が混ざる変更は、共有の skill を直さず、手元の層に置きます。
+`-GateManifest` を使わずに入れた場合、入った先はこのリポジトリを指しているので、skill を直すと、このリポジトリの変更として現れます。共有してよい変更は PR にします（公開前の手順は [../skills/git-publish/SKILL.md](../skills/git-publish/SKILL.md)）。組織に固有の内容が混ざる変更は、共有の skill を直さず、手元の層に置きます。
 
 - 新しい skill は `skills/<名前>/SKILL.md` に作る。`name` はフォルダ名と同じにし、`description` に起動条件を書く。書き方は [../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)
 - 常に効かせたい短い決まりは [AGENTS.md](AGENTS.md) に足す。長い手順は skill か文書にする（[../foundation/agents-md/README.md](../foundation/agents-md/README.md)）
