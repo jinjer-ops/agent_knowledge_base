@@ -50,16 +50,36 @@ BUNDLED_POLICY = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))),
     "config", "policy.json",
 )
-# 配備された複製は正本リポジトリの外に置かれるため、相対解決では policy に届かない。
-# ゲートと同じ環境変数を見て、両者が同じ policy を読む。
+# 組織の policy は環境変数で渡す。ゲート（PreToolUse）も同じ変数を見るので、両者が同じ policy を読む。
 POLICY_ENV = "GIT_PUBLISH_POLICY"
 
 
 def default_policy():
-    if os.path.isfile(BUNDLED_POLICY):
-        return BUNDLED_POLICY
+    """読む順は --policy（呼び出し側）→ 環境変数 → 同梱の既定。
+
+    明示したものを既定より先に読む。同梱の既定を先にすると、リポジトリを丸ごと取り出して
+    その中から動かしたとき、環境変数で渡した組織の policy が黙って外れる。
+    """
     declared = os.environ.get(POLICY_ENV, "").strip().strip("\"'")
     return os.path.expanduser(declared) if declared else BUNDLED_POLICY
+
+
+def file_sha256(path):
+    """改行を LF にそろえてから数える。Windows の取り出し（CRLF）と CI（LF）で同じ値にするため。"""
+    with open(path, "rb") as handle:
+        return hashlib.sha256(handle.read().replace(b"\r\n", b"\n")).hexdigest()
+
+
+def checker_revision():
+    """この検査が載っている git のコミット。手元と CI の結果を、同じ版どうしで突き合わせるために出す。"""
+    here = os.path.dirname(os.path.abspath(__file__))
+    try:
+        p = subprocess.run(["git", "-C", here, "rev-parse", "HEAD"],
+                           stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True, timeout=10)
+    except (OSError, subprocess.SubprocessError):
+        return "unknown"
+    rev = p.stdout.strip()
+    return rev if p.returncode == 0 and re.fullmatch(r"[0-9a-f]{40,64}", rev) else "unknown"
 
 # ---------------------------------------------------------------- git helpers
 
@@ -658,8 +678,8 @@ def main():
     ap.add_argument(
         "--policy",
         default=None,
-        help="policy configuration のパス。既定は同梱の config/policy.json、"
-        "配備された複製では環境変数 GIT_PUBLISH_POLICY",
+        help="policy configuration のパス。省略時は環境変数 GIT_PUBLISH_POLICY、"
+        "それも無ければ同梱の config/policy.json",
     )
     args = ap.parse_args()
 
@@ -670,8 +690,10 @@ def main():
     if args.force and not args.reason.strip():
         print("ERROR: --force には --reason が必要（レシートに記録する）", file=sys.stderr)
         return 2
+    policy_path = os.path.abspath(args.policy or default_policy())
     try:
-        policy = load_policy(args.policy or default_policy())
+        policy = load_policy(policy_path)
+        policy_sha256 = file_sha256(policy_path)
         placeholder = placeholder_matcher(policy)
         exempt = path_rule_exempt(policy)
     except PolicyError as e:
@@ -726,6 +748,7 @@ def main():
     warns = [f for f in findings if f[1] == "WARN"]
     tree = target_tree(root, args.scope)
 
+    checker = checker_revision()
     receipt = None
     if tree and (not blocks or args.force):
         payload = {
@@ -733,6 +756,8 @@ def main():
             "tree": tree,
             "scope": args.scope,
             "policy": policy.get("policy_version", "unknown"),
+            "policy_sha256": policy_sha256,
+            "checker": checker,
             "checked_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "files": len(paths),
             "blocks": [[f[0], f[2], f[3], f[5]] for f in blocks],
@@ -752,6 +777,9 @@ def main():
             {
                 "repo": root, "tree": tree, "scope": args.scope, "files": len(paths),
                 "truncated": truncated, "suppressed": suppressed, "receipt": receipt,
+                "policy": {"path": policy_path, "sha256": policy_sha256,
+                           "version": policy.get("policy_version", "unknown")},
+                "checker": checker,
                 "findings": [
                     {"rule": r, "severity": s, "path": p, "line": ln, "excerpt": ex, "hint": h}
                     for r, s, p, ln, ex, h in findings
@@ -761,6 +789,7 @@ def main():
         ))
     else:
         print(f"preflight: {root}  scope={args.scope}  files={len(paths)}  tree={tree}")
+        print(f"  policy: {policy_path}  sha256={policy_sha256[:12]}  checker={checker[:12]}")
         if truncated:
             print(f"  ! 対象が多いため {truncated} ファイルを未検査（--scope を絞るか分割コミットする）")
         for label, items in (("BLOCK", blocks), ("WARN", warns)):

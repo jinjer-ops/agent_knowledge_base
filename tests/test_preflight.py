@@ -23,6 +23,7 @@
 from __future__ import annotations
 
 import atexit
+import hashlib
 import io
 import json
 import pathlib
@@ -158,6 +159,44 @@ class PreflightBoundaryTest(unittest.TestCase):
         self.assertTrue(os.path.exists(POLICY), "policy.json が無い: %s" % POLICY)
         self.repo = Repo()
         self.addCleanup(self.repo.close)
+
+    # --- 0. policy の読む順：--policy → 環境変数 → 同梱 ----------------------
+    def run_without_policy_flag(self, env_policy):
+        env = {k: v for k, v in os.environ.items() if k != "GIT_PUBLISH_POLICY"}
+        if env_policy is not None:
+            env["GIT_PUBLISH_POLICY"] = env_policy
+        p = subprocess.run(
+            [sys.executable, PREFLIGHT, "--repo", self.repo.path, "--scope", "staged",
+             "--json", "--receipt-dir", self.repo.receipts],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
+        )
+        return json.loads(p.stdout.decode("utf-8", "replace"))
+
+    def test_environment_policy_wins_over_bundled_default(self):
+        """リポジトリを丸ごと取り出して動かしても、環境変数で渡した policy が効く。
+
+        同梱の config/policy.json がこの検査の隣にある状態（このリポジトリの中から動かす）で確かめる。
+        """
+        org = os.path.join(self.repo.path, "org-policy.json")
+        shutil.copyfile(POLICY, org)
+        data = self.run_without_policy_flag(org)
+        self.assertEqual(os.path.normcase(data["policy"]["path"]), os.path.normcase(os.path.abspath(org)))
+        with open(org, "rb") as f:
+            raw = f.read()
+        self.assertEqual(data["policy"]["sha256"], hashlib.sha256(raw.replace(b"\r\n", b"\n")).hexdigest())
+        crlf = os.path.join(self.repo.path, "org-policy-crlf.json")
+        with open(crlf, "wb") as f:
+            f.write(raw.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n"))
+        self.assertEqual(self.run_without_policy_flag(crlf)["policy"]["sha256"], data["policy"]["sha256"],
+                         "改行の違いで設定の SHA-256 が変わると、手元と CI の結果を突き合わせられない")
+
+    def test_bundled_default_is_used_without_environment(self):
+        data = self.run_without_policy_flag(None)
+        self.assertEqual(os.path.normcase(data["policy"]["path"]), os.path.normcase(os.path.abspath(POLICY)))
+
+    def test_checker_revision_is_reported(self):
+        data = self.run_without_policy_flag(None)
+        self.assertRegex(data["checker"], r"^([0-9a-f]{40,64}|unknown)$")
 
     # --- 1. 組織アカウントは通り、合成の個人著者名は BLOCK -------------------
     def test_allowlisted_organization_account_passes(self):
