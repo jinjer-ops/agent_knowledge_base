@@ -358,6 +358,32 @@ class PreflightBoundaryTest(unittest.TestCase):
                       "実在形式の絶対パスが BLOCK されなかった: %s" % data["findings"])
         self.assertEqual(code, 1)
 
+    # --- 2b. 対象が多くても全部を見る・上限を付けたら閉じる側に倒す ------------
+    def write_many_with_block_last(self, count):
+        for i in range(count):
+            self.repo.write("notes/n%04d.md" % i, "# メモ %d\n\n本文。\n" % i)
+        # ls-files の並びで最後に来るファイルにだけ BLOCK を置く（先頭だけを見ると素通りする）
+        self.repo.write("notes/zz-last.md", "# 配線\n\n位置: `%s`\n" % windows_user_path("alice"))
+        self.repo.stage("notes")
+
+    def test_every_file_is_checked_beyond_the_old_cap(self):
+        self.write_many_with_block_last(450)
+        code, data = self.repo.run()
+        self.assertEqual(data["truncated"], 0)
+        self.assertIn("L01", rules(data, "BLOCK"), "先頭の一部だけを見て、最後のファイルの BLOCK を見落とした")
+        self.assertEqual(code, 1)
+
+    def test_exceeding_an_explicit_cap_fails_closed(self):
+        self.write_many_with_block_last(10)
+        p = subprocess.run(
+            [sys.executable, PREFLIGHT, "--repo", self.repo.path, "--scope", "staged", "--json",
+             "--policy", POLICY, "--receipt-dir", self.repo.receipts, "--max-files", "5"],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        )
+        self.assertEqual(p.returncode, 2, p.stderr.decode("utf-8", "replace"))
+        self.assertFalse(os.listdir(self.repo.receipts) if os.path.isdir(self.repo.receipts) else [],
+                         "上限を超えたのにレシートが出た")
+
     # --- 3. 会話文脈の規則に例外パスを設けない ----------------------------
     def test_conversational_wording_in_normal_doc_blocks(self):
         self.repo.write("docs/guide.md",

@@ -37,7 +37,6 @@ import sys
 import tempfile
 from datetime import datetime, timezone
 
-MAX_FILES = 400
 LARGE_FILE_BYTES = 5 * 1024 * 1024
 DATA_FILE_BYTES = 50 * 1024
 SUPPRESS_MARK = "git-publish:allow"
@@ -667,6 +666,10 @@ def main():
         help="staged=これからコミットする差分 / all=追跡ファイル全体 / head=HEAD の内容（push 前）",
     )
     ap.add_argument("--json", action="store_true")
+    ap.add_argument(
+        "--max-files", type=int, default=None,
+        help="対象のファイル数の上限。超えたら検査せずに止める（終了コード 2）。既定は上限なしで全部を見る",
+    )
     ap.add_argument("--force", action="store_true", help="BLOCK を承知でレシートを発行する")
     ap.add_argument("--reason", default="", help="--force の理由（必須・レシートに記録される）")
     ap.add_argument(
@@ -724,10 +727,16 @@ def main():
         rc, all_out, _ = git(root, "ls-files", "-z")
         all_paths = [p for p in all_out.split("\0") if p] if rc == 0 else list(paths)
 
-    truncated = 0
-    if len(paths) > MAX_FILES:
-        truncated = len(paths) - MAX_FILES
-        paths = paths[:MAX_FILES]
+    # 一部だけを見て「BLOCK なし」と返すと、見ていないファイルの BLOCK が素通りする。
+    # 上限を指定したときは、超えたら検査せずに止める（閉じる側に倒す）。既定は全部を見る。
+    if args.max_files is not None and len(paths) > args.max_files:
+        print(
+            f"ERROR: 対象が {len(paths)} ファイルで、上限 {args.max_files} を超えた。"
+            "一部だけを検査して通すことはしない（--scope を絞るか、上限を外す）",
+            file=sys.stderr,
+        )
+        return 2
+    truncated = 0  # 互換のために JSON に残す。全部を見るので常に 0
 
     findings, suppressed = [], 0
     for p in paths:
@@ -790,8 +799,6 @@ def main():
     else:
         print(f"preflight: {root}  scope={args.scope}  files={len(paths)}  tree={tree}")
         print(f"  policy: {policy_path}  sha256={policy_sha256[:12]}  checker={checker[:12]}")
-        if truncated:
-            print(f"  ! 対象が多いため {truncated} ファイルを未検査（--scope を絞るか分割コミットする）")
         for label, items in (("BLOCK", blocks), ("WARN", warns)):
             if not items:
                 continue
