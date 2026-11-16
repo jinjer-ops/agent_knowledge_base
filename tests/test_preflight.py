@@ -23,6 +23,7 @@
 from __future__ import annotations
 
 import atexit
+import hashlib
 import io
 import json
 import pathlib
@@ -158,6 +159,44 @@ class PreflightBoundaryTest(unittest.TestCase):
         self.assertTrue(os.path.exists(POLICY), "policy.json が無い: %s" % POLICY)
         self.repo = Repo()
         self.addCleanup(self.repo.close)
+
+    # --- 0. policy の読む順：--policy → 環境変数 → 同梱 ----------------------
+    def run_without_policy_flag(self, env_policy):
+        env = {k: v for k, v in os.environ.items() if k != "GIT_PUBLISH_POLICY"}
+        if env_policy is not None:
+            env["GIT_PUBLISH_POLICY"] = env_policy
+        p = subprocess.run(
+            [sys.executable, PREFLIGHT, "--repo", self.repo.path, "--scope", "staged",
+             "--json", "--receipt-dir", self.repo.receipts],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
+        )
+        return json.loads(p.stdout.decode("utf-8", "replace"))
+
+    def test_environment_policy_wins_over_bundled_default(self):
+        """リポジトリを丸ごと取り出して動かしても、環境変数で渡した policy が効く。
+
+        同梱の config/policy.json がこの検査の隣にある状態（このリポジトリの中から動かす）で確かめる。
+        """
+        org = os.path.join(self.repo.path, "org-policy.json")
+        shutil.copyfile(POLICY, org)
+        data = self.run_without_policy_flag(org)
+        self.assertEqual(os.path.normcase(data["policy"]["path"]), os.path.normcase(os.path.abspath(org)))
+        with open(org, "rb") as f:
+            raw = f.read()
+        self.assertEqual(data["policy"]["sha256"], hashlib.sha256(raw.replace(b"\r\n", b"\n")).hexdigest())
+        crlf = os.path.join(self.repo.path, "org-policy-crlf.json")
+        with open(crlf, "wb") as f:
+            f.write(raw.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n"))
+        self.assertEqual(self.run_without_policy_flag(crlf)["policy"]["sha256"], data["policy"]["sha256"],
+                         "改行の違いで設定の SHA-256 が変わると、手元と CI の結果を突き合わせられない")
+
+    def test_bundled_default_is_used_without_environment(self):
+        data = self.run_without_policy_flag(None)
+        self.assertEqual(os.path.normcase(data["policy"]["path"]), os.path.normcase(os.path.abspath(POLICY)))
+
+    def test_checker_revision_is_reported(self):
+        data = self.run_without_policy_flag(None)
+        self.assertRegex(data["checker"], r"^([0-9a-f]{40,64}|unknown)$")
 
     # --- 1. 組織アカウントは通り、合成の個人著者名は BLOCK -------------------
     def test_allowlisted_organization_account_passes(self):
@@ -318,6 +357,32 @@ class PreflightBoundaryTest(unittest.TestCase):
         self.assertIn("L01", rules(data, "BLOCK"),
                       "実在形式の絶対パスが BLOCK されなかった: %s" % data["findings"])
         self.assertEqual(code, 1)
+
+    # --- 2b. 対象が多くても全部を見る・上限を付けたら閉じる側に倒す ------------
+    def write_many_with_block_last(self, count):
+        for i in range(count):
+            self.repo.write("notes/n%04d.md" % i, "# メモ %d\n\n本文。\n" % i)
+        # ls-files の並びで最後に来るファイルにだけ BLOCK を置く（先頭だけを見ると素通りする）
+        self.repo.write("notes/zz-last.md", "# 配線\n\n位置: `%s`\n" % windows_user_path("alice"))
+        self.repo.stage("notes")
+
+    def test_every_file_is_checked_beyond_the_old_cap(self):
+        self.write_many_with_block_last(450)
+        code, data = self.repo.run()
+        self.assertEqual(data["truncated"], 0)
+        self.assertIn("L01", rules(data, "BLOCK"), "先頭の一部だけを見て、最後のファイルの BLOCK を見落とした")
+        self.assertEqual(code, 1)
+
+    def test_exceeding_an_explicit_cap_fails_closed(self):
+        self.write_many_with_block_last(10)
+        p = subprocess.run(
+            [sys.executable, PREFLIGHT, "--repo", self.repo.path, "--scope", "staged", "--json",
+             "--policy", POLICY, "--receipt-dir", self.repo.receipts, "--max-files", "5"],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        )
+        self.assertEqual(p.returncode, 2, p.stderr.decode("utf-8", "replace"))
+        self.assertFalse(os.listdir(self.repo.receipts) if os.path.isdir(self.repo.receipts) else [],
+                         "上限を超えたのにレシートが出た")
 
     # --- 3. 会話文脈の規則に例外パスを設けない ----------------------------
     def test_conversational_wording_in_normal_doc_blocks(self):
