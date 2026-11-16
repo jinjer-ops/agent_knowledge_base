@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-11-05
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247, ART-061, REF-248, REF-249, REF-250, REF-251, ART-062, REF-252, REF-253, REF-254, REF-255]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247, ART-061, REF-248, REF-249, REF-250, REF-251, ART-062, REF-252, REF-253, REF-254, REF-255, ART-063, REF-256, REF-257, REF-258, REF-259]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -2915,12 +2915,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 代表の 1 つ。この入力で比べた中で**唯一の査読を経た資料**であり、提供元 2 件には無い層を足します。前の 2 件は分けることの費用を文脈の損失として書きますが、この論文の 3 つ目のまとまりは「終了と検証」です。役割を分けると終了条件と検証の責任も分かれ、親が受け取るのはふつう子の自己申告の要約になります（製品の仕様でも親へ戻るのは要約だけ。`REF-026`）。つまり分けるという決定は、根拠が自己申告しかない検証の境目を 1 つ増やす決定でもある、という形で手引きに書きました。ここから出る条件は、戻り値に確かめ直せるもの（パス、行の位置、件数）を含めさせ、足りないときの止まり方を先に決めること。既存の [../foundation/agent-report-handoff/README.md](../foundation/agent-report-handoff/README.md) が別の経路から出している結論と独立に一致しています。限界は、対象が 2025 年前半までに公開された構成で、1 つの製品の中で役割を分ける形とは規模が違うことです。数値（軌跡の件数、失敗の型の数）は手引きへ移していません。**要旨と公開された説明の範囲でしか確認していません。**
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/subagent-fold-boundary/README.md](../foundation/subagent-fold-boundary/README.md)、[../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)（いずれも未検証）。
 
+### ART-063 再学習なしでモデルを直す手法を、数値とともに日本語で紹介した記事
+
+- **URL**: <https://www.itmedia.co.jp/business/spv/2611/13/news038.html>
+- **記事種別**: 国内メディアの解説記事（2026-11-13 掲載。4 ページ構成。同じ記事は `/articles/` 配下でも配信）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 上位のモデルに別のモデルの重みを直接読み書きさせ、勾配を使った再学習をせずに不具合を直す、という研究の紹介です。対象となった小さいモデルの数学の正答率が大きく上がったこと、書き換えた重みが全体のごく一部であること、そして「能力が増えたのではなく、推論のループが解けただけではないか」という懐疑的な見方が併記されています。
+- **得られる示唆**: この入力の入口。**代表にはしません。** 採否を決める 3 点——同じ手法が効かない相手がいること、著者自身が能力は足せないと書いていること、何本試して何本が残ったか——の根拠がいずれも一次情報と追試の側にあるためです。ただし入口としてはよく機能しました。懐疑的な見方を併記していたおかげで、一次情報の対照実験を探しに行く動機になり、そこがこのテーマの中心になりました。数値は記事からではなく一次情報（`REF-256`）で突き合わせています。本文は調べ物の道具を通して 4 ページぶん確認しましたが、ページを 1 枚ずつ開いてはいません。記事側に「元配信 2026-11-04」という記述があると報告されましたが独立に確認できなかったため、台帳の公開日は掲載日を採っています。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/broken-baseline-gains/README.md](../foundation/broken-baseline-gains/README.md)（未検証）。
+
+### REF-256 同じ手法が、片方では 6 倍、片方ではほとんど動かない
+
+- **URL**: <https://rikiyat.github.io/blog/weight-space-programming/>
+- **記事種別**: 研究チーム（MIT CSAIL、4 名の連名）が公開した技術報告。査読なし（2026-11-02 公開）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 上位のモデルに、別のモデルの重み行列を読ませ、問題を起こしている方向を特定させ、該当部分を直接書き換えさせる一連の実験です。8 億パラメータ級のモデルでは、全体の 0.016%（131,072 個）の重みを書き換えて数学の正答率が 7.9% から 48.1% へ、他の 2 つの指標も同じ向きに大きく動きました。**同じ手順を 2.7 億パラメータ級の別のモデルに当てた対照も載っています。** そちらは出力が上限に当たる割合が 8.5%（大きい側は 93%）で、誤りが散らばっていて止めるべき単一の箇所が見つからず、正答率は 6.8% から 7.0〜7.7% にしか動きませんでした。著者らの総括も同じ向きで、外せたのは能力の発揮を妨げていたものであって、持っていない能力を付け足せたわけではない、としています。
+- **得られる示唆**: 代表の 1 つ。このテーマで**対照を持つ唯一の資料**です。採ったのは数値ではなく、そこから出る読み方で、**大きな改善幅は手法の強さではなく直す前の壊れ方を測っている**という形にしました。これが無いと、他人の N 倍報告を自分の環境へ持ち込んで対照群の側を再現することになります。副次的に、安い段のモデルの低い成績が能力不足ではなく打ち切りのことがある、という切り分けにも使えるので、段の選び方の手引きにも節を足しました。限界は、査読を経ていないこと、対象が 2 つの小さいモデルに限られること、そして**主要な実験で何本の軌跡を試したかが書かれていない**ことです。数値はこのカードとテーマの手引きに残し、判定の基準には使っていません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/broken-baseline-gains/README.md](../foundation/broken-baseline-gains/README.md)、[../foundation/cost-change-evaluation/README.md](../foundation/cost-change-evaluation/README.md)、[../foundation/model-tier-selection/README.md](../foundation/model-tier-selection/README.md)（いずれも未検証）。
+
+### REF-257 16 本試して 6 本は破棄された、という側を書いた独立の追試
+
+- **URL**: <https://arxiv.org/abs/2611.09382>
+- **記事種別**: 査読前のプレプリント（2026-11-06 投稿。`REF-256` とは別の研究機関の連名）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: `REF-256` の手法を独立に追い、7 つの指標と 2 つの規模（8 億級と 90 億級）で 16 本の編集の軌跡を回した報告です。**16 本のうち 6 本は、改善を確かめきれなかったため編集を破棄して元の重みに戻しています。** 規模を上げた側では有効な編集を見つけること自体が難しく、結果も安定しません。課題をまたいだ波及も一様ではなく、数学向けの編集で動かなかった指標があると述べています。
+- **得られる示唆**: 代表の 1 つで、同時に**反対方向の根拠**として登録しました。`REF-256` だけを読むと手法が広く効くように見えますが、この追試が足すのは打率と規模依存です。ここから出る読み方は「報告を読むときに、何本試して何本が残ったかを探す。書かれていなければ打率は読めない」という形で、テーマの手引きに節を立てました。もう 1 つ、破棄が起きたのは**自分の改善を確かめきれなかったときに元へ戻す**作りになっていたからで、自動で何かを直させる構成の設計にそのまま当たります。限界は、査読前であること、要旨と公開された説明の範囲でしか確認していないことです。破棄された本数以外の数値は手引きへ移していません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/broken-baseline-gains/README.md](../foundation/broken-baseline-gains/README.md)（未検証）。
+
+### REF-258 改善幅が、比較対象の調整不足で作られていた例を体系的に数えた
+
+- **URL**: <https://arxiv.org/abs/1907.06902>
+- **記事種別**: 査読を経た論文（RecSys 2019 採択。arXiv 版は 2019-07-16 投稿。3 名の連名）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 上位会議で発表された推薦システムの深層学習の手法 18 件を再現しようとした調査です。手間をかけて再現できたのは 7 件にとどまり、**そのうち 6 件は近傍法やグラフを使った単純な手法に多くの場合で負けました。** 残る 1 件も、よく調整した非ニューラルの線形手法に一貫しては勝てていません。著者らの指摘は個々の手法ではなく、比較対象の選び方と調整の不足という**研究の進め方の側**に向いています。
+- **得られる示唆**: 補助。大きな改善幅が生まれるもう 1 つの経路を与えます。`REF-256` が示すのは「直す前が壊れていた」経路で、こちらは「比較対象が調整されていない」経路です。この 2 つは確かめ方が違うので、テーマの手引きでは表に分けました。自分に当てはめるときは、報告の「前」の側が今の素の状態と同じ条件かを見る、という形になります。限界は、分野が推薦システムで時期が 2019 年であること。採ったのは経路の存在だけで、件数を他分野の目安には使っていません。要旨と公開された説明の範囲での確認です。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/broken-baseline-gains/README.md](../foundation/broken-baseline-gains/README.md)、[../foundation/cost-change-evaluation/README.md](../foundation/cost-change-evaluation/README.md)（いずれも未検証）。
+
+### REF-259 同じ介入の効き目が、課題の種類で分かれることを 100 本超で測った
+
+- **URL**: <https://arxiv.org/abs/2409.12183>
+- **記事種別**: 査読を経た論文（ICLR 2025 採択。arXiv 版は 2024-09-18 投稿。10 名の連名）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 考える手順を書かせる指示（chain-of-thought）の効果を、100 本を超える論文のメタ分析と、20 データセット・14 モデルでの再評価で調べたものです。**効き目が大きいのは数学と論理・記号操作を含む課題にほぼ限られ、それ以外では差が小さい**という結論です。ある総合指標では、質問か応答に等号が現れない限り、手順を書かせても書かせなくても正答率がほぼ同じでした。効いている部分は記号的な実行の改善で、そこは専用の計算器に任せたほうが良いとも述べています。
+- **得られる示唆**: 代表の 1 つ。`REF-256` の対照が重みの層で示したことを、**こちらは自分が実際に触っている指示の層で、査読を通った規模で示しています。** 採ったのは「報告された効果は介入そのものではなく、介入と課題の組に付いている」という向きです。実務では、思考の深さを一律に下げるのではなく記号を扱う作業かどうかで分ける、という形になるので、段の選び方の手引きに条件として足しました。限界は、対象が 2024 年時点のモデルと指標で、推論を内蔵した現在のモデルへそのまま当てはまるとは限らないこと。設定値は 1 つも移していません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/broken-baseline-gains/README.md](../foundation/broken-baseline-gains/README.md)、[../foundation/model-tier-selection/README.md](../foundation/model-tier-selection/README.md)（いずれも未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全317 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全322 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 309件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 314件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

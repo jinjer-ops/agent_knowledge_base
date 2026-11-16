@@ -628,6 +628,15 @@ tags: [knowledge, sources, discovery]
   - REF-254 Don't Build Multi-Agents <https://cognition.com/blog/dont-build-multi-agents>（`reference`）
   - REF-255 Why Do Multi-Agent LLM Systems Fail? <https://arxiv.org/abs/2503.13657>（`reference`）
 
+### ART-063 再学習なしで正答率6倍　マサチューセッツ工科大学が実証した「AIがAIを直接直す」新手法
+
+- 共有した URL: <https://www.itmedia.co.jp/business/spv/2611/13/news038.html>
+- 見つけて使った資料:
+  - REF-256 Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights <https://rikiyat.github.io/blog/weight-space-programming/>（`reference`）
+  - REF-257 Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations <https://arxiv.org/abs/2611.09382>（`reference`）
+  - REF-258 Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches <https://arxiv.org/abs/1907.06902>（`reference`）
+  - REF-259 To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning <https://arxiv.org/abs/2409.12183>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>
