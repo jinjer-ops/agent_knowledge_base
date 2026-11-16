@@ -3108,3 +3108,52 @@ sources:
     found_via: [ART-062]
     use_when: "役割を分けた構成の失敗がどの層から来るかを、実際の軌跡の分類で確かめる時"
     derived: [foundation/skill-authoring/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
+  - id: ART-063
+    title: 再学習なしで正答率6倍　マサチューセッツ工科大学が実証した「AIがAIを直接直す」新手法
+    url: https://www.itmedia.co.jp/business/spv/2611/13/news038.html
+    published_at: 2026-11-13
+    topics: [evaluation, benchmarks, model_editing, baselines, measurement]
+    status: reference
+    intake: shared
+    use_when: "再学習なしでモデルを直す手法の話題の入口が要る時（数値と限界の判断は一次情報側で取る）"
+    derived: [foundation/broken-baseline-gains/README.md, knowledge/reading-guide.md]
+  - id: REF-256
+    title: "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights"
+    url: https://rikiyat.github.io/blog/weight-space-programming/
+    published_at: 2026-11-02
+    topics: [model_editing, evaluation, baselines, small_models, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-063]
+    use_when: "同じ介入が、直す前の壊れ方によって効いたり効かなかったりすることを対照付きで確かめる時"
+    derived: [foundation/broken-baseline-gains/README.md, foundation/cost-change-evaluation/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: REF-257
+    title: "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations"
+    url: https://arxiv.org/abs/2611.09382
+    published_at: 2026-11-06
+    topics: [model_editing, reproducibility, evaluation, generalization, verification]
+    status: reference
+    intake: found
+    found_via: [ART-063]
+    use_when: "公開された手法の打率と規模依存を、成功例だけでなく破棄された試行も含めて確かめる時"
+    derived: [foundation/broken-baseline-gains/README.md, knowledge/reading-guide.md]
+  - id: REF-258
+    title: "Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches"
+    url: https://arxiv.org/abs/1907.06902
+    published_at: 2019-07-16
+    topics: [evaluation, baselines, reproducibility, benchmarks, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-063]
+    use_when: "報告された改善幅が比較対象の調整不足で作られていないかを疑う根拠が要る時"
+    derived: [foundation/broken-baseline-gains/README.md, foundation/cost-change-evaluation/README.md, knowledge/reading-guide.md]
+  - id: REF-259
+    title: "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning"
+    url: https://arxiv.org/abs/2409.12183
+    published_at: 2024-09-18
+    topics: [prompting, evaluation, benchmarks, reasoning, cost]
+    status: reference
+    intake: found
+    found_via: [ART-063]
+    use_when: "考える手順を書かせる指示や思考の深さを、作業の種類で分けて決める時"
+    derived: [foundation/broken-baseline-gains/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
