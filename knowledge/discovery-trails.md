@@ -615,6 +615,19 @@ tags: [knowledge, sources, discovery]
   - REF-250 CrossCodeEval: A Diverse and Multilingual Benchmark for Cross-File Code Completion <https://arxiv.org/abs/2310.11248>（`reference`）
   - REF-251 The Maintainability Gap: 2026 AI Code Quality Research <https://www.gitclear.com/the_ai_code_quality_maintainability_gap>（`reference`）
 
+### ART-062 Skills を持つ単一エージェントは、サブエージェント構成より品質で上回ることが多い — Anthropic が示す移行の手順
+
+- 共有した URL: <https://zenn.dev/happy_elements/articles/201519107f93de>
+- 見つけて使った資料:
+  - REF-014 Skill authoring best practices <https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices>（`reference`）
+  - REF-016 SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks <https://arxiv.org/abs/2602.12670>（`reference`）
+  - REF-026 Subagents (Claude Code) <https://code.claude.com/docs/en/sub-agents>（`reference`）
+  - REF-094 LLM Evaluators Recognize and Favor Their Own Generations <https://proceedings.neurips.cc/paper_files/paper/2024/file/7f1f0218e45f5414c79c0679633e47bc-Paper-Conference.pdf>（`reference`）
+  - REF-252 Building agents: When to fold subagents into your main agent loop <https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop>（`reference`）
+  - REF-253 How we built our multi-agent research system <https://www.anthropic.com/research/multi-agent-research-system>（`reference`）
+  - REF-254 Don't Build Multi-Agents <https://cognition.com/blog/dont-build-multi-agents>（`reference`）
+  - REF-255 Why Do Multi-Agent LLM Systems Fail? <https://arxiv.org/abs/2503.13657>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

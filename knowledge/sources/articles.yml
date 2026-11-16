@@ -333,9 +333,9 @@ sources:
     topics: [skills, agent_instructions, context_management, evaluation]
     status: reference
     intake: found
-    found_via: [ART-004, REF-002]
+    found_via: [ART-004, ART-062, REF-002]
     use_when: "skillのdescriptionと本体を、選ばれて実際に効く形に書く時、評価を先に作って検証する時"
-    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [foundation/skill-authoring/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
   - id: REF-015
     title: Agent Skills Specification
     url: https://agentskills.io/specification
@@ -353,9 +353,9 @@ sources:
     topics: [skills, evaluation, benchmarks, agent_operations]
     status: reference
     intake: found
-    found_via: [ART-004, REF-002]
+    found_via: [ART-004, ART-062, REF-002]
     use_when: "skillが効く条件と効かない条件、自動生成したskillの扱いを、実測を見て判断する時"
-    derived: [foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [foundation/skill-authoring/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
   - id: REF-017
     title: Explore the context window (Claude Code)
     url: https://code.claude.com/docs/en/context-window
@@ -472,9 +472,9 @@ sources:
     topics: [subagents, context_management, delegation, claude_code]
     status: reference
     intake: found
-    found_via: [ART-023, ART-028, ART-029]
+    found_via: [ART-023, ART-028, ART-029, ART-062]
     use_when: "重い作業を別の文脈へ分離する手段が製品側にあるか、モデルを個別に指定できるかを確認する時"
-    derived: [foundation/heavy-read-delegation/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+    derived: [foundation/claude-code/README.md, foundation/heavy-read-delegation/README.md, foundation/model-tier-selection/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
   - id: ART-025
     title: Claude Codeでトークンを消費する4つの設定と対処法
     url: https://news.yahoo.co.jp/articles/0abb4856706e3274dd5d1c6394ca819a96c28712?page=1
@@ -1288,9 +1288,9 @@ sources:
     topics: [evaluation, reliability, verification, quality_gates]
     status: reference
     intake: found
-    found_via: [ART-039]
+    found_via: [ART-039, ART-062]
     use_when: "直したものを同じモデルに判定させる構成を置く前に、その判定がどちらへ偏るかを確かめる時"
-    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, knowledge/reading-guide.md]
+    derived: [foundation/generated-prose-style/README.md, foundation/skill-authoring/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
   - id: REF-095
     title: ISO plain language standard (Plain Language Association International)
     url: https://plainlanguage.com/what-is-plain-language/iso-plain-language-standard/
@@ -3059,3 +3059,52 @@ sources:
     found_via: [ART-061]
     use_when: "重複実装やファイル間のつながりの減少が自分の現場だけの話かを当たる時、ただし原因の証明には使わない時"
     derived: [foundation/incremental-feature-drift/README.md, knowledge/reading-guide.md]
+  - id: ART-062
+    title: Skills を持つ単一エージェントは、サブエージェント構成より品質で上回ることが多い — Anthropic が示す移行の手順
+    url: https://zenn.dev/happy_elements/articles/201519107f93de
+    published_at: 2026-11-12
+    topics: [agent_design, subagents, skills, context_management, agent_orchestration]
+    status: reference
+    intake: shared
+    use_when: "役割ごとにエージェントを分ける構成をやめて 1 つのループへ寄せる話題の入口が要る時（判断の根拠は一次情報側で取る）"
+    derived: [foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-252
+    title: "Building agents: When to fold subagents into your main agent loop"
+    url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+    published_at: 2026-10-22
+    topics: [agent_design, subagents, skills, context_management, evaluation]
+    status: reference
+    intake: found
+    found_via: [ART-062]
+    use_when: "サブエージェントを残すか畳み込むかの条件と、評価セットを先に作る移行の順序を確認する時"
+    derived: [foundation/claude-code/README.md, foundation/skill-authoring/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-253
+    title: How we built our multi-agent research system
+    url: https://www.anthropic.com/research/multi-agent-research-system
+    published_at: 2025-06-13
+    topics: [agent_orchestration, subagents, evaluation, cost, agent_design]
+    status: reference
+    intake: found
+    found_via: [ART-062]
+    use_when: "分けた構成が単一の構成を上回る条件と、その構成が払うトークンの桁を確かめる時"
+    derived: [foundation/skill-authoring/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-254
+    title: Don't Build Multi-Agents
+    url: https://cognition.com/blog/dont-build-multi-agents
+    published_at: 2025-06-12
+    topics: [agent_design, subagents, context_management, agent_orchestration]
+    status: reference
+    intake: found
+    found_via: [ART-062]
+    use_when: "並行して進めた結果を後から突き合わせても直せないものが何かを、機構として説明する時"
+    derived: [foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
+  - id: REF-255
+    title: "Why Do Multi-Agent LLM Systems Fail?"
+    url: https://arxiv.org/abs/2503.13657
+    published_at: 2025-03-17
+    topics: [agent_orchestration, subagents, evaluation, verification, failure_analysis]
+    status: reference
+    intake: found
+    found_via: [ART-062]
+    use_when: "役割を分けた構成の失敗がどの層から来るかを、実際の軌跡の分類で確かめる時"
+    derived: [foundation/skill-authoring/README.md, foundation/subagent-fold-boundary/README.md, knowledge/reading-guide.md]
