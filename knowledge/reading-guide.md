@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-11-05
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247, ART-061, REF-248, REF-249, REF-250, REF-251]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247, ART-061, REF-248, REF-249, REF-250, REF-251, ART-062, REF-252, REF-253, REF-254, REF-255]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -2870,12 +2870,57 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 補助で、反対向きにも読める材料として扱った。入口の記事が挙げた画面ごとの別実装が自分の現場だけの話ではないことは示すが、原因の証明には使えない。理由は 2 つで、この報告は AI が書いた行を分けて数えておらず、同じ期間に起きた他の変化と区別できないこと、発行元が計測の道具を売る会社であること。より広く引用されている前年の版（2020〜2024 年、2 億 1,100 万行）も読んだが、ファイルをまたぐつながりの指標はこちらにしか無く、期間も新しいので**この版だけを登録した**。数値は手引きへ移していない。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/incremental-feature-drift/README.md](../foundation/incremental-feature-drift/README.md)（未検証）。
 
+### ART-062 役割ごとに分けるのをやめる、という話題の入口（本文未確認）
+
+- **URL**: <https://zenn.dev/happy_elements/articles/201519107f93de>
+- **記事種別**: 技術記事の投稿サイトの記事（2026-11-12 公開）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: **本文を確認できていません。** 規定の調べ物の経路（Gemini）では、この URL の本文を開く手段が無く、検索結果の範囲までしか確かめられませんでした。そこから確認できたのは、タイトル、公開日、そして提供元の公式記事（`REF-252`）を日本語で解説した記事であることだけです。見出しの構成、著者自身の実測の有無、公式に無い付加があるかは不明です。
+- **得られる示唆**: 補助（入口）。代表にはしません。本文を確認できていない以上、記事固有の主張を根拠に使えないこと、そして確認できた範囲での位置づけが一次情報の解説であることが理由です。それでも、この入力が無ければ「役割を分けるかどうか」という問い自体がこの環境の手引きに立っていませんでした。実際、置き場所を示す 2 つの表のどちらにもサブエージェントの行がありませんでした。入口としての役割はそこにあります。判断の根拠は `REF-252`・`REF-253`・`REF-255` の側で取っています。なお、この記事の調査の過程で、関連する公式の配布物が存在するという説明を二次的な解説記事で見かけましたが、**独立に確認できなかったため登録していません**。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/subagent-fold-boundary/README.md](../foundation/subagent-fold-boundary/README.md)（未検証）。
+
+### REF-252 既定を 1 つのループに戻し、切り出すのは条件を満たすときだけ
+
+- **URL**: <https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop>
+- **記事種別**: 提供元（Anthropic）の公式記事（2026-10-22 公開。Applied AI チーム）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 組織の分担をそのままエージェントの構成に写すと、受け渡しのたびに条件や例外が落ち、指示が混ざり、評価がばらばらになる、という問題提起。そのうえで既定を単一のループと必要時に読み込む手順書に置き、サブエージェントを残してよい条件を 3 つに絞っています。文脈が膨らんで**測れる形で**成績が落ちる場合、互いに依存しない作業を並行させて途中経過を捨てたい場合、指示や権限や道具の選択が衝突する場合です。移行は、小さな評価セット（10 件程度でよいとされる）を先に作り、結び付きの強いものから 1 つずつ畳み、揺らぎを見るために複数回流す、という順序で示されています。道具の定義が増えすぎると選択の精度が落ちるため、分けるのではなく読み込みを遅らせるべきだという記述もあり、目安として 30〜50 個という幅が挙げられています。
+- **得られる示唆**: 代表の 1 つ。採ったのは条件の分け方と移行の順序です。この入力で判断を動かした点は 2 つ。(1) 1 つ目の条件が「測れる形で」と書かれていること。比較の基準が無い環境では、この条件は満たされているかどうかを言えず、あるのは見込みだけです。したがって評価セットを先に作る手順は儀式ではなく、条件を判定できるようにする作業そのものになります。(2) 3 つ目の条件に性質の違う 2 つ（指示の衝突と、道具の在庫の多さ）が混ざっていること。後者には読み込みの遅延というより安い手当てがあるため、分ける理由にすると受け渡しの損失を無駄に買うことになります。数値は手引きへ移していません（道具の数の目安だけ、版の条件付きと明記して向きを残しました）。限界は、提供元自身の記事であり、挙げられている速度や削減の事例が自己申告であること、そして**本文を検索結果の範囲でしか確認できていない**ことです。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/subagent-fold-boundary/README.md](../foundation/subagent-fold-boundary/README.md)、[../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)、[../foundation/claude-code/README.md](../foundation/claude-code/README.md)（いずれも未検証）。
+
+### REF-253 同じ提供元が、分けた方が大きく勝つ場面を測っている
+
+- **URL**: <https://www.anthropic.com/research/multi-agent-research-system>
+- **記事種別**: 提供元（Anthropic）の公式記事（2025-06-13 公開。6 名の連名）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 調査用のエージェントを、上位のモデルを親、安いモデルを複数の子に置いた構成で作った経緯と、その評価。内部の評価セット（20 問程度）で、この構成が単一の上位モデルを 90.2 % 上回ったと報告しています。同じ記事は費用の側も書いており、通常の対話に対して単一のループは約 4 倍、分けた構成は約 15 倍のトークンを使うとしています。効いた理由として、子が広く探して要るものだけを親へ返す形、つまり出力が入力よりはるかに小さい作業であることが挙げられています。
+- **得られる示唆**: 代表の 1 つで、同時に**反対の結論を示す独立した根拠**として扱いました。これが無いと `REF-252` を「分けるのはやめた方がよい」と読んでしまい、測られている勝ちパターンを捨てることになります。この入力で最も重要な判断は、2 つを矛盾ではなく条件の違いとして読んだことです。分けて得をするのは、子の出力が入力より大幅に小さく、かつ子同士が互いの決定を知らなくてよいときで、調査の作業はその両方に当たります。役割の名前が違うことはどちらの理由にもなりません。限界は、提供元の内部評価で対照群の設計が外から確かめられないこと、評価の件数が少ないこと、対象が調査の作業に限られることです。数値は手引きへ移さず、費用が桁で増えるという向きだけを使いました。**本文を検索結果の範囲でしか確認できていません。** URL も検索結果に現れたものをそのまま採っており、ページを開いて確かめてはいません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/subagent-fold-boundary/README.md](../foundation/subagent-fold-boundary/README.md)、[../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)（いずれも未検証）。
+
+### REF-254 分けた結果を後から突き合わせても、食い違った前提までは直せない
+
+- **URL**: <https://cognition.com/blog/dont-build-multi-agents>
+- **記事種別**: 開発会社のブログ記事（2025-06-12 公開。Walden Yan）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 流行している分割型の構成は壊れやすく、注力すべきは文脈の設計だという主張。原則として、可能な限り文脈を共有させること、そして各エージェントの行動には明示されていない決定が伴うことを勘定に入れること、の 2 つを挙げています。結論として、書き込みを 1 本に保つ単線の構成を対置しています。
+- **得られる示唆**: 補助。提供元とは独立に同じ向きを主張している点に価値があります。ただし測定がないので、採ったのは機構の説明だけです。`REF-252` が受け渡しで落ちるものを量の問題として書くのに対し、こちらは**暗黙の決定**という形で書いており、こちらの方が判定に使えます。文脈が短くても、子同士の決定が互いに整合している必要があるなら分けられない、という形になるからです。数値は無く、移していません。**本文を検索結果の範囲でしか確認できていません。**
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/subagent-fold-boundary/README.md](../foundation/subagent-fold-boundary/README.md)（未検証）。
+
+### REF-255 失敗の大きな部分は、誰が検証し誰が終わりと決めるかの欠落から来る
+
+- **URL**: <https://arxiv.org/abs/2503.13657>
+- **記事種別**: 査読を経た論文（NeurIPS 2025 Datasets and Benchmarks Track 採択。arXiv 版は 2025-03-17 投稿。UC Berkeley ほか）
+- **現在の扱い**: `reference`（確認日 2026-11-16）
+- **何が書かれているか**: 公開されている 7 つのマルチエージェント構成の実行の軌跡を 1,600 件以上注釈し、失敗の型を 14 に分類したもの。14 は 3 つのまとまりに整理されています。設計と仕様の不備、エージェント間の食い違い、そして検証と終了判定の失敗です。著者らは、エージェントの数を増やしても得られるものは小さく、壊れうる箇所の方が大きく増えると述べています。
+- **得られる示唆**: 代表の 1 つ。この入力で比べた中で**唯一の査読を経た資料**であり、提供元 2 件には無い層を足します。前の 2 件は分けることの費用を文脈の損失として書きますが、この論文の 3 つ目のまとまりは「終了と検証」です。役割を分けると終了条件と検証の責任も分かれ、親が受け取るのはふつう子の自己申告の要約になります（製品の仕様でも親へ戻るのは要約だけ。`REF-026`）。つまり分けるという決定は、根拠が自己申告しかない検証の境目を 1 つ増やす決定でもある、という形で手引きに書きました。ここから出る条件は、戻り値に確かめ直せるもの（パス、行の位置、件数）を含めさせ、足りないときの止まり方を先に決めること。既存の [../foundation/agent-report-handoff/README.md](../foundation/agent-report-handoff/README.md) が別の経路から出している結論と独立に一致しています。限界は、対象が 2025 年前半までに公開された構成で、1 つの製品の中で役割を分ける形とは規模が違うことです。数値（軌跡の件数、失敗の型の数）は手引きへ移していません。**要旨と公開された説明の範囲でしか確認していません。**
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/subagent-fold-boundary/README.md](../foundation/subagent-fold-boundary/README.md)、[../foundation/skill-authoring/README.md](../foundation/skill-authoring/README.md)（いずれも未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全312 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全317 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 304件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 309件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
