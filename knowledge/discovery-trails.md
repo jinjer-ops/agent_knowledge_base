@@ -637,6 +637,17 @@ tags: [knowledge, sources, discovery]
   - REF-258 Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches <https://arxiv.org/abs/1907.06902>（`reference`）
   - REF-259 To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning <https://arxiv.org/abs/2409.12183>（`reference`）
 
+### ART-064 AnthropicがClaudeを使って自社APIをPythonからRustに移植しCPU使用量を約70％削減した方法を公開
+
+- 共有した URL: <https://gigazine.net/news/20261126-anthropic-claude-api-rust/>
+- 見つけて使った資料:
+  - REF-249 ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases <https://arxiv.org/abs/2510.20270>（`reference`）
+  - REF-260 Migrating our Messages API to Rust <https://www.anthropic.com/research/migrating-api-to-rust>（`reference`）
+  - REF-261 scientist: a library for carefully refactoring critical paths <https://github.com/github/scientist>（`reference`）
+  - REF-262 Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code <https://arxiv.org/abs/2308.03109>（`reference`）
+  - REF-263 MigrationBench: Repository-Level Code Migration Benchmark from Java 8 <https://arxiv.org/abs/2505.09569>（`reference`）
+  - REF-264 How is Google using AI for internal code migrations? <https://arxiv.org/abs/2501.06972>（`reference`）
+
 ### REF-001 How Claude remembers your project
 
 - 共有した URL: <https://code.claude.com/docs/en/memory>

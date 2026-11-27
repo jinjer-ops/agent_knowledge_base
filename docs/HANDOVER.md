@@ -17,11 +17,11 @@ This repository is the single entry point for reusable agent-environment guidanc
 
 Acceptance criteria: a new reader can identify the three areas from the README, apply a generic Claude Code starter without overwriting local settings, find every supplied article through the reading guide, and tell from the registry whether a source is adopted or kept only for reference.
 
-## Current state — 2026-11-16
+## Current state — 2026-11-27
 
-Sources: 322 records in `knowledge/sources/articles.yml`, made up of 63 article records (`ART-001`–`ART-063`) and 259 official or reference records (`REF-001`–`REF-259`). Current status split: 8 `adopted`, 314 `reference`, 0 `experiment`.
+Sources: 328 records in `knowledge/sources/articles.yml`, made up of 64 article records (`ART-001`–`ART-064`) and 264 official or reference records (`REF-001`–`REF-264`). Current status split: 8 `adopted`, 320 `reference`, 0 `experiment`.
 
-Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 322 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` is adopted only for the general automation-safety principle in `foundation/README.md`; its reported figures are not treated as local verification, and a re-check on 2026-10-06 found the article is member-gated past the second page, so the card records that the earlier full read could not be repeated and that the judgement now rests on the primary sources `REF-049`–`REF-057`. A later page of that article carries its own URL; it is covered by the same `ART-013` card rather than a second source record, since one article gets one ID.
+Human entry point: `knowledge/reading-guide.md` holds one Japanese card per source, 328 cards in total, covering what each URL says, what it implies here, its current status, and the evidence that supports that status. `ART-013` is adopted only for the general automation-safety principle in `foundation/README.md`; its reported figures are not treated as local verification, and a re-check on 2026-10-06 found the article is member-gated past the second page, so the card records that the earlier full read could not be repeated and that the judgement now rests on the primary sources `REF-049`–`REF-057`. A later page of that article carries its own URL; it is covered by the same `ART-013` card rather than a second source record, since one article gets one ID.
 
 Machine entry point: `knowledge/sources/articles.yml` is canonical for source IDs and URLs. Its `derived` field is the complete reverse index of the documents that declare a source in `source_ids`, so a reader can list every related document from the registry alone. `derived` is an index of related documents; it is not the basis for status.
 

@@ -6,7 +6,7 @@ status: active
 created_at: 2026-09-02
 updated_at: 2026-11-05
 owners: [knowledge-stewards]
-source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247, ART-061, REF-248, REF-249, REF-250, REF-251, ART-062, REF-252, REF-253, REF-254, REF-255, ART-063, REF-256, REF-257, REF-258, REF-259]
+source_ids: [ART-001, ART-002, ART-003, ART-004, ART-005, ART-006, ART-007, ART-008, ART-009, ART-010, ART-011, ART-012, ART-013, ART-014, ART-015, ART-016, ART-017, ART-018, ART-019, ART-020, ART-021, ART-022, ART-023, ART-024, ART-025, ART-026, ART-027, ART-028, ART-029, ART-030, REF-001, REF-002, REF-003, REF-004, REF-005, REF-006, REF-007, REF-008, REF-009, REF-010, REF-011, REF-012, REF-013, REF-014, REF-015, REF-016, REF-017, REF-018, REF-019, REF-020, REF-021, REF-022, REF-023, REF-024, REF-025, REF-026, REF-027, REF-028, REF-029, REF-030, REF-031, REF-032, REF-033, REF-034, REF-035, REF-036, REF-037, REF-038, REF-039, REF-040, REF-041, REF-042, REF-043, REF-044, REF-045, REF-046, REF-047, REF-048, REF-049, REF-050, REF-051, REF-052, REF-053, REF-054, REF-055, REF-056, REF-057, ART-031, REF-058, ART-032, REF-059, REF-060, REF-061, REF-062, ART-033, REF-063, REF-064, REF-065, REF-066, ART-034, REF-067, REF-068, REF-069, ART-035, REF-070, REF-071, REF-072, REF-073, REF-074, REF-075, REF-076, REF-077, REF-078, ART-036, REF-079, REF-080, REF-081, REF-082, ART-037, REF-083, REF-084, REF-085, REF-086, ART-038, REF-087, REF-088, REF-089, REF-090, REF-091, ART-039, REF-092, REF-093, REF-094, REF-095, ART-040, REF-096, REF-097, REF-098, REF-099, REF-100, REF-101, REF-102, REF-103, REF-104, REF-105, REF-106, REF-107, ART-041, REF-108, REF-109, REF-110, REF-111, REF-112, ART-042, REF-113, REF-114, REF-115, REF-116, ART-043, REF-117, REF-118, REF-119, ART-044, REF-120, REF-121, REF-122, REF-123, REF-124, REF-125, REF-126, REF-127, REF-128, REF-129, REF-130, REF-131, REF-132, ART-045, REF-133, REF-134, REF-135, REF-136, REF-137, REF-138, REF-139, REF-140, REF-141, REF-142, REF-143, REF-144, REF-145, REF-146, REF-147, REF-148, REF-149, REF-150, REF-151, REF-152, REF-153, ART-046, REF-154, REF-155, REF-156, REF-157, REF-158, REF-159, REF-160, REF-161, ART-047, REF-162, REF-163, REF-164, REF-165, REF-166, REF-167, ART-048, REF-168, REF-169, REF-170, REF-171, REF-172, REF-173, REF-174, ART-049, REF-175, REF-176, REF-177, REF-178, REF-179, REF-180, REF-181, REF-182, REF-183, REF-184, REF-185, REF-186, REF-187, REF-188, REF-189, REF-190, REF-191, ART-050, REF-192, REF-193, REF-194, REF-195, REF-196, REF-197, ART-051, REF-198, REF-199, REF-200, REF-201, ART-052, REF-202, REF-203, REF-204, REF-205, REF-206, ART-053, REF-207, REF-208, REF-209, REF-210, REF-211, REF-212, REF-213, REF-214, ART-054, REF-215, REF-216, REF-217, REF-218, REF-219, ART-055, REF-220, REF-221, REF-222, REF-223, REF-224, ART-056, REF-225, REF-226, ART-057, REF-227, REF-228, REF-229, ART-058, REF-230, REF-231, REF-232, REF-233, ART-059, REF-234, REF-235, REF-236, REF-237, REF-238, REF-239, REF-240, ART-060, REF-241, REF-242, REF-243, REF-244, REF-245, REF-246, REF-247, ART-061, REF-248, REF-249, REF-250, REF-251, ART-062, REF-252, REF-253, REF-254, REF-255, ART-063, REF-256, REF-257, REF-258, REF-259, ART-064, REF-260, REF-261, REF-262, REF-263, REF-264]
 tags: [knowledge, reading-guide, sources]
 ---
 
@@ -2960,12 +2960,66 @@ tags: [knowledge, reading-guide, sources]
 - **得られる示唆**: 代表の 1 つ。`REF-256` の対照が重みの層で示したことを、**こちらは自分が実際に触っている指示の層で、査読を通った規模で示しています。** 採ったのは「報告された効果は介入そのものではなく、介入と課題の組に付いている」という向きです。実務では、思考の深さを一律に下げるのではなく記号を扱う作業かどうかで分ける、という形になるので、段の選び方の手引きに条件として足しました。限界は、対象が 2024 年時点のモデルと指標で、推論を内蔵した現在のモデルへそのまま当てはまるとは限らないこと。設定値は 1 つも移していません。
 - **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/broken-baseline-gains/README.md](../foundation/broken-baseline-gains/README.md)、[../foundation/model-tier-selection/README.md](../foundation/model-tier-selection/README.md)（いずれも未検証）。
 
+### ART-064 全面的な書き換えを、エージェントに書かせて本番まで通した事例の紹介
+
+- **URL**: <https://gigazine.net/news/20261126-anthropic-claude-api-rust/>
+- **記事種別**: 日本語の技術ニュース。提供元の発表（`REF-260`）を紹介する記事（2026-11-26 公開）
+- **現在の扱い**: `reference`（確認日 2026-11-27）
+- **何が書かれているか**: ある提供元が、自社の主要な API の実装を Python から Rust へ全面的に作り直し、モデルに大半のコードを書かせたという発表の紹介です。1 リクエストあたりの CPU が約 7 割減、メモリが 8 割超減、最初の応答までの時間の中央値が約 2 割短縮という結果と、移行の期間中にトラフィックが桁違いに増えていたという背景、そして「テストは 9 割以上通っていたのに本番の入出力の一致は 4 分の 1 だった」という観測を挙げています。記事自身の見立てとして、**作業の律速がコードを書くことから検証へ移っている**という点を強調しています。
+- **得られる示唆**: 入口として機能しました。数値は一次情報と一致しており、何に注目すべきか（検証の側）という読み筋も外していません。**代表にはしません。** 採否を決める 3 点（旧実装を基準にできる条件、差を種類に畳む方法、一致を門にしたときに何が起きるか）の根拠がすべて一次情報と測定の側にあるためです。数値も手順も、この記事からは独自に採っていません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/rewrite-equivalence/README.md](../foundation/rewrite-equivalence/README.md)（未検証）。
+
+### REF-260 旧実装を正解の基準にして、書き換えの等価を本番の入力で測った
+
+- **URL**: <https://www.anthropic.com/research/migrating-api-to-rust>
+- **記事種別**: 提供元自身のエンジニアリング記事（2026-11-25 公開）。対照群のない 1 件の事例報告
+- **現在の扱い**: `reference`（確認日 2026-11-27）
+- **何が書かれているか**: 主要な API を別の言語へ全面的に作り直した経過です。この領域で最も使えるのは**検証の設計**で、4 つあります。(1) 動いている旧実装を基準にし、同じ入力を両方へ流して出力を比べる。(2) 最終出力だけでなく、受理・設定の解決・組み立てといった**段ごとに比べ、最初に分かれた段**を特定する。(3) 顧客の入力そのものを読めないため、差の中身ではなく**差の形**（どこから分かれたか、長さがどれだけ違うか）を記録し、同じ原因から出た差をまとめる。(4) モデルの応答は同じ入力でも変わるので、**1 回だけ走らせた出力を両方へ再生**して非決定を比較から外す。観測として、既存の統合テスト約 700 件を 98% 通過していた時点での本番の一致が約 4 分の 1 だったこと、その後 99% 台まで上げたこと、理由はテストが旧実装の内部に結合していたことと組合せを尽くせないことだと書かれています。失敗例も自分で挙げており、**出力は一致するが設計としては筋の悪い回避策**をエージェントが書き、人が差し戻しています。性能は CPU 約 7 割減、メモリ 8 割超減、最初の応答まで約 2 割短縮です。
+- **得られる示唆**: 代表の 1 つ。**この領域の検証器の構造を具体的に書いた唯一の資料**です。採ったのは構造と、テストの通過率と本番の一致率の食い違いという観測で、ここから「テストの緑は、振る舞いを保つ変更の門としては弱い」という既存の手引きへの補強が出ました。性能の比率は**言語を替えた効果として読めません**。同じ記事が、重い処理だけを別の言語にする段階的な置き換えでは得るものが小さかったと書いており、効果が出た全面的な作り直しでは言語の変更と設計の作り直しが同時に入っています。限界は、提供元自身の発表で対照群が無いこと、費やした人数と期間が書かれていないこと、規模の前提（桁違いに増えた負荷、専任の体制）が手元と違うことです。比率は帰属の説明にだけ使い、目標値としては移していません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/rewrite-equivalence/README.md](../foundation/rewrite-equivalence/README.md)、[../foundation/change-intake-gate/README.md](../foundation/change-intake-gate/README.md)、[../foundation/broken-baseline-gains/README.md](../foundation/broken-baseline-gains/README.md)（いずれも未検証）。
+
+### REF-261 新旧を同時に走らせて突き合わせる型と、その使えない範囲
+
+- **URL**: <https://github.com/github/scientist>
+- **記事種別**: 公開された実装と、その説明（Ruby 版が原典。複数の言語へ移植されている。公開日は特定できず）
+- **現在の扱い**: `reference`（確認日 2026-11-27）
+- **何が書かれているか**: 重要な経路を安全に作り直すための小さな仕組みです。旧の処理と新の処理の両方を走らせ、**利用者へ返すのは常に旧の結果**とし、新の側で出た例外は飲み込んで記録します。比較の方法は差し替えられ、既知の差は「無視する」と宣言でき、実行する割合も絞れます。そして最も重要な但し書きとして、**データを変えない処理にしか安全に使えない**ことと、必ず毎回走ることは保証できないことが明記されています。
+- **得られる示唆**: 代表の 1 つ。`REF-260` の検証が独自の発明ではなく、**エージェント以前からある型の適用**だと分かる資料です。だから手引きでは、まず「二重に走らせても害の無い段はどこか」を切り分ける作業を先に置きました。副作用のある段を比較に出す設計は、先にその副作用を切り離してからになります。限界は、これが実装であって効果の測定ではないこと、項目名や既定の挙動が版に依存することです。導入は勧めていません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/rewrite-equivalence/README.md](../foundation/rewrite-equivalence/README.md)、[../foundation/change-intake-gate/README.md](../foundation/change-intake-gate/README.md)（いずれも未検証）。
+
+### REF-262 翻訳の歩留まりは、モデルと言語の組ごとに大きく違う
+
+- **URL**: <https://arxiv.org/abs/2308.03109>
+- **記事種別**: 査読を経た論文（ICSE 2024。arXiv 版は 2023-08-06 投稿、2024-01 改訂。10 名の連名）
+- **現在の扱い**: `reference`（確認日 2026-11-27）
+- **何が書かれているか**: 5 つの言語・1,700 件のコードを対象に、モデルにコードを別の言語へ移させ、正しさをテストで判定した研究です。**正しく移せた割合はモデルと言語の組で 2.1% から 47.3% まで散らばりました。** 失敗した翻訳を人手で調べ、誤りを 15 種類に分類しています。
+- **得られる示唆**: 補助に置いています。**対象が 2023 年時点のモデルなので、この割合を現在の見込みとして使えません。** 採ったのは 2 つだけで、歩留まりが「モデル × 言語の組」に付いていて一律ではないこと、そして誤りが分類できる形をしていること（＝種類ごとに手当てを決められること）です。現行世代については `REF-263` の側を見ます。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/rewrite-equivalence/README.md](../foundation/rewrite-equivalence/README.md)（未検証）。
+
+### REF-263 リポジトリ単位の移行を現行世代のモデルに解かせた成功率
+
+- **URL**: <https://arxiv.org/abs/2505.09569>
+- **記事種別**: 査読前のプレプリント（2025-05-14 投稿、2026-05 改訂。11 名の連名）
+- **現在の扱い**: `reference`（確認日 2026-11-27）
+- **何が書かれているか**: Java の古い版から新しい長期支援版へ上げる作業を、リポジトリ単位で解かせるベンチマークです。全体で 5,000 件規模、評価用に絞った集合が 300 件。現行世代のモデルを使ったエージェント構成での結果として、**最小限の移行で約 7 割、依存や API の置き換えまで含む移行で約 5 割**（1 回目の試行での成功）を報告しています。
+- **得られる示唆**: 代表の 1 つ。**現行世代のモデルで、リポジトリ単位の移し替えがどの桁の成功率かを示す唯一の資料**として採りました。採ったのは「半分前後は人が中身を見る前に落ちる」という桁と、**成功率が評価の条件（どこまでを移行に含めるか）で大きく動く**という点です。ここから、手引きの最初の節を「歩留まりは道具ではなく判定の仕方とセットでしか読めない」にしました。限界は、査読前であること、対象が 1 つの言語の版上げに限られること。数値は目標値としては移していません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/rewrite-equivalence/README.md](../foundation/rewrite-equivalence/README.md)（未検証）。
+
+### REF-264 大半をモデルが書いても、着地の前に置かれているものは変わらない
+
+- **URL**: <https://arxiv.org/abs/2501.06972>
+- **記事種別**: 1 社の経験報告（2025-01-12 投稿。7 名の連名）。**著者ら自身が、他の手法との比較も仮説の検証も行っていないと明記**
+- **現在の扱い**: `reference`（確認日 2026-11-27）
+- **何が書かれているか**: 大きな組織の内部で、数値型の置き換えや試験の枠組みの版上げといった移行をモデルに手伝わせた運用の報告です。着地した変更のうち**8 割の修正は完全にモデルが書いたもの**で、残りが人の手によるものか、モデルの提案を人が直したものでした。着地の前には自動の検査（ビルドと単体テスト）と、移行を進める担当者および対象コードの持ち主によるレビューが置かれています。所要時間の短縮は、当事者の見積もりを含む形で報告されています。
+- **得られる示唆**: 補助に置いています。採ったのは 1 点だけで、**生成の割合が上がっても、着地の直前に置かれているもの（自動の検査と人のレビュー）は変わっていない**という観測です。これは `REF-260` の運用（修正は人のレビューを通してから本番へ出す）と独立に一致しており、別の組織・別の種類の移行でも同じ位置に人が立っていることになります。限界は、研究ではないと著者らが明記していること、時間の短縮が自己申告を含むことです。数値は手引きへ移していません。
+- **採用・実験の裏付け**: 該当なし（`reference` のため）。反映先は [../foundation/rewrite-equivalence/README.md](../foundation/rewrite-equivalence/README.md)（未検証）。
+
 ---
 
 ## 台帳との関係
 
 このガイドは [sources/articles.yml](sources/articles.yml) の `status` をそのまま反映し、各カードには status を支える「採用・実験の裏付け」だけを書きます。
 
-台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全322 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
+台帳の `derived` は別の役割です。source ID を宣言している現存文書の**完全な逆引き**であり、ある source に関連する文書を全て引くための索引です。このガイド自身も全328 source を要約する関連文書なので、全 source の `derived` に含まれます。`derived` の件数は status の根拠にはなりません。
 
-現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 314件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。
+現在の内訳は `adopted` 8件、`experiment` 0件、`reference` 320件です。source を `adopted` や `experiment` へ移すには、裏付けとなる文書（`experiment` の場合は用途・入力・安全境界・検証方法・終了条件を書いた charter）を先に作ります。追加の手順は [../docs/contribution.md](../docs/contribution.md) にあります。

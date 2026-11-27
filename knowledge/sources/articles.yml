@@ -3036,9 +3036,9 @@ sources:
     topics: [verification, reward_hacking, benchmark, evaluation, ci_gate]
     status: reference
     intake: found
-    found_via: [ART-061]
+    found_via: [ART-061, ART-064]
     use_when: "テストを合格条件の門にすると決める前に、テスト自体を書き換える経路がどれだけ使われるかを確かめる時"
-    derived: [foundation/incremental-feature-drift/README.md, knowledge/reading-guide.md]
+    derived: [foundation/incremental-feature-drift/README.md, foundation/rewrite-equivalence/README.md, knowledge/reading-guide.md]
   - id: REF-250
     title: "CrossCodeEval: A Diverse and Multilingual Benchmark for Cross-File Code Completion"
     url: https://arxiv.org/abs/2310.11248
@@ -3157,3 +3157,62 @@ sources:
     found_via: [ART-063]
     use_when: "考える手順を書かせる指示や思考の深さを、作業の種類で分けて決める時"
     derived: [foundation/broken-baseline-gains/README.md, foundation/model-tier-selection/README.md, knowledge/reading-guide.md]
+  - id: ART-064
+    title: AnthropicがClaudeを使って自社APIをPythonからRustに移植しCPU使用量を約70％削減した方法を公開
+    url: https://gigazine.net/news/20261126-anthropic-claude-api-rust/
+    published_at: 2026-11-26
+    topics: [code_migration, verification, rust, coding_agents, performance]
+    status: reference
+    intake: shared
+    use_when: "動いている実装をエージェントに作り直させる構成を検討し始めた時の入口（数値と手順は一次情報で確かめる）"
+    derived: [foundation/rewrite-equivalence/README.md, knowledge/reading-guide.md]
+  - id: REF-260
+    title: Migrating our Messages API to Rust
+    url: https://www.anthropic.com/research/migrating-api-to-rust
+    published_at: 2026-11-25
+    topics: [code_migration, verification, differential_comparison, agent_orchestration, reward_hacking]
+    status: reference
+    intake: found
+    found_via: [ART-064]
+    use_when: "旧実装を基準にして書き換えの等価を確かめる仕組み（段ごとの比較・差の指紋・非決定の除去・人を残す位置）を設計する時"
+    derived: [foundation/broken-baseline-gains/README.md, foundation/change-intake-gate/README.md, foundation/rewrite-equivalence/README.md, knowledge/reading-guide.md]
+  - id: REF-261
+    title: "scientist: a library for carefully refactoring critical paths"
+    url: https://github.com/github/scientist
+    published_at: null
+    topics: [refactoring, differential_comparison, verification, production_testing]
+    status: reference
+    intake: found
+    found_via: [ART-064]
+    use_when: "新旧の実装を同時に走らせて突き合わせる構成の既定の形と、副作用のある処理に使えないという制約を確かめる時"
+    derived: [foundation/change-intake-gate/README.md, foundation/rewrite-equivalence/README.md, knowledge/reading-guide.md]
+  - id: REF-262
+    title: "Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code"
+    url: https://arxiv.org/abs/2308.03109
+    published_at: 2023-08-06
+    topics: [code_migration, code_generation, evaluation, benchmarks, verification]
+    status: reference
+    intake: found
+    found_via: [ART-064]
+    use_when: "コードを別の言語へ移させる作業の歩留まりが、モデルと言語の組ごとに違うことと、誤りの分類を確かめる時"
+    derived: [foundation/rewrite-equivalence/README.md, knowledge/reading-guide.md]
+  - id: REF-263
+    title: "MigrationBench: Repository-Level Code Migration Benchmark from Java 8"
+    url: https://arxiv.org/abs/2505.09569
+    published_at: 2025-05-14
+    topics: [code_migration, benchmarks, evaluation, coding_agents, verification]
+    status: reference
+    intake: found
+    found_via: [ART-064]
+    use_when: "リポジトリ単位の版上げ・移行を現行世代のモデルに任せたときの成功率の桁を、評価条件つきで確かめる時"
+    derived: [foundation/rewrite-equivalence/README.md, knowledge/reading-guide.md]
+  - id: REF-264
+    title: How is Google using AI for internal code migrations?
+    url: https://arxiv.org/abs/2501.06972
+    published_at: 2025-01-12
+    topics: [code_migration, coding_agents, code_review, quality_gates, measurement]
+    status: reference
+    intake: found
+    found_via: [ART-064]
+    use_when: "大規模な移行をモデルに書かせる運用で、着地の前に何（自動検査・人のレビュー）が置かれているかを確かめる時"
+    derived: [foundation/rewrite-equivalence/README.md, knowledge/reading-guide.md]
